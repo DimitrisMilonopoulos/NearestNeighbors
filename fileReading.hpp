@@ -1,3 +1,6 @@
+#ifndef _FILE_READING
+#define _FILE_READING
+
 #include <vector>
 #include <string>
 
@@ -6,19 +9,23 @@ using namespace std;
 class Item
 {
     string itemID;
-    vector<int> *coordinates;
+    int *coordinates;
+    int size;
 
 public:
-    Item(string ID);
+    Item();
+    Item(string ID, int *coord, int siz);
     ~Item();
     string getID();
-    vector<int> *getCoord();
-    void Item::addCoord(int coord);
+    int *getCoord();
+    int getSize();
 };
 
 class Reading
 {
 public:
-    vector<class Item> *readInputPoints(string FileLocation);
-    vector<class Item> *readQueryPoints(string FileLocation);
+    class Item **readInputPoints(string FileLocation, int *tableSize);
+    class Item **readQueryPoints(string FileLocation);
 };
+
+#endif

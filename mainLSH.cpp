@@ -38,4 +38,16 @@ int main(int argc, char *argv[])
     }
 
     cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
+
+    class Reading reader;
+    int tableSize;
+    class Item **inputTable;
+    inputTable = reader.readInputPoints("./Files/input_small_id", &tableSize);
+
+    //delete the table
+    for (int i = 0; i < tableSize; i++)
+    {
+        delete (inputTable[i]);
+    }
+    delete[](inputTable);
 }

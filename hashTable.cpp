@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 
+#include "point.hpp"
 #include "hashTable.hpp"
 
 using namespace std;
@@ -20,7 +21,7 @@ unsigned int manhattanDist(class Point * Point1, class Point* Point2){
 }
 
 template <typename T>
-HashTable<T>::HashTable(unsigned int size){
+HashTable<T>::HashTable(size_t size){
     bucketSize = size;
     buckets = new vector<T*>[bucketSize];
 }

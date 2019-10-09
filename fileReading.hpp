@@ -3,28 +3,16 @@
 
 #include <vector>
 #include <string>
+#include "point.hpp"
 
 using namespace std;
 
-class Point
-{
-    string PointID;
-    int *coordinates;
-    int size;
-
-public:
-    Point();
-    Point(string ID, int *coord, int siz);
-    ~Point();
-    string getID();
-    int *getCoord();
-    int getSize();
-};
 
 class Reading
+
 {
 public:
-    class Point **readPoints(string FileLocation, int *tableSize);
+    vector <class Point*> *readPoints(string FileLocation);
 };
 
 #endif

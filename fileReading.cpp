@@ -3,36 +3,13 @@
 #include <sstream>
 
 #include "fileReading.hpp"
+#include "point.hpp"
 
 using namespace std;
 
-//Class used to handle the input Points
-
-Point::Point(string ID, int *coord, int siz)
-{
-    PointID = ID;
-    coordinates = coord;
-    size = siz;
-}
-
-Point::~Point()
-{
-    delete[](coordinates);
-}
-
-string Point::getID()
-{
-    return PointID;
-}
-
-int Point::getSize()
-{
-    return size;
-}
-
 //Class used to read the input files
 
-class Point **Reading::readPoints(string FileLocation, int *tableSize)
+vector <class Point*> *Reading::readPoints(string FileLocation)
 {
     ifstream infile(FileLocation);
     string line;
@@ -55,11 +32,12 @@ class Point **Reading::readPoints(string FileLocation, int *tableSize)
     while (getline(file, line))
         count++;
 
-    cout << "Number of lines in file: " << count << '\n';
-    cout << "Number of dimensions per point: " << columns << '\n';
+    cout << "Number of lines in file: " << count << endl;
+    cout << "Number of dimensions per point: " << columns << endl;
 
     //construct the table of Points
-    class Point **table = new class Point *[count];
+    vector <class Point*> *table = new vector <class Point*>;
+    table->reserve(count);
     int j = 0;
     while (getline(infile, line))
     {
@@ -74,14 +52,9 @@ class Point **Reading::readPoints(string FileLocation, int *tableSize)
             iss >> coord[i];
         }
         class Point *newPoint = new class Point(name, coord, columns);
-        table[j] = newPoint;
+        table->push_back(newPoint) ;
         j++;
     }
-    // for (int i = 0; i < count; i++)
-    // {
-    //     delete (table[i]);
-    // }
-    // delete[](table);
-    *tableSize = count;
+    
     return table;
 }

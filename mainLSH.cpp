@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 
-    if (argc != 11)
+    if (argc > 11)
     {
         cout << "Invalid Input!\n";
         return -1;
@@ -41,13 +41,9 @@ int main(int argc, char *argv[])
 
     class Reading reader;
     int tableSize;
-    class Item **inputTable;
-    inputTable = reader.readPoints("./Files/input_small_id", &tableSize);
+    vector <class Point*>* inputTable;
+    inputTable = reader.readPoints(inputFile);
 
     //delete the table
-    for (int i = 0; i < tableSize; i++)
-    {
-        delete (inputTable[i]);
-    }
     delete[](inputTable);
 }

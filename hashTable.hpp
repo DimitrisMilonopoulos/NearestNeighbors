@@ -7,9 +7,10 @@
 
 unsigned int manhattanDist(class Item *, class Item*);
 
+template <typename T>
 class HashTable{
     unsigned int bucketSize;
-    vector<class Item*> *buckets;
+    vector<T*> *buckets;
     
     public:
     HashTable();
@@ -17,8 +18,8 @@ class HashTable{
     ~HashTable();
 
     //hashfunction operations
-    int insertItem(class Item*,unsigned int position);
-    int findItem(class Item*);
+    int insertItem(T*,unsigned int position);
+    int findItem(T*);
 };
 
 #endif

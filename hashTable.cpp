@@ -19,16 +19,19 @@ unsigned int manhattanDist(class Item * item1, class Item* item2){
     return distance;
 }
 
-HashTable::HashTable(unsigned int size){
+template <typename T>
+HashTable<T>::HashTable(unsigned int size){
     bucketSize = size;
-    buckets = new vector<class Item *>[bucketSize];
+    buckets = new vector<T*>[bucketSize];
 }
 
-HashTable::~HashTable(){
+template <typename T>
+HashTable<T>::~HashTable(){
     delete []buckets;
 }
 
-int HashTable::insertItem(class Item* item,unsigned int position){
+template <typename T>
+int HashTable<T>::insertItem(T* item,unsigned int position){
     if (position>=bucketSize){
         cout << "Invalid hash table position"<<endl;
         return 1;

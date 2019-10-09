@@ -3,20 +3,22 @@ CXX = g++
 DEPS = fileReading.hpp
 OBJ = fileReading.o
 
-fileReading.o: fileReading.cpp fileReading.hpp
-	$(CXX) -c fileReading.cpp -o fileReading.o
+all: mainCube mainLSH
 
-mainCube.o: mainCube.cpp
-	$(CXX) -c mainCube.cpp -o mainCube.o
-
-mainLSH.o: mainLSH.cpp
-	$(CXX) -c mainLSH.cpp -o mainLSH.o
-
-mainCube: mainCube.o
-	$(CXX) –o mainCube# $(CFLAGS)
+mainCube: mainCube.o $(OBJ)
+	$(CXX) mainCube.o $(OBJ) -o mainCube
 
 mainLSH: mainLSH.o $(OBJ)
-	$(CXX) –o mainLSH#$(CFLAGS)
+	$(CXX) mainLSH.o $(OBJ) -o mainLSH
+
+mainCube.o: mainCube.cpp fileReading.hpp
+	$(CXX) -c mainCube.cpp -o mainCube.o
+
+mainLSH.o: mainLSH.cpp fileReading.hpp
+	$(CXX) -c mainLSH.cpp -o mainLSH.o
+
+fileReading.o: fileReading.cpp fileReading.hpp
+	$(CXX) -c fileReading.cpp -o fileReading.o
 
 clean:
 	rm –f *.o mainCube mainLSH

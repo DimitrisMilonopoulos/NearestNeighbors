@@ -6,33 +6,33 @@
 
 using namespace std;
 
-//Class used to handle the input items
+//Class used to handle the input Points
 
-Item::Item(string ID, int *coord, int siz)
+Point::Point(string ID, int *coord, int siz)
 {
-    itemID = ID;
+    PointID = ID;
     coordinates = coord;
     size = siz;
 }
 
-Item::~Item()
+Point::~Point()
 {
     delete[](coordinates);
 }
 
-string Item::getID()
+string Point::getID()
 {
-    return itemID;
+    return PointID;
 }
 
-int Item::getSize()
+int Point::getSize()
 {
     return size;
 }
 
 //Class used to read the input files
 
-class Item **Reading::readPoints(string FileLocation, int *tableSize)
+class Point **Reading::readPoints(string FileLocation, int *tableSize)
 {
     ifstream infile(FileLocation);
     string line;
@@ -50,7 +50,7 @@ class Item **Reading::readPoints(string FileLocation, int *tableSize)
         {
             columns++;
         }
-        columns--; //exclude the item name
+        columns--; //exclude the Point name
     }
     while (getline(file, line))
         count++;
@@ -58,8 +58,8 @@ class Item **Reading::readPoints(string FileLocation, int *tableSize)
     cout << "Number of lines in file: " << count << '\n';
     cout << "Number of dimensions per point: " << columns << '\n';
 
-    //construct the table of items
-    class Item **table = new class Item *[count];
+    //construct the table of Points
+    class Point **table = new class Point *[count];
     int j = 0;
     while (getline(infile, line))
     {
@@ -73,8 +73,8 @@ class Item **Reading::readPoints(string FileLocation, int *tableSize)
         {
             iss >> coord[i];
         }
-        class Item *newitem = new class Item(name, coord, columns);
-        table[j] = newitem;
+        class Point *newPoint = new class Point(name, coord, columns);
+        table[j] = newPoint;
         j++;
     }
     // for (int i = 0; i < count; i++)

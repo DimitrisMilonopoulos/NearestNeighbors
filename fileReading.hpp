@@ -6,16 +6,16 @@
 
 using namespace std;
 
-class Item
+class Point
 {
-    string itemID;
+    string PointID;
     int *coordinates;
     int size;
 
 public:
-    Item();
-    Item(string ID, int *coord, int siz);
-    ~Item();
+    Point();
+    Point(string ID, int *coord, int siz);
+    ~Point();
     string getID();
     int *getCoord();
     int getSize();
@@ -24,7 +24,7 @@ public:
 class Reading
 {
 public:
-    class Item **readPoints(string FileLocation, int *tableSize);
+    class Point **readPoints(string FileLocation, int *tableSize);
 };
 
 #endif

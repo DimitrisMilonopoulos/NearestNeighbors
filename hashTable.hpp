@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <vector>
 
-unsigned int manhattanDist(class Item *, class Item*);
+unsigned int manhattanDist(class Point *, class Point*);
 
 template <typename T>
 class HashTable{
@@ -18,8 +18,8 @@ class HashTable{
     ~HashTable();
 
     //hashfunction operations
-    int insertItem(T*,unsigned int position);
-    int findItem(T*);
+    int insertPoint(T*,unsigned int position);
+    int findPoint(T*);
 };
 
 #endif

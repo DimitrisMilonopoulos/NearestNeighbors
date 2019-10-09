@@ -1,24 +1,35 @@
 CXX = g++
+FLAGS = -g -c
 #CFLAGS=-I
-DEPS = fileReading.hpp hashTable.hpp
-OBJ = fileReading.o hashTable.o
+DEPS = fileReading.hpp hashTable.hpp point.hpp
+OBJ = fileReading.o hashTable.o point.o
+OUT = mainCube mainLSH
 
-all: mainCube mainLSH
+all: $(OUT)
 
-mainCube: mainCube.o $(OBJ)
-	$(CXX) mainCube.o $(OBJ) -o mainCube
+mainCube: mainCube.o
+	$(CXX) -g mainCube.o -o mainCube
 
-mainLSH: mainLSH.o $(OBJ)
-	$(CXX) mainLSH.o $(OBJ) -o mainLSH
+mainLSH: mainLSH.o LSH.o $(OBJ)
+	$(CXX) -g mainLSH.o LSH.o $(OBJ) -o mainLSH
 
-mainCube.o: mainCube.cpp fileReading.hpp
-	$(CXX) -c mainCube.cpp -o mainCube.o
+mainCube.o: mainCube.cpp
+	$(CXX) $(FLAGS) mainCube.cpp -o mainCube.o
 
-mainLSH.o: mainLSH.cpp fileReading.hpp
-	$(CXX) -c mainLSH.cpp -o mainLSH.o
+mainLSH.o: mainLSH.cpp $(DEPS)
+	$(CXX) $(FLAGS) mainLSH.cpp -o mainLSH.o
 
-fileReading.o: fileReading.cpp fileReading.hpp
-	$(CXX) -c fileReading.cpp -o fileReading.o
+LSH.o: LSH.cpp LSH.hpp hashTable.hpp point.hpp
+	$(CXX) $(FLAGS) LSH.cpp -o LSH.o
+
+fileReading.o: fileReading.cpp fileReading.hpp point.hpp
+	$(CXX) $(FLAGS) fileReading.cpp -o fileReading.o
+
+hashTable.o: hashTable.cpp hashTable.hpp point.hpp
+	$(CXX) $(FLAGS) hashTable.cpp -o hashTable.o
+
+point.o: point.cpp point.hpp
+	$(CXX) $(FLAGS) point.cpp -o point.o
 
 clean:
-	rm –f *.o mainCube mainLSH
+	rm *.o $(OUT)

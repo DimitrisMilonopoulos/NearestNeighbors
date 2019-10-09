@@ -27,6 +27,10 @@ HashTable<T>::HashTable(size_t size){
 }
 
 template <typename T>
+HashTable<T>::HashTable(){
+}
+
+template <typename T>
 HashTable<T>::~HashTable(){
     delete []buckets;
 }
@@ -38,4 +42,8 @@ int HashTable<T>::insertPoint(T* Point,unsigned int position){
         return 1;
     }
     buckets[position].push_back(Point);
+
+    return 0;
 }
+
+template class HashTable<class Point*>;

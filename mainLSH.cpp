@@ -1,5 +1,9 @@
 #include <iostream>
+
 #include "fileReading.hpp"
+#include "LSH.hpp"
+#include "point.hpp"
+#include "hashTable.hpp"
 
 using namespace std;
 

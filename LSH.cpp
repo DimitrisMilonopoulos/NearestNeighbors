@@ -8,16 +8,16 @@ using namespace std;
 
 // Class used for the implementation of the LSH algorithm
 
-LSH::LSH(int givenk = 3, int givenL = 5, int givenw, vector <class Point*>* points)
+LSH::LSH(int givenw, vector <class Point*>* points, int givenk = 3, int givenL = 5)
 {
 
     k = givenk;
     L = givenL;
     w = givenw;
     inputPoints = points;
-    hashTables = new class HashTable<class Point>[L];
+    hashTables = new class HashTable<class Point*>[L];
     for(int i = 0; i < L; i++){
-        hashTables[i] = HashTable<class Point>(inputPoints->size());
+        hashTables[i] = HashTable<class Point*>(inputPoints->size());
     }
 }
 

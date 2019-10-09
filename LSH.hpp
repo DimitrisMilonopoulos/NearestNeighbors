@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <string>
+#include "point.hpp"
+#include "hashTable.hpp"
 
 using namespace std;
 
@@ -12,10 +14,10 @@ class LSH{
     int w;
     int L;
     vector <class Point*>* inputPoints;
-    class HashTable<class Point>* hashTables;
+    class HashTable<class Point*>* hashTables;
 
 public:
-    LSH(int, int, int, vector <class Point*>*);
+    LSH(int, vector <class Point*>*, int, int);
     ~LSH();
     int getk();
     int getw();

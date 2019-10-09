@@ -29,3 +29,7 @@ int Point::getSize()
 {
     return size;
 }
+
+int* Point::getCoord(){
+    return coordinates;
+}

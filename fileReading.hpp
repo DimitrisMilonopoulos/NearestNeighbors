@@ -24,8 +24,7 @@ public:
 class Reading
 {
 public:
-    class Item **readInputPoints(string FileLocation, int *tableSize);
-    class Item **readQueryPoints(string FileLocation);
+    class Item **readPoints(string FileLocation, int *tableSize);
 };
 
 #endif

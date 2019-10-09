@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     class Reading reader;
     int tableSize;
     class Item **inputTable;
-    inputTable = reader.readInputPoints("./Files/input_small_id", &tableSize);
+    inputTable = reader.readPoints("./Files/input_small_id", &tableSize);
 
     //delete the table
     for (int i = 0; i < tableSize; i++)

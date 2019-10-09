@@ -32,7 +32,7 @@ int Item::getSize()
 
 //Class used to read the input files
 
-class Item **Reading::readInputPoints(string FileLocation, int *tableSize)
+class Item **Reading::readPoints(string FileLocation, int *tableSize)
 {
     ifstream infile(FileLocation);
     string line;

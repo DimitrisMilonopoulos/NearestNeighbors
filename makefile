@@ -1,7 +1,7 @@
 CXX = g++
 #CFLAGS=-I
-DEPS = fileReading.hpp
-OBJ = fileReading.o
+DEPS = fileReading.hpp hashTable.hpp
+OBJ = fileReading.o hashTable.o
 
 all: mainCube mainLSH
 

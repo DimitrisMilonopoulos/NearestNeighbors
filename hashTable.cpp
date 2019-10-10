@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cmath>
+#include <random>
 
 #include "point.hpp"
 #include "hashTable.hpp"
@@ -21,9 +23,29 @@ unsigned int manhattanDist(class Point * Point1, class Point* Point2){
 }
 
 template <typename T>
-HashTable<T>::HashTable(size_t size){
+HashTable<T>::HashTable(size_t size, int givenw, int givenk, int givendim){
+    k = givenk;
+    w = givenw;
+    d = givendim;
+    
     bucketSize = size;
     buckets = new vector<T*>[bucketSize];
+    
+    sVectors = new double*[k];
+    for(int i = 0; i < k; i++){
+        sVectors[i] = new double[d];
+    }
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<> dis(0.0, (double)w);
+    for(int i = 0; i < k; i++)
+    {
+        for (int j = 0; j < d; j++)
+        {
+            sVectors[i][j] = dis(gen);
+        }
+        
+    }
 }
 
 template <typename T>
@@ -36,14 +58,58 @@ HashTable<T>::~HashTable(){
 }
 
 template <typename T>
-int HashTable<T>::insertPoint(T* Point,unsigned int position){
-    if (position>=bucketSize){
-        cout << "Invalid hash table position"<<endl;
-        return 1;
-    }
+int HashTable<T>::insertPoint(T* Point){
+    unsigned int position = amplifiedHashFunctionPoint(Point)%bucketSize;
     buckets[position].push_back(Point);
 
     return 0;
 }
+
+template <class T>
+unsigned int HashTable<class Point*>::hashFunctionPoint(T x, int functionNo){
+
+    double* a = new double[d];
+    double* s = sVectors[functionNo];
+    double m;
+
+    a[0] = floor((x->getCoord()[0] - s[0]) / w);
+    m = a[0];
+
+    for(int i = 1; i < d; i++)
+    {
+        a[i] = floor((x->getCoord()[i] - s[i]) / w);
+
+        if(a[i] > m)
+            m = a[i];
+    }
+
+    m++; // m must be greater than the max ai
+
+    unsigned int result = 0;
+    unsigned int M = 32/k;
+
+    for(int i = 0; i < d; i++)
+    {
+        result += ((int) a[d-1-i] * (int) pow(m, (double)i)) % M;
+    }
+
+    return result;
+}
+
+template <class T>
+unsigned int HashTable<T>::amplifiedHashFunctionPoint(class Point* x){
+    
+    int shiftAmount = 32/k;
+    unsigned int temp, result = 0;
+    for (int i = 0; i < k; i++)
+    {
+        temp = hashFunctionPoint(x,i);
+        temp = temp << shiftAmount*i; //prepare the 32/k binary digits for concatenation
+        result += temp;
+    }
+    
+    return result;
+}
+
 
 template class HashTable<class Point*>;

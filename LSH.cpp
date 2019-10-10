@@ -14,10 +14,13 @@ LSH::LSH(int givenw, vector <class Point*>* points, int givenk = 3, int givenL =
     k = givenk;
     L = givenL;
     w = givenw;
+    
     inputPoints = points;
+    int dim = inputPoints->at(0)->getSize();
+
     hashTables = new class HashTable<class Point*>[L];
     for(int i = 0; i < L; i++){
-        hashTables[i] = HashTable<class Point*>(inputPoints->size());
+        hashTables[i] = HashTable<class Point*>(inputPoints->size(), w, k, dim);
     }
 }
 

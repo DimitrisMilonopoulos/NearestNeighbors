@@ -1,5 +1,5 @@
 CXX = g++
-FLAGS = -g -c
+FLAGS = -g -c -std=c++14
 #CFLAGS=-I
 DEPS = fileReading.hpp hashTable.hpp point.hpp
 OBJ = fileReading.o hashTable.o point.o
@@ -8,10 +8,10 @@ OUT = mainCube mainLSH
 all: $(OUT)
 
 mainCube: mainCube.o
-	$(CXX) -g mainCube.o -o mainCube
+	$(CXX) -g mainCube.o -std=c++14 -o mainCube
 
 mainLSH: mainLSH.o LSH.o $(OBJ)
-	$(CXX) -g mainLSH.o LSH.o $(OBJ) -o mainLSH
+	$(CXX) -g mainLSH.o LSH.o $(OBJ) -std=c++14 -o mainLSH
 
 mainCube.o: mainCube.cpp
 	$(CXX) $(FLAGS) mainCube.cpp -o mainCube.o

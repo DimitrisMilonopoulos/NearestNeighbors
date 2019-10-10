@@ -6,21 +6,29 @@
 
 #include "point.hpp"
 
-unsigned int manhattanDist(class Point *, class Point*);
+unsigned int manhattanDist(class Point*, class Point*);
 
 template <class T>
-
 class HashTable{
+
     unsigned int bucketSize;
-    vector<T*> *buckets;
+    int k;
+    int w;
+    int d;
+    vector<T*>* buckets;
+    double** sVectors;
+
     
     public:
+
     HashTable();
-    HashTable(size_t);
+    HashTable(size_t, int, int, int);
     ~HashTable();
 
     //hashfunction operations
-    int insertPoint(T*,unsigned int);
+    unsigned int amplifiedHashFunctionPoint(class Point*);
+    unsigned int hashFunctionPoint(T x, int functionNo);
+    int insertPoint(T*);
     int findPoint(T*);
 };
 

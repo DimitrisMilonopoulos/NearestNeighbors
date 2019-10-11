@@ -30,6 +30,7 @@ int Point::getSize()
     return size;
 }
 
-int* Point::getCoord(){
+int *Point::getCoord()
+{
     return coordinates;
 }

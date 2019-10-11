@@ -2,8 +2,7 @@
 #define POINT_HPP
 
 #include <string>
-
-using namespace std;
+using std::string;
 
 class Point
 {

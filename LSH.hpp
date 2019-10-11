@@ -2,22 +2,18 @@
 #define LSH_HPP
 
 #include <vector>
-#include <string>
-#include "point.hpp"
-#include "hashTable.hpp"
+using std::vector;
 
-using namespace std;
-
-class LSH{
-
+class LSH
+{
     int k;
     int w;
     int L;
-    vector <class Point*>* inputPoints;
-    class HashTable* hashTables;
+    vector<class Point *> *inputPoints;
+    class HashTable *hashTables;
 
 public:
-    LSH(int, vector <class Point*>*, int, int);
+    LSH(int, int, int, vector<class Point *> *);
     ~LSH();
     int getk();
     int getw();

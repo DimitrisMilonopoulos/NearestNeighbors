@@ -2,14 +2,14 @@
 #include <fstream>
 #include <sstream>
 
-#include "fileReading.hpp"
 #include "point.hpp"
+#include "fileReading.hpp"
 
 using namespace std;
 
 //Class used to read the input files
 
-vector <class Point*> *Reading::readPoints(string FileLocation)
+vector<class Point *> *Reading::readPoints(string FileLocation)
 {
     ifstream infile(FileLocation);
     string line;
@@ -36,7 +36,7 @@ vector <class Point*> *Reading::readPoints(string FileLocation)
     cout << "Number of dimensions per point: " << columns << endl;
 
     //construct the table of Points
-    vector <class Point*> *table = new vector <class Point*>;
+    vector<class Point *> *table = new vector<class Point *>;
     table->reserve(count);
     int j = 0;
     while (getline(infile, line))
@@ -52,9 +52,9 @@ vector <class Point*> *Reading::readPoints(string FileLocation)
             iss >> coord[i];
         }
         class Point *newPoint = new class Point(name, coord, columns);
-        table->push_back(newPoint) ;
+        table->push_back(newPoint);
         j++;
     }
-    
+
     return table;
 }

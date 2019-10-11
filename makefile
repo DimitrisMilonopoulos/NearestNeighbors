@@ -28,6 +28,9 @@ fileReading.o: fileReading.cpp fileReading.hpp point.hpp
 hashTable.o: hashTable.cpp hashTable.hpp point.hpp
 	$(CXX) $(FLAGS) hashTable.cpp -o hashTable.o
 
+manhattanDistance.o: manhattanDistance.cpp manhattanDistance.hpp point.hpp
+	$(CXX) $(FLAGS) manhattanDistance.cpp -o manhattanDistance.o
+
 point.o: point.cpp point.hpp
 	$(CXX) $(FLAGS) point.cpp -o point.o
 

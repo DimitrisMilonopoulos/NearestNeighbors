@@ -3,16 +3,15 @@
 
 #include <vector>
 #include <string>
-#include "point.hpp"
 
-using namespace std;
-
+using std::string;
+using std::vector;
 
 class Reading
 
 {
 public:
-    vector <class Point*> *readPoints(string FileLocation);
+    vector<class Point *> *readPoints(string FileLocation);
 };
 
 #endif

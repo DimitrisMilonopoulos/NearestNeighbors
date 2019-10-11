@@ -14,7 +14,7 @@ class LSH{
     int w;
     int L;
     vector <class Point*>* inputPoints;
-    class HashTable<class Point*>* hashTables;
+    class HashTable* hashTables;
 
 public:
     LSH(int, vector <class Point*>*, int, int);

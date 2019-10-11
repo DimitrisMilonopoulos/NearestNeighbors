@@ -8,14 +8,13 @@
 
 unsigned int manhattanDist(class Point*, class Point*);
 
-template <class T>
 class HashTable{
 
     unsigned int bucketSize;
     int k;
     int w;
     int d;
-    vector<T*>* buckets;
+    vector<class Point*>* buckets;
     double** sVectors;
 
     
@@ -26,10 +25,13 @@ class HashTable{
     ~HashTable();
 
     //hashfunction operations
-    unsigned int amplifiedHashFunctionPoint(class Point*);
-    unsigned int hashFunctionPoint(T x, int functionNo);
-    int insertPoint(T*);
-    int findPoint(T*);
+    unsigned int amplifiedHashFunctionPoint(class Point* x);
+    unsigned int hashFunctionPoint(class Point* x, int functionNo);
+    int insertPoint(class Point*);
+    int findPoint(class Point*);
 };
+
+
+
 
 #endif

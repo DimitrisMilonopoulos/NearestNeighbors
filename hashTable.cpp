@@ -9,6 +9,9 @@
 
 using namespace std;
 
+
+
+
 unsigned int manhattanDist(class Point * Point1, class Point* Point2){
     unsigned int distance = 0;
     unsigned int dimensions = Point1->getSize();
@@ -22,14 +25,13 @@ unsigned int manhattanDist(class Point * Point1, class Point* Point2){
     return distance;
 }
 
-template <typename T>
-HashTable<T>::HashTable(size_t size, int givenw, int givenk, int givendim){
+HashTable::HashTable(size_t size, int givenw, int givenk, int givendim){
     k = givenk;
     w = givenw;
     d = givendim;
     
     bucketSize = size;
-    buckets = new vector<T*>[bucketSize];
+    buckets = new vector<class Point*>[bucketSize];
     
     sVectors = new double*[k];
     for(int i = 0; i < k; i++){
@@ -48,25 +50,42 @@ HashTable<T>::HashTable(size_t size, int givenw, int givenk, int givendim){
     }
 }
 
-template <typename T>
-HashTable<T>::HashTable(){
+
+HashTable::HashTable(){
 }
 
-template <typename T>
-HashTable<T>::~HashTable(){
+HashTable::~HashTable(){
     delete []buckets;
 }
 
-template <typename T>
-int HashTable<T>::insertPoint(T* Point){
-    unsigned int position = amplifiedHashFunctionPoint(Point)%bucketSize;
-    buckets[position].push_back(Point);
+int HashTable::insertPoint(class Point* point){
+    unsigned int position = amplifiedHashFunctionPoint(point)%bucketSize;
+    buckets[position].push_back(point);
 
     return 0;
 }
 
-template <class T>
-unsigned int HashTable<class Point*>::hashFunctionPoint(T x, int functionNo){
+
+
+
+
+unsigned int HashTable::amplifiedHashFunctionPoint(class Point* x){
+    
+    int shiftAmount = 32/k;
+    unsigned int temp, result = 0;
+    for (int i = 0; i < k; i++)
+    {
+        temp = hashFunctionPoint(x,i);
+        temp = temp << shiftAmount*i; //prepare the 32/k binary digits for concatenation
+        result += temp;
+    }
+    
+    return result;
+}
+
+
+
+unsigned int HashTable::hashFunctionPoint(class Point* x, int functionNo){
 
     double* a = new double[d];
     double* s = sVectors[functionNo];
@@ -96,20 +115,3 @@ unsigned int HashTable<class Point*>::hashFunctionPoint(T x, int functionNo){
     return result;
 }
 
-template <class T>
-unsigned int HashTable<T>::amplifiedHashFunctionPoint(class Point* x){
-    
-    int shiftAmount = 32/k;
-    unsigned int temp, result = 0;
-    for (int i = 0; i < k; i++)
-    {
-        temp = hashFunctionPoint(x,i);
-        temp = temp << shiftAmount*i; //prepare the 32/k binary digits for concatenation
-        result += temp;
-    }
-    
-    return result;
-}
-
-
-template class HashTable<class Point*>;

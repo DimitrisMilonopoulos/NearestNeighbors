@@ -4,6 +4,7 @@
 #include "LSH.hpp"
 #include "point.hpp"
 #include "hashTable.hpp"
+#include <random>
 
 using namespace std;
 

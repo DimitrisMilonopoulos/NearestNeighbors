@@ -17,7 +17,7 @@ Point::Point(string ID, int *coord, int siz)
 
 Point::~Point()
 {
-    delete[](coordinates);
+    delete[] coordinates;
 }
 
 string Point::getID()

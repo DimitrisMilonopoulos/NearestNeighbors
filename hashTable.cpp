@@ -8,7 +8,7 @@
 
 using namespace std;
 
-HashTable::HashTable(size_t size, int givenw, int givenk, int givendim)
+void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
 {
     k = givenk;
     w = givenw;
@@ -40,7 +40,14 @@ HashTable::HashTable()
 
 HashTable::~HashTable()
 {
+    cout << "Deleting Hashtable!" << endl;
+
     delete[] buckets;
+    for (int i = 0; i < k; i++)
+    {
+        delete[] sVectors[i];
+    }
+    delete[] sVectors;
 }
 
 int HashTable::insertPoint(class Point *point)
@@ -62,7 +69,6 @@ unsigned int HashTable::amplifiedHashFunctionPoint(class Point *x)
         temp = temp << shiftAmount * i; //prepare the 32/k binary digits for concatenation
         result += temp;
     }
-
     return result;
 }
 
@@ -93,6 +99,8 @@ unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
     {
         result += ((int)a[d - 1 - i] * (int)pow(m, (double)i)) % M;
     }
+
+    delete[] a;
 
     return result;
 }

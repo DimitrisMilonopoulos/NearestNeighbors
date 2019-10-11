@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     if (L == -1)
         L = 5;
 
-    int w = 1000000;
+    int w = 1366;
 
     cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
 
@@ -54,21 +54,22 @@ int main(int argc, char *argv[])
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
 
-    class LSH lshImplementation(k, L, w, inputTable);
-    //lshImplementation.approximateNN
+    cout << "THIS IS WHERE LSH BEGINS" << endl;
 
-    //     Approximate NN
-    //         Input : query q
-    //                     Let b ←Null; db ← ∞
-    // for i from 1 to L do
-    // for each item p in bucket gi(q) do
-    // if large number of retrieved items (e.g. > 3L) then Break // exit loop
-    // end if
-    // if dist(q, p) < db then b ← p; db ← dist(q, p)
-    // end if
-    // end for
-    // end for
-    // return b
+    class LSH lshImplementation(k, L, w, inputTable);
+    class Point *q, *b;
+    unsigned int distance;
+
+    cout << "THIS IS WHERE LSH ENDS" << endl;
+
+    for (int i = 0; i < queryTable->size(); i++)
+    {
+        q = (queryTable->at(i));
+        b = lshImplementation.approximateNN(q, &distance);
+        cout << "Query Point: " << q->getID() << '\t' << "Nearest Neighbour: " << b->getID() << '\t' << "Distance: " << distance << endl;
+    }
+
+    cout << "THIS IS WHERE LSH ENDS" << endl;
 
     //delete the tables
     while (!inputTable->empty())

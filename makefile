@@ -1,8 +1,8 @@
 CXX = g++
 FLAGS = -g -c -std=c++14
 #CFLAGS=-I
-DEPS = fileReading.hpp hashTable.hpp point.hpp
-OBJ = fileReading.o hashTable.o point.o
+DEPS = fileReading.hpp hashTable.hpp point.hpp manhattanDistance.hpp
+OBJ = fileReading.o hashTable.o point.o manhattanDistance.o
 OUT = mainCube mainLSH
 
 all: $(OUT)

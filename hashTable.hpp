@@ -16,7 +16,7 @@ class HashTable
 
 public:
     HashTable();
-    HashTable(size_t, int, int, int);
+    void initialize(size_t, int, int, int);
     ~HashTable();
 
     //hashfunction operations
@@ -27,7 +27,7 @@ public:
     vector<class Point *> &getNeighbours(class Point *x)
     {
         unsigned int position = amplifiedHashFunctionPoint(x);
-        return buckets[position];
+        return buckets[position % bucketSize];
     }
 };
 

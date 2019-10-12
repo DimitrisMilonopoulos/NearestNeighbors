@@ -19,7 +19,7 @@ LSH::LSH(int givenk, int givenL, int givenw, vector<class Point *> *points)
     inputPoints = points;
     int dim = inputPoints->at(0)->getSize();
 
-    unsigned int hashtableSize = inputPoints->size() / 16;
+    unsigned int hashtableSize = inputPoints->size() / 8;
     hashTables = new class HashTable[L];
     for (int i = 0; i < L; i++)
     {

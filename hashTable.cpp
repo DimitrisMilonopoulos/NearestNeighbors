@@ -15,7 +15,7 @@ void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
     d = givendim;
 
     bucketSize = size;
-    buckets = new vector<class Point *>[bucketSize];
+    buckets = new vector< pair<class Point *, unsigned int> >[bucketSize];
 
     sVectors = new double *[k];
     for (int i = 0; i < k; i++)
@@ -52,8 +52,10 @@ HashTable::~HashTable()
 
 int HashTable::insertPoint(class Point *point)
 {
+    unsigned int result = amplifiedHashFunctionPoint(point);
+    pair <class Point*, unsigned int> PAIR = make_pair(point, result);
     unsigned int position = amplifiedHashFunctionPoint(point) % bucketSize;
-    buckets[position].push_back(point);
+    buckets[position].push_back(PAIR);
 
     return 0;
 }

@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     if (L == -1)
         L = 5;
 
-    int w = 6000;
+    int w = 5000;
 
     //cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
 

@@ -3,6 +3,8 @@
 
 #include <vector>
 using std::vector;
+#include <utility>
+using std::pair;
 
 class HashTable
 {
@@ -11,7 +13,7 @@ class HashTable
     int k;
     int w;
     int d;
-    vector<class Point *> *buckets;
+    vector< pair<class Point *, unsigned int> > *buckets;
     double **sVectors;
 
 public:
@@ -24,10 +26,10 @@ public:
     unsigned int hashFunctionPoint(class Point *x, int functionNo);
     int insertPoint(class Point *);
     int findPoint(class Point *);
-    vector<class Point *> &getNeighbours(class Point *x)
+    vector< pair<class Point *, unsigned int> > &getNeighbours(class Point *x, unsigned int* amplifiedResult)
     {
-        unsigned int position = amplifiedHashFunctionPoint(x);
-        return buckets[position % bucketSize];
+        *amplifiedResult = amplifiedHashFunctionPoint(x);
+        return buckets[*amplifiedResult % bucketSize];
     }
 };
 

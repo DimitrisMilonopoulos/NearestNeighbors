@@ -19,7 +19,7 @@ LSH::LSH(int givenk, int givenL, int givenw, vector<class Point *> *points)
     inputPoints = points;
     int dim = inputPoints->at(0)->getSize();
 
-    unsigned int hashtableSize = inputPoints->size() / 8;
+    unsigned int hashtableSize = inputPoints->size() / 16;
     hashTables = new class HashTable[L];
     for (int i = 0; i < L; i++)
     {
@@ -61,27 +61,31 @@ class Point *LSH::approximateNN(class Point *query, unsigned int *dist)
     class Point *p = NULL;
     unsigned int manhattanD;
     unsigned int distance = numeric_limits<int>::max();
-    vector<class Point *> neighbours;
+    vector< pair <class Point *, unsigned int> > neighbours;
     int count;
 
     for (int i = 0; i < L; i++)
     {
-        neighbours = hashTables[i].getNeighbours(query);
+        unsigned int amplifiedResult = 0;
+        neighbours = hashTables[i].getNeighbours(query, &amplifiedResult);
         count = 0;
 
         for (int j = 0; j < neighbours.size(); j++)
         {
-            count++;
-            if (count > 3 * L)
-                break;
-
-            p = neighbours.at(j);
-            manhattanD = manhattanDist(query, neighbours.at(j));
-
-            if (manhattanD < distance)
+            if(amplifiedResult == neighbours.at(j).second)
             {
-                b = p;
-                distance = manhattanD;
+                count++;
+                if (count > 3 * L)
+                    break;
+
+                p = neighbours.at(j).first;
+                manhattanD = manhattanDist(query, p);
+
+                if (manhattanD < distance)
+                {
+                    b = p;
+                    distance = manhattanD;
+                }
             }
         }
     }

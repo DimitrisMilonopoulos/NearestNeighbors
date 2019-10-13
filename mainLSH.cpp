@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
     int w = 1366;
 
-    cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
+    //cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
 
     class Reading reader;
     int tableSize;
@@ -54,13 +54,9 @@ int main(int argc, char *argv[])
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
 
-    cout << "THIS IS WHERE LSH BEGINS" << endl;
-
     class LSH lshImplementation(k, L, w, inputTable);
     class Point *q, *b;
     unsigned int distance;
-
-    cout << "THIS IS WHERE LSH ENDS" << endl;
 
     for (int i = 0; i < queryTable->size(); i++)
     {
@@ -68,8 +64,6 @@ int main(int argc, char *argv[])
         b = lshImplementation.approximateNN(q, &distance);
         cout << "Query Point: " << q->getID() << '\t' << "Nearest Neighbour: " << b->getID() << '\t' << "Distance: " << distance << endl;
     }
-
-    cout << "THIS IS WHERE LSH ENDS" << endl;
 
     //delete the tables
     while (!inputTable->empty())

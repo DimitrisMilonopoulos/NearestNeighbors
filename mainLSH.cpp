@@ -2,7 +2,6 @@
 
 #include "point.hpp"
 #include "fileReading.hpp"
-#include "hashTable.hpp"
 #include "LSH.hpp"
 
 using namespace std;

@@ -1,7 +1,7 @@
 #include <iostream>
-#include <unistd.h>
-#include <getopt.h>
-#include <string>
+
+#include "point.hpp"
+#include "fileReading.hpp"
 
 using namespace std;
 

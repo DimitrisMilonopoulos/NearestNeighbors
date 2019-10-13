@@ -15,6 +15,7 @@ class HashTable
     int d;
     vector< pair<class Point *, unsigned int> > *buckets;
     double **sVectors;
+    unsigned int * mArray;
 
 public:
     HashTable();

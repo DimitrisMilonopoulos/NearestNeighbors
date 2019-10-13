@@ -32,6 +32,14 @@ void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
             sVectors[i][j] = dis(gen);
         }
     }
+    mArray = new unsigned int[d];
+    int M = 32/k;
+    unsigned int m = INT32_MAX - 4;
+    for (int i = 0; i < d; i++)
+    {
+        mArray[i] = modular_expo(m,i,M);
+    }
+    
 }
 
 HashTable::HashTable()
@@ -48,6 +56,7 @@ HashTable::~HashTable()
         delete[] sVectors[i];
     }
     delete[] sVectors;
+    delete[] mArray;
 }
 
 int HashTable::insertPoint(class Point *point)
@@ -96,15 +105,14 @@ unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
 
     unsigned int result = 0;
     unsigned int M = 32 / k;
-    unsigned int step1,step2;
+    unsigned int step1;
 
     for (int i = 0; i < d; i++)
-    {
-        step1 =a[d-1-i]%M;
-        step2 = modular_expo(m,i,M);
-        result +=step1*step2;
+    {   
+        step1 =(a[d-1-i]%M + M)%M;
+        result +=(step1*mArray[i])% M;
     }
-
+    result = result %M;
     delete[] a;
 
     return result;

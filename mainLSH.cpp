@@ -2,6 +2,7 @@
 
 #include "point.hpp"
 #include "fileReading.hpp"
+#include "bruteForce.hpp"
 #include "LSH.hpp"
 
 using namespace std;
@@ -52,6 +53,8 @@ int main(int argc, char *argv[])
     vector<class Point *> *inputTable, *queryTable;
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
+
+    bruteForce(inputTable, queryTable);
 
     class LSH lshImplementation(k, L, w, inputTable);
     class Point *q, *b;

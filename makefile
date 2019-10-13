@@ -22,6 +22,9 @@ mainLSH.o: mainLSH.cpp $(DEPS)
 LSH.o: LSH.cpp LSH.hpp hashTable.hpp point.hpp
 	$(CXX) $(FLAGS) LSH.cpp -o LSH.o
 
+bruteForce.o: bruteForce.cpp bruteForce.hpp manhattanDistance.hpp point.hpp
+	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o
+
 bruteForce.o: bruteForce.cpp
 	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o
 

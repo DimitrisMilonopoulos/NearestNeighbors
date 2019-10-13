@@ -77,32 +77,53 @@ unsigned int HashTable::amplifiedHashFunctionPoint(class Point *x)
 unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
 {
 
-    double *a = new double[d];
+    int *a = new int[d];
     double *s = sVectors[functionNo];
-    double m;
+    unsigned int m = UINT32_MAX -4;
 
-    a[0] = floor((x->getCoord()[0] - s[0]) / w);
-    m = a[0];
-
-    for (int i = 1; i < d; i++)
-    {
-        a[i] = floor((x->getCoord()[i] - s[i]) / w);
-
-        if (a[i] > m)
-            m = a[i];
-    }
-
-    m++; // m must be greater than the max ai
-
-    unsigned int result = 0;
-    unsigned int M = 32 / k;
+    // a[0] = floor((x->getCoord()[0] - s[0]) / w);
+    // m = a[0];
 
     for (int i = 0; i < d; i++)
     {
-        result += ((int)a[d - 1 - i] * (int)pow(m, (double)i)) % M;
+        a[i] =(int)floor((x->getCoord()[i] - s[i]) / w);
+
+        // if (a[i] > m)
+        //     m = a[i];
+    }
+
+    // m++; // m must be greater than the max ai
+
+    unsigned int result = 0;
+    unsigned int M = 32 / k;
+    unsigned int step1,step2;
+
+    for (int i = 0; i < d; i++)
+    {
+        step1 =a[d-1-i]%M;
+        step2 = modular_expo(m,i,M);
+        result +=step1*step2;
     }
 
     delete[] a;
 
     return result;
 }
+
+unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int modulus){
+    if (modulus == 1)
+        return 0;
+    if (exponent == 0)
+        if (modulus == 1)
+            return 1;
+        else 
+            return 0;
+    
+    unsigned long long c = 1;
+    for (unsigned int i = 1; i <= exponent; i++)
+    {
+        c = (c*base) % modulus;
+    }
+    return c;
+}
+

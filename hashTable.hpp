@@ -33,4 +33,6 @@ public:
     }
 };
 
+unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int modulus);
+
 #endif

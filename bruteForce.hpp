@@ -2,10 +2,12 @@
 #define _BRUTE_FORCE_
 
 #include <vector>
+using std::vector;
+
 #include "point.hpp"
 
-using namespace std; 
+using namespace std;
 
-int bruteForce(vector<class Point*>*,vector<class Point*>*);
+int bruteForce(vector<class Point *> *, vector<class Point *> *);
 
 #endif

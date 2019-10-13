@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
     {
         q = (queryTable->at(i));
         b = lshImplementation.approximateNN(q, &distance);
-        cout << "Query Point: " << q->getID() << '\t' << "Nearest Neighbour: " << b->getID() << '\t' << "Distance: " << distance << endl;
+        cout << "Query Point: " << q->getID() << "\tNearest Neighbour: " << b->getID() << "\tDistance: " << distance << endl;
     }
 
     //delete the tables

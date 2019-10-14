@@ -4,12 +4,12 @@
 
 using namespace std;
 
-unsigned int manhattanDist(class Point *Point1, class Point *Point2)
+double manhattanDist(class Point *Point1, class Point *Point2)
 {
-    unsigned int distance = 0;
+    double distance = 0;
     unsigned int dimensions = Point1->getSize();
-    int *coord_1 = Point1->getCoord();
-    int *coord_2 = Point2->getCoord();
+    double *coord_1 = Point1->getCoord();
+    double *coord_2 = Point2->getCoord();
 
     for (int i = 0; i < dimensions; i++)
     {

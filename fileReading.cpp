@@ -45,7 +45,7 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
         //get the name
         string name;
         string buff;
-        int *coord = new int[columns];
+        double *coord = new double[columns];
         iss >> name;
         for (int i = 0; i < columns; i++)
         {

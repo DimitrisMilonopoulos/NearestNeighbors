@@ -16,7 +16,10 @@ void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
 
     bucketSize = size;
     buckets = new vector< pair<class Point *, unsigned int> >[bucketSize];
-
+    unsigned int temp = 32/k;
+    M = 1;
+    M = M<<temp;
+    cout << "M is : "<<M<<endl;
     sVectors = new double *[k];
     for (int i = 0; i < k; i++)
     {
@@ -33,7 +36,6 @@ void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
         }
     }
     mArray = new unsigned int[d];
-    int M = 32/k;
     unsigned int m = INT32_MAX - 4;
     for (int i = 0; i < d; i++)
     {
@@ -104,7 +106,6 @@ unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
     // m++; // m must be greater than the max ai
 
     unsigned int result = 0;
-    unsigned int M = 32 / k;
     unsigned int step1;
 
     for (int i = 0; i < d; i++)

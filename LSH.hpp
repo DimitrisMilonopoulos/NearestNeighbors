@@ -18,7 +18,7 @@ public:
     int getk();
     int getw();
     int getL();
-    class Point *approximateNN(class Point *, unsigned int *);
+    class Point *approximateNN(class Point *, double *);
 };
 
 #endif

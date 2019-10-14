@@ -7,15 +7,15 @@ using std::string;
 class Point
 {
     string PointID;
-    int *coordinates;
+    double *coordinates;
     int size;
 
 public:
     Point();
-    Point(string ID, int *coord, int siz);
+    Point(string ID, double *coord, int siz);
     ~Point();
     string getID();
-    int *getCoord();
+    double *getCoord();
     int getSize();
 };
 

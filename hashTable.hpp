@@ -13,6 +13,7 @@ class HashTable
     int k;
     int w;
     int d;
+    unsigned int M;
     vector< pair<class Point *, unsigned int> > *buckets;
     double **sVectors;
     unsigned int * mArray;

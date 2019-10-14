@@ -8,7 +8,7 @@ using namespace std;
 
 //Class used to handle the input Points
 
-Point::Point(string ID, int *coord, int siz)
+Point::Point(string ID, double *coord, int siz)
 {
     PointID = ID;
     coordinates = coord;
@@ -30,7 +30,7 @@ int Point::getSize()
     return size;
 }
 
-int *Point::getCoord()
+double *Point::getCoord()
 {
     return coordinates;
 }

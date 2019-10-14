@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
     class LSH lshImplementation(k, L, w, inputTable);
     class Point *q, *b;
-    unsigned int distance;
+    double distance;
 
     for (int i = 0; i < queryTable->size(); i++)
     {

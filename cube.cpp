@@ -77,7 +77,7 @@ class Point *Cube::approximateNN(class Point *query, double *dist)
             if(amplifiedResult == neighbours.at(j).second)
             {
                 count++;
-                if (count > M)
+                if (count > maxPoints)
                     break;
 
                 p = neighbours.at(j).first;

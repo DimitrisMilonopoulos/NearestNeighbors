@@ -2,66 +2,82 @@
 #include <cmath>
 #include <random>
 #include <cstdlib>
+#include <utility>
 
 #include "point.hpp"
 #include "hashTable.hpp"
 
 using namespace std;
 
-void HashTable::initialize(size_t size, int givenw, int givenk, int givendim)
+template <class T>
+void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int givendim, int givenMaxPoints)
 {
-    k = givenk;
+    numFunct = givenNumFunct;
     w = givenw;
-    d = givendim;
+    dimensions = givendim;
+    maxPoints = givenMaxPoints;
+
+    // create buckets
 
     bucketSize = size;
-    buckets = new vector< pair<class Point *, unsigned int> >[bucketSize];
-    unsigned int temp = 32/k;
+    buckets = new T[bucketSize];
+
+    // initialize M
+
+    unsigned int temp = 32/numFunct;
     M = 1;
     M = M<<temp;
-    cout << "M is : "<<M<<endl;
-    sVectors = new double *[k];
-    for (int i = 0; i < k; i++)
+
+    // create si arrays (fill with uniformly random numbers from 0 to w)
+
+    sVectors = new double *[numFunct];
+    for (int i = 0; i < numFunct; i++)
     {
-        sVectors[i] = new double[d];
+        sVectors[i] = new double[dimensions];
     }
+
     random_device rd;
     mt19937 gen(rd());
     uniform_real_distribution<> dis(0.0, (double)w);
-    for (int i = 0; i < k; i++)
+    for (int i = 0; i < numFunct; i++)
     {
-        for (int j = 0; j < d; j++)
+        for (int j = 0; j < dimensions; j++)
         {
             sVectors[i][j] = dis(gen);
         }
     }
-    mArray = new unsigned int[d];
+
+    // create array to keep powers of m
+
+    mArray = new unsigned int[dimensions];
     unsigned int m = INT32_MAX - 4;
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < dimensions; i++)
     {
         mArray[i] = modular_expo(m,i,M);
     }
-    
+
 }
 
-HashTable::HashTable()
+template <class T>
+HashTable<T>::HashTable()
 {
 }
 
-HashTable::~HashTable()
+template <class T>
+HashTable<T>::~HashTable()
 {
     cout << "Deleting Hashtable!" << endl;
 
     delete[] buckets;
-    for (int i = 0; i < k; i++)
+    for (int i = 0; i < numFunct; i++)
     {
         delete[] sVectors[i];
     }
     delete[] sVectors;
     delete[] mArray;
 }
-
-int HashTable::insertPoint(class Point *point)
+template <>
+int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class Point *point)
 {
     unsigned int result = amplifiedHashFunctionPoint(point);
     pair <class Point*, unsigned int> PAIR = make_pair(point, result);
@@ -71,31 +87,39 @@ int HashTable::insertPoint(class Point *point)
     return 0;
 }
 
-unsigned int HashTable::amplifiedHashFunctionPoint(class Point *x)
+template <class T>
+int HashTable<T>::insertPoint(class Point *point)
+{
+    return 0;
+};
+
+template <class T>
+unsigned int HashTable<T>::amplifiedHashFunctionPoint(class Point *x)
 {
 
-    int shiftAmount = 32 / k;
+    int shiftAmount = 32 / numFunct;
     unsigned int temp, result = 0;
-    for (int i = 0; i < k; i++)
+    for (int i = 0; i < numFunct; i++)
     {
         temp = hashFunctionPoint(x, i);
-        temp = temp << shiftAmount * i; //prepare the 32/k binary digits for concatenation
+        temp = temp << shiftAmount * i; //prepare the 32/numFunct binary digits for concatenation
         result += temp;
     }
     return result;
 }
 
-unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
+template <class T>
+unsigned int HashTable<T>::hashFunctionPoint(class Point *x, int functionNo)
 {
 
-    int *a = new int[d];
+    int *a = new int[dimensions];
     double *s = sVectors[functionNo];
     unsigned int m = UINT32_MAX -4;
 
     // a[0] = floor((x->getCoord()[0] - s[0]) / w);
     // m = a[0];
 
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < dimensions; i++)
     {
         a[i] =(int)floor((x->getCoord()[i] - s[i]) / w);
 
@@ -108,12 +132,12 @@ unsigned int HashTable::hashFunctionPoint(class Point *x, int functionNo)
     unsigned int result = 0;
     unsigned int step1;
 
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < dimensions; i++)
     {   
-        step1 =(a[d-1-i]%M + M)%M;
+        step1 =(a[dimensions-1-i]% M + M)%M;
         result +=(step1*mArray[i])% M;
     }
-    result = result %M;
+    result = result % M;
     delete[] a;
 
     return result;
@@ -136,3 +160,5 @@ unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int 
     return c;
 }
 
+template class HashTable<vector < pair <class Point*, unsigned int> > >;
+template class HashTable<char>;

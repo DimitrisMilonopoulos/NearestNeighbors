@@ -4,29 +4,31 @@
 #include "point.hpp"
 #include "manhattanDistance.hpp"
 #include "hashTable.hpp"
-#include "LSH.hpp"
+#include "cube.hpp"
 
 using namespace std;
 
-// Class used for the implementation of the LSH algorithm
+// Class used for the implementation of randomized projections in a hypercube algorithm
 
-LSH::LSH(int givenk, int givenL, int givenw, vector<class Point *> *points)
+Cube::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vector<class Point *> *points)
 {
     k = givenk;
-    L = givenL;
+    maxPoints = givenMaxPoints;
+    probes = givenProbes;
     w = givenw;
 
     inputPoints = points;
     int dim = inputPoints->at(0)->getSize();
 
     unsigned int hashtableSize = inputPoints->size() / 8;
-    hashTables = new class HashTable<vector < pair <class Point*, unsigned int> > >[L];
-    for (int i = 0; i < L; i++)
+    hashTables = new class HashTable<char>[k];
+    for (int i = 0; i < k; i++)
     {
-        hashTables[i].initialize(hashtableSize, w, k, dim, 0);
+        hashTables[i].initialize(hashtableSize, w, k, dim,givenProbes);
+        hashTables[i].initBuck();
     }
     //insert the points to the hashtables
-    for (int i = 0; i < L; i++)
+    for (int i = 0; i < k; i++)
     {
         for (int j = 0; j < inputPoints->size(); j++)
         {
@@ -35,27 +37,27 @@ LSH::LSH(int givenk, int givenL, int givenw, vector<class Point *> *points)
     }
 }
 
-LSH::~LSH()
+Cube::~Cube()
 {
     delete[] hashTables;
 }
 
-int LSH::getk()
+int Cube::getk()
 {
     return k;
 }
 
-int LSH::getL()
+int Cube::getProbes()
 {
-    return L;
+    return probes;
 }
 
-int LSH::getw()
+int Cube::getw()
 {
     return w;
 }
 
-class Point *LSH::approximateNN(class Point *query, double *dist)
+class Point *Cube::approximateNN(class Point *query, double *dist)
 {
     class Point *b = NULL;
     class Point *p = NULL;
@@ -64,7 +66,7 @@ class Point *LSH::approximateNN(class Point *query, double *dist)
     vector< pair <class Point *, unsigned int> > neighbours;
     int count;
 
-    for (int i = 0; i < L; i++)
+    for (int i = 0; i < k; i++)
     {
         unsigned int amplifiedResult = 0;
         neighbours = hashTables[i].getNeighbours(query, &amplifiedResult);
@@ -75,7 +77,7 @@ class Point *LSH::approximateNN(class Point *query, double *dist)
             if(amplifiedResult == neighbours.at(j).second)
             {
                 count++;
-                if (count > 10 * L)
+                if (count > M)
                     break;
 
                 p = neighbours.at(j).first;

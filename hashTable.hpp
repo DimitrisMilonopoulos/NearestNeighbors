@@ -6,21 +6,23 @@ using std::vector;
 #include <utility>
 using std::pair;
 
+template <class T>
 class HashTable
 {
 
     unsigned int bucketSize;
-    int k;
+    int numFunct;
     int w;
-    int d;
+    int dimensions;
+    int maxPoints;
     unsigned int M;
-    vector< pair<class Point *, unsigned int> > *buckets;
+    T *buckets;
     double **sVectors;
     unsigned int * mArray;
 
 public:
     HashTable();
-    void initialize(size_t, int, int, int);
+    void initialize(size_t, int, int, int, int);
     ~HashTable();
 
     //hashfunction operations
@@ -28,8 +30,15 @@ public:
     unsigned int hashFunctionPoint(class Point *x, int functionNo);
     int insertPoint(class Point *);
     int findPoint(class Point *);
+    void initBuck(){
+        memset(T,-1,bucketSize*sizeof(T));
+    }
     vector< pair<class Point *, unsigned int> > &getNeighbours(class Point *x, unsigned int* amplifiedResult)
     {
+        *amplifiedResult = amplifiedHashFunctionPoint(x);
+        return buckets[*amplifiedResult % bucketSize];
+    }
+    T getDigit(class Point* x, unsigned int* amplifiedResult){
         *amplifiedResult = amplifiedHashFunctionPoint(x);
         return buckets[*amplifiedResult % bucketSize];
     }

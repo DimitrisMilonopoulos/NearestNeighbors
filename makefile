@@ -1,7 +1,7 @@
 CXX = g++
 FLAGS = -g -c -std=c++14
 #CFLAGS=-I
-DEPS = fileReading.hpp hashTable.hpp point.hpp manhattanDistance.hpp
+DEPS = fileReading.hpp hashTable.hpp point.hpp manhattanDistance.hpp bruteForce.hpp
 OBJ = fileReading.o hashTable.o point.o manhattanDistance.o bruteForce.o
 OUT = mainCube mainLSH
 
@@ -16,16 +16,16 @@ mainLSH: mainLSH.o LSH.o $(OBJ)
 mainCube.o: mainCube.cpp
 	$(CXX) $(FLAGS) mainCube.cpp -o mainCube.o
 
-mainLSH.o: mainLSH.cpp $(DEPS)
+mainLSH.o: mainLSH.cpp LSH.hpp $(DEPS)
 	$(CXX) $(FLAGS) mainLSH.cpp -o mainLSH.o
 
 LSH.o: LSH.cpp LSH.hpp hashTable.hpp point.hpp
 	$(CXX) $(FLAGS) LSH.cpp -o LSH.o
 
-bruteForce.o: bruteForce.cpp bruteForce.hpp manhattanDistance.hpp point.hpp
-	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o
+#cube.o: cube.cpp cube.hpp hashTable.hpp point.hpp
+#	$(CXX) $(FLAGS) cube.cpp -o cube.o
 
-bruteForce.o: bruteForce.cpp
+bruteForce.o: bruteForce.cpp bruteForce.hpp manhattanDistance.hpp point.hpp
 	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o
 
 fileReading.o: fileReading.cpp fileReading.hpp point.hpp

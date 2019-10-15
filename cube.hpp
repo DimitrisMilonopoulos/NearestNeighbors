@@ -20,6 +20,7 @@ class Cube{
     int getProbes();
     int getw();
     unsigned int getBucket(class Point *);
+    int getMaxPoints();
     class Point *approximateNN(class Point *, double *);
 };
 

@@ -57,6 +57,11 @@ int Cube::getw()
     return w;
 }
 
+int Cube::getMaxPoints()
+{
+    return maxPoints;
+}
+
 class Point *Cube::approximateNN(class Point *query, double *dist)
 {
     class Point *b = NULL;

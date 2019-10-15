@@ -19,6 +19,7 @@ class Cube{
     int getk();
     int getProbes();
     int getw();
+    int getMaxPoints();
     class Point *approximateNN(class Point *, double *);
 };
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <random>
+#include <cstring>
 #include <cstdlib>
 #include <utility>
 
@@ -36,14 +37,13 @@ void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int gi
         sVectors[i] = new double[dimensions];
     }
 
-    random_device rd;
-    mt19937 gen(rd());
     uniform_real_distribution<> dis(0.0, (double)w);
+
     for (int i = 0; i < numFunct; i++)
     {
         for (int j = 0; j < dimensions; j++)
         {
-            sVectors[i][j] = dis(gen);
+            sVectors[i][j] = dis(generator);
         }
     }
 
@@ -59,7 +59,7 @@ void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int gi
 }
 
 template <class T>
-HashTable<T>::HashTable()
+HashTable<T>::HashTable(): generator((std::random_device())())
 {
 }
 
@@ -81,10 +81,26 @@ int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class 
 {
     unsigned int result = amplifiedHashFunctionPoint(point);
     pair <class Point*, unsigned int> PAIR = make_pair(point, result);
-    unsigned int position = amplifiedHashFunctionPoint(point) % bucketSize;
+    unsigned int position = result % bucketSize;
     buckets[position].push_back(PAIR);
 
     return 0;
+}
+
+template <>
+int HashTable<char>::insertPoint(class Point *point)
+{
+    unsigned int result = amplifiedHashFunctionPoint(point);
+    unsigned int position = result % bucketSize;
+
+    char* temp = &buckets[position];
+
+    if(*temp == -1){
+        uniform_int_distribution<> dis(0, 1);
+        *temp = dis(generator);
+    }
+
+    return *temp;
 }
 
 template <class T>

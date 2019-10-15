@@ -5,6 +5,9 @@
 using std::vector;
 #include <utility>
 using std::pair;
+#include <random>
+using std::mt19937;
+using std::random_device;
 
 template <class T>
 class HashTable
@@ -15,6 +18,7 @@ class HashTable
     int w;
     int dimensions;
     int maxPoints;
+    mt19937 generator;
     unsigned int M;
     T *buckets;
     double **sVectors;
@@ -30,15 +34,17 @@ public:
     unsigned int hashFunctionPoint(class Point *x, int functionNo);
     int insertPoint(class Point *);
     int findPoint(class Point *);
-    void initBuck(){
-        memset(T,-1,bucketSize*sizeof(T));
+    void initBuck()
+    {
+        memset(buckets,-1,bucketSize*sizeof(T));
     }
-    vector< pair<class Point *, unsigned int> > &getNeighbours(class Point *x, unsigned int* amplifiedResult)
+    T &getNeighbours(class Point *x, unsigned int* amplifiedResult)
     {
         *amplifiedResult = amplifiedHashFunctionPoint(x);
         return buckets[*amplifiedResult % bucketSize];
     }
-    T getDigit(class Point* x, unsigned int* amplifiedResult){
+    T getDigit(class Point* x, unsigned int* amplifiedResult)
+    {
         *amplifiedResult = amplifiedHashFunctionPoint(x);
         return buckets[*amplifiedResult % bucketSize];
     }

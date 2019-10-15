@@ -7,13 +7,13 @@ OUT = mainCube mainLSH
 
 all: $(OUT)
 
-mainCube: mainCube.o
-	$(CXX) -g mainCube.o -std=c++14 -o mainCube
+mainCube: mainCube.o cube.o $(OBJ)
+	$(CXX) -g mainCube.o cube.o $(OBJ) -std=c++14 -o mainCube
 
 mainLSH: mainLSH.o LSH.o $(OBJ)
 	$(CXX) -g mainLSH.o LSH.o $(OBJ) -std=c++14 -o mainLSH
 
-mainCube.o: mainCube.cpp
+mainCube.o: mainCube.cpp cube.hpp $(DEPS)
 	$(CXX) $(FLAGS) mainCube.cpp -o mainCube.o
 
 mainLSH.o: mainLSH.cpp LSH.hpp $(DEPS)
@@ -22,8 +22,8 @@ mainLSH.o: mainLSH.cpp LSH.hpp $(DEPS)
 LSH.o: LSH.cpp LSH.hpp hashTable.hpp point.hpp
 	$(CXX) $(FLAGS) LSH.cpp -o LSH.o
 
-#cube.o: cube.cpp cube.hpp hashTable.hpp point.hpp
-#	$(CXX) $(FLAGS) cube.cpp -o cube.o
+cube.o: cube.cpp cube.hpp hashTable.hpp point.hpp
+	$(CXX) $(FLAGS) cube.cpp -o cube.o
 
 bruteForce.o: bruteForce.cpp bruteForce.hpp manhattanDistance.hpp point.hpp
 	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o

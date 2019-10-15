@@ -8,6 +8,7 @@ using std::pair;
 #include <random>
 using std::mt19937;
 using std::random_device;
+#include <cstring>
 
 template <class T>
 class HashTable
@@ -34,10 +35,6 @@ public:
     unsigned int hashFunctionPoint(class Point *x, int functionNo);
     int insertPoint(class Point *);
     int findPoint(class Point *);
-    void initBuck()
-    {
-        memset(buckets,-1,bucketSize*sizeof(T));
-    }
     T &getNeighbours(class Point *x, unsigned int* amplifiedResult)
     {
         *amplifiedResult = amplifiedHashFunctionPoint(x);

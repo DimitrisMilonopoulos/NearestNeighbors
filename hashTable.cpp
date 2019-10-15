@@ -1,14 +1,59 @@
 #include <iostream>
 #include <cmath>
-#include <random>
-#include <cstring>
 #include <cstdlib>
 #include <utility>
+#include <map>
 
 #include "point.hpp"
 #include "hashTable.hpp"
 
 using namespace std;
+
+template<>
+void HashTable< map<unsigned int, char> >::initialize(size_t size, int givenw, int givenNumFunct, int givendim, int givenMaxPoints)
+{
+    numFunct = givenNumFunct;
+    w = givenw;
+    dimensions = givendim;
+    maxPoints = givenMaxPoints;
+
+    // create buckets
+    buckets = new map<unsigned int, char>;
+
+    // initialize M
+
+    unsigned int temp = 32/numFunct;
+    M = 1;
+    M = M<<temp;
+
+    // create si arrays (fill with uniformly random numbers from 0 to w)
+
+    sVectors = new double *[numFunct];
+    for (int i = 0; i < numFunct; i++)
+    {
+        sVectors[i] = new double[dimensions];
+    }
+
+    uniform_real_distribution<> dis(0.0, (double)w);
+
+    for (int i = 0; i < numFunct; i++)
+    {
+        for (int j = 0; j < dimensions; j++)
+        {
+            sVectors[i][j] = dis(generator);
+        }
+    }
+
+    // create array to keep powers of m
+
+    mArray = new unsigned int[dimensions];
+    unsigned int m = INT32_MAX - 4;
+    for (int i = 0; i < dimensions; i++)
+    {
+        mArray[i] = modular_expo(m,i,M);
+    }
+
+}
 
 template <class T>
 void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int givendim, int givenMaxPoints)
@@ -63,11 +108,22 @@ HashTable<T>::HashTable(): generator((std::random_device())())
 {
 }
 
+template <>
+HashTable< map<unsigned int, char> >::~HashTable()
+{
+    buckets->clear();
+    delete buckets;
+    for (int i = 0; i < numFunct; i++)
+    {
+        delete[] sVectors[i];
+    }
+    delete[] sVectors;
+    delete[] mArray;
+}
+
 template <class T>
 HashTable<T>::~HashTable()
 {
-    cout << "Deleting Hashtable!" << endl;
-
     delete[] buckets;
     for (int i = 0; i < numFunct; i++)
     {
@@ -76,6 +132,7 @@ HashTable<T>::~HashTable()
     delete[] sVectors;
     delete[] mArray;
 }
+
 template <>
 int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class Point *point)
 {
@@ -88,19 +145,24 @@ int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class 
 }
 
 template <>
-int HashTable<char>::insertPoint(class Point *point)
+int HashTable< map<unsigned int, char> >::insertPoint(class Point *point)
 {
     unsigned int result = amplifiedHashFunctionPoint(point);
-    unsigned int position = result % bucketSize;
+    char random;
+    map< unsigned int, char > :: iterator it;
 
-    char* temp = &buckets[position];
+    it = buckets->find(result);
 
-    if(*temp == -1){
+    if(it == buckets->end())
+    {
         uniform_int_distribution<> dis(0, 1);
-        *temp = dis(generator);
+        random = dis(generator);
+        buckets->insert(pair<unsigned int, unsigned int> (result, random));
+        return random;
     }
-
-    return *temp;
+    else{
+        return it->second;
+    }
 }
 
 template <class T>
@@ -177,4 +239,4 @@ unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int 
 }
 
 template class HashTable<vector < pair <class Point*, unsigned int> > >;
-template class HashTable<char>;
+template class HashTable< map<unsigned int, char> >;

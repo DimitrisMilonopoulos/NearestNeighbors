@@ -27,16 +27,35 @@ Cube::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vector<c
         hashTables[i].initialize(hashtableSize, w, k, dim,givenProbes);
         hashTables[i].initBuck();
     }
-    //insert the points to the hashtables
-    for (int i = 0; i < k; i++)
+
+    
+    //create a list of vectors where the points will be saved
+    //calculate the size of the points
+    unsigned int temp = 1;
+    temp = temp << k;
+    inputPoints = new vector<class Point *>[temp];
+
+    unsigned int bucket;
+    //insert the points into the hypercube
+    for (int i = 0; i < points->size(); i++)
     {
-        for (int j = 0; j < inputPoints->size(); j++)
-        {
-            hashTables[i].insertPoint(inputPoints->at(j));
-        }
+        bucket = getBucket(points->at(i));
+        inputPoints[bucket].push_back(points->at(i));
     }
+     
 }
 
+unsigned int Cube::getBucket(class Point *point){
+    unsigned int bucket = 0;
+    unsigned int hashresult;
+    for (int j = 0; j < k; j++)
+    {
+            hashresult = hashTables[j].insertPoint(point);
+            hashresult = hashresult << j;   
+            bucket += hashresult;         
+        }
+    return bucket;
+}
 Cube::~Cube()
 {
     delete[] hashTables;

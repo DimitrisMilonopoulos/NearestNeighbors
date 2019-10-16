@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <ctime>
+#include <utility>
 
 #include "point.hpp"
 #include "fileReading.hpp"
@@ -46,26 +49,44 @@ int main(int argc, char *argv[])
 
     int w = 4500;
 
-    //cout << inputFile << " " << queryFile << " " << k << " " << L << " " << outputFile << endl;
-
     class Reading reader;
     int tableSize;
     vector<class Point *> *inputTable, *queryTable;
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
 
-    bruteForce(inputTable, queryTable);
-
     class LSH lshImplementation(k, L, w, inputTable);
-    class Point *q, *b;
+    class Point *q, *b = NULL;
     double distance;
+    clock_t timeLSH, timeBrute;
+
+    pair<class Point*, double>* bruteNN;
+    ofstream outfile;
+    outfile.open(outputFile);
+
 
     for (int i = 0; i < queryTable->size(); i++)
     {
         q = (queryTable->at(i));
+        timeBrute = clock();
+        bruteNN = bruteForce(inputTable, q);
+        timeBrute = clock() - timeBrute;
+        timeLSH = clock();
         b = lshImplementation.approximateNN(q, &distance);
-        cout << "Query Point: " << q->getID() << "\tNearest Neighbour: " << b->getID() << "\tDistance: " << distance << endl;
+        timeLSH = clock() - timeLSH;
+
+        outfile << "Query Point: " << q->getID() << endl;
+        if(b != NULL)
+            outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
+        else
+            outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
+        outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
+        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+        delete bruteNN;
+        
     }
+    
+    outfile.close();
 
     //delete the tables
     while (!inputTable->empty())

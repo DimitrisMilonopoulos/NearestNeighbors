@@ -8,6 +8,7 @@ using std::vector;
 
 using namespace std;
 
-int bruteForce(vector<class Point *> *, vector<class Point *> *);
+pair<class Point*, double>* bruteForce(vector<class Point *> *, class Point *);
+int bruteForceAll(vector<class Point *> *, vector<class Point *> *);
 
 #endif

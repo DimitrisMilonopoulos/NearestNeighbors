@@ -35,3 +35,5 @@ mainLSH
 .vscode/settings.json
 brute.dat
 brute.dat
+lshResults.txt
+cubeResults.txt

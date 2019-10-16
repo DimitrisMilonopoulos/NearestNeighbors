@@ -94,6 +94,8 @@ class Point *Cube::findNN(class Point *query, double *dist)
     vector <class Point*> *acme;
     unsigned int mask = 1;
 
+    count = 0;
+
     for (int i = 0; i < probes; i++)
     {
         if (i==0)
@@ -103,8 +105,6 @@ class Point *Cube::findNN(class Point *query, double *dist)
                 mask = mask << 1;
             acme = &hyperCube[acmeNo ^ mask];       
         }
-
-        count = 0;
 
         for (int j = 0; j < acme->size(); j++)
         {

@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <ctime>
+#include <utility>
 
 #include "point.hpp"
 #include "fileReading.hpp"
@@ -51,8 +54,6 @@ int main(int argc, char *argv[])
     if (probes == -1)
         probes = 2;
 
-    //cout << inputFile << " " << queryFile << " " << k << " " << M << " " << probes << " " << outputFile << endl;
-
     int w = 4500;
 
     class Reading reader;
@@ -64,18 +65,35 @@ int main(int argc, char *argv[])
     // bruteForce(inputTable, queryTable);
 
     class Cube cubeImplementation(k, M, probes, w, inputTable);
-    class Point *q, *b;
+    class Point *q, *b = NULL;
     double distance;
+    clock_t timeCube, timeBrute;
+
+    pair<class Point*, double>* bruteNN;
+    ofstream outfile;
+    outfile.open(outputFile);
 
     for (int i = 0; i < queryTable->size(); i++)
     {
         q = (queryTable->at(i));
+        timeBrute = clock();
+        bruteNN = bruteForce(inputTable, q);
+        timeBrute = clock() - timeBrute;
+        timeCube = clock();
         b = cubeImplementation.findNN(q, &distance);
-        if(q != NULL && b != NULL)
-            cout << "Query Point: " << q->getID() << "\tNearest Neighbour: " << b->getID() << "\tDistance: " << distance << endl;
+        timeCube = clock() - timeCube;
+
+        outfile << "Query Point: " << q->getID() << endl;
+        if(b != NULL)
+            outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "DistanceCube: " << distance << endl;
         else
-            cout << "No neighbors found!" << endl;
+            outfile << "Nearest Neighbor Cube: None Found!" << endl << "DistanceCube: -" << endl;
+        outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
+        outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+        delete bruteNN;
     }
+
+    outfile.close();
 
     //delete the tables
     while (!inputTable->empty())

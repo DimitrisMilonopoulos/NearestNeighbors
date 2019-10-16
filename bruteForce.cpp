@@ -8,7 +8,35 @@
 
 using namespace std;
 
-int bruteForce(vector<class Point *> *points, vector<class Point *> *queries)
+pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Point * query)
+{    
+    size_t npoints = points->size();
+    
+    pair<class Point*, double>* nearestNeighbor = new pair<class Point*, double>;
+
+    class Point *closestPoint = points->at(0);
+    double minDistance = manhattanDist(points->at(0), query);
+
+    class Point* tempPoint;
+    double tempDist;
+        
+    for (int i = 1; i < npoints; i++)
+    {
+        tempPoint = points->at(i);
+        tempDist = manhattanDist(tempPoint, query);
+        if (tempDist < minDistance)
+        {
+            minDistance = tempDist;
+            closestPoint = tempPoint;
+        }
+    }
+    nearestNeighbor->first = closestPoint;
+    nearestNeighbor->second = minDistance;
+    
+    return nearestNeighbor;
+}
+
+int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 {
 
     size_t npoints = points->size();
@@ -16,12 +44,12 @@ int bruteForce(vector<class Point *> *points, vector<class Point *> *queries)
 
     ofstream outfile;
     outfile.open("brute.dat");
-    unsigned int avg = 0;
+    double avg = 0;
 
     //for each nqueries find the one with the smallest manhattan distance
     for (int i = 0; i < nqueries; i++)
     {
-        unsigned int temp_dist, min_distance = manhattanDist(points->at(0), queries->at(i));
+        double temp_dist, min_distance = manhattanDist(points->at(0), queries->at(i));
         class Point *closest_point = points->at(0);
         for (int j = 1; j < npoints; j++)
         {

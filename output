@@ -1,0 +1,800 @@
+Query Point: 1
+Nearest Neighbor Cube: 9072
+DistanceCube: 2836
+True Neighbor: 2177
+DistanceTrue: 2064
+tCube: 0.000803
+tTrue: 0.010094
+
+Query Point: 2
+Nearest Neighbor Cube: 281
+DistanceCube: 2436
+True Neighbor: 2782
+DistanceTrue: 2045
+tCube: 0.000762
+tTrue: 0.010126
+
+Query Point: 3
+Nearest Neighbor Cube: 6048
+DistanceCube: 1891
+True Neighbor: 9973
+DistanceTrue: 1619
+tCube: 0.00072
+tTrue: 0.010031
+
+Query Point: 4
+Nearest Neighbor Cube: 218
+DistanceCube: 2057
+True Neighbor: 9844
+DistanceTrue: 1593
+tCube: 0.000798
+tTrue: 0.010045
+
+Query Point: 5
+Nearest Neighbor Cube: 9308
+DistanceCube: 2214
+True Neighbor: 5165
+DistanceTrue: 1680
+tCube: 0.000761
+tTrue: 0.010333
+
+Query Point: 6
+Nearest Neighbor Cube: 9049
+DistanceCube: 2519
+True Neighbor: 1240
+DistanceTrue: 2180
+tCube: 0.000811
+tTrue: 0.010428
+
+Query Point: 7
+Nearest Neighbor Cube: 2448
+DistanceCube: 2382
+True Neighbor: 2775
+DistanceTrue: 1946
+tCube: 0.000818
+tTrue: 0.010166
+
+Query Point: 8
+Nearest Neighbor Cube: 7185
+DistanceCube: 2518
+True Neighbor: 5869
+DistanceTrue: 1149
+tCube: 0.000833
+tTrue: 0.010387
+
+Query Point: 9
+Nearest Neighbor Cube: 551
+DistanceCube: 2592
+True Neighbor: 9629
+DistanceTrue: 1791
+tCube: 0.00078
+tTrue: 0.010476
+
+Query Point: 10
+Nearest Neighbor Cube: 5008
+DistanceCube: 2344
+True Neighbor: 4720
+DistanceTrue: 1834
+tCube: 0.000761
+tTrue: 0.010395
+
+Query Point: 11
+Nearest Neighbor Cube: 157
+DistanceCube: 2744
+True Neighbor: 694
+DistanceTrue: 2067
+tCube: 0.000823
+tTrue: 0.010241
+
+Query Point: 12
+Nearest Neighbor Cube: 1641
+DistanceCube: 2067
+True Neighbor: 4698
+DistanceTrue: 1280
+tCube: 0.000815
+tTrue: 0.010577
+
+Query Point: 13
+Nearest Neighbor Cube: 2493
+DistanceCube: 2461
+True Neighbor: 507
+DistanceTrue: 1811
+tCube: 0.000864
+tTrue: 0.010495
+
+Query Point: 14
+Nearest Neighbor Cube: 1729
+DistanceCube: 2609
+True Neighbor: 9816
+DistanceTrue: 1829
+tCube: 0.000812
+tTrue: 0.010642
+
+Query Point: 15
+Nearest Neighbor Cube: 2367
+DistanceCube: 2955
+True Neighbor: 798
+DistanceTrue: 2136
+tCube: 0.000774
+tTrue: 0.010795
+
+Query Point: 16
+Nearest Neighbor Cube: 1479
+DistanceCube: 2486
+True Neighbor: 410
+DistanceTrue: 1973
+tCube: 0.000957
+tTrue: 0.010209
+
+Query Point: 17
+Nearest Neighbor Cube: 1695
+DistanceCube: 2598
+True Neighbor: 471
+DistanceTrue: 1963
+tCube: 0.000849
+tTrue: 0.010722
+
+Query Point: 18
+Nearest Neighbor Cube: 1311
+DistanceCube: 2624
+True Neighbor: 4097
+DistanceTrue: 1987
+tCube: 0.000911
+tTrue: 0.01049
+
+Query Point: 19
+Nearest Neighbor Cube: 4504
+DistanceCube: 2534
+True Neighbor: 904
+DistanceTrue: 1964
+tCube: 0.000828
+tTrue: 0.010364
+
+Query Point: 20
+Nearest Neighbor Cube: 9595
+DistanceCube: 1947
+True Neighbor: 9807
+DistanceTrue: 1754
+tCube: 0.000778
+tTrue: 0.01037
+
+Query Point: 21
+Nearest Neighbor Cube: 7072
+DistanceCube: 2450
+True Neighbor: 7028
+DistanceTrue: 1239
+tCube: 0.000829
+tTrue: 0.01049
+
+Query Point: 22
+Nearest Neighbor Cube: 5207
+DistanceCube: 1490
+True Neighbor: 4491
+DistanceTrue: 486
+tCube: 0.000753
+tTrue: 0.010253
+
+Query Point: 23
+Nearest Neighbor Cube: 4504
+DistanceCube: 1930
+True Neighbor: 4958
+DistanceTrue: 1159
+tCube: 0.000782
+tTrue: 0.010102
+
+Query Point: 24
+Nearest Neighbor Cube: 3981
+DistanceCube: 2249
+True Neighbor: 4673
+DistanceTrue: 1520
+tCube: 0.000727
+tTrue: 0.010131
+
+Query Point: 25
+Nearest Neighbor Cube: 1958
+DistanceCube: 2324
+True Neighbor: 4631
+DistanceTrue: 1068
+tCube: 0.000826
+tTrue: 0.010289
+
+Query Point: 26
+Nearest Neighbor Cube: 104
+DistanceCube: 2421
+True Neighbor: 6423
+DistanceTrue: 1919
+tCube: 0.000784
+tTrue: 0.010493
+
+Query Point: 27
+Nearest Neighbor Cube: 8700
+DistanceCube: 1764
+True Neighbor: 6828
+DistanceTrue: 1251
+tCube: 0.000775
+tTrue: 0.010213
+
+Query Point: 28
+Nearest Neighbor Cube: 9792
+DistanceCube: 1920
+True Neighbor: 5964
+DistanceTrue: 1166
+tCube: 0.000757
+tTrue: 0.010163
+
+Query Point: 29
+Nearest Neighbor Cube: 6526
+DistanceCube: 2027
+True Neighbor: 6828
+DistanceTrue: 1504
+tCube: 0.000793
+tTrue: 0.010105
+
+Query Point: 30
+Nearest Neighbor Cube: 5569
+DistanceCube: 2050
+True Neighbor: 5454
+DistanceTrue: 734
+tCube: 0.000766
+tTrue: 0.010256
+
+Query Point: 31
+Nearest Neighbor Cube: 1138
+DistanceCube: 2867
+True Neighbor: 4778
+DistanceTrue: 1819
+tCube: 0.00088
+tTrue: 0.010289
+
+Query Point: 32
+Nearest Neighbor Cube: 785
+DistanceCube: 2702
+True Neighbor: 5560
+DistanceTrue: 741
+tCube: 0.000824
+tTrue: 0.010429
+
+Query Point: 33
+Nearest Neighbor Cube: 4625
+DistanceCube: 2525
+True Neighbor: 5301
+DistanceTrue: 1210
+tCube: 0.000774
+tTrue: 0.010465
+
+Query Point: 34
+Nearest Neighbor Cube: 4007
+DistanceCube: 2934
+True Neighbor: 8151
+DistanceTrue: 2368
+tCube: 0.000812
+tTrue: 0.010273
+
+Query Point: 35
+Nearest Neighbor Cube: 14
+DistanceCube: 2399
+True Neighbor: 7059
+DistanceTrue: 1951
+tCube: 0.000805
+tTrue: 0.010159
+
+Query Point: 36
+Nearest Neighbor Cube: 5377
+DistanceCube: 2070
+True Neighbor: 5842
+DistanceTrue: 969
+tCube: 0.000786
+tTrue: 0.010491
+
+Query Point: 37
+Nearest Neighbor Cube: 1605
+DistanceCube: 2557
+True Neighbor: 5843
+DistanceTrue: 865
+tCube: 0.000735
+tTrue: 0.010456
+
+Query Point: 38
+Nearest Neighbor Cube: 7862
+DistanceCube: 3156
+True Neighbor: 5185
+DistanceTrue: 1241
+tCube: 0.000896
+tTrue: 0.01031
+
+Query Point: 39
+Nearest Neighbor Cube: 5715
+DistanceCube: 2762
+True Neighbor: 5501
+DistanceTrue: 995
+tCube: 0.000744
+tTrue: 0.010208
+
+Query Point: 40
+Nearest Neighbor Cube: 5762
+DistanceCube: 1514
+True Neighbor: 5075
+DistanceTrue: 1200
+tCube: 0.000847
+tTrue: 0.010296
+
+Query Point: 41
+Nearest Neighbor Cube: 1062
+DistanceCube: 2261
+True Neighbor: 8308
+DistanceTrue: 1106
+tCube: 0.000758
+tTrue: 0.010341
+
+Query Point: 42
+Nearest Neighbor Cube: 9345
+DistanceCube: 1621
+True Neighbor: 4644
+DistanceTrue: 1442
+tCube: 0.00077
+tTrue: 0.010152
+
+Query Point: 43
+Nearest Neighbor Cube: 5133
+DistanceCube: 2436
+True Neighbor: 5225
+DistanceTrue: 1629
+tCube: 0.000781
+tTrue: 0.010533
+
+Query Point: 44
+Nearest Neighbor Cube: 562
+DistanceCube: 2463
+True Neighbor: 6303
+DistanceTrue: 1275
+tCube: 0.000785
+tTrue: 0.010378
+
+Query Point: 45
+Nearest Neighbor Cube: 478
+DistanceCube: 2324
+True Neighbor: 8616
+DistanceTrue: 1483
+tCube: 0.000782
+tTrue: 0.010092
+
+Query Point: 46
+Nearest Neighbor Cube: 4575
+DistanceCube: 2219
+True Neighbor: 7877
+DistanceTrue: 1628
+tCube: 0.000775
+tTrue: 0.01018
+
+Query Point: 47
+Nearest Neighbor Cube: 6183
+DistanceCube: 1802
+True Neighbor: 5881
+DistanceTrue: 646
+tCube: 0.000842
+tTrue: 0.010255
+
+Query Point: 48
+Nearest Neighbor Cube: 9777
+DistanceCube: 3191
+True Neighbor: 5642
+DistanceTrue: 2446
+tCube: 0.001075
+tTrue: 0.013693
+
+Query Point: 49
+Nearest Neighbor Cube: 1637
+DistanceCube: 2750
+True Neighbor: 5214
+DistanceTrue: 968
+tCube: 0.001047
+tTrue: 0.013593
+
+Query Point: 50
+Nearest Neighbor Cube: 4730
+DistanceCube: 2019
+True Neighbor: 5085
+DistanceTrue: 849
+tCube: 0.000802
+tTrue: 0.012586
+
+Query Point: 51
+Nearest Neighbor Cube: 4410
+DistanceCube: 2884
+True Neighbor: 5013
+DistanceTrue: 1130
+tCube: 0.000764
+tTrue: 0.010223
+
+Query Point: 52
+Nearest Neighbor Cube: 9998
+DistanceCube: 1694
+True Neighbor: 6124
+DistanceTrue: 848
+tCube: 0.000793
+tTrue: 0.010108
+
+Query Point: 53
+Nearest Neighbor Cube: 4492
+DistanceCube: 2117
+True Neighbor: 5674
+DistanceTrue: 1188
+tCube: 0.000759
+tTrue: 0.010173
+
+Query Point: 54
+Nearest Neighbor Cube: 5408
+DistanceCube: 2240
+True Neighbor: 8613
+DistanceTrue: 1219
+tCube: 0.000798
+tTrue: 0.010257
+
+Query Point: 55
+Nearest Neighbor Cube: 6316
+DistanceCube: 1442
+True Neighbor: 6159
+DistanceTrue: 979
+tCube: 0.000761
+tTrue: 0.010033
+
+Query Point: 56
+Nearest Neighbor Cube: 8258
+DistanceCube: 2163
+True Neighbor: 5831
+DistanceTrue: 1042
+tCube: 0.000721
+tTrue: 0.010253
+
+Query Point: 57
+Nearest Neighbor Cube: 119
+DistanceCube: 1972
+True Neighbor: 4904
+DistanceTrue: 1436
+tCube: 0.000833
+tTrue: 0.010314
+
+Query Point: 58
+Nearest Neighbor Cube: 8317
+DistanceCube: 2498
+True Neighbor: 5212
+DistanceTrue: 1176
+tCube: 0.000726
+tTrue: 0.010157
+
+Query Point: 59
+Nearest Neighbor Cube: 5402
+DistanceCube: 2965
+True Neighbor: 7238
+DistanceTrue: 460
+tCube: 0.000764
+tTrue: 0.0101
+
+Query Point: 60
+Nearest Neighbor Cube: 2295
+DistanceCube: 1413
+True Neighbor: 6835
+DistanceTrue: 619
+tCube: 0.000795
+tTrue: 0.01026
+
+Query Point: 61
+Nearest Neighbor Cube: 7981
+DistanceCube: 2592
+True Neighbor: 5279
+DistanceTrue: 1209
+tCube: 0.000765
+tTrue: 0.010385
+
+Query Point: 62
+Nearest Neighbor Cube: 919
+DistanceCube: 2427
+True Neighbor: 8403
+DistanceTrue: 732
+tCube: 0.000762
+tTrue: 0.010128
+
+Query Point: 63
+Nearest Neighbor Cube: 6739
+DistanceCube: 1479
+True Neighbor: 6561
+DistanceTrue: 832
+tCube: 0.000789
+tTrue: 0.010128
+
+Query Point: 64
+Nearest Neighbor Cube: 7964
+DistanceCube: 1955
+True Neighbor: 6322
+DistanceTrue: 627
+tCube: 0.000762
+tTrue: 0.010162
+
+Query Point: 65
+Nearest Neighbor Cube: 8120
+DistanceCube: 2256
+True Neighbor: 5636
+DistanceTrue: 980
+tCube: 0.000779
+tTrue: 0.010146
+
+Query Point: 66
+Nearest Neighbor Cube: 2338
+DistanceCube: 1549
+True Neighbor: 6406
+DistanceTrue: 1085
+tCube: 0.000837
+tTrue: 0.010334
+
+Query Point: 67
+Nearest Neighbor Cube: 9203
+DistanceCube: 2218
+True Neighbor: 5391
+DistanceTrue: 1189
+tCube: 0.000757
+tTrue: 0.010253
+
+Query Point: 68
+Nearest Neighbor Cube: 2533
+DistanceCube: 2088
+True Neighbor: 6858
+DistanceTrue: 1205
+tCube: 0.000762
+tTrue: 0.010151
+
+Query Point: 69
+Nearest Neighbor Cube: 5993
+DistanceCube: 1483
+True Neighbor: 7218
+DistanceTrue: 1251
+tCube: 0.000807
+tTrue: 0.010157
+
+Query Point: 70
+Nearest Neighbor Cube: 5137
+DistanceCube: 2670
+True Neighbor: 5878
+DistanceTrue: 1943
+tCube: 0.000762
+tTrue: 0.010082
+
+Query Point: 71
+Nearest Neighbor Cube: 6125
+DistanceCube: 280
+True Neighbor: 6125
+DistanceTrue: 280
+tCube: 0.000721
+tTrue: 0.010232
+
+Query Point: 72
+Nearest Neighbor Cube: 7158
+DistanceCube: 1711
+True Neighbor: 5827
+DistanceTrue: 1254
+tCube: 0.000749
+tTrue: 0.010188
+
+Query Point: 73
+Nearest Neighbor Cube: 2032
+DistanceCube: 2515
+True Neighbor: 934
+DistanceTrue: 2210
+tCube: 0.000774
+tTrue: 0.010289
+
+Query Point: 74
+Nearest Neighbor Cube: 8051
+DistanceCube: 3239
+True Neighbor: 6854
+DistanceTrue: 1573
+tCube: 0.000765
+tTrue: 0.010136
+
+Query Point: 75
+Nearest Neighbor Cube: 4709
+DistanceCube: 2397
+True Neighbor: 7365
+DistanceTrue: 986
+tCube: 0.000784
+tTrue: 0.010209
+
+Query Point: 76
+Nearest Neighbor Cube: 1376
+DistanceCube: 2821
+True Neighbor: 6554
+DistanceTrue: 1416
+tCube: 0.000721
+tTrue: 0.010123
+
+Query Point: 77
+Nearest Neighbor Cube: 450
+DistanceCube: 2419
+True Neighbor: 7904
+DistanceTrue: 1648
+tCube: 0.000749
+tTrue: 0.010142
+
+Query Point: 78
+Nearest Neighbor Cube: 3457
+DistanceCube: 2944
+True Neighbor: 8579
+DistanceTrue: 2177
+tCube: 0.000772
+tTrue: 0.010328
+
+Query Point: 79
+Nearest Neighbor Cube: 5048
+DistanceCube: 1997
+True Neighbor: 9209
+DistanceTrue: 1551
+tCube: 0.000788
+tTrue: 0.010319
+
+Query Point: 80
+Nearest Neighbor Cube: 3082
+DistanceCube: 2320
+True Neighbor: 8070
+DistanceTrue: 743
+tCube: 0.000877
+tTrue: 0.010357
+
+Query Point: 81
+Nearest Neighbor Cube: 9081
+DistanceCube: 2267
+True Neighbor: 7452
+DistanceTrue: 987
+tCube: 0.000738
+tTrue: 0.010275
+
+Query Point: 82
+Nearest Neighbor Cube: 7348
+DistanceCube: 2853
+True Neighbor: 3087
+DistanceTrue: 1969
+tCube: 0.000927
+tTrue: 0.01014
+
+Query Point: 83
+Nearest Neighbor Cube: 7682
+DistanceCube: 2697
+True Neighbor: 91
+DistanceTrue: 2001
+tCube: 0.000821
+tTrue: 0.010473
+
+Query Point: 84
+Nearest Neighbor Cube: 8762
+DistanceCube: 2207
+True Neighbor: 6006
+DistanceTrue: 1161
+tCube: 0.000761
+tTrue: 0.010254
+
+Query Point: 85
+Nearest Neighbor Cube: 4005
+DistanceCube: 2047
+True Neighbor: 8895
+DistanceTrue: 1359
+tCube: 0.000744
+tTrue: 0.010086
+
+Query Point: 86
+Nearest Neighbor Cube: 7821
+DistanceCube: 3611
+True Neighbor: 8726
+DistanceTrue: 1753
+tCube: 0.000777
+tTrue: 0.010168
+
+Query Point: 87
+Nearest Neighbor Cube: 4293
+DistanceCube: 2641
+True Neighbor: 9152
+DistanceTrue: 1673
+tCube: 0.000781
+tTrue: 0.0101
+
+Query Point: 88
+Nearest Neighbor Cube: 8274
+DistanceCube: 2722
+True Neighbor: 7723
+DistanceTrue: 683
+tCube: 0.00072
+tTrue: 0.010297
+
+Query Point: 89
+Nearest Neighbor Cube: 5891
+DistanceCube: 1975
+True Neighbor: 7099
+DistanceTrue: 399
+tCube: 0.000833
+tTrue: 0.010302
+
+Query Point: 90
+Nearest Neighbor Cube: 2736
+DistanceCube: 1870
+True Neighbor: 7628
+DistanceTrue: 690
+tCube: 0.000765
+tTrue: 0.010186
+
+Query Point: 91
+Nearest Neighbor Cube: 2917
+DistanceCube: 1600
+True Neighbor: 9259
+DistanceTrue: 310
+tCube: 0.00076
+tTrue: 0.010148
+
+Query Point: 92
+Nearest Neighbor Cube: 2803
+DistanceCube: 3101
+True Neighbor: 8897
+DistanceTrue: 1916
+tCube: 0.00078
+tTrue: 0.010141
+
+Query Point: 93
+Nearest Neighbor Cube: 4812
+DistanceCube: 2426
+True Neighbor: 8357
+DistanceTrue: 954
+tCube: 0.000728
+tTrue: 0.01011
+
+Query Point: 94
+Nearest Neighbor Cube: 6294
+DistanceCube: 1651
+True Neighbor: 8979
+DistanceTrue: 1433
+tCube: 0.000764
+tTrue: 0.010227
+
+Query Point: 95
+Nearest Neighbor Cube: 1080
+DistanceCube: 2668
+True Neighbor: 8420
+DistanceTrue: 977
+tCube: 0.000787
+tTrue: 0.01022
+
+Query Point: 96
+Nearest Neighbor Cube: 2235
+DistanceCube: 2960
+True Neighbor: 1186
+DistanceTrue: 2188
+tCube: 0.000756
+tTrue: 0.010233
+
+Query Point: 97
+Nearest Neighbor Cube: 6497
+DistanceCube: 2636
+True Neighbor: 7513
+DistanceTrue: 2146
+tCube: 0.000804
+tTrue: 0.010093
+
+Query Point: 98
+Nearest Neighbor Cube: 5664
+DistanceCube: 2939
+True Neighbor: 8826
+DistanceTrue: 1515
+tCube: 0.000765
+tTrue: 0.010154
+
+Query Point: 99
+Nearest Neighbor Cube: 6293
+DistanceCube: 995
+True Neighbor: 5811
+DistanceTrue: 787
+tCube: 0.000814
+tTrue: 0.010263
+
+Query Point: 100
+Nearest Neighbor Cube: 5168
+DistanceCube: 2773
+True Neighbor: 8083
+DistanceTrue: 1246
+tCube: 0.000774
+tTrue: 0.010324
+

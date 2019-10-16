@@ -24,6 +24,7 @@ class Cube{
     unsigned int getAcme(class Point *);
     int getMaxPoints();
     class Point *findNN(class Point *, double *);
+    int searchAcme(vector <class Point*> *,class Point* query, int*,double*,class Point**);
 };
 
 #endif

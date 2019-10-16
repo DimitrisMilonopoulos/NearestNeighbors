@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 
     class LSH lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
-    double distance;
+    double distance, tempAF, maxAF = 0.0;
     clock_t timeLSH, timeBrute;
 
     pair<class Point*, double>* bruteNN;
@@ -75,6 +75,11 @@ int main(int argc, char *argv[])
         b = lshImplementation.approximateNN(q, &distance);
         timeLSH = clock() - timeLSH;
 
+        tempAF = distance / bruteNN->second;
+
+        if(tempAF > maxAF)
+            maxAF = tempAF;
+
         outfile << "Query Point: " << q->getID() << endl;
         if(b != NULL)
             outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
@@ -85,6 +90,8 @@ int main(int argc, char *argv[])
         delete bruteNN;
         
     }
+
+    cout << maxAF << endl;
     
     outfile.close();
 

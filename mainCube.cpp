@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 
     class Cube cubeImplementation(k, M, probes, w, inputTable);
     class Point *q, *b = NULL;
-    double distance;
+    double distance, tempAF, maxAF = 0.0;
     clock_t timeCube, timeBrute;
 
     pair<class Point*, double>* bruteNN;
@@ -83,6 +83,11 @@ int main(int argc, char *argv[])
         b = cubeImplementation.findNN(q, &distance);
         timeCube = clock() - timeCube;
 
+        tempAF = distance / bruteNN->second;
+
+        if(tempAF > maxAF)
+            maxAF = tempAF;
+
         outfile << "Query Point: " << q->getID() << endl;
         if(b != NULL)
             outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "DistanceCube: " << distance << endl;
@@ -92,6 +97,8 @@ int main(int argc, char *argv[])
         outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
         delete bruteNN;
     }
+
+    cout << maxAF << endl;
 
     outfile.close();
 

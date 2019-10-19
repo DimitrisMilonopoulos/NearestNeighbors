@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <utility>
 
 #include "point.hpp"
 
@@ -8,11 +9,12 @@ using namespace std;
 
 //Class used to handle the input Points
 
-Point::Point(string ID, double *coord, int siz)
+Point::Point(string ID, double *coord, int siz,class Curve *ptr)
 {
-    PointID = ID;
+    this->ID = ID;
     coordinates = coord;
     size = siz;
+    curvePtr = ptr;
 }
 
 Point::~Point()
@@ -22,7 +24,7 @@ Point::~Point()
 
 string Point::getID()
 {
-    return PointID;
+    return ID;
 }
 
 int Point::getSize()
@@ -33,4 +35,24 @@ int Point::getSize()
 double *Point::getCoord()
 {
     return coordinates;
+}
+
+//temporary class will be merged into template later
+
+Curve::Curve(string givenID,pair <double,double>* coords, int size){
+    ID = givenID;
+    coordinates = coords;
+    this->size = size;
+}
+
+pair<double,double>* Curve::getCoord(){
+    return coordinates;
+}
+
+int Curve::getSize(){
+    return size;
+}
+
+Curve::~Curve(){
+    delete coordinates;
 }

@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 
     class LSH lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
-    double distance, tempAF, maxAF = 0.0;
+    double distance, tempAF, maxAF = 0.0,avgAF = 0.0;
     clock_t timeLSH, timeBrute;
 
     pair<class Point*, double>* bruteNN;
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
         timeLSH = clock() - timeLSH;
 
         tempAF = distance / bruteNN->second;
-
+        avgAF +=tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;
 
@@ -91,8 +91,8 @@ int main(int argc, char *argv[])
         
     }
 
-    cout << maxAF << endl;
-    
+    cout << "MaxAF: "<< maxAF << endl;
+    cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;
     outfile.close();
 
     //delete the tables

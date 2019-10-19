@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <utility>
 
 #include "point.hpp"
 #include "fileReading.hpp"
@@ -51,10 +52,50 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
         {
             iss >> coord[i];
         }
-        class Point *newPoint = new class Point(name, coord, columns);
+        class Point *newPoint = new class Point(name, coord, columns,NULL);
         table->push_back(newPoint);
         j++;
     }
 
     return table;
+}
+
+template <char C>
+std::istream& expect(std::istream& in)
+{
+    if ((in >> std::ws).peek() == C) {
+        in.ignore();
+    }
+    else {
+        in.setstate(std::ios_base::failbit);
+    }
+    return in;
+}
+
+vector <class Curve*> *Reading::readCurves(string FileLocation){
+    ifstream infile(FileLocation);
+    string line;
+    vector <class Curve*> *inputTable = new vector <class Curve*>;
+    while(getline(infile,line)){
+        istringstream iss(line);
+        int points;
+        string ID,buff;
+        iss >> ID;
+        iss >> points;
+        pair <double, double> * coord = new pair<double, double>[points];
+        pair <double, double> mypair;
+        for (size_t i = 0; i < points; i++)
+        {
+            //read first part of the string
+            iss>>buff;
+            sscanf(buff.c_str(),"(%lf,",&coord[i].first);
+            iss>>buff;
+            sscanf(buff.c_str(),"%lf)",&coord[i].second);
+        }
+        class Curve *curve = new class Curve(ID,coord,points);
+        inputTable->push_back(curve);
+    }
+    
+
+    return inputTable;
 }

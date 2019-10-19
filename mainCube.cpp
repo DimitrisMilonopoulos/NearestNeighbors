@@ -54,9 +54,22 @@ int main(int argc, char *argv[])
     if (probes == -1)
         probes = 2;
 
+    class Reading reader;
+    /////////////////////////////////////////////////////////////
+    ///////EXPERIMENTAL//////////////////////////////////////////
+    vector <class Curve*> * input = reader.readCurves("./Files/trajectories_dataset");
+    while(input->size()){
+        delete input->back();
+        input->pop_back();
+    }
+    delete input;
+    
+    return 1;
+
+
+    ////////////////////////////////////////////////////////////
     int w = 4500;
 
-    class Reading reader;
     int tableSize;
     vector<class Point *> *inputTable, *queryTable;
     inputTable = reader.readPoints(inputFile);
@@ -66,7 +79,7 @@ int main(int argc, char *argv[])
 
     class Cube cubeImplementation(k, M, probes, w, inputTable);
     class Point *q, *b = NULL;
-    double distance, tempAF, maxAF = 0.0;
+    double distance, tempAF, maxAF = 0.0,avgAF=0.0;
     clock_t timeCube, timeBrute;
 
     pair<class Point*, double>* bruteNN;
@@ -84,7 +97,7 @@ int main(int argc, char *argv[])
         timeCube = clock() - timeCube;
 
         tempAF = distance / bruteNN->second;
-
+        avgAF += tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;
 
@@ -98,7 +111,8 @@ int main(int argc, char *argv[])
         delete bruteNN;
     }
 
-    cout << maxAF << endl;
+    cout << "MaxAF: " << maxAF << endl;
+    cout << "AvgAF: " << avgAF/queryTable->size() <<endl;
 
     outfile.close();
 

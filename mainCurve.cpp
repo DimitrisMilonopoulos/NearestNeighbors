@@ -57,28 +57,39 @@ int main(int argc, char *argv[])
 
     class Reading reader;
     int tableSize;
-    vector<class Point *> *inputTable, *queryTable;
-    inputTable = reader.readPoints(inputFile);
-    queryTable = reader.readPoints(queryFile);
+    int minPoints, maxPoints;
+
+    vector<class Curve *> *inputTable, *queryTable;
+    pair <vector<class Curve*>*, vector<class Curve*>*> tables;
+
+    tables = reader.readCurves(inputFile, &minPoints, &maxPoints);
+    inputTable = tables.first;
+    queryTable = tables.second;
+
+    ofstream outfile;
+    outfile.open(outputFile);
+
+    double tempAF, maxAF = 0.0, avgAF = 0.0;
 
     ////// Run algorithm based on the user's choices
 
     if(choice1 == "LSH" && choice2 == "LSH")
     {
-        class LSH<class Point*> lshImplementation(k, L, w, inputTable);
-        class Point *q, *b = NULL;
-        double distance, tempAF, maxAF = 0.0,avgAF = 0.0;
+        cout << k << endl;
+        class LSH<class Curve*> lshImplementation(k, L, w, inputTable, minPoints, maxPoints);
+        class Curve *q, *b = NULL;
+        double distance;
+        maxAF = 0.0;
+        avgAF = 0.0;
         clock_t timeLSH, timeBrute;
 
         pair<class Curve*, double>* bruteNN;
-        ofstream outfile;
-        outfile.open(outputFile);
 
         for (int i = 0; i < queryTable->size(); i++)
         {
             q = (queryTable->at(i));
             timeBrute = clock();
-            bruteNN = bruteForce(inputTable, q);
+            bruteNN = bruteForceCurve(inputTable, q);
             timeBrute = clock() - timeBrute;
             timeLSH = clock();
             b = lshImplementation.approximateNN(q, &distance);

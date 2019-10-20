@@ -58,7 +58,9 @@ void HashTable< map<unsigned int, char> >::initialize(size_t size, int givenw, i
 template <class T>
 void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int givendim, int givenMaxPoints)
 {
+    cout << givenNumFunct << endl;
     numFunct = givenNumFunct;
+    cout << numFunct << endl;
     w = givenw;
     dimensions = givendim;
     maxPoints = givenMaxPoints;

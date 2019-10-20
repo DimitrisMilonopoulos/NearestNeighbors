@@ -49,24 +49,23 @@ class Point* LSH<T>::createVector(class Curve*,int){
 }
 
 template <>
-LSH<class Curve*>::LSH(int k, int L, int w, int maxPoints, int minPoints, vector<class Curve*> *input)
+LSH<class Curve*>::LSH(int k, int L, int w,  vector<class Curve*> *input, int minPoints, int maxPoints)
 {
     this->k = k;
+    cout << this->k << " " << k << endl;
     this->L = L;
     this->w = w;
 
     this->input = input;
+
     info.delta = 8*minPoints;
     info.maxCurvePoints = maxPoints*2;
     info.displacement = new double*[L];
-    unsigned int hashtableSize = input->size() / 8;
 
-
-    //initialize the taf vectors
-    for (int i = 0; i < 2; i++)
+    //initialize the tau vectors
+    for (int i = 0; i < L; i++)
     {
         info.displacement[i] = new double[2];
-        hashTables[i].initialize(hashtableSize, w, k, info.maxCurvePoints, 0);
     }
 
     //create the tau vectors
@@ -75,8 +74,13 @@ LSH<class Curve*>::LSH(int k, int L, int w, int maxPoints, int minPoints, vector
     uniform_real_distribution<> dis(0.0, (double)w);
     info.points = new vector<class Point*>[L];
 
+    unsigned int hashtableSize = input->size() / 8;
+    hashTables = new class HashTable<vector < pair <class Point*, unsigned int> > >[L];
+
     for (int i = 0; i < L; i++)
     {
+        hashTables[i].initialize(hashtableSize, w, this->k, info.maxCurvePoints, 0);
+
         //initialize the vector points
         for (int j = 0; j < 2; j++)
         {
@@ -241,7 +245,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
             if(amplifiedResult == neighbours.at(j).second)
             {
                 count++;
-                if (count > 10 * L)
+                if (count > 30 * L)
                     break;
 
                 p = neighbours.at(j).first;

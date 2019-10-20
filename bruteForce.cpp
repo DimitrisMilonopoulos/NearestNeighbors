@@ -5,7 +5,7 @@
 #include "point.hpp"
 #include "manhattanDistance.hpp"
 #include "bruteForce.hpp"
-#include "dynamicTimeWarping.h"
+#include "dynamicTimeWarping.hpp"
 
 using namespace std;
 
@@ -72,28 +72,28 @@ int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 }
 
 
-pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *points, class Curve *query){    
-    size_t npoints = points->size();
+pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class Curve *query){    
+    size_t npoints = curves->size();
     
-    pair<class Point*, double>* nearestNeighbor = new pair<class Point*, double>;
+    pair<class Curve*, double>* nearestNeighbor = new pair<class Curve*, double>;
 
-    class Point *closestPoint = points->at(0);
-    double minDistance = DTWDistance(points->at(0), query);
+    class Curve *closestCurve = curves->at(0);
+    double minDistance = DTWDistance(curves->at(0), query);
 
-    class Point* tempPoint;
+    class Curve* tempCurve;
     double tempDist;
         
     for (int i = 1; i < npoints; i++)
     {
-        tempPoint = points->at(i);
-        tempDist = DTWDistance(tempPoint, query);
+        tempCurve = curves->at(i);
+        tempDist = DTWDistance(tempCurve, query);
         if (tempDist < minDistance)
         {
             minDistance = tempDist;
-            closestPoint = tempPoint;
+            closestCurve = tempCurve;
         }
     }
-    nearestNeighbor->first = closestPoint;
+    nearestNeighbor->first = closestCurve;
     nearestNeighbor->second = minDistance;
     
     return nearestNeighbor;

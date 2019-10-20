@@ -41,3 +41,6 @@ Files/siftbig/input_b_id
 Files/siftbig/query_b_id
 Files/trajectories_dataset
 input
+cube
+curve
+curveResultsLSHGrid.txt

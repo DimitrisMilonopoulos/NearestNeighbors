@@ -32,7 +32,7 @@ class LSH
 
 public:
     LSH(int, int, int, vector<T>*);
-    LSH(int,int,int,int,int,vector<T>*);
+    LSH(int,int, int, vector<T>*, int, int);
     ~LSH();
     int getk();
     int getw();

@@ -13,7 +13,6 @@ using std::random_device;
 template <class T>
 class HashTable
 {
-
     unsigned int bucketSize;
     int numFunct;
     int w;

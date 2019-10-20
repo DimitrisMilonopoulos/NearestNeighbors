@@ -10,5 +10,6 @@ using namespace std;
 
 pair<class Point*, double>* bruteForce(vector<class Point *> *, class Point *);
 int bruteForceAll(vector<class Point *> *, vector<class Point *> *);
+pair<class Curve*,double>* bruteForceCurve(vector<class Curve *> *, class Curve *);
 
 #endif

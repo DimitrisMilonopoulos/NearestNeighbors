@@ -17,3 +17,10 @@ double manhattanDist(class Point *Point1, class Point *Point2)
     }
     return distance;
 }
+
+double manhattanDist(pair <double, double> Point1,pair <double, double> Point2){
+    double distance = 0;
+    distance += abs(Point1.first-Point2.first);
+    distance += abs(Point1.second-Point2.second);
+    return distance;
+}

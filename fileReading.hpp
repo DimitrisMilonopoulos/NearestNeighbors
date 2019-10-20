@@ -12,7 +12,7 @@ class Reading
 {
 public:
     vector<class Point *> *readPoints(string FileLocation);
-    vector<class Curve *> *readCurves(string FileLocation);
+    pair<vector<class Curve *>*,vector<class Curve*>* > readCurves(string FileLocation,int*,int*);
 };
 
 #endif

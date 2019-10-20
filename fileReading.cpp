@@ -60,22 +60,19 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
     return table;
 }
 
-template <char C>
-std::istream& expect(std::istream& in)
-{
-    if ((in >> std::ws).peek() == C) {
-        in.ignore();
-    }
-    else {
-        in.setstate(std::ios_base::failbit);
-    }
-    return in;
-}
-
-vector <class Curve*> *Reading::readCurves(string FileLocation){
+pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints){
     ifstream infile(FileLocation);
     string line;
     vector <class Curve*> *inputTable = new vector <class Curve*>;
+    vector <class Curve*> *queryTable = new vector <class Curve*>;
+
+    pair<vector<class Curve *>*,vector<class Curve*>* > input;
+    input.first = inputTable;
+    input.second =  queryTable;
+    
+    int minpoints = __INT_MAX__;
+    int maxpoints = 0; 
+    int j = 0;
     while(getline(infile,line)){
         istringstream iss(line);
         int points;
@@ -93,9 +90,23 @@ vector <class Curve*> *Reading::readCurves(string FileLocation){
             sscanf(buff.c_str(),"%lf)",&coord[i].second);
         }
         class Curve *curve = new class Curve(ID,coord,points);
-        inputTable->push_back(curve);
+        j++;
+        if (j>7400){
+            input.second->push_back(curve); //enter the queries
+        }
+        else{
+            input.first->push_back(curve); //enter the input curves
+        }
+
+        if (minpoints>points){
+            minpoints = points;
+        }
+        if(maxpoints<points){
+            maxpoints = points;
+        }
     }
     
-
-    return inputTable;
+    *minPoints = minpoints;
+    *maxPoints = maxpoints;
+    return input;
 }

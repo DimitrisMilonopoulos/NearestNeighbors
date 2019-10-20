@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     }
 
     string inputFile, queryFile, outputFile;
-    int k = -1, M = -1, probes = -1;
+    int k = 3, M = 10, probes = 2;
 
     string optionBuffer, parameterBuffer;
 
@@ -47,29 +47,9 @@ int main(int argc, char *argv[])
             outputFile = parameterBuffer;
     }
 
-    if (k == -1)
-        k = 3;
-    if (M == -1)
-        M = 10;
-    if (probes == -1)
-        probes = 2;
-
-    class Reading reader;
-    /////////////////////////////////////////////////////////////
-    ///////EXPERIMENTAL//////////////////////////////////////////
-    vector <class Curve*> * input = reader.readCurves("./Files/trajectories_dataset");
-    while(input->size()){
-        delete input->back();
-        input->pop_back();
-    }
-    delete input;
-    
-    return 1;
-
-
-    ////////////////////////////////////////////////////////////
     int w = 4500;
 
+    class Reading reader;
     int tableSize;
     vector<class Point *> *inputTable, *queryTable;
     inputTable = reader.readPoints(inputFile);

@@ -4,5 +4,5 @@
 #include <vector>
 using std::vector;
 
-double DTWDistance(vector<class Point*> *, vector<class Point*> *);
+double DTWDistance(class Curve *, class Curve *);
 #endif

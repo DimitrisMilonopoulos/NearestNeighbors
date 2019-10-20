@@ -37,6 +37,11 @@ double *Point::getCoord()
     return coordinates;
 }
 
+class Curve* Point::getCurvePtr()
+{
+    return curvePtr;
+}
+
 //temporary class will be merged into template later
 
 Curve::Curve(string givenID,pair <double,double>* coords, int size){
@@ -55,4 +60,8 @@ int Curve::getSize(){
 
 Curve::~Curve(){
     delete coordinates;
+}
+
+string Curve::getID(){
+    return ID;
 }

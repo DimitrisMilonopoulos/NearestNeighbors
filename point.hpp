@@ -20,6 +20,7 @@ class Curve{
     Curve(string,pair <double,double>*,int);
     pair <double,double>* getCoord();
     int getSize();
+    string getID();
 };
 
 
@@ -37,6 +38,8 @@ public:
     string getID();
     double *getCoord();
     int getSize();
+    class Curve* getCurvePtr();
+
 };
 
 

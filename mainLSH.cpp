@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     }
 
     string inputFile, queryFile, outputFile;
-    int k = -1, L = -1;
+    int k = 3, L = 5;
 
     string optionBuffer, parameterBuffer;
 
@@ -42,11 +42,6 @@ int main(int argc, char *argv[])
             outputFile = parameterBuffer;
     }
 
-    if (k == -1)
-        k = 3;
-    if (L == -1)
-        L = 5;
-
     int w = 4500;
 
     class Reading reader;
@@ -55,7 +50,7 @@ int main(int argc, char *argv[])
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
 
-    class LSH lshImplementation(k, L, w, inputTable);
+    class LSH<class Point*> lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
     double distance, tempAF, maxAF = 0.0,avgAF = 0.0;
     clock_t timeLSH, timeBrute;

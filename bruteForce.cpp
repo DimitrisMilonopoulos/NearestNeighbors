@@ -8,7 +8,7 @@
 
 using namespace std;
 
-pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Point * query)
+pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Point *query)
 {    
     size_t npoints = points->size();
     

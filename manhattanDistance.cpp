@@ -1,8 +1,9 @@
 #include <cmath>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 
 using namespace std;
+
 
 double manhattanDist(class Point *Point1, class Point *Point2)
 {
@@ -18,6 +19,7 @@ double manhattanDist(class Point *Point1, class Point *Point2)
     
     return distance;
 }
+
 
 double manhattanDist(pair <double, double> Point1,pair <double, double> Point2)
 {

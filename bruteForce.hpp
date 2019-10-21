@@ -4,7 +4,7 @@
 #include <vector>
 using std::vector;
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 
 using namespace std;
 

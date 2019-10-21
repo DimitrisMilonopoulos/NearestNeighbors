@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "manhattanDistance.hpp"
 #include "bruteForce.hpp"
 #include "dynamicTimeWarping.hpp"
@@ -36,6 +36,7 @@ pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Poin
     
     return nearestNeighbor;
 }
+
 
 int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 {
@@ -72,7 +73,8 @@ int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 }
 
 
-pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class Curve *query){    
+pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class Curve *query)
+{    
     size_t npoints = curves->size();
     
     pair<class Curve*, double>* nearestNeighbor = new pair<class Curve*, double>;

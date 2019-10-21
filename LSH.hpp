@@ -6,20 +6,6 @@ using std::vector;
 
 #include "hashTable.hpp"
 
-template <typename M>
-struct info;
-
-template<>
-struct info<class Curve* >{
-    int maxCurvePoints;
-    int delta;
-    double **displacement;
-    vector <class Point*> *points;
-};
-
-template<>
-struct info<class Point* >{};
-
 template<class T>
 class LSH
 {

@@ -3,7 +3,7 @@
 #include <ctime>
 #include <utility>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "fileReading.hpp"
 #include "bruteForce.hpp"
 #include "LSH.hpp"
@@ -75,7 +75,6 @@ int main(int argc, char *argv[])
 
     if(choice1 == "LSH" && choice2 == "LSH")
     {
-        cout << k << endl;
         class LSH<class Curve*> lshImplementation(k, L, w, inputTable, minPoints, maxPoints);
         class Curve *q, *b = NULL;
         double distance;

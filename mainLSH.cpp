@@ -3,7 +3,7 @@
 #include <ctime>
 #include <utility>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "fileReading.hpp"
 #include "bruteForce.hpp"
 #include "LSH.hpp"

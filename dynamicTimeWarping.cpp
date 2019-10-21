@@ -1,14 +1,15 @@
 #include <iostream>
 #include <string>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "fileReading.hpp"
 #include "manhattanDistance.hpp"
 #include "dynamicTimeWarping.hpp"
 
 using namespace std;
 
-double DTWDistance(class Curve *P, class Curve *Q){
+double DTWDistance(class Curve *P, class Curve *Q)
+{
 
     int length = P->getSize();
     int width = Q->getSize();
@@ -57,39 +58,3 @@ double DTWDistance(class Curve *P, class Curve *Q){
     
     return result;
 }
-
-// int main(){
-
-//     class Reading reader;
-//     int tableSize;
-//     vector<class Point *> *inputTable;
-//     inputTable = reader.readPoints("./input");
-
-//     int index = 0;
-//     vector<class Point*>* P = new vector<class Point*>[3];
-//     vector<class Point*>* Q = new vector<class Point*>[2];
-
-//     while(index < 5){
-//         cout << index<< endl;
-//         if(index < 3)
-//             P->push_back(inputTable->at(index));
-//         else
-//             Q->push_back(inputTable->at(index));
-//         index++;
-//     }
-
-//     double result = DTWDistance(P, Q);
-//     cout << result << endl;
-
-//     delete [] P;
-//     delete [] Q;
-
-//     while (!inputTable->empty())
-//     {
-//         delete inputTable->back();
-//         inputTable->pop_back();
-//     }
-//     delete (inputTable);
-
-//     return 0;
-// }

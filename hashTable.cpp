@@ -4,7 +4,7 @@
 #include <utility>
 #include <map>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "hashTable.hpp"
 
 using namespace std;
@@ -54,6 +54,7 @@ void HashTable< map<unsigned int, char> >::initialize(size_t size, int givenw, i
     }
 
 }
+
 
 template <class T>
 void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int givendim, int givenMaxPoints)
@@ -105,6 +106,7 @@ void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int gi
 
 }
 
+
 template <class T>
 HashTable<T>::HashTable(): generator((std::random_device())())
 {
@@ -123,6 +125,7 @@ HashTable< map<unsigned int, char> >::~HashTable()
     delete[] mArray;
 }
 
+
 template <class T>
 HashTable<T>::~HashTable()
 {
@@ -135,6 +138,7 @@ HashTable<T>::~HashTable()
     delete[] mArray;
 }
 
+
 template <>
 int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class Point *point)
 {
@@ -145,6 +149,7 @@ int HashTable<vector < pair <class Point*, unsigned int> > >::insertPoint(class 
 
     return 0;
 }
+
 
 template <>
 int HashTable< map<unsigned int, char> >::insertPoint(class Point *point)
@@ -167,11 +172,13 @@ int HashTable< map<unsigned int, char> >::insertPoint(class Point *point)
     }
 }
 
+
 template <class T>
 int HashTable<T>::insertPoint(class Point *point)
 {
     return 0;
 };
+
 
 template <class T>
 unsigned int HashTable<T>::amplifiedHashFunctionPoint(class Point *x)
@@ -187,6 +194,7 @@ unsigned int HashTable<T>::amplifiedHashFunctionPoint(class Point *x)
     }
     return result;
 }
+
 
 template <class T>
 unsigned int HashTable<T>::hashFunctionPoint(class Point *x, int functionNo)
@@ -223,6 +231,7 @@ unsigned int HashTable<T>::hashFunctionPoint(class Point *x, int functionNo)
     return result;
 }
 
+
 unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int modulus){
     if (modulus == 1)
         return 0;
@@ -239,6 +248,7 @@ unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int 
     }
     return c;
 }
+
 
 template class HashTable<vector < pair <class Point*, unsigned int> > >;
 template class HashTable< map<unsigned int, char> >;

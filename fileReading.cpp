@@ -3,7 +3,7 @@
 #include <sstream>
 #include <utility>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "fileReading.hpp"
 
 using namespace std;
@@ -60,7 +60,9 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
     return table;
 }
 
-pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints){
+
+pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints)
+{
     ifstream infile(FileLocation);
     string line;
     vector <class Curve*> *inputTable = new vector <class Curve*>;

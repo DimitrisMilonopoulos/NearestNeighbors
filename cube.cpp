@@ -2,7 +2,7 @@
 #include <limits>
 #include <bitset>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "manhattanDistance.hpp"
 #include "hashTable.hpp"
 #include "cube.hpp"
@@ -44,7 +44,9 @@ Cube::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vector<c
     }
 }
 
-unsigned int Cube::getAcme(class Point *point){
+
+unsigned int Cube::getAcme(class Point *point)
+{
 
     unsigned int acme = 0;
     unsigned int hashresult;
@@ -57,74 +59,36 @@ unsigned int Cube::getAcme(class Point *point){
     return acme;
 }
 
+
 Cube::~Cube()
 {
     delete[] hashTables;
     delete [] hyperCube;
 }
 
+
 int Cube::getk()
 {
     return k;
 }
+
 
 int Cube::getProbes()
 {
     return probes;
 }
 
+
 int Cube::getw()
 {
     return w;
 }
 
+
 int Cube::getMaxPoints()
 {
     return maxPoints;
 }
-
-// class Point *Cube::findNN(class Point *query, double *dist)
-// {
-//     class Point* p,* b = NULL;
-//     double manhattanD;
-//     double distance = numeric_limits<double>::max();
-//     int count;
-
-//     unsigned int acmeNo = getAcme(query);
-//     vector <class Point*> *acme;
-//     unsigned int mask = 1;
-
-//     for (int i = 0; i < probes; i++)
-//     {
-//         if (i==0)
-//             acme = &hyperCube[acmeNo];
-//         else{
-//             if (i>1)
-//                 mask = mask << 1;
-//             acme = &hyperCube[acmeNo ^ mask];       
-//         }
-
-//         count = 0;
-
-//         for (int j = 0; j < acme->size(); j++)
-//         {
-//             count++;
-//             if (count > maxPoints)
-//                 break;
-
-//             p = acme->at(j);
-//             manhattanD = manhattanDist(query, p);
-
-//             if (manhattanD < distance)
-//             {
-//                 b = p;
-//                 distance = manhattanD;
-//             }
-//         }
-//     }
-//     *dist = distance;
-//     return b;
-// }
 
 
 class Point *Cube::findNN(class Point *query, double *dist)
@@ -213,27 +177,7 @@ class Point *Cube::findNN(class Point *query, double *dist)
     return b;
     
 }
-//         count = 0;
 
-//         for (int j = 0; j < acme->size(); j++)
-//         {
-//             count++;
-//             if (count > maxPoints)
-//                 break;
-
-//             p = acme->at(j);
-//             manhattanD = manhattanDist(query, p);
-
-//             if (manhattanD < distance)
-//             {
-//                 b = p;
-//                 distance = manhattanD;
-//             }
-//         }
-//     }
-//     *dist = distance;
-//     return b;
-// }
 
 int Cube::searchAcme(vector <class Point*> * acme,class Point * query, int *count, double *distance, class Point**b){
     double manhattanD;

@@ -3,7 +3,7 @@
 #include <cstring>
 #include <cmath>
 
-#include "point.hpp"
+#include "dataStructs.hpp"
 #include "manhattanDistance.hpp"
 #include "dynamicTimeWarping.hpp"
 #include "hashTable.hpp"
@@ -12,41 +12,6 @@
 using namespace std;
 
 // Class used for the implementation of the LSH algorithm
-
-template<>
-class Point* LSH<class Curve* >::createVector(class Curve* curve,int hashtableNo){
-
-    //create the coord vector
-    double* coord = new double[info.maxCurvePoints];
-    memset(coord,0,info.maxCurvePoints*sizeof(double));
-    double temp1,temp2;
-    //snap the curves onto the grid
-    int pos = 0;
-    for (int i = 0; i < curve->getSize(); i++)
-    {
-        temp1 = round((curve->getCoord()[i].first-info.displacement[hashtableNo][0])/info.delta);
-        temp2 =round((curve->getCoord()[i].second-info.displacement[hashtableNo][1])/info.delta);
-        if (i>0){
-            if (coord[2*pos]!=temp1 ||coord[(2*pos)+1]!=temp2 ){
-                pos++;
-                coord[2*pos] = temp1;
-                coord[(2*pos)+1]= temp2;
-            }
-        }
-        else{
-            coord[2*i] = temp1;
-            coord[(2*i)+1]= temp2;
-        }
-        
-    }
-    class Point* newclassPoint = new class Point(curve->getID(),coord,info.maxCurvePoints,curve);
-    return newclassPoint;
-}
-
-template<class T>
-class Point* LSH<T>::createVector(class Curve*,int){
-    return NULL;
-}
 
 template <>
 LSH<class Curve*>::LSH(int k, int L, int w,  vector<class Curve*> *input, int minPoints, int maxPoints)
@@ -57,50 +22,8 @@ LSH<class Curve*>::LSH(int k, int L, int w,  vector<class Curve*> *input, int mi
     this->w = w;
 
     this->input = input;
-
-    info.delta = 8*minPoints;
-    info.maxCurvePoints = maxPoints*2;
-    info.displacement = new double*[L];
-
-    //initialize the tau vectors
-    for (int i = 0; i < L; i++)
-    {
-        info.displacement[i] = new double[2];
-    }
-
-    //create the tau vectors
-    random_device rd;
-    mt19937 generator(rd());
-    uniform_real_distribution<> dis(0.0, (double)w);
-    info.points = new vector<class Point*>[L];
-
-    unsigned int hashtableSize = input->size() / 8;
-    hashTables = new class HashTable<vector < pair <class Point*, unsigned int> > >[L];
-
-    for (int i = 0; i < L; i++)
-    {
-        hashTables[i].initialize(hashtableSize, w, this->k, info.maxCurvePoints, 0);
-
-        //initialize the vector points
-        for (int j = 0; j < 2; j++)
-        {
-            info.displacement[i][j] = dis(generator);
-        } 
-    }
-
-    //produce the new points for the hashtables
-    class Point* newpoint;
-    for (int i = 0; i < input->size(); i++)
-    {
-        for (int j = 0; j < L; j++)
-        {
-            newpoint = createVector(input->at(i),j);
-            info.points[j].push_back(newpoint); //add to vector for deletion
-            hashTables[j].insertPoint(newpoint); //insert to hashtable
-        }
-        
-    }
 }
+
 
 template <>
 LSH<class Point*>::LSH(int k, int L, int w, vector<class Point*> *input)
@@ -129,6 +52,7 @@ LSH<class Point*>::LSH(int k, int L, int w, vector<class Point*> *input)
     }
 }
 
+
 template <class T>
 LSH<T>::LSH(int k, int L, int w, vector<T> *input)
 {
@@ -139,8 +63,10 @@ LSH<T>::LSH(int k, int L, int w, vector<T> *input)
     this->input = input;
 }
 
+
 template<>
-LSH<class Curve*>::~LSH(){
+LSH<class Curve*>::~LSH()
+{
     delete[] hashTables;
 
     //delete taf
@@ -160,11 +86,13 @@ LSH<class Curve*>::~LSH(){
     
 
 }
+
 template <class T>
 LSH<T>::~LSH()
 {
     delete[] hashTables;
 }
+
 
 template <class T>
 int LSH<T>::getk()
@@ -172,17 +100,20 @@ int LSH<T>::getk()
     return k;
 }
 
+
 template <class T>
 int LSH<T>::getL()
 {
     return L;
 }
 
+
 template <class T>
 int LSH<T>::getw()
 {
     return w;
 }
+
 
 template <>
 class Point *LSH<class Point*>::approximateNN(class Point *query, double *dist)
@@ -222,6 +153,7 @@ class Point *LSH<class Point*>::approximateNN(class Point *query, double *dist)
     *dist = distance;
     return b;
 }
+
 
 template <>
 class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
@@ -263,6 +195,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
     *dist = distance;
     return b->getCurvePtr();
 }
+
 
 template <class T>
 T LSH<T>::approximateNN(T query, double *dist){}

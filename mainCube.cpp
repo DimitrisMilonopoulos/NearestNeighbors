@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 
     // bruteForce(inputTable, queryTable);
 
-    class Cube cubeImplementation(k, M, probes, w, inputTable);
+    class Cube<class Point*> cubeImplementation(k, M, probes, w, inputTable);
     class Point *q, *b = NULL;
     double distance, tempAF, maxAF = 0.0,avgAF=0.0;
     clock_t timeCube, timeBrute;

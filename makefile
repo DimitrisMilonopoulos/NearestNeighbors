@@ -7,8 +7,8 @@ OUT = cube lsh curve
 
 all: $(OUT)
 
-curve: mainCurve.o LSH.o cube.o $(OBJ)
-	$(CXX) -g mainCurve.o LSH.o cube.o $(OBJ) -std=c++14 -o curve
+curve: mainCurve.o gridCurve.o LSH.o cube.o $(OBJ)
+	$(CXX) -g mainCurve.o gridCurve.o LSH.o cube.o $(OBJ) -std=c++14 -o curve
 
 cube: mainCube.o cube.o $(OBJ)
 	$(CXX) -g mainCube.o cube.o $(OBJ) -std=c++14 -o cube
@@ -22,8 +22,11 @@ mainCube.o: mainCube.cpp cube.hpp $(DEPS)
 mainLSH.o: mainLSH.cpp LSH.hpp $(DEPS)
 	$(CXX) $(FLAGS) mainLSH.cpp -o mainLSH.o
 
-mainCurve.o: mainCurve.cpp LSH.hpp $(DEPS)
+mainCurve.o: mainCurve.cpp gridCurve.hpp LSH.hpp cube.hpp $(DEPS)
 	$(CXX) $(FLAGS) mainCurve.cpp -o mainCurve.o
+
+gridCurve.o: gridCurve.cpp gridCurve.hpp LSH.hpp cube.hpp dataStructs.hpp
+	$(CXX) $(FLAGS) gridCurve.cpp -o gridCurve.o
 
 LSH.o: LSH.cpp LSH.hpp hashTable.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) LSH.cpp -o LSH.o

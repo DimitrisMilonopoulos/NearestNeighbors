@@ -6,7 +6,9 @@
 #include "dataStructs.hpp"
 #include "fileReading.hpp"
 #include "bruteForce.hpp"
+#include "gridCurve.hpp"
 #include "LSH.hpp"
+#include "cube.hpp"
 
 using namespace std;
 
@@ -71,28 +73,30 @@ int main(int argc, char *argv[])
 
     double tempAF, maxAF = 0.0, avgAF = 0.0;
 
+    class Curve *q, *b = NULL;
+    double distance;
+    maxAF = 0.0;
+    avgAF = 0.0;
+    clock_t timeAlgorithm, timeBrute;
+
+    pair<class Curve*, double>* bruteNN;
+
     ////// Run algorithm based on the user's choices
 
     if(choice1 == "LSH" && choice2 == "LSH")
     {
-        class LSH<class Curve*> lshImplementation(k, L, w, inputTable, minPoints, maxPoints);
-        class Curve *q, *b = NULL;
-        double distance;
-        maxAF = 0.0;
-        avgAF = 0.0;
-        clock_t timeLSH, timeBrute;
-
-        pair<class Curve*, double>* bruteNN;
-
+        class gridCurve<class LSH<class Curve*> >* lshLsh = new class gridCurve<class LSH<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints);
+        lshLsh->initializeAlgorithm();
+        
         for (int i = 0; i < queryTable->size(); i++)
         {
             q = (queryTable->at(i));
             timeBrute = clock();
             bruteNN = bruteForceCurve(inputTable, q);
             timeBrute = clock() - timeBrute;
-            timeLSH = clock();
-            b = lshImplementation.approximateNN(q, &distance);
-            timeLSH = clock() - timeLSH;
+            timeAlgorithm = clock();
+            b = lshLsh->findNN(q, &distance);
+            timeAlgorithm = clock() - timeAlgorithm;
 
             tempAF = distance / bruteNN->second;
             avgAF +=tempAF;
@@ -101,17 +105,45 @@ int main(int argc, char *argv[])
 
             outfile << "Query Point: " << q->getID() << endl;
             if(b != NULL)
-                outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
+                outfile << "Nearest Neighbor LSH/LSH: " << b->getID() << endl << "Distance LSH/LSH: " << distance << endl;
             else
-                outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
+                outfile << "Nearest Neighbor LSH/LSH: None Found!" << endl << "Distance LSH/LSH: -" << endl;
             outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
-            outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+            outfile << "tLSH/LSH: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
             delete bruteNN;
         }
+        delete lshLsh;
     }
     else if(choice1 == "LSH" && choice2 == "Hypercube")
     {
+        class gridCurve<class Cube<class Curve*> >* lshCube = new class gridCurve<class Cube<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints);
+        lshCube->initializeAlgorithm();
 
+        for (int i = 0; i < queryTable->size(); i++)
+        {
+            q = (queryTable->at(i));
+            timeBrute = clock();
+            bruteNN = bruteForceCurve(inputTable, q);
+            timeBrute = clock() - timeBrute;
+            timeAlgorithm = clock();
+            b = lshCube->findNN(q, &distance);
+            timeAlgorithm = clock() - timeAlgorithm;
+
+            tempAF = distance / bruteNN->second;
+            avgAF +=tempAF;
+            if(tempAF > maxAF)
+                maxAF = tempAF;
+
+            outfile << "Query Point: " << q->getID() << endl;
+            if(b != NULL)
+                outfile << "Nearest Neighbor LSH/Hypercube: " << b->getID() << endl << "Distance LSH/Hypercube: " << distance << endl;
+            else
+                outfile << "Nearest Neighbor LSH/Hypercube: None Found!" << endl << "Distance LSH/Hypercube: -" << endl;
+            outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
+            outfile << "tLSH/Hypercube: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+            delete bruteNN;
+        }
+        delete lshCube;
     }
     else if(choice1 == "RandomProjection" && choice2 == "LSH")
     {

@@ -12,21 +12,8 @@
 using namespace std;
 
 // Class used for the implementation of the LSH algorithm
-
-template <>
-LSH<class Curve*>::LSH(int k, int L, int w,  vector<class Curve*> *input, int minPoints, int maxPoints)
-{
-    this->k = k;
-    cout << this->k << " " << k << endl;
-    this->L = L;
-    this->w = w;
-
-    this->input = input;
-}
-
-
-template <>
-LSH<class Point*>::LSH(int k, int L, int w, vector<class Point*> *input)
+template <class T>
+LSH<T>::LSH(int k, int L, int w, vector<class Point*> *input)
 {
     this->k = k;
     this->L = L;
@@ -53,38 +40,10 @@ LSH<class Point*>::LSH(int k, int L, int w, vector<class Point*> *input)
 }
 
 
-template <class T>
-LSH<T>::LSH(int k, int L, int w, vector<T> *input)
-{
-    this->k = k;
-    this->L = L;
-    this->w = w;
-
-    this->input = input;
-}
-
-
 template<>
 LSH<class Curve*>::~LSH()
 {
     delete[] hashTables;
-
-    //delete taf
-    for (int i = 0; i < L; i++)
-    {
-        delete info.displacement[i];
-        while (!input[i].empty())
-    {
-        delete input[i].back();
-        input[i].pop_back();
-    }
-    }
-    
-    delete (input);
-
-    delete []info.displacement;
-    
-
 }
 
 template <class T>
@@ -156,7 +115,7 @@ class Point *LSH<class Point*>::approximateNN(class Point *query, double *dist)
 
 
 template <>
-class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
+class Curve *LSH<class Curve*>::approximateNN(class Point *query, double *dist)
 {
     class Point *b = NULL;
     class Point *p = NULL;
@@ -168,8 +127,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
     for (int i = 0; i < L; i++)
     {
         unsigned int amplifiedResult = 0;
-        class Point* gridCurve = createVector(query, i);
-        neighbours = hashTables[i].getNeighbours(gridCurve, &amplifiedResult);
+        neighbours = hashTables[i].getNeighbours(query, &amplifiedResult);
         count = 0;
 
         for (int j = 0; j < neighbours.size(); j++)
@@ -181,7 +139,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
                     break;
 
                 p = neighbours.at(j).first;
-                dtwDist = DTWDistance(query, p->getCurvePtr());
+                dtwDist = DTWDistance(query->getCurvePtr(), p->getCurvePtr());
 
                 if (dtwDist < distance)
                 {
@@ -190,7 +148,6 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
                 }
             }
         }
-        delete gridCurve;
     }
     *dist = distance;
     return b->getCurvePtr();
@@ -198,7 +155,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Curve *query, double *dist)
 
 
 template <class T>
-T LSH<T>::approximateNN(T query, double *dist){}
+T LSH<T>::approximateNN(class Point* query, double *dist){}
 
 
 template class LSH<class Curve*>;

@@ -44,3 +44,5 @@ input
 cube
 curve
 curveResultsLSHGrid.txt
+curveLSHLSH.txt
+curveLSHCube.txt

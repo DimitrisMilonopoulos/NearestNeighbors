@@ -7,6 +7,7 @@ using std::vector;
 #include <map>
 using std::map;
 
+template <class T>
 class Cube{
     int k;
     int maxPoints;
@@ -21,10 +22,10 @@ class Cube{
     int getk();
     int getProbes();
     int getw();
-    unsigned int getAcme(class Point *);
+    unsigned int getVertex(class Point *);
     int getMaxPoints();
-    class Point *findNN(class Point *, double *);
-    int searchAcme(vector <class Point*> *,class Point* query, int*,double*,class Point**);
+    T findNN(class Point *, double *);
+    int searchVertex(vector <class Point*> *,class Point* query, int*,double*,class Point**);
 };
 
 #endif

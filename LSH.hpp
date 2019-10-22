@@ -12,19 +12,16 @@ class LSH
     int k;
     int w;
     int L;
-    vector<T> *input;
-    struct info<T> info;
+    vector<class Point*> *input;
     class HashTable< vector < pair < class Point*, unsigned int > > > *hashTables;
 
 public:
-    LSH(int, int, int, vector<T>*);
-    LSH(int,int, int, vector<T>*, int, int);
+    LSH(int, int, int, vector<class Point*>*);
     ~LSH();
     int getk();
     int getw();
     int getL();
-    T approximateNN(T , double *);
-    class Point *createVector(class Curve*,int);
+    T approximateNN(class Point* , double *);
 };
 
 #endif

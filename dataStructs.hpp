@@ -1,7 +1,6 @@
 #ifndef POINT_HPP
 #define POINT_HPP
 
-#include <iostream>
 #include <string>
 using std::string;
 #include <utility>
@@ -41,31 +40,5 @@ public:
     class Curve* getCurvePtr();
 
 };
-
-template <class T>
-class gridCurve
-{
-    vector<class Curve*>* curves;
-    vector<class Point*>* points;
-    int k;
-    int L;
-    int w;
-    int probes;
-    int maxCurvePoints;
-    int minCurvePoints;
-    int delta;
-    double **displacement;
-    T* algorithm;
-
-    public:
-    gridCurve(){};
-    ~gridCurve();
-    gridCurve(vector<class Curve*>*, int, int, int, int, int, int, string algorithm);
-    class Point* createVector(class Curve* curve,int hashtableNo);
-    pair <double,double>* getCoord();
-    int getSize();
-    string getID();
-};
-
 
 #endif

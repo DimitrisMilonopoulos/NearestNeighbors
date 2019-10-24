@@ -4,8 +4,8 @@
 
 #include "dataStructs.hpp"
 #include "metrics.hpp"
-#include "bruteForce.hpp"
 #include "dynamicTimeWarping.hpp"
+#include "bruteForce.hpp"
 
 using namespace std;
 

@@ -2,6 +2,7 @@
 #include <fstream>
 #include <ctime>
 #include <utility>
+#include <sstream>
 
 #include "dataStructs.hpp"
 #include "fileReading.hpp"
@@ -50,6 +51,8 @@ int main(int argc, char *argv[])
     inputTable = reader.readPoints(inputFile);
     queryTable = reader.readPoints(queryFile);
 
+    cout << inputTable->size() << " " << queryTable->size() << endl;
+
     class LSH<class Point*> lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
     double distance, tempAF, maxAF = 0.0,avgAF = 0.0;
@@ -59,18 +62,32 @@ int main(int argc, char *argv[])
     ofstream outfile;
     outfile.open(outputFile);
 
+    ifstream readBrute("brutePoints.txt");
+
+    string bruteNeighborID;
+    string line;
+    double bruteDist;
 
     for (int i = 0; i < queryTable->size(); i++)
     {
-        q = (queryTable->at(i));
-        timeBrute = clock();
-        bruteNN = bruteForce(inputTable, q);
-        timeBrute = clock() - timeBrute;
+        //read the output of the bruteforce file
+
+        if (getline(readBrute, line)){
+            istringstream buffer(line);
+            buffer >> bruteNeighborID >> bruteDist >> timeBrute;
+        }
+        else{
+            cout <<"ERROR reading bruteforce file!"<<endl;
+        }
+        ////////////////////////////////
+
+        q = queryTable->at(i);
+
         timeLSH = clock();
         b = lshImplementation.approximateNN(q, &distance);
         timeLSH = clock() - timeLSH;
 
-        tempAF = distance / bruteNN->second;
+        tempAF = distance / bruteDist;
         avgAF +=tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;
@@ -80,11 +97,36 @@ int main(int argc, char *argv[])
             outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
         else
             outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
-        outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
-        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
-        delete bruteNN;
-        
+        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
+        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;        
     }
+
+
+    // for (int i = 0; i < queryTable->size(); i++)
+    // {
+    //     q = (queryTable->at(i));
+    //     timeBrute = clock();
+    //     bruteNN = bruteForce(inputTable, q);
+    //     timeBrute = clock() - timeBrute;
+    //     timeLSH = clock();
+    //     b = lshImplementation.approximateNN(q, &distance);
+    //     timeLSH = clock() - timeLSH;
+
+    //     tempAF = distance / bruteNN->second;
+    //     avgAF +=tempAF;
+    //     if(tempAF > maxAF)
+    //         maxAF = tempAF;
+
+    //     outfile << "Query Point: " << q->getID() << endl;
+    //     if(b != NULL)
+    //         outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
+    //     else
+    //         outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
+    //     outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
+    //     outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+    //     delete bruteNN;
+        
+    // }
 
     cout << "MaxAF: "<< maxAF << endl;
     cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;

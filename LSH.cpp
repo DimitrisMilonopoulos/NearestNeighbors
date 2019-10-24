@@ -4,7 +4,7 @@
 #include <cmath>
 
 #include "dataStructs.hpp"
-#include "manhattanDistance.hpp"
+#include "metrics.hpp"
 #include "dynamicTimeWarping.hpp"
 #include "hashTable.hpp"
 #include "LSH.hpp"
@@ -119,7 +119,7 @@ class Curve *LSH<class Curve*>::approximateNN(class Point *query, double *dist)
 {
     class Point *b = NULL;
     class Point *p = NULL;
-    double dtwDist;
+    double dtwD;
     double distance = numeric_limits<double>::max();
     vector< pair <class Point *, unsigned int> > neighbours;
     int count;
@@ -139,12 +139,12 @@ class Curve *LSH<class Curve*>::approximateNN(class Point *query, double *dist)
                     break;
 
                 p = neighbours.at(j).first;
-                dtwDist = DTWDistance(query->getCurvePtr(), p->getCurvePtr());
+                dtwD = dtwDist(query->getCurvePtr(), p->getCurvePtr());
 
-                if (dtwDist < distance)
+                if (dtwD < distance)
                 {
                     b = p;
-                    distance = dtwDist;
+                    distance = dtwD;
                 }
             }
         }

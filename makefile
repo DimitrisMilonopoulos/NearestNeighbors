@@ -1,8 +1,8 @@
 CXX = g++
 FLAGS = -g -c -std=c++14
 #CFLAGS=-I
-DEPS = fileReading.hpp hashTable.hpp dataStructs.hpp manhattanDistance.hpp dynamicTimeWarping.hpp bruteForce.hpp
-OBJ = fileReading.o hashTable.o dataStructs.o manhattanDistance.o dynamicTimeWarping.o bruteForce.o
+DEPS = fileReading.hpp hashTable.hpp dataStructs.hpp metrics.hpp dynamicTimeWarping.hpp bruteForce.hpp
+OBJ = fileReading.o hashTable.o dataStructs.o metrics.o dynamicTimeWarping.o bruteForce.o
 OUT = cube lsh curve
 
 all: $(OUT)
@@ -34,7 +34,7 @@ LSH.o: LSH.cpp LSH.hpp hashTable.hpp dataStructs.hpp
 cube.o: cube.cpp cube.hpp hashTable.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) cube.cpp -o cube.o
 
-bruteForce.o: bruteForce.cpp bruteForce.hpp manhattanDistance.hpp dataStructs.hpp
+bruteForce.o: bruteForce.cpp bruteForce.hpp metrics.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) bruteForce.cpp -o bruteForce.o
 
 fileReading.o: fileReading.cpp fileReading.hpp dataStructs.hpp
@@ -43,10 +43,10 @@ fileReading.o: fileReading.cpp fileReading.hpp dataStructs.hpp
 hashTable.o: hashTable.cpp hashTable.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) hashTable.cpp -o hashTable.o
 
-manhattanDistance.o: manhattanDistance.cpp manhattanDistance.hpp dataStructs.hpp
-	$(CXX) $(FLAGS) manhattanDistance.cpp -o manhattanDistance.o
+metrics.o: metrics.cpp metrics.hpp dataStructs.hpp
+	$(CXX) $(FLAGS) metrics.cpp -o metrics.o
 
-dynamicTimeWarping.o: dynamicTimeWarping.cpp dynamicTimeWarping.hpp manhattanDistance.hpp dataStructs.hpp
+dynamicTimeWarping.o: dynamicTimeWarping.cpp dynamicTimeWarping.hpp metrics.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) dynamicTimeWarping.cpp -o dynamicTimeWarping.o
 
 dataStructs.o: dataStructs.cpp dataStructs.hpp

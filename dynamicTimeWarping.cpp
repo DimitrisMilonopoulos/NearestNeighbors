@@ -3,12 +3,12 @@
 
 #include "dataStructs.hpp"
 #include "fileReading.hpp"
-#include "manhattanDistance.hpp"
+#include "metrics.hpp"
 #include "dynamicTimeWarping.hpp"
 
 using namespace std;
 
-double DTWDistance(class Curve *P, class Curve *Q)
+double dtwDist(class Curve *P, class Curve *Q)
 {
 
     int length = P->getSize();
@@ -28,21 +28,21 @@ double DTWDistance(class Curve *P, class Curve *Q)
         for(int j = 0; j < width; j++)
         {
             if( i == 0 && j == 0){
-                C[i][j] = manhattanDist(P->getCoord()[i], Q->getCoord()[j]);
+                C[i][j] = euclideanDist(P->getCoord()[i], Q->getCoord()[j]);
             }
             else if(j > 0 && i == 0)
             {
-                C[i][j] = C[i][j-1] + manhattanDist(P->getCoord()[i], Q->getCoord()[j]);
+                C[i][j] = C[i][j-1] + euclideanDist(P->getCoord()[i], Q->getCoord()[j]);
             }
             else if(i > 0 && j == 0)
             {
-                C[i][j] = C[i-1][j] + manhattanDist(P->getCoord()[i], Q->getCoord()[j]);
+                C[i][j] = C[i-1][j] + euclideanDist(P->getCoord()[i], Q->getCoord()[j]);
 
             }
             else
             {
                 minimum = min(min(C[i-1][j], C[i-1][j-1]), C[i][j-1]);
-                C[i][j] = minimum + manhattanDist(P->getCoord()[i], Q->getCoord()[j]);
+                C[i][j] = minimum + euclideanDist(P->getCoord()[i], Q->getCoord()[j]);
                 minimum = 0.0;
             }
         }

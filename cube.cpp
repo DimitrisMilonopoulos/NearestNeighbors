@@ -3,7 +3,7 @@
 #include <bitset>
 
 #include "dataStructs.hpp"
-#include "manhattanDistance.hpp"
+#include "metrics.hpp"
 #include "dynamicTimeWarping.hpp"
 #include "hashTable.hpp"
 #include "cube.hpp"
@@ -111,7 +111,7 @@ int Cube<class Curve*>::searchVertex(vector <class Point*> * vertex,class Point 
                 return 1;
 
             p = vertex->at(j);
-            DTWDist = DTWDistance(query->getCurvePtr(), p->getCurvePtr());
+            DTWDist = dtwDist(query->getCurvePtr(), p->getCurvePtr());
 
             if (DTWDist < *distance)
             {

@@ -3,7 +3,7 @@
 #include <string>
 
 #include "dataStructs.hpp"
-#include "manhattanDistance.hpp"
+#include "metrics.hpp"
 #include "bruteForce.hpp"
 #include "dynamicTimeWarping.hpp"
 
@@ -80,7 +80,7 @@ pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class
     pair<class Curve*, double>* nearestNeighbor = new pair<class Curve*, double>;
 
     class Curve *closestCurve = curves->at(0);
-    double minDistance = DTWDistance(curves->at(0), query);
+    double minDistance = dtwDist(curves->at(0), query);
 
     class Curve* tempCurve;
     double tempDist;
@@ -88,7 +88,7 @@ pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class
     for (int i = 1; i < npoints; i++)
     {
         tempCurve = curves->at(i);
-        tempDist = DTWDistance(tempCurve, query);
+        tempDist = dtwDist(tempCurve, query);
         if (tempDist < minDistance)
         {
             minDistance = tempDist;

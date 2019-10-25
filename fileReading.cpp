@@ -61,7 +61,7 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
 }
 
 
-pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints)
+pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints, double * maxCoord)
 {
     ifstream infile(FileLocation);
     string line;
@@ -90,6 +90,14 @@ pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string F
             sscanf(buff.c_str(),"(%lf,",&coord[i].first);
             iss>>buff;
             sscanf(buff.c_str(),"%lf)",&coord[i].second);
+
+            if (coord[i].first>*maxCoord){
+                *maxCoord = coord[i].first;
+            }
+
+            if (coord[i].second>*maxCoord){
+                *maxCoord = coord[i].second;
+            }
         }
         class Curve *curve = new class Curve(ID,coord,points);
         j++;

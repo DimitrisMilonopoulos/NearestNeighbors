@@ -18,13 +18,14 @@ class gridCurve
     int maxCurvePoints;
     int minCurvePoints;
     int delta;
+    double maxCoord;
     double **displacement;
     T** algorithm;
 
     public:
     gridCurve(){};
     ~gridCurve();
-    gridCurve(vector<class Curve*>*, int, int, int, int, int, int);
+    gridCurve(vector<class Curve*>*, int, int, int, int, int, int,double);
     int initializeAlgorithm();
     class Point* createVector(class Curve*,int);
     class Curve* findNN(class Curve*, double*);

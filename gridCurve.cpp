@@ -1,6 +1,7 @@
 #include <string>
 #include <cmath>
 #include <random>
+#include <iostream>
 
 #include "dataStructs.hpp"
 #include "gridCurve.hpp"
@@ -11,7 +12,7 @@ using namespace std;
 ////// GRID CURVES //////
 
 template<class T>
-gridCurve<T>::gridCurve(vector<class Curve*>* curves, int k, int L, int w, int probes, int minCurvePoints, int maxCurvePoints)
+gridCurve<T>::gridCurve(vector<class Curve*>* curves, int k, int L, int w, int probes, int minCurvePoints, int maxCurvePoints,double maxCoord)
 {   
     this->curves = curves;
     this->k = k;
@@ -20,8 +21,11 @@ gridCurve<T>::gridCurve(vector<class Curve*>* curves, int k, int L, int w, int p
     this->probes = probes;
     this->minCurvePoints = minCurvePoints;
     this->maxCurvePoints = maxCurvePoints;
+    this->maxCoord = maxCoord;
 
-    this->delta = 8*minCurvePoints;   /// this needs to change
+    //this->delta = 8*minCurvePoints;   /// this needs to change
+    //temp change
+    this->delta = 0.0000663729;
     this->maxCurvePoints = maxCurvePoints*2;
 
     this->displacement = new double*[L];
@@ -78,7 +82,7 @@ int gridCurve<class Cube<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class Cube<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
-        this->algorithm[i] = new class Cube<class Curve*>(this->k, maxCurvePoints, this->probes, this->w, points[i]);
+        this->algorithm[i] = new class Cube<class Curve*>(this->k, 100, this->probes, this->w, points[i]);
     }
 
     return 0;
@@ -93,7 +97,9 @@ class Point* gridCurve<T>::gridCurve::createVector(class Curve* curve, int gridN
 
     //create the coord vector
     double* coord = new double[this->maxCurvePoints];
-    memset(coord,0,this->maxCurvePoints*sizeof(double));
+    for (int i = 0 ; i < this->maxCurvePoints;i++){
+        coord[i]= maxCoord;
+    }
     double temp1,temp2;
 
     //snap the curves onto the grid
@@ -130,6 +136,7 @@ class Curve* gridCurve<class LSH<class Curve*> >::findNN(class Curve* query, dou
     class Point* queryGridCurve;
     class Curve* temp, *neighbor = NULL;
     double minDistance = numeric_limits<double>::max();
+    cout <<"TRYING TO FIND"<<endl;
 
     for(int i = 0; i < L; i++)
     {
@@ -142,6 +149,27 @@ class Curve* gridCurve<class LSH<class Curve*> >::findNN(class Curve* query, dou
     }
     return neighbor;
 }
+
+template<>
+class Curve* gridCurve<class Cube<class Curve*> >::findNN(class Curve* query, double* dist)
+{
+    class Point* queryGridCurve;
+    class Curve* temp, *neighbor = NULL;
+    double minDistance = numeric_limits<double>::max();
+    cout <<"TRYING TO FIND"<<endl;
+
+    for(int i = 0; i < L; i++)
+    {
+        queryGridCurve = createVector(query, i);
+        temp = algorithm[i]->findNN(queryGridCurve, dist);
+        if(*dist < minDistance){
+            minDistance = *dist;
+            neighbor = temp;
+        }
+    }
+    return neighbor;
+}
+
 
 
 template<class T>

@@ -64,13 +64,17 @@ int main(int argc, char *argv[])
     vector<class Curve *> *inputTable, *queryTable;
     pair <vector<class Curve*>*, vector<class Curve*>*> tables;
 
-    tables = reader.readCurves(inputFile, &minPoints, &maxPoints);
+    double maxCoord = -10000000;
+
+    tables = reader.readCurves(inputFile, &minPoints, &maxPoints,&maxCoord);
+    cout << "MAXIMUM COORDINATES " << maxCoord<<endl;
     inputTable = tables.first;
     queryTable = tables.second;
 
     ofstream outfile;
-    outfile.open(outputFile);
 
+    outfile.open(outputFile);
+    outfile.precision(16);
     double tempAF, maxAF = 0.0, avgAF = 0.0;
 
     class Curve *q, *b = NULL;
@@ -83,9 +87,11 @@ int main(int argc, char *argv[])
 
     ////// Run algorithm based on the user's choices
 
+    cout << "You chose: " <<choice1<< " "<<choice2 <<endl;
+
     if(choice1 == "LSH" && choice2 == "LSH")
     {
-        class gridCurve<class LSH<class Curve*> >* lshLsh = new class gridCurve<class LSH<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints);
+        class gridCurve<class LSH<class Curve*> >* lshLsh = new class gridCurve<class LSH<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints,maxCoord);
         lshLsh->initializeAlgorithm();
         
         for (int i = 0; i < queryTable->size(); i++)
@@ -99,6 +105,8 @@ int main(int argc, char *argv[])
             timeAlgorithm = clock() - timeAlgorithm;
 
             tempAF = distance / bruteNN->second;
+            cout.precision(15);
+            cout <<tempAF<<endl;
             avgAF +=tempAF;
             if(tempAF > maxAF)
                 maxAF = tempAF;
@@ -116,7 +124,7 @@ int main(int argc, char *argv[])
     }
     else if(choice1 == "LSH" && choice2 == "Hypercube")
     {
-        class gridCurve<class Cube<class Curve*> >* lshCube = new class gridCurve<class Cube<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints);
+        class gridCurve<class Cube<class Curve*> >* lshCube = new class gridCurve<class Cube<class Curve*> >(inputTable, k, L, w, 30, minPoints, maxPoints,maxCoord);
         lshCube->initializeAlgorithm();
 
         for (int i = 0; i < queryTable->size(); i++)

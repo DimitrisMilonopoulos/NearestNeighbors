@@ -17,7 +17,7 @@ class gridCurve
     int probes;
     int maxCurvePoints;
     int minCurvePoints;
-    int delta;
+    double delta;
     double maxCoord;
     double **displacement;
     T** algorithm;

@@ -105,6 +105,22 @@ void HashTable<T>::initialize(size_t size, int givenw, int givenNumFunct, int gi
 }
 
 
+template<>
+void HashTable<vector < pair <class Point*, unsigned int> > >::printHashTable(){
+
+    for(int i = 0; i < bucketSize; i++){
+        cout << buckets[i].size() << " ";
+    }
+    cout << endl;
+}
+
+
+template<class T>
+void HashTable<T>::printHashTable(){
+}
+
+
+
 template <class T>
 HashTable<T>::HashTable(): generator((std::random_device())())
 {

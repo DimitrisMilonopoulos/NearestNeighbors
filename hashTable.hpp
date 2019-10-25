@@ -1,6 +1,8 @@
 #ifndef _HASHTABLE_
 #define _HASHTABLE_
 
+#include <iostream>
+
 #include <vector>
 using std::vector;
 #include <utility>
@@ -27,6 +29,7 @@ class HashTable
 public:
     HashTable();
     void initialize(size_t, int, int, int, int);
+    void printHashTable();
     ~HashTable();
 
     //hashfunction operations
@@ -37,6 +40,7 @@ public:
     T &getNeighbours(class Point *x, unsigned int* amplifiedResult)
     {
         *amplifiedResult = amplifiedHashFunctionPoint(x);
+        std::cout <<  "Point: " << x->getID() << " Bucket: " << *amplifiedResult % bucketSize << std::endl;
         return buckets[*amplifiedResult % bucketSize];
     }
     T getDigit(class Point* x, unsigned int* amplifiedResult)

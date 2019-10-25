@@ -36,15 +36,10 @@ LSH<T>::LSH(int k, int L, int w, vector<class Point*> *input)
         {
             hashTables[i].insertPoint(input->at(j));
         }
+        hashTables[i].printHashTable();
     }
 }
 
-
-template<>
-LSH<class Curve*>::~LSH()
-{
-    delete[] hashTables;
-}
 
 template <class T>
 LSH<T>::~LSH()
@@ -124,6 +119,9 @@ class Curve *LSH<class Curve*>::approximateNN(class Point *query, double *dist)
     vector< pair <class Point *, unsigned int> > neighbours;
     int count;
 
+    cout << "This is the curve: ";
+    cout << query->getCurvePtr()->getID() << endl;
+
     for (int i = 0; i < L; i++)
     {
         unsigned int amplifiedResult = 0;
@@ -149,8 +147,12 @@ class Curve *LSH<class Curve*>::approximateNN(class Point *query, double *dist)
             }
         }
     }
+
     *dist = distance;
-    return b->getCurvePtr();
+    if( b != NULL)
+        return b->getCurvePtr();
+    else
+        return NULL;
 }
 
 

@@ -1,0 +1,424 @@
+Query Point: 7400
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7397
+DistanceTrue: 0.1885406046411147
+tLSH/LSH: 0.001934999949298799
+tTrue: 19.19436836242676
+
+Query Point: 7401
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.1206621474810238
+tLSH/LSH: 0.001622000010684133
+tTrue: 16.39105033874512
+
+Query Point: 7402
+Nearest Neighbor LSH/LSH: 966
+Distance LSH/LSH: 0.002080978739785347
+True Neighbor: 966
+DistanceTrue: 4.999999999988347e-05
+tLSH/LSH: 0.002875000005587935
+tTrue: 0.2444580048322678
+
+Query Point: 7403
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.1146327571750514
+tLSH/LSH: 0.001446999958716333
+tTrue: 13.61952304840088
+
+Query Point: 7404
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.2298501021783489
+tLSH/LSH: 0.002454000059515238
+tTrue: 16.68038368225098
+
+Query Point: 7405
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7397
+DistanceTrue: 0.1600838204276613
+tLSH/LSH: 0.002075999975204468
+tTrue: 11.67815113067627
+
+Query Point: 7406
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.2049435368682179
+tLSH/LSH: 0.001371999969705939
+tTrue: 11.96024417877197
+
+Query Point: 7407
+Nearest Neighbor LSH/LSH: 966
+Distance LSH/LSH: 0.003633381478494584
+True Neighbor: 4015
+DistanceTrue: 0.0001118033988779066
+tLSH/LSH: 0.002186000114306808
+tTrue: 0.2515609860420227
+
+Query Point: 7408
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.1386860929304459
+tLSH/LSH: 0.002076999982818961
+tTrue: 19.09573554992676
+
+Query Point: 7409
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7398
+DistanceTrue: 0.1553141005928484
+tLSH/LSH: 0.002133999951183796
+tTrue: 13.3604097366333
+
+Query Point: 7410
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5618
+DistanceTrue: 1.109991237147669
+tLSH/LSH: 0.002330000046640635
+tTrue: 3.772517919540405
+
+Query Point: 7411
+Nearest Neighbor LSH/LSH: 115
+Distance LSH/LSH: 0.0003832753579357986
+True Neighbor: 2545
+DistanceTrue: 0.000180000000000291
+tLSH/LSH: 0.002508000005036592
+tTrue: 0.1448609977960587
+
+Query Point: 7412
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 7393
+DistanceTrue: 0.1707723111258878
+tLSH/LSH: 0.001555999973788857
+tTrue: 12.02737140655518
+
+Query Point: 7413
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1706
+DistanceTrue: 1.618474991965286
+tLSH/LSH: 0.002264000009745359
+tTrue: 7.284186840057373
+
+Query Point: 7414
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 6156
+DistanceTrue: 0.7179412438743987
+tLSH/LSH: 0.001225000014528632
+tTrue: 5.466601848602295
+
+Query Point: 7415
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.187905328377824
+tLSH/LSH: 0.001462999964132905
+tTrue: 5.061800003051758
+
+Query Point: 7416
+Nearest Neighbor LSH/LSH: 121
+Distance LSH/LSH: 0.040542024946865
+True Neighbor: 2766
+DistanceTrue: 0.01350783338010513
+tLSH/LSH: 0.002888000104576349
+tTrue: 0.2439800053834915
+
+Query Point: 7417
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 4847
+DistanceTrue: 1.238095768012712
+tLSH/LSH: 0.001569999963976443
+tTrue: 6.04784107208252
+
+Query Point: 7418
+Nearest Neighbor LSH/LSH: 2770
+Distance LSH/LSH: 0.1367006949506838
+True Neighbor: 2770
+DistanceTrue: 0
+tLSH/LSH: 0.002331000054255128
+tTrue: 0.246507003903389
+
+Query Point: 7419
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.72630997938713
+tLSH/LSH: 0.001334000029601157
+tTrue: 10.08586883544922
+
+Query Point: 7420
+Nearest Neighbor LSH/LSH: 4863
+Distance LSH/LSH: 0.1334236687128355
+True Neighbor: 4863
+DistanceTrue: 0.000624403065092068
+tLSH/LSH: 0.003747999900951982
+tTrue: 1.040860056877136
+
+Query Point: 7421
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.692377740740867
+tLSH/LSH: 0.001364000025205314
+tTrue: 10.43276309967041
+
+Query Point: 7422
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.567232404987398
+tLSH/LSH: 0.001480999984778464
+tTrue: 9.785263061523438
+
+Query Point: 7423
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.268863135065511
+tLSH/LSH: 0.002139999996870756
+tTrue: 6.572030067443848
+
+Query Point: 7424
+Nearest Neighbor LSH/LSH: 2267
+Distance LSH/LSH: 0.2477225738335198
+True Neighbor: 6873
+DistanceTrue: 0.01568837932116994
+tLSH/LSH: 0.003459000028669834
+tTrue: 0.635699987411499
+
+Query Point: 7425
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.526637865896609
+tLSH/LSH: 0.001812999951653183
+tTrue: 8.588536262512207
+
+Query Point: 7426
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.941249266561763
+tLSH/LSH: 0.002004999900236726
+tTrue: 11.81498527526855
+
+Query Point: 7427
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.76078563966428
+tLSH/LSH: 0.001312999986112118
+tTrue: 13.18192481994629
+
+Query Point: 7428
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 5227
+DistanceTrue: 1.525036491095077
+tLSH/LSH: 0.002053000032901764
+tTrue: 7.69676685333252
+
+Query Point: 7429
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1717
+DistanceTrue: 2.300473474379881
+tLSH/LSH: 0.001490999944508076
+tTrue: 17.39738845825195
+
+Query Point: 7430
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3730
+DistanceTrue: 1.695809100027338
+tLSH/LSH: 0.001551000052131712
+tTrue: 14.60397243499756
+
+Query Point: 7431
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3731
+DistanceTrue: 1.555923010255786
+tLSH/LSH: 0.001720999949611723
+tTrue: 15.12548923492432
+
+Query Point: 7432
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3721
+DistanceTrue: 1.65766361435009
+tLSH/LSH: 0.001813999959267676
+tTrue: 14.74279880523682
+
+Query Point: 7433
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1717
+DistanceTrue: 1.904019198463059
+tLSH/LSH: 0.002185000106692314
+tTrue: 11.90322589874268
+
+Query Point: 7434
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1717
+DistanceTrue: 1.675890105920006
+tLSH/LSH: 0.001358999987132847
+tTrue: 15.20090007781982
+
+Query Point: 7435
+Nearest Neighbor LSH/LSH: 3723
+Distance LSH/LSH: 0.09892070807742748
+True Neighbor: 3723
+DistanceTrue: 0.04110064447878083
+tLSH/LSH: 0.002786000026389956
+tTrue: 0.3479909896850586
+
+Query Point: 7436
+Nearest Neighbor LSH/LSH: 115
+Distance LSH/LSH: 0.0248228221602621
+True Neighbor: 4806
+DistanceTrue: 0.007943198348272378
+tLSH/LSH: 0.002068999921903014
+tTrue: 0.1479050070047379
+
+Query Point: 7437
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3730
+DistanceTrue: 2.260660838518185
+tLSH/LSH: 0.001872000051662326
+tTrue: 19.27778053283691
+
+Query Point: 7438
+Nearest Neighbor LSH/LSH: 1294
+Distance LSH/LSH: 0.03236961692698674
+True Neighbor: 4970
+DistanceTrue: 0.0003080584360110517
+tLSH/LSH: 0.002395000075921416
+tTrue: 0.1420329958200455
+
+Query Point: 7439
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3741
+DistanceTrue: 1.821187987448124
+tLSH/LSH: 0.001755999983288348
+tTrue: 21.61160087585449
+
+Query Point: 7440
+Nearest Neighbor LSH/LSH: 1328
+Distance LSH/LSH: 0.03114282581911942
+True Neighbor: 6871
+DistanceTrue: 9.999999999621423e-06
+tLSH/LSH: 0.001772999996319413
+tTrue: 0.1451929956674576
+
+Query Point: 7441
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1894
+DistanceTrue: 2.354129424693869
+tLSH/LSH: 0.002274000085890293
+tTrue: 21.12739562988281
+
+Query Point: 7442
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3730
+DistanceTrue: 2.054658875417768
+tLSH/LSH: 0.001352000050246716
+tTrue: 17.5173511505127
+
+Query Point: 7443
+Nearest Neighbor LSH/LSH: 1296
+Distance LSH/LSH: 0.09344298172257927
+True Neighbor: 353
+DistanceTrue: 0.008056576228515336
+tLSH/LSH: 0.003260999917984009
+tTrue: 0.344292014837265
+
+Query Point: 7444
+Nearest Neighbor LSH/LSH: 1310
+Distance LSH/LSH: 0.03151031577118744
+True Neighbor: 1310
+DistanceTrue: 0.0002236067977431026
+tLSH/LSH: 0.001781999948434532
+tTrue: 0.1467210054397583
+
+Query Point: 7445
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3731
+DistanceTrue: 0.9876844701956415
+tLSH/LSH: 0.00177800003439188
+tTrue: 7.06299877166748
+
+Query Point: 7446
+Nearest Neighbor LSH/LSH: 2912
+Distance LSH/LSH: 0.05945836862881702
+True Neighbor: 2912
+DistanceTrue: 2.00000000010192e-05
+tLSH/LSH: 0.001718000043183565
+tTrue: 0.2440200001001358
+
+Query Point: 7447
+Nearest Neighbor LSH/LSH: 281
+Distance LSH/LSH: 0.005134043240952105
+True Neighbor: 1345
+DistanceTrue: 0.003489140295262257
+tLSH/LSH: 0.00255300011485815
+tTrue: 0.1473450064659119
+
+Query Point: 7448
+Nearest Neighbor LSH/LSH: 281
+Distance LSH/LSH: 0.00449484148774935
+True Neighbor: 281
+DistanceTrue: 0.0009486832980519541
+tLSH/LSH: 0.00268299994058907
+tTrue: 0.1460379958152771
+
+Query Point: 7449
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1894
+DistanceTrue: 2.568091987512072
+tLSH/LSH: 0.00185500003863126
+tTrue: 21.2683162689209
+
+Query Point: 7450
+Nearest Neighbor LSH/LSH: 2912
+Distance LSH/LSH: 0.02970471343069978
+True Neighbor: 4973
+DistanceTrue: 1.999999999924285e-05
+tLSH/LSH: 0.002514000050723553
+tTrue: 0.1510819941759109
+
+Query Point: 7451
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 1894
+DistanceTrue: 2.182416748843909
+tLSH/LSH: 0.002292999997735023
+tTrue: 21.4206600189209
+
+Query Point: 7452
+Nearest Neighbor LSH/LSH: None Found!
+Distance LSH/LSH: -
+True Neighbor: 3730
+DistanceTrue: 1.753587662325647
+tLSH/LSH: 0.001876999973319471
+tTrue: 19.68258476257324
+

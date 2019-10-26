@@ -6,7 +6,9 @@
 #include "dataStructs.hpp"
 #include "gridCurve.hpp"
 #include "LSH.hpp"
+#include "metrics.hpp"
 #include "cube.hpp"
+#include "bruteForce.hpp"
 
 using namespace std;
 ////// GRID CURVES //////
@@ -26,10 +28,13 @@ gridCurve<T>::gridCurve(vector<class Curve*>* curves, int k, int L, int w, int p
     //this->delta = 8*minCurvePoints;   /// this needs to change
     //temp change
     //this->delta = 0.000663729;
-    this->delta = 0.000066;
+    this->delta = calculateDelta();
     this->maxCurvePoints = maxCurvePoints*2;
 
     this->displacement = new double*[L];
+
+    cout.precision(15);
+    cout <<  "DELTA VALUE IS ESTIMATED" << this->delta <<endl;
 
     //initialize the tau vectors
     for (int i = 0; i < L; i++)
@@ -73,6 +78,7 @@ int gridCurve<class LSH<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class LSH<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
+        this->w = 2*calculateW(points[i],5);
         this->algorithm[i] = new class LSH<class Curve*>(this->k, 1, this->w, points[i]);
     }
 
@@ -87,6 +93,7 @@ int gridCurve<class Cube<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class Cube<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
+        this->w = calculateW(points[i],12);
         this->algorithm[i] = new class Cube<class Curve*>(this->k, 100, this->probes, this->w, points[i]);
     }
 
@@ -141,7 +148,6 @@ class Point* gridCurve<T>::gridCurve::createVector(class Curve* curve, int gridN
     //     cout << gridCurve->getCoord()[i] << " ";
     // }
     // cout << endl;
-    cout << "Created Vector!" << endl;
     return gridCurve;
 }
 
@@ -217,5 +223,33 @@ gridCurve<T>::~gridCurve()
     cout << "Destructor Done!" << endl;
 }
 
+template<class T>
+double gridCurve<T>::calculateDelta(){
+    double curveAvg, totalAvg, tempDist;
+    int total = curves->size();
+
+    for (int i = 0; i < curves->size(); i++)
+    {
+        curveAvg = 0;
+        int size = curves->at(i)->getSize();
+        if(size  <2){
+            total--;
+            continue;
+
+        }
+        pair<double,double> * coords = curves->at(i)->getCoord();
+
+        for (int j = 1; j < size; j++)
+        {
+            curveAvg +=  euclideanDist(coords[j],coords[j-1]);
+        }
+        curveAvg /= (double)(size-1);
+        totalAvg+= curveAvg;
+    }
+    totalAvg /= (double)total;
+
+    return totalAvg;
+
+}
 template class gridCurve<class LSH<class Curve*> >;
 template class gridCurve<class Cube<class Curve*> >;

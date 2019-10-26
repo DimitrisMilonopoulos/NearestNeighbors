@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 
     ////// Initialize input and queries //////
 
-    int w = 20000;
+    int w = 38;
 
     class Reading reader;
     int tableSize;

@@ -29,6 +29,7 @@ class gridCurve
     int initializeAlgorithm();
     class Point* createVector(class Curve*,int);
     class Curve* findNN(class Curve*, double*);
+    double calculateDelta();
 };
 
 #endif

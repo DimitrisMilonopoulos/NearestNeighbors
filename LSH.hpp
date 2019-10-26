@@ -21,7 +21,8 @@ public:
     int getk();
     int getw();
     int getL();
-    T approximateNN(class Point* , double *);
+    T findNN(class Point* , double *);
+    vector<pair<class Point*, double> >* findRadiusNN(class Point*, double);
 };
 
 #endif

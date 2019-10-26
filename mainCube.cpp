@@ -2,6 +2,7 @@
 #include <fstream>
 #include <ctime>
 #include <utility>
+#include <sstream>
 
 #include "dataStructs.hpp"
 #include "fileReading.hpp"
@@ -15,7 +16,6 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-
     if (argc < 13)
     {
         cout << "Invalid Input!\n";
@@ -52,8 +52,11 @@ int main(int argc, char *argv[])
     class Reading reader;
     int tableSize;
     vector<class Point *> *inputTable, *queryTable;
-    inputTable = reader.readPoints(inputFile);
-    queryTable = reader.readPoints(queryFile);
+    pair<vector<class Point *> *, double> input = reader.readPoints(inputFile, 'i');
+    inputTable = input.first;
+    pair<vector<class Point *> *, double> queries = reader.readPoints(queryFile, 'q');
+    queryTable = queries.first;
+    double radius = queries.second;
 
     // bruteForce(inputTable, queryTable);
 
@@ -66,29 +69,86 @@ int main(int argc, char *argv[])
     ofstream outfile;
     outfile.open(outputFile);
 
+    ifstream readBrute("brutePoints.txt");
+
+    string bruteNeighborID;
+    string line;
+    double bruteDist;
+    vector<pair<class Point*, double> >* radiusNeighbors;
+
+
+    // for (int i = 0; i < queryTable->size(); i++)
+    // {
+    //     q = (queryTable->at(i));
+    //     timeBrute = clock();
+    //     bruteNN = bruteForce(inputTable, q);
+    //     timeBrute = clock() - timeBrute;
+    //     timeCube = clock();
+    //     b = cubeImplementation.findNN(q, &distance);
+    //     timeCube = clock() - timeCube;
+
+    //     tempAF = distance / bruteNN->second;
+    //     avgAF += tempAF;
+    //     if(tempAF > maxAF)
+    //         maxAF = tempAF;
+
+    //     outfile << "Query Point: " << q->getID() << endl;
+    //     if(b != NULL)
+    //         outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "DistanceCube: " << distance << endl;
+    //     else
+    //         outfile << "Nearest Neighbor Cube: None Found!" << endl << "DistanceCube: -" << endl;
+    //     outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
+    //     outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+    //     delete bruteNN;
+    // }
     for (int i = 0; i < queryTable->size(); i++)
     {
-        q = (queryTable->at(i));
-        timeBrute = clock();
-        bruteNN = bruteForce(inputTable, q);
-        timeBrute = clock() - timeBrute;
+        //read the output of the bruteforce file
+
+        if (getline(readBrute, line)){
+            istringstream buffer(line);
+            buffer >> bruteNeighborID >> bruteDist >> timeBrute;
+        }
+        else{
+            cout <<"ERROR reading bruteforce file!"<<endl;
+        }
+        ////////////////////////////////
+
+        q = queryTable->at(i);
+
         timeCube = clock();
         b = cubeImplementation.findNN(q, &distance);
         timeCube = clock() - timeCube;
 
-        tempAF = distance / bruteNN->second;
-        avgAF += tempAF;
+        radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);
+
+        tempAF = distance / bruteDist;
+        avgAF +=tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
         if(b != NULL)
-            outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "DistanceCube: " << distance << endl;
+            outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "Distance Cube: " << distance << endl;
         else
-            outfile << "Nearest Neighbor Cube: None Found!" << endl << "DistanceCube: -" << endl;
-        outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
-        outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
-        delete bruteNN;
+            outfile << "Nearest Neighbor Cube: None Found!" << endl << "Distance Cube: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
+        outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
+        outfile << "R-nearest neighbors:" << endl;
+
+        if(radiusNeighbors != NULL)
+        {
+            for(int i = 0; i < radiusNeighbors->size(); i++)
+            {
+                outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
+            }
+            outfile << endl;
+
+            radiusNeighbors->clear();
+            delete (radiusNeighbors);
+        }
+        else
+            outfile << "None Found!" << endl << endl;
     }
 
     cout << "MaxAF: " << maxAF << endl;

@@ -38,8 +38,10 @@ int main(int argc, char * argv[]){
 
     class Reading reader;
     vector<class Point *> *inputTable, *queryTable;
-    inputTable = reader.readPoints(inputFile);
-    queryTable = reader.readPoints(queryFile);
+    pair<vector<class Point *> *, double> input = reader.readPoints(inputFile, 'i');
+    inputTable = input.first;
+    pair<vector<class Point *> *, double> queries = reader.readPoints(queryFile, 'q');
+    queryTable = queries.first;
 
 /////////calculate the nearest neighbors with brute force////////////////////
     brute.open(outputFile);

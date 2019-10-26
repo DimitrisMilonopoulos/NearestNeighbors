@@ -104,26 +104,28 @@ int Cube<class Curve*>::searchVertex(vector <class Point*> * vertex,class Point 
     
     double DTWDist;
     class Point* p;
+
     for (int j = 0; j < vertex->size(); j++)
+    {
+        *count = *count + 1;
+        if (*count > maxPoints)
+            return 1;
+
+        p = vertex->at(j);
+        DTWDist = dtwDist(query->getCurvePtr(), p->getCurvePtr());
+
+        if (DTWDist < *distance)
         {
-            *count = *count + 1;
-            if (*count > maxPoints)
-                return 1;
-
-            p = vertex->at(j);
-            DTWDist = dtwDist(query->getCurvePtr(), p->getCurvePtr());
-
-            if (DTWDist < *distance)
-            {
-                *b = p;
-                *distance = DTWDist;
-            }
+            *b = p;
+            *distance = DTWDist;
         }
+    }
         return 0;
 }
 
 template<class T>
 int Cube<T>::searchVertex(vector <class Point*> * vertex,class Point * query, int *count, double *distance, class Point**b){
+    
     double manhattanD;
     class Point* p;
     for (int j = 0; j < vertex->size(); j++)
@@ -143,7 +145,6 @@ int Cube<T>::searchVertex(vector <class Point*> * vertex,class Point * query, in
         }
         return 0;
 }
-
 
 
 template<>
@@ -255,9 +256,12 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
     
     for (int i = 0; i < probeCounter; i++)
     {
-        if (i==0){
+        if (i==0)
+        {
             vertex = &hyperCube[vertexNo];
-            if(searchVertex(vertex,query,&count,&distance,&b)){
+            
+            if(searchVertex(vertex,query,&count,&distance,&b))
+            {
                 neighborPos1->clear();
                 delete neighborPos1;
                 *dist = distance;
@@ -284,18 +288,23 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
     probeCounter = 1;
     int canProduce;
     int newPos;
+
     for (int i = 0; i < k-1; i++)
     {
         neighborPos2 =  new vector< pair<unsigned int, unsigned int> >;
-        for (int j = 0 ; j <neighborPos1->size();j++){
+
+        for (int j = 0 ; j <neighborPos1->size();j++)
+        {
             //try to produce the neighbors with hamming distance bigger by one
             canProduce = neighborPos1->at(j).second;
             mask = 1;
             mask = mask << (canProduce-1);
-            for (int k = 0; k <canProduce; k++ ){
+            for (int k = 0; k <canProduce; k++ )
+            {
                 pos = neighborPos1->at(j).first ^ mask;
                 newPos = canProduce - k-1;
-                if(searchVertex(vertex,query,&count,&distance,&b) || (probeCounter == probes)){
+                if(searchVertex(vertex,query,&count,&distance,&b) || (probeCounter == probes))
+                {
                     neighborPos1->clear();
                     delete neighborPos1;
                     neighborPos2->clear();
@@ -322,6 +331,53 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
 
 template<class T>
 T Cube<T>::findNN(class Point *query, double* dist)
+{
+    return NULL;
+}
+
+
+template<>
+vector<pair<class Point*, double> >* Cube<class Point*>::findRadiusNN(class Point* query, double radius)
+{
+    double manhattanD;
+    class Point* p;
+
+    vector<pair<class Point*, double> >* radiusNeighbors = new vector<pair<class Point*, double> >;
+
+    unsigned int vertexNo = getVertex(query);
+    vector<class Point*>* vertex = &hyperCube[vertexNo];
+
+    int count = 0;
+
+    for (int j = 0; j < vertex->size(); j++)
+    {
+        count++;
+        if (count > maxPoints)
+            break;
+
+        p = vertex->at(j);
+        manhattanD = manhattanDist(query, p);
+
+        if (manhattanD < radius)
+        {
+            pair<class Point*, double> neighbor;
+            neighbor.first = p;
+            neighbor.second = manhattanD;
+            radiusNeighbors->push_back(neighbor);
+        }
+    }
+    
+    if(!radiusNeighbors->empty())
+        return radiusNeighbors;
+    else{
+        delete radiusNeighbors;
+        return NULL;
+    }
+}
+
+
+template<class T>
+vector<pair<class Point*, double> >* Cube<T>::findRadiusNN(class Point* query, double radius)
 {
     return NULL;
 }

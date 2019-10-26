@@ -10,7 +10,7 @@ using namespace std;
 
 //Class used to read the input files
 
-vector<class Point *> *Reading::readPoints(string FileLocation)
+pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, char identifier)
 {
     ifstream infile(FileLocation);
     string line;
@@ -19,6 +19,10 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
     int columns = 0;
     int x;
     ifstream file(FileLocation);
+
+    if(identifier == 'q')
+        getline(file, line);
+
     if (getline(file, line))
     {
         count++;
@@ -32,22 +36,40 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
     }
     while (getline(file, line))
         count++;
-
+ 
     cout << "Number of lines in file: " << count << endl;
     cout << "Number of dimensions per point: " << columns << endl;
 
     //construct the table of Points
     vector<class Point *> *table = new vector<class Point *>;
     table->reserve(count);
+
     int j = 0;
+    string name;
+    string buff;
+    double radius = -1.0;
+    double *coord;
+
+    if(identifier == 'q'){
+        getline(infile, line);
+        istringstream iss(line);
+
+        iss >> name;
+
+        if(name == "Radius:"){
+            iss >> radius;
+        }    
+    }
+
     while (getline(infile, line))
     {
         istringstream iss(line);
+
         //get the name
-        string name;
-        string buff;
-        double *coord = new double[columns];
         iss >> name;
+        
+        coord = new double[columns];
+
         for (int i = 0; i < columns; i++)
         {
             iss >> coord[i];
@@ -57,7 +79,11 @@ vector<class Point *> *Reading::readPoints(string FileLocation)
         j++;
     }
 
-    return table;
+    pair<vector<class Point *>*, double> PAIR;
+    PAIR.first = table;
+    PAIR.second = radius;
+
+    return PAIR;
 }
 
 

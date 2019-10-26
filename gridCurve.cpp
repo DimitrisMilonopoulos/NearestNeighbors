@@ -161,7 +161,7 @@ class Curve* gridCurve<class LSH<class Curve*> >::findNN(class Curve* query, dou
     for(int i = 0; i < L; i++)
     {
         queryGridCurve = createVector(query, i);
-        temp = algorithm[i]->approximateNN(queryGridCurve, dist);
+        temp = algorithm[i]->findNN(queryGridCurve, dist);
         if(temp == NULL)
             continue;
         if(*dist < minDistance){

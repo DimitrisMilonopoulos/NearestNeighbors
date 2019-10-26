@@ -48,10 +48,11 @@ int main(int argc, char *argv[])
     class Reading reader;
     int tableSize;
     vector<class Point *> *inputTable, *queryTable;
-    inputTable = reader.readPoints(inputFile);
-    queryTable = reader.readPoints(queryFile);
-
-    cout << inputTable->size() << " " << queryTable->size() << endl;
+    pair<vector<class Point *> *, double> input = reader.readPoints(inputFile, 'i');
+    inputTable = input.first;
+    pair<vector<class Point *> *, double> queries = reader.readPoints(queryFile, 'q');
+    queryTable = queries.first;
+    double radius = queries.second;
 
     class LSH<class Point*> lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
@@ -67,6 +68,7 @@ int main(int argc, char *argv[])
     string bruteNeighborID;
     string line;
     double bruteDist;
+    vector<pair<class Point*, double> >* radiusNeighbors;
 
     for (int i = 0; i < queryTable->size(); i++)
     {
@@ -84,8 +86,10 @@ int main(int argc, char *argv[])
         q = queryTable->at(i);
 
         timeLSH = clock();
-        b = lshImplementation.approximateNN(q, &distance);
+        b = lshImplementation.findNN(q, &distance);
         timeLSH = clock() - timeLSH;
+
+        radiusNeighbors = lshImplementation.findRadiusNN(q, radius);
 
         tempAF = distance / bruteDist;
         avgAF +=tempAF;
@@ -98,7 +102,20 @@ int main(int argc, char *argv[])
         else
             outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
         outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
-        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;        
+        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
+        outfile << "R-nearest neighbors:" << endl;
+
+        if(radiusNeighbors != NULL){
+            for(int i = 0; i < radiusNeighbors->size(); i++){
+                outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
+            }
+            outfile << endl;
+
+            radiusNeighbors->clear();
+            delete (radiusNeighbors);
+        }
+        else
+            outfile << "None Found!" << endl << endl;
     }
 
 

@@ -112,6 +112,8 @@ int main(int argc, char *argv[])
         timeAlgorithm = clock() - timeAlgorithm;
 
         tempAF = distance / bruteDist;
+        if (distance==0 || bruteDist ==0)
+            tempAF = 1;
         avgAF +=tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;

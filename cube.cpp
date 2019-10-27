@@ -160,17 +160,29 @@ class Point *Cube<class Point*>::findNN(class Point *query, double *dist)
     count = 0;
     vector <pair<unsigned int, unsigned int> > *neighborPos1,*neighborPos2;
     neighborPos1 =  new vector< pair<unsigned int, unsigned int> >;
-    if (probes > k){
-        probeCounter = k;
-    }
-    else{
-        probeCounter = probes;
-    }
     
-    for (int i = 0; i < probeCounter; i++)
+    probeCounter = 0;
+    
+    for (int i = 0; i < k; i++)
     {
+
+        //check for probes
+        if(probeCounter == probes){
+                neighborPos1->clear();
+                delete neighborPos1;
+                *dist = distance;
+                return b;
+
+            }
+
         if (i==0){
             vertex = &hyperCube[vertexNo];
+            if(vertex->size()==0)
+            {
+                continue;
+
+            }
+            probeCounter++;
             if(searchVertex(vertex,query,&count,&distance,&b)){
                 neighborPos1->clear();
                 delete neighborPos1;
@@ -184,6 +196,13 @@ class Point *Cube<class Point*>::findNN(class Point *query, double *dist)
                 mask = mask << 1;
             pos = vertexNo ^ mask;
             vertex = &hyperCube[pos]; 
+            neighborPos1->push_back(make_pair(pos,i));
+            if(vertex->size()==0)
+            {
+                continue;
+
+            }
+            probeCounter++;
             if(searchVertex(vertex,query,&count,&distance,&b)){
                 neighborPos1->clear();
                 delete neighborPos1;
@@ -191,17 +210,23 @@ class Point *Cube<class Point*>::findNN(class Point *query, double *dist)
                 return b;
 
             }
-        neighborPos1->push_back(make_pair(pos,i));
         }
 
     }
-    probeCounter = 1;
     int canProduce;
     int newPos;
     for (int i = 0; i < k-1; i++)
     {
         neighborPos2 =  new vector< pair<unsigned int, unsigned int> >;
         for (int j = 0 ; j <neighborPos1->size();j++){
+            if (probeCounter == probes){
+                neighborPos1->clear();
+                    delete neighborPos1;
+                    neighborPos2->clear();
+                    delete neighborPos2;
+                    *dist = distance;
+                    return b;
+            }
             //try to produce the neighbors with hamming distance bigger by one
             canProduce = neighborPos1->at(j).second;
             mask = 1;
@@ -209,7 +234,7 @@ class Point *Cube<class Point*>::findNN(class Point *query, double *dist)
             for (int k = 0; k <canProduce; k++ ){
                 pos = neighborPos1->at(j).first ^ mask;
                 newPos = canProduce - k-1;
-                if(searchVertex(vertex,query,&count,&distance,&b) || (probeCounter == probes)){
+                if(searchVertex(vertex,query,&count,&distance,&b)){
                     neighborPos1->clear();
                     delete neighborPos1;
                     neighborPos2->clear();
@@ -219,6 +244,10 @@ class Point *Cube<class Point*>::findNN(class Point *query, double *dist)
                 }
                 neighborPos2->push_back(make_pair(pos,newPos));
                 mask = mask >> 1;
+                if(vertex->size()==0)
+                {
+                continue;
+                }
                 probeCounter++;
             }
             
@@ -248,32 +277,28 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
     vector <pair<unsigned int, unsigned int> > *neighborPos1,*neighborPos2;
     neighborPos1 =  new vector< pair<unsigned int, unsigned int> >;
     
-    if (probes > k){
-        probeCounter = k;
-    }
-    else{
-        probeCounter = probes;
-    }
+    probeCounter = 0;
     
-    for (int i = 0; i < probeCounter; i++)
+    for (int i = 0; i < k; i++)
     {
-        if (i==0)
-        {
-            vertex = &hyperCube[vertexNo];
-            
-            if(searchVertex(vertex,query,&count,&distance,&b))
-            {
+
+        //check for probes
+        if(probeCounter == probes){
                 neighborPos1->clear();
                 delete neighborPos1;
                 *dist = distance;
                 return b->getCurvePtr();
+
             }
-        }
-        else{
-            if (i>1)
-                mask = mask << 1;
-            pos = vertexNo ^ mask;
-            vertex = &hyperCube[pos]; 
+
+        if (i==0){
+            vertex = &hyperCube[vertexNo];
+            if(vertex->size()==0)
+            {
+                continue;
+
+            }
+            probeCounter++;
             if(searchVertex(vertex,query,&count,&distance,&b)){
                 neighborPos1->clear();
                 delete neighborPos1;
@@ -281,30 +306,51 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
                 return b->getCurvePtr();
 
             }
-        neighborPos1->push_back(make_pair(pos,i));
+        }
+        else{
+            if (i>1)
+                mask = mask << 1;
+            pos = vertexNo ^ mask;
+            vertex = &hyperCube[pos]; 
+            neighborPos1->push_back(make_pair(pos,i));
+            if(vertex->size()==0)
+            {
+                continue;
+
+            }
+            probeCounter++;
+            if(searchVertex(vertex,query,&count,&distance,&b)){
+                neighborPos1->clear();
+                delete neighborPos1;
+                *dist = distance;
+                return b->getCurvePtr();
+
+            }
         }
 
     }
-    probeCounter = 1;
     int canProduce;
     int newPos;
-
     for (int i = 0; i < k-1; i++)
     {
         neighborPos2 =  new vector< pair<unsigned int, unsigned int> >;
-
-        for (int j = 0 ; j <neighborPos1->size();j++)
-        {
+        for (int j = 0 ; j <neighborPos1->size();j++){
+            if (probeCounter == probes){
+                neighborPos1->clear();
+                    delete neighborPos1;
+                    neighborPos2->clear();
+                    delete neighborPos2;
+                    *dist = distance;
+                    return b->getCurvePtr();
+            }
             //try to produce the neighbors with hamming distance bigger by one
             canProduce = neighborPos1->at(j).second;
             mask = 1;
             mask = mask << (canProduce-1);
-            for (int k = 0; k <canProduce; k++ )
-            {
+            for (int k = 0; k <canProduce; k++ ){
                 pos = neighborPos1->at(j).first ^ mask;
                 newPos = canProduce - k-1;
-                if(searchVertex(vertex,query,&count,&distance,&b) || (probeCounter == probes))
-                {
+                if(searchVertex(vertex,query,&count,&distance,&b)){
                     neighborPos1->clear();
                     delete neighborPos1;
                     neighborPos2->clear();
@@ -314,6 +360,10 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
                 }
                 neighborPos2->push_back(make_pair(pos,newPos));
                 mask = mask >> 1;
+                if(vertex->size()==0)
+                {
+                continue;
+                }
                 probeCounter++;
             }
             
@@ -327,6 +377,7 @@ class Curve *Cube<class Curve*>::findNN(class Point *query, double *dist)
     *dist = distance;
     return b->getCurvePtr(); 
 }
+
 
 
 template<class T>

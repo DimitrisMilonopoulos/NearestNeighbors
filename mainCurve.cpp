@@ -115,6 +115,8 @@ int main(int argc, char *argv[])
 
 
         tempAF = distance / bruteDist;
+        if (distance==0 || bruteDist ==0)
+            tempAF = 1;
         cout.precision(15);
         cout <<tempAF<<endl;
         avgAF +=tempAF;

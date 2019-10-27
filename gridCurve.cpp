@@ -76,7 +76,7 @@ int gridCurve<class LSH<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class LSH<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
-        this->w = 10*calculateW(points[i],2);
+        this->w = 6*calculateW(points[i],2);
         this->algorithm[i] = new class LSH<class Curve*>(this->k, 1, this->w, points[i]);
     }
 

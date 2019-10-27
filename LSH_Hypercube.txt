@@ -1,0 +1,696 @@
+Query Point: 7400
+Nearest Neighbor LSH/Hypercube: 680
+Distance LSH/Hypercube: 1.365277366851035
+True Neighbor: 7397
+DistanceTrue: 0.188541
+tLSH/Hypercube: 1.212748050689697
+tTrue: 14.05745601654053
+
+Query Point: 7401
+Nearest Neighbor LSH/Hypercube: 978
+Distance LSH/Hypercube: 1.141593243720222
+True Neighbor: 7398
+DistanceTrue: 0.120662
+tLSH/Hypercube: 1.061776995658875
+tTrue: 11.76841735839844
+
+Query Point: 7402
+Nearest Neighbor LSH/Hypercube: 115
+Distance LSH/Hypercube: 0.001879963505482128
+True Neighbor: 966
+DistanceTrue: 5e-05
+tLSH/Hypercube: 0.00623599998652935
+tTrue: 0.189861997961998
+
+Query Point: 7403
+Nearest Neighbor LSH/Hypercube: 978
+Distance LSH/Hypercube: 1.016898465594663
+True Neighbor: 7398
+DistanceTrue: 0.114633
+tLSH/Hypercube: 0.6689599752426147
+tTrue: 9.73396110534668
+
+Query Point: 7404
+Nearest Neighbor LSH/Hypercube: 680
+Distance LSH/Hypercube: 1.20690461188476
+True Neighbor: 7398
+DistanceTrue: 0.22985
+tLSH/Hypercube: 0.9854050278663635
+tTrue: 11.82692432403564
+
+Query Point: 7405
+Nearest Neighbor LSH/Hypercube: 680
+Distance LSH/Hypercube: 1.586172183108304
+True Neighbor: 7397
+DistanceTrue: 0.160084
+tLSH/Hypercube: 0.7847489714622498
+tTrue: 8.311534881591797
+
+Query Point: 7406
+Nearest Neighbor LSH/Hypercube: 962
+Distance LSH/Hypercube: 3.779905632715762
+True Neighbor: 7398
+DistanceTrue: 0.204944
+tLSH/Hypercube: 0.5192790031433105
+tTrue: 8.561452865600586
+
+Query Point: 7407
+Nearest Neighbor LSH/Hypercube: 115
+Distance LSH/Hypercube: 0.003492294383815447
+True Neighbor: 4015
+DistanceTrue: 0.000111803
+tLSH/Hypercube: 0.006132999900728464
+tTrue: 0.1904300004243851
+
+Query Point: 7408
+Nearest Neighbor LSH/Hypercube: 972
+Distance LSH/Hypercube: 1.844177845423009
+True Neighbor: 7398
+DistanceTrue: 0.138686
+tLSH/Hypercube: 0.9594519734382629
+tTrue: 13.75344371795654
+
+Query Point: 7409
+Nearest Neighbor LSH/Hypercube: 982
+Distance LSH/Hypercube: 1.843596508889313
+True Neighbor: 7398
+DistanceTrue: 0.155314
+tLSH/Hypercube: 0.5488839745521545
+tTrue: 9.693399429321289
+
+Query Point: 7410
+Nearest Neighbor LSH/Hypercube: 880
+Distance LSH/Hypercube: 5.171603508632221
+True Neighbor: 5618
+DistanceTrue: 1.10999
+tLSH/Hypercube: 0.2469410002231598
+tTrue: 2.75689697265625
+
+Query Point: 7411
+Nearest Neighbor LSH/Hypercube: 115
+Distance LSH/Hypercube: 0.0003832753579357986
+True Neighbor: 2545
+DistanceTrue: 0.00018
+tLSH/Hypercube: 0.004738000221550465
+tTrue: 0.1248200014233589
+
+Query Point: 7412
+Nearest Neighbor LSH/Hypercube: 680
+Distance LSH/Hypercube: 9.469428592597543
+True Neighbor: 7393
+DistanceTrue: 0.170772
+tLSH/Hypercube: 0.701587975025177
+tTrue: 8.657493591308594
+
+Query Point: 7413
+Nearest Neighbor LSH/Hypercube: 1721
+Distance LSH/Hypercube: 4.201817884863353
+True Neighbor: 1706
+DistanceTrue: 1.61847
+tLSH/Hypercube: 0.4447570145130157
+tTrue: 5.244791984558105
+
+Query Point: 7414
+Nearest Neighbor LSH/Hypercube: 1706
+Distance LSH/Hypercube: 0.8248774906822183
+True Neighbor: 6156
+DistanceTrue: 0.7179410000000001
+tLSH/Hypercube: 0.355230987071991
+tTrue: 4.040801048278809
+
+Query Point: 7415
+Nearest Neighbor LSH/Hypercube: 100
+Distance LSH/Hypercube: 3.580733381531746
+True Neighbor: 5227
+DistanceTrue: 1.18791
+tLSH/Hypercube: 0.3267000019550323
+tTrue: 3.719966888427734
+
+Query Point: 7416
+Nearest Neighbor LSH/Hypercube: 121
+Distance LSH/Hypercube: 0.0511051307605576
+True Neighbor: 2766
+DistanceTrue: 0.0135078
+tLSH/Hypercube: 0.009937000460922718
+tTrue: 0.191309005022049
+
+Query Point: 7417
+Nearest Neighbor LSH/Hypercube: 338
+Distance LSH/Hypercube: 1.516160626959299
+True Neighbor: 4847
+DistanceTrue: 1.2381
+tLSH/Hypercube: 0.3237929940223694
+tTrue: 4.355105876922607
+
+Query Point: 7418
+Nearest Neighbor LSH/Hypercube: 355
+Distance LSH/Hypercube: 0.0007858753081786089
+True Neighbor: 2770
+DistanceTrue: 0
+tLSH/Hypercube: 0.00761799979954958
+tTrue: 0.1983039975166321
+
+Query Point: 7419
+Nearest Neighbor LSH/Hypercube: 338
+Distance LSH/Hypercube: 3.098276256010537
+True Neighbor: 5227
+DistanceTrue: 1.72631
+tLSH/Hypercube: 0.545229971408844
+tTrue: 7.322494029998779
+
+Query Point: 7420
+Nearest Neighbor LSH/Hypercube: 355
+Distance LSH/Hypercube: 0.003040000000001264
+True Neighbor: 4863
+DistanceTrue: 0.000624403
+tLSH/Hypercube: 0.02498899959027767
+tTrue: 0.806725025177002
+
+Query Point: 7421
+Nearest Neighbor LSH/Hypercube: 2747
+Distance LSH/Hypercube: 5.811350311728059
+True Neighbor: 5227
+DistanceTrue: 1.69238
+tLSH/Hypercube: 0.6724159717559814
+tTrue: 7.587016105651855
+
+Query Point: 7422
+Nearest Neighbor LSH/Hypercube: 2769
+Distance LSH/Hypercube: 3.350054275475077
+True Neighbor: 5227
+DistanceTrue: 1.56723
+tLSH/Hypercube: 0.4330810010433197
+tTrue: 7.09153413772583
+
+Query Point: 7423
+Nearest Neighbor LSH/Hypercube: 100
+Distance LSH/Hypercube: 2.647360123341948
+True Neighbor: 5227
+DistanceTrue: 1.26886
+tLSH/Hypercube: 0.3426359891891479
+tTrue: 4.817183017730713
+
+Query Point: 7424
+Nearest Neighbor LSH/Hypercube: 100
+Distance LSH/Hypercube: 0.08678288355348573
+True Neighbor: 6873
+DistanceTrue: 0.0156884
+tLSH/Hypercube: 0.02177600003778934
+tTrue: 0.4840799868106842
+
+Query Point: 7425
+Nearest Neighbor LSH/Hypercube: 338
+Distance LSH/Hypercube: 3.093089477643208
+True Neighbor: 5227
+DistanceTrue: 1.52664
+tLSH/Hypercube: 0.412211000919342
+tTrue: 6.230857849121094
+
+Query Point: 7426
+Nearest Neighbor LSH/Hypercube: 338
+Distance LSH/Hypercube: 3.006996891178
+True Neighbor: 5227
+DistanceTrue: 1.94125
+tLSH/Hypercube: 0.4921010136604309
+tTrue: 8.528543472290039
+
+Query Point: 7427
+Nearest Neighbor LSH/Hypercube: 1743
+Distance LSH/Hypercube: 4.724038679984563
+True Neighbor: 5227
+DistanceTrue: 1.76079
+tLSH/Hypercube: 0.6111699938774109
+tTrue: 9.152729034423828
+
+Query Point: 7428
+Nearest Neighbor LSH/Hypercube: 2769
+Distance LSH/Hypercube: 3.209612255396447
+True Neighbor: 5227
+DistanceTrue: 1.52504
+tLSH/Hypercube: 0.5105239748954773
+tTrue: 5.587969779968262
+
+Query Point: 7429
+Nearest Neighbor LSH/Hypercube: 1912
+Distance LSH/Hypercube: 3.402592254606782
+True Neighbor: 1717
+DistanceTrue: 2.30047
+tLSH/Hypercube: 0.9154019951820374
+tTrue: 12.31801795959473
+
+Query Point: 7430
+Nearest Neighbor LSH/Hypercube: 1702
+Distance LSH/Hypercube: 3.227691457565914
+True Neighbor: 3730
+DistanceTrue: 1.69581
+tLSH/Hypercube: 0.8447639942169189
+tTrue: 10.32590389251709
+
+Query Point: 7431
+Nearest Neighbor LSH/Hypercube: 1191
+Distance LSH/Hypercube: 3.759128242095262
+True Neighbor: 3731
+DistanceTrue: 1.55592
+tLSH/Hypercube: 0.6954780220985413
+tTrue: 10.82336616516113
+
+Query Point: 7432
+Nearest Neighbor LSH/Hypercube: 1896
+Distance LSH/Hypercube: 3.253005019916787
+True Neighbor: 3721
+DistanceTrue: 1.65766
+tLSH/Hypercube: 0.7754529714584351
+tTrue: 10.50717926025391
+
+Query Point: 7433
+Nearest Neighbor LSH/Hypercube: 1717
+Distance LSH/Hypercube: 1.904019198463059
+True Neighbor: 1717
+DistanceTrue: 1.90402
+tLSH/Hypercube: 0.7266389727592468
+tTrue: 8.424812316894531
+
+Query Point: 7434
+Nearest Neighbor LSH/Hypercube: 167
+Distance LSH/Hypercube: 2.529131196562317
+True Neighbor: 1717
+DistanceTrue: 1.67589
+tLSH/Hypercube: 0.7439110279083252
+tTrue: 10.78311920166016
+
+Query Point: 7435
+Nearest Neighbor LSH/Hypercube: 100
+Distance LSH/Hypercube: 0.06605698793041248
+True Neighbor: 3723
+DistanceTrue: 0.0411006
+tLSH/Hypercube: 0.01573700085282326
+tTrue: 0.2686989903450012
+
+Query Point: 7436
+Nearest Neighbor LSH/Hypercube: 115
+Distance LSH/Hypercube: 0.0248228221602621
+True Neighbor: 4806
+DistanceTrue: 0.007943199999999999
+tLSH/Hypercube: 0.004695999901741743
+tTrue: 0.127472996711731
+
+Query Point: 7437
+Nearest Neighbor LSH/Hypercube: 1894
+Distance LSH/Hypercube: 3.284412075505387
+True Neighbor: 3730
+DistanceTrue: 2.26066
+tLSH/Hypercube: 1.224717020988464
+tTrue: 13.8105001449585
+
+Query Point: 7438
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.004555022498035865
+True Neighbor: 4970
+DistanceTrue: 0.000308058
+tLSH/Hypercube: 0.004749000072479248
+tTrue: 0.1276910006999969
+
+Query Point: 7439
+Nearest Neighbor LSH/Hypercube: 1746
+Distance LSH/Hypercube: 5.2010923547418
+True Neighbor: 3741
+DistanceTrue: 1.82119
+tLSH/Hypercube: 1.436509013175964
+tTrue: 15.48685741424561
+
+Query Point: 7440
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.005512693387355586
+True Neighbor: 6871
+DistanceTrue: 1e-05
+tLSH/Hypercube: 0.004738999996334314
+tTrue: 0.128698006272316
+
+Query Point: 7441
+Nearest Neighbor LSH/Hypercube: 138
+Distance LSH/Hypercube: 4.584510378595362
+True Neighbor: 1894
+DistanceTrue: 2.35413
+tLSH/Hypercube: 1.185971021652222
+tTrue: 15.02227687835693
+
+Query Point: 7442
+Nearest Neighbor LSH/Hypercube: 1746
+Distance LSH/Hypercube: 3.381968018750785
+True Neighbor: 3730
+DistanceTrue: 2.05466
+tLSH/Hypercube: 0.9682170152664185
+tTrue: 12.43050098419189
+
+Query Point: 7443
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.008056576228515336
+True Neighbor: 353
+DistanceTrue: 0.008056580000000001
+tLSH/Hypercube: 0.01034899987280369
+tTrue: 0.2679589986801147
+
+Query Point: 7444
+Nearest Neighbor LSH/Hypercube: 262
+Distance LSH/Hypercube: 0.01596441355014355
+True Neighbor: 1310
+DistanceTrue: 0.000223607
+tLSH/Hypercube: 0.004679999779909849
+tTrue: 0.1286920011043549
+
+Query Point: 7445
+Nearest Neighbor LSH/Hypercube: 1609
+Distance LSH/Hypercube: 2.308778083603907
+True Neighbor: 3731
+DistanceTrue: 0.987684
+tLSH/Hypercube: 0.4145900011062622
+tTrue: 5.079347133636475
+
+Query Point: 7446
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.008361159518271726
+True Neighbor: 2912
+DistanceTrue: 2e-05
+tLSH/Hypercube: 0.006099000107496977
+tTrue: 0.2004420012235641
+
+Query Point: 7447
+Nearest Neighbor LSH/Hypercube: 281
+Distance LSH/Hypercube: 0.004268126052497839
+True Neighbor: 1345
+DistanceTrue: 0.00348914
+tLSH/Hypercube: 0.004821000155061483
+tTrue: 0.1276050060987473
+
+Query Point: 7448
+Nearest Neighbor LSH/Hypercube: 281
+Distance LSH/Hypercube: 0.0009486832980519541
+True Neighbor: 281
+DistanceTrue: 0.000948683
+tLSH/Hypercube: 0.005059000104665756
+tTrue: 0.1274019926786423
+
+Query Point: 7449
+Nearest Neighbor LSH/Hypercube: 1702
+Distance LSH/Hypercube: 3.303853827042072
+True Neighbor: 1894
+DistanceTrue: 2.56809
+tLSH/Hypercube: 1.223695039749146
+tTrue: 15.36020660400391
+
+Query Point: 7450
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.008574646750070332
+True Neighbor: 4973
+DistanceTrue: 2e-05
+tLSH/Hypercube: 0.004819999914616346
+tTrue: 0.1286890059709549
+
+Query Point: 7451
+Nearest Neighbor LSH/Hypercube: 1912
+Distance LSH/Hypercube: 5.538708442213835
+True Neighbor: 1894
+DistanceTrue: 2.18242
+tLSH/Hypercube: 1.429177045822144
+tTrue: 15.79768085479736
+
+Query Point: 7452
+Nearest Neighbor LSH/Hypercube: 1924
+Distance LSH/Hypercube: 3.385712721453788
+True Neighbor: 3730
+DistanceTrue: 1.75359
+tLSH/Hypercube: 1.310124039649963
+tTrue: 14.37561798095703
+
+Query Point: 7453
+Nearest Neighbor LSH/Hypercube: 1746
+Distance LSH/Hypercube: 6.198746090862898
+True Neighbor: 1894
+DistanceTrue: 2.76439
+tLSH/Hypercube: 1.202276945114136
+tTrue: 15.29504013061523
+
+Query Point: 7454
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.004815392024104663
+True Neighbor: 4954
+DistanceTrue: 0.000107703
+tLSH/Hypercube: 0.004767000209540129
+tTrue: 0.1225949972867966
+
+Query Point: 7455
+Nearest Neighbor LSH/Hypercube: 1912
+Distance LSH/Hypercube: 4.94853238963238
+True Neighbor: 2902
+DistanceTrue: 1.50616
+tLSH/Hypercube: 0.7951359748840332
+tTrue: 9.319212913513184
+
+Query Point: 7456
+Nearest Neighbor LSH/Hypercube: 1912
+Distance LSH/Hypercube: 3.339932922529963
+True Neighbor: 3730
+DistanceTrue: 2.41451
+tLSH/Hypercube: 1.380730032920837
+tTrue: 14.43680572509766
+
+Query Point: 7457
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.00491505873305147
+True Neighbor: 5004
+DistanceTrue: 0.000156205
+tLSH/Hypercube: 0.004741999786347151
+tTrue: 0.1276600062847137
+
+Query Point: 7458
+Nearest Neighbor LSH/Hypercube: 1702
+Distance LSH/Hypercube: 3.431822621738735
+True Neighbor: 3730
+DistanceTrue: 2.35463
+tLSH/Hypercube: 0.8968889713287354
+tTrue: 14.14338684082031
+
+Query Point: 7459
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.008361159518271726
+True Neighbor: 4902
+DistanceTrue: 1e-05
+tLSH/Hypercube: 0.004730999935418367
+tTrue: 0.1241440027952194
+
+Query Point: 7460
+Nearest Neighbor LSH/Hypercube: 138
+Distance LSH/Hypercube: 3.555618088225383
+True Neighbor: 1717
+DistanceTrue: 1.77789
+tLSH/Hypercube: 0.7114229798316956
+tTrue: 11.57999897003174
+
+Query Point: 7461
+Nearest Neighbor LSH/Hypercube: 262
+Distance LSH/Hypercube: 0.02435307988735658
+True Neighbor: 4806
+DistanceTrue: 0.0112136
+tLSH/Hypercube: 0.004734999965876341
+tTrue: 0.1260180026292801
+
+Query Point: 7462
+Nearest Neighbor LSH/Hypercube: 1741
+Distance LSH/Hypercube: 0.5332419380677074
+True Neighbor: 1741
+DistanceTrue: 0.17668
+tLSH/Hypercube: 0.1689160019159317
+tTrue: 1.865664958953857
+
+Query Point: 7463
+Nearest Neighbor LSH/Hypercube: 781
+Distance LSH/Hypercube: 2.363710945854479
+True Neighbor: 3742
+DistanceTrue: 0.77132
+tLSH/Hypercube: 0.5577840209007263
+tTrue: 6.11012077331543
+
+Query Point: 7464
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.006632422845984373
+True Neighbor: 2866
+DistanceTrue: 0.000513275
+tLSH/Hypercube: 0.007464999798685312
+tTrue: 0.2613100111484528
+
+Query Point: 7465
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.005482440994397369
+True Neighbor: 4918
+DistanceTrue: 0.0004272
+tLSH/Hypercube: 0.00494999997317791
+tTrue: 0.1214990019798279
+
+Query Point: 7466
+Nearest Neighbor LSH/Hypercube: 1746
+Distance LSH/Hypercube: 3.292625595808696
+True Neighbor: 3732
+DistanceTrue: 2.54685
+tLSH/Hypercube: 1.305956959724426
+tTrue: 13.83862018585205
+
+Query Point: 7467
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.004727034267685139
+True Neighbor: 4970
+DistanceTrue: 0.00010198
+tLSH/Hypercube: 0.004774999804794788
+tTrue: 0.121570996940136
+
+Query Point: 7468
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.006862641583159319
+True Neighbor: 4914
+DistanceTrue: 0
+tLSH/Hypercube: 0.004755999892950058
+tTrue: 0.1251720041036606
+
+Query Point: 7469
+Nearest Neighbor LSH/Hypercube: 167
+Distance LSH/Hypercube: 2.288188925470824
+True Neighbor: 1717
+DistanceTrue: 2.01215
+tLSH/Hypercube: 0.6974200010299683
+tTrue: 9.52888011932373
+
+Query Point: 7470
+Nearest Neighbor LSH/Hypercube: 260
+Distance LSH/Hypercube: 0.02835252095865948
+True Neighbor: 4821
+DistanceTrue: 0.00387451
+tLSH/Hypercube: 0.008508999831974506
+tTrue: 0.1910780072212219
+
+Query Point: 7471
+Nearest Neighbor LSH/Hypercube: 1702
+Distance LSH/Hypercube: 3.719269259710265
+True Neighbor: 3730
+DistanceTrue: 2.2846
+tLSH/Hypercube: 1.482442021369934
+tTrue: 15.83933544158936
+
+Query Point: 7472
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.002605330172210848
+True Neighbor: 4986
+DistanceTrue: 1e-05
+tLSH/Hypercube: 0.0047109997831285
+tTrue: 0.121799997985363
+
+Query Point: 7473
+Nearest Neighbor LSH/Hypercube: 1912
+Distance LSH/Hypercube: 5.521618819989645
+True Neighbor: 1894
+DistanceTrue: 2.73147
+tLSH/Hypercube: 1.400259017944336
+tTrue: 14.98670482635498
+
+Query Point: 7474
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.008663686909150139
+True Neighbor: 6865
+DistanceTrue: 0.0001
+tLSH/Hypercube: 0.004755000118166208
+tTrue: 0.1256719976663589
+
+Query Point: 7475
+Nearest Neighbor LSH/Hypercube: 1702
+Distance LSH/Hypercube: 3.173016957729969
+True Neighbor: 1894
+DistanceTrue: 2.50962
+tLSH/Hypercube: 1.150810956954956
+tTrue: 14.41179656982422
+
+Query Point: 7476
+Nearest Neighbor LSH/Hypercube: 353
+Distance LSH/Hypercube: 0.00872830292397948
+True Neighbor: 6865
+DistanceTrue: 5e-05
+tLSH/Hypercube: 0.004850999917834997
+tTrue: 0.1245900020003319
+
+Query Point: 7477
+Nearest Neighbor LSH/Hypercube: 1746
+Distance LSH/Hypercube: 4.270867679728782
+True Neighbor: 3730
+DistanceTrue: 1.84999
+tLSH/Hypercube: 0.8909919857978821
+tTrue: 11.5265588760376
+
+Query Point: 7478
+Nearest Neighbor LSH/Hypercube: 473
+Distance LSH/Hypercube: 0.002255944817204963
+True Neighbor: 473
+DistanceTrue: 0.00225594
+tLSH/Hypercube: 0.1641629934310913
+tTrue: 2.06243109703064
+
+Query Point: 7479
+Nearest Neighbor LSH/Hypercube: 74
+Distance LSH/Hypercube: 0.01664057404258804
+True Neighbor: 2084
+DistanceTrue: 0.00161576
+tLSH/Hypercube: 0.02306300029158592
+tTrue: 1.026960015296936
+
+Query Point: 7480
+Nearest Neighbor LSH/Hypercube: 1450
+Distance LSH/Hypercube: 4.924410250971743
+True Neighbor: 5783
+DistanceTrue: 0.684096
+tLSH/Hypercube: 0.9089969992637634
+tTrue: 10.7124080657959
+
+Query Point: 7481
+Nearest Neighbor LSH/Hypercube: 2098
+Distance LSH/Hypercube: 5.898739278062723
+True Neighbor: 5764
+DistanceTrue: 0.69319
+tLSH/Hypercube: 1.02696704864502
+tTrue: 13.40257358551025
+
+Query Point: 7482
+Nearest Neighbor LSH/Hypercube: 2117
+Distance LSH/Hypercube: 0.1338719431355809
+True Neighbor: 2088
+DistanceTrue: 0.0277422
+tLSH/Hypercube: 0.05527999997138977
+tTrue: 0.7588930130004883
+
+Query Point: 7483
+Nearest Neighbor LSH/Hypercube: 1451
+Distance LSH/Hypercube: 2.928361213915958
+True Neighbor: 5760
+DistanceTrue: 0.474025
+tLSH/Hypercube: 0.5793769955635071
+tTrue: 5.968639850616455
+
+Query Point: 7484
+Nearest Neighbor LSH/Hypercube: 1450
+Distance LSH/Hypercube: 4.900743935701483
+True Neighbor: 5764
+DistanceTrue: 0.379709
+tLSH/Hypercube: 0.8076990246772766
+tTrue: 10.75781536102295
+
+Query Point: 7485
+Nearest Neighbor LSH/Hypercube: 1453
+Distance LSH/Hypercube: 5.143100311187418
+True Neighbor: 5766
+DistanceTrue: 3.34376
+tLSH/Hypercube: 1.406223058700562
+tTrue: 14.1809606552124
+
+Query Point: 7486
+Nearest Neighbor LSH/Hypercube: 415
+Distance LSH/Hypercube: 5.348352005939956
+True Neighbor: 5764
+DistanceTrue: 0.386047
+tLSH/Hypercube: 0.7260890007019043
+tTrue: 9.2779541015625
+

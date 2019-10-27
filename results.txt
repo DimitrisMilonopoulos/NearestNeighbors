@@ -1,0 +1,3757 @@
+Query Point: 1
+Nearest Neighbor Cube: 125
+Distance Cube: 2522
+True Neighbor: 2177
+DistanceTrue: 2064
+tCube: 0.000365
+tTrue: 0.145159
+R-nearest neighbors:
+ID: 125 Distance: 2522
+ID: 276 Distance: 2935
+ID: 287 Distance: 2676
+ID: 483 Distance: 2817
+ID: 484 Distance: 2957
+ID: 505 Distance: 2875
+ID: 599 Distance: 2542
+ID: 801 Distance: 2792
+ID: 1070 Distance: 2990
+ID: 1813 Distance: 2613
+ID: 1994 Distance: 2780
+ID: 2006 Distance: 2684
+ID: 2152 Distance: 2982
+ID: 2274 Distance: 2791
+ID: 2321 Distance: 2844
+ID: 2389 Distance: 2894
+ID: 2696 Distance: 2993
+ID: 2764 Distance: 2562
+ID: 2878 Distance: 2770
+
+Query Point: 2
+Nearest Neighbor Cube: 125
+Distance Cube: 2258
+True Neighbor: 2782
+DistanceTrue: 2045
+tCube: 0.000294
+tTrue: 0.136374
+R-nearest neighbors:
+ID: 44 Distance: 2837
+ID: 125 Distance: 2258
+ID: 276 Distance: 2979
+ID: 483 Distance: 2403
+ID: 484 Distance: 2625
+ID: 505 Distance: 2493
+ID: 545 Distance: 2417
+ID: 569 Distance: 2997
+ID: 599 Distance: 2690
+ID: 801 Distance: 2380
+ID: 822 Distance: 2812
+ID: 834 Distance: 2269
+ID: 849 Distance: 2952
+ID: 1070 Distance: 2580
+ID: 1095 Distance: 2796
+ID: 1367 Distance: 2911
+ID: 1498 Distance: 2877
+ID: 1679 Distance: 2872
+ID: 1940 Distance: 2692
+ID: 1989 Distance: 2758
+ID: 1994 Distance: 2398
+ID: 2006 Distance: 2740
+ID: 2031 Distance: 2743
+ID: 2152 Distance: 2902
+ID: 2235 Distance: 2701
+ID: 2266 Distance: 2744
+ID: 2321 Distance: 2542
+ID: 2389 Distance: 2406
+ID: 2441 Distance: 2908
+ID: 2614 Distance: 2713
+ID: 2618 Distance: 2725
+ID: 2696 Distance: 2907
+ID: 2743 Distance: 2725
+ID: 2764 Distance: 2556
+ID: 2878 Distance: 2966
+ID: 3056 Distance: 2823
+ID: 3166 Distance: 2707
+
+Query Point: 3
+Nearest Neighbor Cube: 2257
+Distance Cube: 1840
+True Neighbor: 9973
+DistanceTrue: 1619
+tCube: 0.000323
+tTrue: 0.140426
+R-nearest neighbors:
+ID: 71 Distance: 2613
+ID: 93 Distance: 2471
+ID: 105 Distance: 2676
+ID: 135 Distance: 2910
+ID: 159 Distance: 2370
+ID: 166 Distance: 2495
+ID: 176 Distance: 2820
+ID: 396 Distance: 2814
+ID: 562 Distance: 2675
+ID: 658 Distance: 2626
+ID: 754 Distance: 2992
+ID: 810 Distance: 2339
+ID: 814 Distance: 2625
+ID: 1000 Distance: 2663
+ID: 1129 Distance: 2391
+ID: 1154 Distance: 2099
+ID: 1274 Distance: 2001
+ID: 1277 Distance: 2271
+ID: 1301 Distance: 2423
+ID: 1423 Distance: 2964
+ID: 1450 Distance: 2312
+ID: 1467 Distance: 2520
+ID: 1569 Distance: 2864
+ID: 1749 Distance: 2881
+ID: 1838 Distance: 2497
+ID: 1861 Distance: 2776
+ID: 2071 Distance: 2231
+ID: 2230 Distance: 2795
+ID: 2257 Distance: 1840
+ID: 2430 Distance: 2631
+ID: 2462 Distance: 2816
+ID: 2468 Distance: 2779
+ID: 2768 Distance: 2922
+ID: 2932 Distance: 2901
+ID: 2980 Distance: 2851
+ID: 3049 Distance: 2579
+ID: 3140 Distance: 2662
+ID: 3307 Distance: 2639
+ID: 3338 Distance: 2588
+ID: 3371 Distance: 2969
+ID: 3378 Distance: 2932
+ID: 3446 Distance: 2241
+ID: 3457 Distance: 2807
+ID: 3469 Distance: 2721
+ID: 3494 Distance: 2689
+ID: 3600 Distance: 2981
+
+Query Point: 4
+Nearest Neighbor Cube: 1802
+Distance Cube: 2074
+True Neighbor: 9844
+DistanceTrue: 1593
+tCube: 0.000322
+tTrue: 0.14734
+R-nearest neighbors:
+ID: 107 Distance: 2082
+ID: 123 Distance: 2423
+ID: 156 Distance: 2228
+ID: 186 Distance: 2903
+ID: 220 Distance: 2735
+ID: 263 Distance: 2662
+ID: 283 Distance: 2989
+ID: 320 Distance: 2573
+ID: 371 Distance: 2565
+ID: 403 Distance: 2881
+ID: 412 Distance: 2547
+ID: 423 Distance: 2757
+ID: 464 Distance: 2943
+ID: 465 Distance: 2827
+ID: 493 Distance: 2076
+ID: 504 Distance: 2453
+ID: 532 Distance: 2745
+ID: 600 Distance: 2887
+ID: 613 Distance: 2538
+ID: 756 Distance: 2446
+ID: 870 Distance: 2689
+ID: 950 Distance: 2449
+ID: 958 Distance: 2510
+ID: 1505 Distance: 2997
+ID: 1511 Distance: 2956
+ID: 1538 Distance: 2989
+ID: 1624 Distance: 2907
+ID: 1688 Distance: 2447
+ID: 1699 Distance: 2448
+ID: 1774 Distance: 2770
+ID: 1785 Distance: 2877
+ID: 1802 Distance: 2074
+ID: 1806 Distance: 2600
+ID: 1833 Distance: 2837
+ID: 1897 Distance: 2476
+ID: 1982 Distance: 2732
+ID: 2096 Distance: 2677
+ID: 2271 Distance: 2453
+ID: 2436 Distance: 2812
+ID: 2448 Distance: 2806
+ID: 2591 Distance: 2559
+ID: 2606 Distance: 2713
+ID: 2673 Distance: 2811
+
+Query Point: 5
+Nearest Neighbor Cube: 3575
+Distance Cube: 2082
+True Neighbor: 5165
+DistanceTrue: 1680
+tCube: 0.000321
+tTrue: 0.148988
+R-nearest neighbors:
+ID: 104 Distance: 2707
+ID: 162 Distance: 2673
+ID: 181 Distance: 2938
+ID: 247 Distance: 2194
+ID: 253 Distance: 2682
+ID: 418 Distance: 2315
+ID: 549 Distance: 2967
+ID: 705 Distance: 2120
+ID: 876 Distance: 2534
+ID: 890 Distance: 2310
+ID: 928 Distance: 2650
+ID: 931 Distance: 2893
+ID: 972 Distance: 2585
+ID: 1023 Distance: 2935
+ID: 1062 Distance: 2912
+ID: 1199 Distance: 2538
+ID: 1298 Distance: 2550
+ID: 1351 Distance: 2659
+ID: 1473 Distance: 2666
+ID: 1548 Distance: 2827
+ID: 1691 Distance: 2794
+ID: 2123 Distance: 2522
+ID: 2221 Distance: 2270
+ID: 2662 Distance: 2830
+ID: 2874 Distance: 2111
+ID: 2912 Distance: 2484
+ID: 2942 Distance: 2911
+ID: 2998 Distance: 2942
+ID: 3105 Distance: 2855
+ID: 3165 Distance: 2897
+ID: 3523 Distance: 2995
+ID: 3575 Distance: 2082
+ID: 3617 Distance: 2947
+ID: 3780 Distance: 2925
+ID: 3819 Distance: 2442
+ID: 4210 Distance: 2477
+ID: 4216 Distance: 2665
+ID: 4346 Distance: 2903
+
+Query Point: 6
+Nearest Neighbor Cube: 4247
+Distance Cube: 2535
+True Neighbor: 1240
+DistanceTrue: 2180
+tCube: 0.000324
+tTrue: 0.147651
+R-nearest neighbors:
+ID: 496 Distance: 2955
+ID: 704 Distance: 2607
+ID: 772 Distance: 2606
+ID: 791 Distance: 2994
+ID: 2328 Distance: 2739
+ID: 2844 Distance: 2918
+ID: 2881 Distance: 2638
+ID: 2976 Distance: 2994
+ID: 3249 Distance: 2786
+ID: 4247 Distance: 2535
+ID: 4273 Distance: 2909
+ID: 4448 Distance: 2679
+
+Query Point: 7
+Nearest Neighbor Cube: 2457
+Distance Cube: 2020
+True Neighbor: 2775
+DistanceTrue: 1946
+tCube: 0.000314
+tTrue: 0.139897
+R-nearest neighbors:
+ID: 108 Distance: 2575
+ID: 124 Distance: 2756
+ID: 632 Distance: 2845
+ID: 684 Distance: 2259
+ID: 763 Distance: 2736
+ID: 1028 Distance: 2749
+ID: 1034 Distance: 2886
+ID: 1054 Distance: 2606
+ID: 1149 Distance: 2909
+ID: 1251 Distance: 2712
+ID: 1255 Distance: 2626
+ID: 1325 Distance: 2779
+ID: 1445 Distance: 2752
+ID: 1495 Distance: 2887
+ID: 1532 Distance: 2569
+ID: 1544 Distance: 2726
+ID: 1739 Distance: 2971
+ID: 1754 Distance: 2524
+ID: 1842 Distance: 2818
+ID: 1941 Distance: 2632
+ID: 2080 Distance: 2712
+ID: 2110 Distance: 2377
+ID: 2129 Distance: 2811
+ID: 2282 Distance: 2670
+ID: 2294 Distance: 2882
+ID: 2302 Distance: 2628
+ID: 2358 Distance: 2391
+ID: 2457 Distance: 2020
+ID: 2473 Distance: 2770
+ID: 2735 Distance: 2876
+ID: 2737 Distance: 2894
+ID: 2773 Distance: 2637
+ID: 2909 Distance: 2698
+ID: 2936 Distance: 2487
+ID: 2972 Distance: 2705
+ID: 3027 Distance: 2950
+ID: 3057 Distance: 2648
+ID: 3180 Distance: 2774
+ID: 3475 Distance: 2992
+ID: 3544 Distance: 2356
+
+Query Point: 8
+Nearest Neighbor Cube: 1939
+Distance Cube: 2257
+True Neighbor: 5869
+DistanceTrue: 1149
+tCube: 0.000323
+tTrue: 0.136389
+R-nearest neighbors:
+ID: 686 Distance: 2656
+ID: 806 Distance: 2782
+ID: 851 Distance: 2479
+ID: 1027 Distance: 2591
+ID: 1065 Distance: 2964
+ID: 1125 Distance: 2411
+ID: 1939 Distance: 2257
+ID: 2683 Distance: 2841
+ID: 2856 Distance: 2894
+ID: 2908 Distance: 2743
+
+Query Point: 9
+Nearest Neighbor Cube: 708
+Distance Cube: 2198
+True Neighbor: 9629
+DistanceTrue: 1791
+tCube: 0.00032
+tTrue: 0.138338
+R-nearest neighbors:
+ID: 9 Distance: 2935
+ID: 21 Distance: 2849
+ID: 158 Distance: 2648
+ID: 197 Distance: 2796
+ID: 203 Distance: 2771
+ID: 251 Distance: 2514
+ID: 459 Distance: 2996
+ID: 557 Distance: 2926
+ID: 708 Distance: 2198
+ID: 715 Distance: 2934
+ID: 725 Distance: 2304
+ID: 833 Distance: 2817
+ID: 854 Distance: 2674
+ID: 880 Distance: 2761
+ID: 894 Distance: 2496
+ID: 1004 Distance: 2915
+ID: 1153 Distance: 2825
+ID: 1215 Distance: 2891
+ID: 1261 Distance: 2732
+ID: 1424 Distance: 2509
+ID: 1508 Distance: 2695
+ID: 1602 Distance: 2889
+ID: 1674 Distance: 2748
+ID: 1726 Distance: 2693
+ID: 1859 Distance: 2906
+ID: 1873 Distance: 2508
+ID: 1903 Distance: 2919
+ID: 1953 Distance: 2730
+ID: 1960 Distance: 2685
+ID: 2538 Distance: 2799
+ID: 2709 Distance: 2516
+ID: 2726 Distance: 2921
+ID: 2859 Distance: 2967
+ID: 2996 Distance: 2787
+ID: 3000 Distance: 2862
+ID: 3039 Distance: 2768
+ID: 3054 Distance: 2470
+ID: 3092 Distance: 2823
+
+Query Point: 10
+Nearest Neighbor Cube: 159
+Distance Cube: 2128
+True Neighbor: 4720
+DistanceTrue: 1834
+tCube: 0.000319
+tTrue: 0.136371
+R-nearest neighbors:
+ID: 55 Distance: 2228
+ID: 71 Distance: 2517
+ID: 93 Distance: 2133
+ID: 105 Distance: 2474
+ID: 159 Distance: 2128
+ID: 166 Distance: 2163
+ID: 267 Distance: 2962
+ID: 270 Distance: 2908
+ID: 279 Distance: 2741
+ID: 396 Distance: 2972
+ID: 443 Distance: 2932
+ID: 562 Distance: 2535
+ID: 658 Distance: 2650
+ID: 754 Distance: 2680
+ID: 759 Distance: 2911
+ID: 810 Distance: 2357
+ID: 814 Distance: 2661
+ID: 921 Distance: 2796
+ID: 1129 Distance: 2331
+ID: 1154 Distance: 2489
+ID: 1301 Distance: 2463
+ID: 1432 Distance: 2954
+ID: 1450 Distance: 2406
+ID: 1457 Distance: 2880
+ID: 1467 Distance: 2770
+ID: 1744 Distance: 2796
+ID: 1756 Distance: 2655
+ID: 1861 Distance: 2690
+ID: 2071 Distance: 2513
+ID: 2126 Distance: 2724
+ID: 2257 Distance: 2558
+ID: 2430 Distance: 2553
+ID: 2462 Distance: 2584
+ID: 2468 Distance: 2865
+ID: 2518 Distance: 2886
+ID: 2768 Distance: 2840
+ID: 2857 Distance: 2598
+ID: 2980 Distance: 2793
+ID: 3049 Distance: 2721
+ID: 3140 Distance: 2306
+ID: 3206 Distance: 2500
+ID: 3334 Distance: 2809
+ID: 3469 Distance: 2617
+ID: 3543 Distance: 2863
+ID: 3545 Distance: 2702
+ID: 3600 Distance: 2853
+
+Query Point: 11
+Nearest Neighbor Cube: 495
+Distance Cube: 2442
+True Neighbor: 694
+DistanceTrue: 2067
+tCube: 0.000336
+tTrue: 0.139862
+R-nearest neighbors:
+ID: 97 Distance: 2681
+ID: 133 Distance: 2814
+ID: 145 Distance: 2610
+ID: 177 Distance: 2800
+ID: 219 Distance: 2934
+ID: 232 Distance: 2659
+ID: 245 Distance: 2624
+ID: 301 Distance: 2955
+ID: 428 Distance: 2716
+ID: 471 Distance: 2791
+ID: 495 Distance: 2442
+ID: 541 Distance: 2679
+ID: 618 Distance: 2988
+ID: 661 Distance: 2838
+ID: 667 Distance: 2835
+ID: 695 Distance: 2804
+ID: 734 Distance: 2595
+ID: 741 Distance: 2551
+ID: 758 Distance: 2984
+ID: 848 Distance: 2711
+ID: 862 Distance: 2648
+ID: 955 Distance: 2676
+ID: 1295 Distance: 2466
+ID: 1296 Distance: 2562
+ID: 1355 Distance: 2816
+ID: 1616 Distance: 2900
+ID: 1647 Distance: 2976
+ID: 1695 Distance: 2716
+ID: 1700 Distance: 2846
+ID: 1832 Distance: 2916
+ID: 1991 Distance: 2831
+ID: 2106 Distance: 2795
+ID: 2130 Distance: 2546
+ID: 2163 Distance: 2926
+ID: 2175 Distance: 2717
+ID: 2205 Distance: 2964
+ID: 2241 Distance: 2827
+
+Query Point: 12
+Nearest Neighbor Cube: 357
+Distance Cube: 2053
+True Neighbor: 4698
+DistanceTrue: 1280
+tCube: 0.000342
+tTrue: 0.138656
+R-nearest neighbors:
+ID: 5 Distance: 2182
+ID: 8 Distance: 2091
+ID: 75 Distance: 2415
+ID: 117 Distance: 2178
+ID: 234 Distance: 2561
+ID: 238 Distance: 2739
+ID: 326 Distance: 2830
+ID: 333 Distance: 2128
+ID: 357 Distance: 2053
+ID: 417 Distance: 2672
+ID: 444 Distance: 2600
+ID: 499 Distance: 2665
+ID: 513 Distance: 2949
+ID: 547 Distance: 2458
+ID: 548 Distance: 2682
+ID: 595 Distance: 2644
+ID: 604 Distance: 2643
+ID: 729 Distance: 2907
+ID: 777 Distance: 2835
+ID: 856 Distance: 2885
+ID: 865 Distance: 2761
+ID: 867 Distance: 2580
+ID: 877 Distance: 2963
+ID: 881 Distance: 2089
+ID: 893 Distance: 2370
+ID: 905 Distance: 2238
+ID: 938 Distance: 2643
+ID: 957 Distance: 2700
+ID: 959 Distance: 2693
+ID: 960 Distance: 2774
+ID: 963 Distance: 2290
+ID: 985 Distance: 2772
+ID: 1198 Distance: 2919
+ID: 1232 Distance: 2802
+ID: 1263 Distance: 2686
+ID: 1268 Distance: 2848
+ID: 1275 Distance: 2858
+ID: 1315 Distance: 2801
+ID: 1336 Distance: 2581
+ID: 1407 Distance: 2629
+ID: 1422 Distance: 2594
+ID: 1437 Distance: 2947
+ID: 1443 Distance: 2350
+ID: 1465 Distance: 2500
+ID: 1483 Distance: 2802
+ID: 1484 Distance: 2445
+ID: 1540 Distance: 2822
+ID: 1614 Distance: 2420
+ID: 1719 Distance: 2094
+ID: 1723 Distance: 2848
+ID: 1727 Distance: 2292
+ID: 1769 Distance: 2449
+ID: 1790 Distance: 2710
+ID: 1883 Distance: 2936
+ID: 1904 Distance: 2838
+ID: 1912 Distance: 2667
+ID: 1946 Distance: 2423
+ID: 1979 Distance: 2973
+ID: 2010 Distance: 2634
+ID: 2033 Distance: 2068
+ID: 2146 Distance: 2181
+ID: 2185 Distance: 2239
+ID: 2186 Distance: 2988
+ID: 2247 Distance: 2587
+
+Query Point: 13
+Nearest Neighbor Cube: 484
+Distance Cube: 1896
+True Neighbor: 507
+DistanceTrue: 1811
+tCube: 0.000311
+tTrue: 0.138995
+R-nearest neighbors:
+ID: 125 Distance: 2745
+ID: 287 Distance: 2651
+ID: 420 Distance: 2664
+ID: 446 Distance: 2577
+ID: 483 Distance: 2300
+ID: 484 Distance: 1896
+ID: 505 Distance: 2356
+ID: 527 Distance: 2957
+ID: 545 Distance: 2736
+ID: 564 Distance: 2946
+ID: 599 Distance: 2977
+ID: 801 Distance: 2945
+ID: 822 Distance: 2603
+ID: 834 Distance: 2434
+ID: 849 Distance: 2793
+ID: 965 Distance: 2770
+ID: 979 Distance: 2853
+ID: 1031 Distance: 2932
+ID: 1070 Distance: 2235
+ID: 1095 Distance: 2841
+ID: 1363 Distance: 1996
+ID: 1367 Distance: 2888
+ID: 1618 Distance: 2942
+ID: 1694 Distance: 2778
+ID: 1989 Distance: 2941
+ID: 1994 Distance: 2917
+ID: 2031 Distance: 2770
+ID: 2266 Distance: 2719
+ID: 2274 Distance: 2704
+ID: 2275 Distance: 2843
+ID: 2321 Distance: 2439
+ID: 2377 Distance: 2566
+ID: 2389 Distance: 2267
+ID: 2416 Distance: 2119
+ID: 2441 Distance: 2941
+ID: 2743 Distance: 2508
+ID: 2764 Distance: 2935
+ID: 2878 Distance: 2817
+ID: 2879 Distance: 2771
+ID: 3102 Distance: 2387
+ID: 3127 Distance: 2789
+ID: 3166 Distance: 2184
+
+Query Point: 14
+Nearest Neighbor Cube: 1499
+Distance Cube: 2155
+True Neighbor: 9816
+DistanceTrue: 1829
+tCube: 0.000311
+tTrue: 0.13826
+R-nearest neighbors:
+ID: 103 Distance: 2932
+ID: 146 Distance: 2546
+ID: 147 Distance: 2631
+ID: 201 Distance: 2608
+ID: 230 Distance: 2548
+ID: 244 Distance: 2752
+ID: 372 Distance: 2846
+ID: 413 Distance: 2780
+ID: 466 Distance: 2937
+ID: 533 Distance: 2925
+ID: 686 Distance: 2272
+ID: 806 Distance: 2486
+ID: 910 Distance: 2302
+ID: 981 Distance: 2783
+ID: 990 Distance: 2493
+ID: 1065 Distance: 2834
+ID: 1125 Distance: 2535
+ID: 1453 Distance: 2919
+ID: 1469 Distance: 2447
+ID: 1491 Distance: 2985
+ID: 1499 Distance: 2155
+ID: 1626 Distance: 2733
+ID: 1917 Distance: 2596
+ID: 1945 Distance: 2781
+ID: 2165 Distance: 2693
+ID: 2309 Distance: 2796
+ID: 2371 Distance: 2729
+ID: 2543 Distance: 2652
+ID: 2544 Distance: 2593
+ID: 2590 Distance: 2423
+ID: 2683 Distance: 2839
+ID: 2744 Distance: 2764
+ID: 2756 Distance: 2599
+ID: 2856 Distance: 2886
+ID: 2908 Distance: 2909
+ID: 2910 Distance: 2831
+ID: 2954 Distance: 2498
+ID: 2990 Distance: 2593
+ID: 3111 Distance: 2757
+
+Query Point: 15
+Nearest Neighbor Cube: 1265
+Distance Cube: 2398
+True Neighbor: 798
+DistanceTrue: 2136
+tCube: 0.000306
+tTrue: 0.14266
+R-nearest neighbors:
+ID: 12 Distance: 2999
+ID: 932 Distance: 2898
+ID: 937 Distance: 2971
+ID: 1265 Distance: 2398
+ID: 1612 Distance: 2461
+ID: 1876 Distance: 2522
+ID: 2049 Distance: 2937
+ID: 2387 Distance: 2572
+ID: 2561 Distance: 2839
+ID: 2592 Distance: 2542
+ID: 2669 Distance: 2714
+ID: 2812 Distance: 2934
+ID: 3021 Distance: 2578
+ID: 3083 Distance: 2993
+ID: 3107 Distance: 2951
+ID: 3240 Distance: 2491
+ID: 3375 Distance: 2963
+ID: 3602 Distance: 2953
+
+Query Point: 16
+Nearest Neighbor Cube: 234
+Distance Cube: 2251
+True Neighbor: 410
+DistanceTrue: 1973
+tCube: 0.000302
+tTrue: 0.136455
+R-nearest neighbors:
+ID: 5 Distance: 2918
+ID: 75 Distance: 2545
+ID: 234 Distance: 2251
+ID: 333 Distance: 2906
+ID: 357 Distance: 2951
+ID: 444 Distance: 2860
+ID: 548 Distance: 2704
+ID: 604 Distance: 2411
+ID: 777 Distance: 2981
+ID: 867 Distance: 2926
+ID: 893 Distance: 2940
+ID: 905 Distance: 2530
+ID: 938 Distance: 2705
+ID: 960 Distance: 2312
+ID: 963 Distance: 2526
+ID: 985 Distance: 2306
+ID: 1007 Distance: 2758
+ID: 1465 Distance: 2760
+ID: 1484 Distance: 2339
+ID: 1836 Distance: 2987
+ID: 1912 Distance: 2819
+ID: 1979 Distance: 2677
+ID: 2033 Distance: 2668
+ID: 2146 Distance: 2711
+ID: 2247 Distance: 2981
+
+Query Point: 17
+Nearest Neighbor Cube: 2743
+Distance Cube: 2083
+True Neighbor: 471
+DistanceTrue: 1963
+tCube: 0.000302
+tTrue: 0.138405
+R-nearest neighbors:
+ID: 125 Distance: 2458
+ID: 264 Distance: 2802
+ID: 287 Distance: 2288
+ID: 420 Distance: 2937
+ID: 446 Distance: 2826
+ID: 483 Distance: 2507
+ID: 484 Distance: 2283
+ID: 505 Distance: 2649
+ID: 545 Distance: 2875
+ID: 564 Distance: 2611
+ID: 599 Distance: 2570
+ID: 834 Distance: 2835
+ID: 849 Distance: 2940
+ID: 965 Distance: 2889
+ID: 979 Distance: 2984
+ID: 1070 Distance: 2712
+ID: 1206 Distance: 2774
+ID: 1363 Distance: 2347
+ID: 1391 Distance: 2719
+ID: 1618 Distance: 2909
+ID: 1694 Distance: 2795
+ID: 1813 Distance: 2549
+ID: 1874 Distance: 2221
+ID: 1940 Distance: 2718
+ID: 1989 Distance: 2924
+ID: 2031 Distance: 2495
+ID: 2060 Distance: 2967
+ID: 2062 Distance: 2624
+ID: 2274 Distance: 2489
+ID: 2275 Distance: 2290
+ID: 2321 Distance: 2342
+ID: 2370 Distance: 2941
+ID: 2377 Distance: 2765
+ID: 2389 Distance: 2172
+ID: 2416 Distance: 2460
+ID: 2441 Distance: 2686
+ID: 2496 Distance: 2725
+ID: 2618 Distance: 2617
+ID: 2730 Distance: 2933
+ID: 2743 Distance: 2083
+ID: 2764 Distance: 2518
+ID: 2878 Distance: 2434
+ID: 2879 Distance: 2746
+ID: 3056 Distance: 2893
+ID: 3102 Distance: 2522
+ID: 3166 Distance: 2357
+
+Query Point: 18
+Nearest Neighbor Cube: 1963
+Distance Cube: 2166
+True Neighbor: 4097
+DistanceTrue: 1987
+tCube: 0.000306
+tTrue: 0.137014
+R-nearest neighbors:
+ID: 194 Distance: 2741
+ID: 265 Distance: 2981
+ID: 284 Distance: 2647
+ID: 342 Distance: 2471
+ID: 390 Distance: 2382
+ID: 568 Distance: 2984
+ID: 688 Distance: 2962
+ID: 703 Distance: 2940
+ID: 805 Distance: 2691
+ID: 816 Distance: 2810
+ID: 817 Distance: 2502
+ID: 823 Distance: 2666
+ID: 824 Distance: 2201
+ID: 917 Distance: 2578
+ID: 925 Distance: 2461
+ID: 947 Distance: 2704
+ID: 1063 Distance: 2999
+ID: 1185 Distance: 2940
+ID: 1326 Distance: 2958
+ID: 1328 Distance: 2719
+ID: 1480 Distance: 2446
+ID: 1567 Distance: 2722
+ID: 1625 Distance: 2863
+ID: 1670 Distance: 2747
+ID: 1708 Distance: 2733
+ID: 1773 Distance: 2855
+ID: 1963 Distance: 2166
+ID: 2151 Distance: 2621
+ID: 2158 Distance: 2683
+ID: 2246 Distance: 2637
+ID: 2459 Distance: 2548
+ID: 2532 Distance: 2702
+ID: 2617 Distance: 2735
+ID: 2639 Distance: 2548
+ID: 2962 Distance: 2630
+ID: 3025 Distance: 2913
+ID: 3042 Distance: 2894
+ID: 3211 Distance: 2561
+ID: 3269 Distance: 2449
+ID: 3303 Distance: 2468
+ID: 3320 Distance: 2835
+ID: 3392 Distance: 2454
+ID: 3429 Distance: 2906
+ID: 3512 Distance: 2466
+ID: 3692 Distance: 2283
+ID: 3700 Distance: 2638
+ID: 3710 Distance: 2748
+ID: 3795 Distance: 2365
+ID: 3812 Distance: 2888
+ID: 3827 Distance: 2755
+ID: 3910 Distance: 2358
+ID: 3916 Distance: 2946
+ID: 4061 Distance: 2719
+ID: 4179 Distance: 2737
+ID: 4217 Distance: 2971
+ID: 4256 Distance: 2871
+ID: 4276 Distance: 2509
+
+Query Point: 19
+Nearest Neighbor Cube: 2681
+Distance Cube: 2355
+True Neighbor: 904
+DistanceTrue: 1964
+tCube: 0.000307
+tTrue: 0.138338
+R-nearest neighbors:
+ID: 62 Distance: 2438
+ID: 73 Distance: 2703
+ID: 163 Distance: 2678
+ID: 307 Distance: 2843
+ID: 353 Distance: 2865
+ID: 482 Distance: 2427
+ID: 492 Distance: 2913
+ID: 515 Distance: 2607
+ID: 709 Distance: 2781
+ID: 746 Distance: 2739
+ID: 861 Distance: 2904
+ID: 882 Distance: 2526
+ID: 1226 Distance: 2664
+ID: 1270 Distance: 2431
+ID: 1394 Distance: 2422
+ID: 1414 Distance: 2646
+ID: 1526 Distance: 2381
+ID: 1547 Distance: 2619
+ID: 1660 Distance: 2550
+ID: 1827 Distance: 2684
+ID: 2121 Distance: 2957
+ID: 2209 Distance: 2449
+ID: 2559 Distance: 2999
+ID: 2681 Distance: 2355
+ID: 2865 Distance: 2984
+
+Query Point: 20
+Nearest Neighbor Cube: 485
+Distance Cube: 2021
+True Neighbor: 9807
+DistanceTrue: 1754
+tCube: 0.000302
+tTrue: 0.136047
+R-nearest neighbors:
+ID: 26 Distance: 2364
+ID: 50 Distance: 2803
+ID: 82 Distance: 2832
+ID: 130 Distance: 2251
+ID: 137 Distance: 2655
+ID: 239 Distance: 2893
+ID: 273 Distance: 2543
+ID: 281 Distance: 2641
+ID: 299 Distance: 2691
+ID: 310 Distance: 2513
+ID: 315 Distance: 2823
+ID: 322 Distance: 2987
+ID: 329 Distance: 2667
+ID: 431 Distance: 2720
+ID: 485 Distance: 2021
+ID: 488 Distance: 2846
+ID: 506 Distance: 2856
+ID: 511 Distance: 2626
+ID: 561 Distance: 2929
+ID: 678 Distance: 2846
+ID: 698 Distance: 2742
+ID: 735 Distance: 2808
+ID: 762 Distance: 2964
+ID: 860 Distance: 2794
+ID: 915 Distance: 2913
+ID: 1033 Distance: 2738
+ID: 1156 Distance: 2954
+ID: 1230 Distance: 2730
+ID: 1241 Distance: 2625
+ID: 1293 Distance: 2210
+ID: 1364 Distance: 2889
+ID: 1471 Distance: 2507
+ID: 1476 Distance: 2393
+ID: 1506 Distance: 2919
+ID: 1566 Distance: 2979
+ID: 1600 Distance: 2233
+ID: 1666 Distance: 2911
+ID: 1716 Distance: 2822
+ID: 1777 Distance: 2789
+ID: 1816 Distance: 2502
+ID: 1850 Distance: 2267
+ID: 1880 Distance: 2764
+ID: 1898 Distance: 2943
+ID: 1988 Distance: 2067
+ID: 1998 Distance: 2795
+ID: 2118 Distance: 2973
+ID: 2148 Distance: 2602
+ID: 2176 Distance: 2506
+ID: 2184 Distance: 2483
+ID: 2349 Distance: 2744
+ID: 2362 Distance: 2757
+ID: 2363 Distance: 2713
+ID: 2495 Distance: 2169
+ID: 2517 Distance: 2936
+ID: 2528 Distance: 2745
+ID: 2562 Distance: 2696
+ID: 2572 Distance: 2575
+ID: 2628 Distance: 2397
+ID: 2700 Distance: 2935
+ID: 2784 Distance: 2143
+ID: 2792 Distance: 2315
+ID: 2880 Distance: 2729
+ID: 3014 Distance: 2105
+ID: 3041 Distance: 2555
+ID: 3044 Distance: 2097
+ID: 3112 Distance: 2885
+ID: 3186 Distance: 2795
+ID: 3198 Distance: 2852
+ID: 3266 Distance: 2875
+ID: 3268 Distance: 2743
+
+Query Point: 21
+Nearest Neighbor Cube: 71
+Distance Cube: 1944
+True Neighbor: 7028
+DistanceTrue: 1239
+tCube: 0.000306
+tTrue: 0.13745
+R-nearest neighbors:
+ID: 71 Distance: 1944
+ID: 93 Distance: 2324
+ID: 105 Distance: 2809
+ID: 159 Distance: 2721
+ID: 166 Distance: 2584
+ID: 267 Distance: 2881
+ID: 658 Distance: 2899
+ID: 759 Distance: 2786
+ID: 810 Distance: 2416
+ID: 921 Distance: 2851
+ID: 1000 Distance: 2192
+ID: 1129 Distance: 2466
+ID: 1154 Distance: 2720
+ID: 1173 Distance: 2945
+ID: 1274 Distance: 2932
+ID: 1277 Distance: 2912
+ID: 1301 Distance: 2804
+ID: 1432 Distance: 2905
+ID: 1450 Distance: 2285
+ID: 1838 Distance: 2758
+ID: 2071 Distance: 2518
+ID: 2257 Distance: 2109
+ID: 2430 Distance: 2488
+ID: 2932 Distance: 2536
+ID: 3140 Distance: 2625
+ID: 3206 Distance: 2637
+ID: 3307 Distance: 2466
+ID: 3338 Distance: 2871
+ID: 3371 Distance: 2510
+ID: 3457 Distance: 2560
+ID: 3469 Distance: 2734
+
+Query Point: 22
+Nearest Neighbor Cube: 61
+Distance Cube: 1865
+True Neighbor: 4491
+DistanceTrue: 486
+tCube: 0.000307
+tTrue: 0.141426
+R-nearest neighbors:
+ID: 2 Distance: 2438
+ID: 10 Distance: 2274
+ID: 13 Distance: 2191
+ID: 32 Distance: 2290
+ID: 56 Distance: 2593
+ID: 59 Distance: 2317
+ID: 61 Distance: 1865
+ID: 65 Distance: 2967
+ID: 72 Distance: 2504
+ID: 87 Distance: 2877
+ID: 114 Distance: 2028
+ID: 180 Distance: 2623
+ID: 184 Distance: 2720
+ID: 209 Distance: 2544
+ID: 222 Distance: 2621
+ID: 243 Distance: 2645
+ID: 254 Distance: 2279
+ID: 255 Distance: 2837
+ID: 313 Distance: 2512
+ID: 325 Distance: 2964
+ID: 332 Distance: 2468
+ID: 366 Distance: 2796
+ID: 427 Distance: 2593
+ID: 433 Distance: 2873
+ID: 474 Distance: 2879
+ID: 491 Distance: 2599
+ID: 534 Distance: 2307
+ID: 550 Distance: 1893
+ID: 551 Distance: 2449
+ID: 573 Distance: 2046
+ID: 590 Distance: 2585
+ID: 653 Distance: 2373
+ID: 656 Distance: 2928
+ID: 727 Distance: 2964
+ID: 751 Distance: 2079
+ID: 852 Distance: 2447
+ID: 855 Distance: 2440
+ID: 873 Distance: 2643
+ID: 874 Distance: 2195
+ID: 892 Distance: 2500
+ID: 904 Distance: 2656
+ID: 994 Distance: 2703
+ID: 1011 Distance: 2241
+ID: 1014 Distance: 2391
+ID: 1048 Distance: 2981
+ID: 1049 Distance: 2690
+ID: 1146 Distance: 2590
+ID: 1178 Distance: 2522
+ID: 1179 Distance: 2439
+ID: 1216 Distance: 2860
+ID: 1234 Distance: 2548
+ID: 1257 Distance: 2946
+ID: 1330 Distance: 2790
+ID: 1361 Distance: 2228
+ID: 1362 Distance: 2996
+ID: 1381 Distance: 2934
+ID: 1396 Distance: 2964
+ID: 1451 Distance: 2698
+ID: 1478 Distance: 2251
+ID: 1531 Distance: 2565
+ID: 1586 Distance: 2955
+ID: 1654 Distance: 2869
+ID: 1718 Distance: 2836
+ID: 1746 Distance: 2896
+ID: 1811 Distance: 2652
+ID: 2085 Distance: 2437
+ID: 2147 Distance: 2644
+ID: 2191 Distance: 2426
+ID: 2195 Distance: 2023
+ID: 2225 Distance: 2961
+ID: 2228 Distance: 2462
+ID: 2244 Distance: 2800
+ID: 2256 Distance: 2324
+ID: 2283 Distance: 2768
+ID: 2481 Distance: 2800
+ID: 2521 Distance: 2952
+ID: 2535 Distance: 2381
+ID: 2564 Distance: 2761
+ID: 2655 Distance: 2578
+
+Query Point: 23
+Nearest Neighbor Cube: 207
+Distance Cube: 1402
+True Neighbor: 4958
+DistanceTrue: 1159
+tCube: 0.000305
+tTrue: 0.136214
+R-nearest neighbors:
+ID: 20 Distance: 2375
+ID: 70 Distance: 2794
+ID: 80 Distance: 1931
+ID: 89 Distance: 2862
+ID: 106 Distance: 1448
+ID: 116 Distance: 2305
+ID: 179 Distance: 2793
+ID: 207 Distance: 1402
+ID: 248 Distance: 2085
+ID: 268 Distance: 2539
+ID: 297 Distance: 2841
+ID: 306 Distance: 2804
+ID: 354 Distance: 2394
+ID: 458 Distance: 2851
+ID: 462 Distance: 2649
+ID: 467 Distance: 2577
+ID: 473 Distance: 2889
+ID: 516 Distance: 2147
+ID: 544 Distance: 2705
+ID: 577 Distance: 2932
+ID: 650 Distance: 2905
+ID: 719 Distance: 2686
+ID: 837 Distance: 2728
+ID: 875 Distance: 2996
+ID: 878 Distance: 2931
+ID: 907 Distance: 2611
+ID: 975 Distance: 2753
+ID: 993 Distance: 2951
+ID: 1009 Distance: 2388
+ID: 1019 Distance: 2954
+ID: 1122 Distance: 2906
+ID: 1135 Distance: 2132
+ID: 1160 Distance: 2640
+ID: 1161 Distance: 2632
+ID: 1180 Distance: 2548
+ID: 1218 Distance: 2996
+ID: 1289 Distance: 2528
+ID: 1322 Distance: 2535
+ID: 1375 Distance: 2594
+ID: 1435 Distance: 2035
+ID: 1525 Distance: 2003
+ID: 1546 Distance: 1986
+ID: 1562 Distance: 2963
+ID: 1648 Distance: 2907
+ID: 1659 Distance: 1935
+ID: 1725 Distance: 2930
+ID: 1734 Distance: 2043
+ID: 1750 Distance: 2154
+ID: 1771 Distance: 2710
+ID: 1781 Distance: 2576
+ID: 1821 Distance: 2551
+ID: 1839 Distance: 2870
+ID: 1872 Distance: 2510
+ID: 1890 Distance: 2794
+ID: 1966 Distance: 2595
+ID: 1995 Distance: 2604
+ID: 2047 Distance: 2966
+ID: 2076 Distance: 2784
+ID: 2135 Distance: 2507
+ID: 2136 Distance: 2510
+ID: 2258 Distance: 2059
+ID: 2270 Distance: 2391
+ID: 2318 Distance: 2541
+ID: 2445 Distance: 2626
+ID: 2551 Distance: 2231
+ID: 2558 Distance: 2581
+ID: 2632 Distance: 2722
+ID: 2656 Distance: 2894
+ID: 2661 Distance: 2422
+ID: 2787 Distance: 2259
+ID: 2804 Distance: 2715
+ID: 2810 Distance: 2980
+ID: 2828 Distance: 1748
+ID: 2831 Distance: 2771
+ID: 2917 Distance: 2167
+ID: 3016 Distance: 2754
+ID: 3129 Distance: 2859
+ID: 3151 Distance: 2900
+ID: 3403 Distance: 2976
+ID: 3404 Distance: 2670
+ID: 3484 Distance: 2780
+ID: 3503 Distance: 2967
+ID: 3509 Distance: 2850
+
+Query Point: 24
+Nearest Neighbor Cube: 1012
+Distance Cube: 2047
+True Neighbor: 4673
+DistanceTrue: 1520
+tCube: 0.000313
+tTrue: 0.138289
+R-nearest neighbors:
+ID: 30 Distance: 2963
+ID: 202 Distance: 2768
+ID: 266 Distance: 2738
+ID: 675 Distance: 2498
+ID: 706 Distance: 2895
+ID: 802 Distance: 2720
+ID: 853 Distance: 2990
+ID: 1012 Distance: 2047
+ID: 1042 Distance: 2819
+ID: 1047 Distance: 2945
+ID: 1221 Distance: 2854
+ID: 1225 Distance: 2568
+ID: 1378 Distance: 2766
+ID: 1611 Distance: 2719
+ID: 1730 Distance: 2600
+ID: 1731 Distance: 2904
+ID: 1735 Distance: 2944
+ID: 1767 Distance: 2354
+ID: 1956 Distance: 2195
+ID: 2038 Distance: 2998
+ID: 2167 Distance: 2456
+ID: 2196 Distance: 2563
+ID: 2306 Distance: 2502
+ID: 2322 Distance: 2940
+ID: 2386 Distance: 2421
+ID: 2522 Distance: 2370
+ID: 2582 Distance: 2653
+ID: 2670 Distance: 2909
+ID: 3001 Distance: 2987
+ID: 3007 Distance: 2728
+
+Query Point: 25
+Nearest Neighbor Cube: 653
+Distance Cube: 1747
+True Neighbor: 4631
+DistanceTrue: 1068
+tCube: 0.000303
+tTrue: 0.135866
+R-nearest neighbors:
+ID: 2 Distance: 2284
+ID: 10 Distance: 2512
+ID: 13 Distance: 2409
+ID: 32 Distance: 2206
+ID: 56 Distance: 2845
+ID: 59 Distance: 2137
+ID: 61 Distance: 2383
+ID: 72 Distance: 2764
+ID: 87 Distance: 2661
+ID: 114 Distance: 2272
+ID: 180 Distance: 2679
+ID: 209 Distance: 2738
+ID: 222 Distance: 2831
+ID: 243 Distance: 2769
+ID: 254 Distance: 2301
+ID: 255 Distance: 2625
+ID: 290 Distance: 2922
+ID: 313 Distance: 2446
+ID: 325 Distance: 2740
+ID: 332 Distance: 2338
+ID: 366 Distance: 2800
+ID: 433 Distance: 2857
+ID: 461 Distance: 2974
+ID: 474 Distance: 2899
+ID: 491 Distance: 2357
+ID: 534 Distance: 2341
+ID: 550 Distance: 2447
+ID: 551 Distance: 2501
+ID: 573 Distance: 2672
+ID: 590 Distance: 2697
+ID: 653 Distance: 1747
+ID: 656 Distance: 2462
+ID: 720 Distance: 2937
+ID: 728 Distance: 2876
+ID: 751 Distance: 2577
+ID: 852 Distance: 2735
+ID: 855 Distance: 2692
+ID: 873 Distance: 2693
+ID: 874 Distance: 2239
+ID: 892 Distance: 2806
+ID: 904 Distance: 2694
+ID: 927 Distance: 2963
+ID: 994 Distance: 2679
+ID: 1011 Distance: 1803
+ID: 1014 Distance: 2517
+ID: 1048 Distance: 2499
+ID: 1049 Distance: 2934
+ID: 1146 Distance: 2394
+ID: 1178 Distance: 2580
+ID: 1179 Distance: 2341
+ID: 1234 Distance: 2334
+ID: 1257 Distance: 2854
+ID: 1330 Distance: 2444
+ID: 1361 Distance: 2166
+ID: 1478 Distance: 2359
+ID: 1531 Distance: 2807
+ID: 1586 Distance: 2979
+ID: 1639 Distance: 2854
+ID: 1654 Distance: 2807
+ID: 1718 Distance: 2554
+ID: 1746 Distance: 2942
+ID: 1811 Distance: 2666
+ID: 2085 Distance: 2439
+ID: 2147 Distance: 2838
+ID: 2191 Distance: 2584
+ID: 2195 Distance: 2289
+ID: 2228 Distance: 2646
+ID: 2244 Distance: 2834
+ID: 2256 Distance: 2206
+ID: 2481 Distance: 2366
+ID: 2487 Distance: 2747
+ID: 2521 Distance: 2440
+ID: 2535 Distance: 2543
+ID: 2564 Distance: 2379
+ID: 2615 Distance: 2740
+ID: 2655 Distance: 2794
+
+Query Point: 26
+Nearest Neighbor Cube: 2073
+Distance Cube: 2362
+True Neighbor: 6423
+DistanceTrue: 1919
+tCube: 0.000326
+tTrue: 0.138086
+R-nearest neighbors:
+ID: 22 Distance: 2870
+ID: 31 Distance: 2855
+ID: 112 Distance: 2714
+ID: 205 Distance: 2418
+ID: 291 Distance: 2891
+ID: 576 Distance: 2611
+ID: 619 Distance: 2824
+ID: 731 Distance: 2961
+ID: 838 Distance: 2908
+ID: 901 Distance: 2717
+ID: 1010 Distance: 2859
+ID: 1059 Distance: 2934
+ID: 1090 Distance: 2872
+ID: 1496 Distance: 2907
+ID: 1588 Distance: 2551
+ID: 1601 Distance: 2431
+ID: 1673 Distance: 2985
+ID: 1959 Distance: 2732
+ID: 2009 Distance: 2976
+ID: 2058 Distance: 2438
+ID: 2073 Distance: 2362
+ID: 2226 Distance: 2990
+ID: 2378 Distance: 2599
+ID: 2546 Distance: 2558
+ID: 2637 Distance: 2803
+ID: 2919 Distance: 2375
+
+Query Point: 27
+Nearest Neighbor Cube: 58
+Distance Cube: 1872
+True Neighbor: 6828
+DistanceTrue: 1251
+tCube: 0.000314
+tTrue: 0.135973
+R-nearest neighbors:
+ID: 11 Distance: 2634
+ID: 19 Distance: 2737
+ID: 52 Distance: 2922
+ID: 58 Distance: 1872
+ID: 91 Distance: 2884
+ID: 187 Distance: 2741
+ID: 214 Distance: 2856
+ID: 221 Distance: 2385
+ID: 344 Distance: 2723
+ID: 374 Distance: 2437
+ID: 381 Distance: 2641
+ID: 384 Distance: 2523
+ID: 457 Distance: 2292
+ID: 501 Distance: 2598
+ID: 528 Distance: 2700
+ID: 559 Distance: 2802
+ID: 575 Distance: 2693
+ID: 623 Distance: 2399
+ID: 654 Distance: 2255
+ID: 679 Distance: 2160
+ID: 738 Distance: 2822
+ID: 753 Distance: 2831
+ID: 766 Distance: 2374
+ID: 832 Distance: 2845
+ID: 888 Distance: 2563
+ID: 919 Distance: 2105
+ID: 952 Distance: 2738
+ID: 961 Distance: 2607
+ID: 1055 Distance: 2879
+ID: 1137 Distance: 2458
+ID: 1171 Distance: 2950
+ID: 1235 Distance: 2473
+ID: 1260 Distance: 2775
+ID: 1271 Distance: 2571
+ID: 1321 Distance: 2403
+ID: 1344 Distance: 2675
+ID: 1360 Distance: 2005
+ID: 1372 Distance: 2637
+ID: 1561 Distance: 2939
+ID: 1596 Distance: 2855
+ID: 1636 Distance: 2947
+ID: 1643 Distance: 2979
+ID: 1693 Distance: 2660
+ID: 1745 Distance: 2287
+ID: 1891 Distance: 2300
+ID: 1916 Distance: 2887
+ID: 1924 Distance: 2939
+ID: 1958 Distance: 2650
+ID: 2189 Distance: 2384
+ID: 2208 Distance: 2909
+ID: 2210 Distance: 2207
+ID: 2253 Distance: 2895
+ID: 2325 Distance: 2382
+ID: 2343 Distance: 2862
+ID: 2404 Distance: 2825
+ID: 2424 Distance: 2998
+ID: 2426 Distance: 2608
+ID: 2467 Distance: 2512
+ID: 2483 Distance: 2808
+ID: 2486 Distance: 2319
+ID: 2547 Distance: 2618
+ID: 2623 Distance: 2948
+ID: 2704 Distance: 2590
+ID: 2769 Distance: 2817
+ID: 2803 Distance: 2573
+ID: 3051 Distance: 1967
+
+Query Point: 28
+Nearest Neighbor Cube: 1663
+Distance Cube: 1861
+True Neighbor: 5964
+DistanceTrue: 1166
+tCube: 0.000314
+tTrue: 0.13703
+R-nearest neighbors:
+ID: 190 Distance: 2636
+ID: 269 Distance: 2161
+ID: 275 Distance: 2471
+ID: 360 Distance: 2913
+ID: 395 Distance: 2172
+ID: 410 Distance: 1996
+ID: 582 Distance: 2745
+ID: 636 Distance: 2464
+ID: 637 Distance: 2692
+ID: 649 Distance: 2663
+ID: 733 Distance: 2679
+ID: 889 Distance: 2836
+ID: 970 Distance: 2753
+ID: 976 Distance: 2826
+ID: 1064 Distance: 2548
+ID: 1079 Distance: 2325
+ID: 1106 Distance: 2888
+ID: 1134 Distance: 2740
+ID: 1227 Distance: 2141
+ID: 1358 Distance: 2603
+ID: 1359 Distance: 2255
+ID: 1365 Distance: 2802
+ID: 1425 Distance: 2967
+ID: 1479 Distance: 1973
+ID: 1509 Distance: 2652
+ID: 1530 Distance: 2747
+ID: 1584 Distance: 2822
+ID: 1587 Distance: 2294
+ID: 1661 Distance: 2232
+ID: 1663 Distance: 1861
+ID: 1672 Distance: 1872
+ID: 1770 Distance: 2217
+ID: 2059 Distance: 2675
+ID: 2099 Distance: 2778
+ID: 2132 Distance: 2462
+ID: 2252 Distance: 2898
+ID: 2340 Distance: 2386
+ID: 2354 Distance: 2919
+ID: 2425 Distance: 2788
+ID: 2524 Distance: 2815
+
+Query Point: 29
+Nearest Neighbor Cube: 706
+Distance Cube: 2199
+True Neighbor: 6828
+DistanceTrue: 1504
+tCube: 0.000326
+tTrue: 0.139307
+R-nearest neighbors:
+ID: 202 Distance: 2476
+ID: 252 Distance: 2561
+ID: 266 Distance: 2928
+ID: 343 Distance: 2968
+ID: 476 Distance: 2693
+ID: 514 Distance: 2518
+ID: 609 Distance: 2731
+ID: 675 Distance: 2630
+ID: 706 Distance: 2199
+ID: 853 Distance: 2992
+ID: 922 Distance: 2909
+ID: 971 Distance: 2913
+ID: 1020 Distance: 2613
+ID: 1060 Distance: 2991
+ID: 1224 Distance: 2698
+ID: 1225 Distance: 2496
+ID: 1613 Distance: 2963
+ID: 1722 Distance: 2804
+ID: 1735 Distance: 2934
+ID: 1862 Distance: 2574
+ID: 1889 Distance: 2653
+ID: 1926 Distance: 2732
+ID: 2038 Distance: 2658
+ID: 2298 Distance: 2778
+ID: 2306 Distance: 2458
+ID: 2322 Distance: 2906
+ID: 2386 Distance: 2805
+ID: 2433 Distance: 2680
+ID: 2582 Distance: 2923
+ID: 2788 Distance: 2782
+ID: 2837 Distance: 2777
+ID: 3185 Distance: 2965
+ID: 3246 Distance: 2525
+ID: 3389 Distance: 2820
+
+Query Point: 30
+Nearest Neighbor Cube: 1767
+Distance Cube: 1781
+True Neighbor: 5454
+DistanceTrue: 734
+tCube: 0.000279
+tTrue: 0.136142
+R-nearest neighbors:
+ID: 30 Distance: 2614
+ID: 223 Distance: 2847
+ID: 266 Distance: 2721
+ID: 1012 Distance: 2506
+ID: 1042 Distance: 2702
+ID: 1047 Distance: 2894
+ID: 1221 Distance: 2335
+ID: 1225 Distance: 2825
+ID: 1378 Distance: 2819
+ID: 1604 Distance: 2903
+ID: 1611 Distance: 2736
+ID: 1767 Distance: 1781
+ID: 1952 Distance: 2854
+ID: 1956 Distance: 2418
+ID: 2167 Distance: 2303
+ID: 2196 Distance: 2036
+ID: 2386 Distance: 2114
+ID: 2522 Distance: 2643
+ID: 2670 Distance: 2734
+ID: 2884 Distance: 2490
+ID: 2927 Distance: 2926
+ID: 3007 Distance: 2789
+ID: 3087 Distance: 2829
+ID: 3340 Distance: 2633
+
+Query Point: 31
+Nearest Neighbor Cube: 3732
+Distance Cube: 2425
+True Neighbor: 4778
+DistanceTrue: 1819
+tCube: 0.000318
+tTrue: 0.138332
+R-nearest neighbors:
+ID: 51 Distance: 2561
+ID: 161 Distance: 2565
+ID: 188 Distance: 2720
+ID: 231 Distance: 2916
+ID: 335 Distance: 2524
+ID: 456 Distance: 2670
+ID: 620 Distance: 2668
+ID: 992 Distance: 2981
+ID: 1061 Distance: 2609
+ID: 1233 Distance: 2650
+ID: 1350 Distance: 2736
+ID: 2142 Distance: 2652
+ID: 2237 Distance: 2804
+ID: 2463 Distance: 2807
+ID: 2947 Distance: 2938
+ID: 3058 Distance: 2938
+ID: 3195 Distance: 2541
+ID: 3359 Distance: 2774
+ID: 3508 Distance: 2763
+ID: 3576 Distance: 2619
+ID: 3668 Distance: 2513
+ID: 3732 Distance: 2425
+ID: 3748 Distance: 2757
+ID: 3767 Distance: 2852
+
+Query Point: 32
+Nearest Neighbor Cube: 2658
+Distance Cube: 2103
+True Neighbor: 5560
+DistanceTrue: 741
+tCube: 0.000316
+tTrue: 0.136495
+R-nearest neighbors:
+ID: 62 Distance: 2351
+ID: 79 Distance: 2922
+ID: 102 Distance: 2680
+ID: 182 Distance: 2896
+ID: 353 Distance: 2478
+ID: 492 Distance: 2490
+ID: 515 Distance: 2826
+ID: 537 Distance: 2962
+ID: 690 Distance: 2296
+ID: 701 Distance: 2882
+ID: 1003 Distance: 2862
+ID: 1217 Distance: 2833
+ID: 1270 Distance: 2586
+ID: 1452 Distance: 2588
+ID: 1466 Distance: 2724
+ID: 1526 Distance: 2894
+ID: 1543 Distance: 2754
+ID: 1547 Distance: 2924
+ID: 1640 Distance: 2994
+ID: 1660 Distance: 2933
+ID: 1748 Distance: 2693
+ID: 1827 Distance: 2983
+ID: 1965 Distance: 2630
+ID: 2018 Distance: 2828
+ID: 2068 Distance: 2544
+ID: 2121 Distance: 2828
+ID: 2211 Distance: 2966
+ID: 2288 Distance: 2798
+ID: 2559 Distance: 2828
+ID: 2641 Distance: 2717
+ID: 2654 Distance: 2772
+ID: 2658 Distance: 2103
+
+Query Point: 33
+Nearest Neighbor Cube: 856
+Distance Cube: 2305
+True Neighbor: 5301
+DistanceTrue: 1210
+tCube: 0.000313
+tTrue: 0.139279
+R-nearest neighbors:
+ID: 5 Distance: 2696
+ID: 8 Distance: 2595
+ID: 75 Distance: 2817
+ID: 117 Distance: 2752
+ID: 224 Distance: 2977
+ID: 234 Distance: 2661
+ID: 321 Distance: 2634
+ID: 333 Distance: 2664
+ID: 357 Distance: 2851
+ID: 386 Distance: 2601
+ID: 417 Distance: 2872
+ID: 547 Distance: 2584
+ID: 595 Distance: 2684
+ID: 604 Distance: 2457
+ID: 856 Distance: 2305
+ID: 905 Distance: 2338
+ID: 938 Distance: 2807
+ID: 960 Distance: 2662
+ID: 1232 Distance: 2880
+ID: 1263 Distance: 2496
+ID: 1422 Distance: 2704
+ID: 1443 Distance: 2568
+ID: 1465 Distance: 2696
+ID: 1484 Distance: 2697
+ID: 1512 Distance: 2750
+ID: 1540 Distance: 2998
+ID: 1719 Distance: 2704
+ID: 1836 Distance: 2735
+ID: 1912 Distance: 2973
+ID: 2247 Distance: 2783
+
+Query Point: 34
+Nearest Neighbor Cube: 472
+Distance Cube: 2829
+True Neighbor: 8151
+DistanceTrue: 2368
+tCube: 0.000334
+tTrue: 0.136252
+R-nearest neighbors:
+ID: 472 Distance: 2829
+ID: 1143 Distance: 2961
+
+Query Point: 35
+Nearest Neighbor Cube: 1953
+Distance Cube: 2482
+True Neighbor: 7059
+DistanceTrue: 1951
+tCube: 0.000315
+tTrue: 0.13981
+R-nearest neighbors:
+ID: 9 Distance: 2843
+ID: 251 Distance: 2948
+ID: 557 Distance: 2524
+ID: 752 Distance: 2991
+ID: 1021 Distance: 2707
+ID: 1169 Distance: 2874
+ID: 1215 Distance: 2783
+ID: 1424 Distance: 2823
+ID: 1726 Distance: 2963
+ID: 1873 Distance: 2934
+ID: 1953 Distance: 2482
+ID: 1960 Distance: 2903
+ID: 2028 Distance: 2810
+ID: 2557 Distance: 2692
+ID: 2709 Distance: 2630
+ID: 2859 Distance: 2675
+ID: 2875 Distance: 2993
+ID: 3031 Distance: 2828
+ID: 3088 Distance: 2946
+ID: 3208 Distance: 2793
+
+Query Point: 36
+Nearest Neighbor Cube: 2108
+Distance Cube: 2525
+True Neighbor: 5842
+DistanceTrue: 969
+tCube: 0.000316
+tTrue: 0.139055
+R-nearest neighbors:
+ID: 598 Distance: 2660
+ID: 611 Distance: 2839
+ID: 991 Distance: 2664
+ID: 1578 Distance: 2529
+ID: 1797 Distance: 2775
+ID: 1853 Distance: 2963
+ID: 1857 Distance: 2929
+ID: 1975 Distance: 2656
+ID: 2069 Distance: 2970
+ID: 2108 Distance: 2525
+ID: 2177 Distance: 2871
+ID: 2307 Distance: 2846
+ID: 2675 Distance: 2967
+ID: 2732 Distance: 2963
+ID: 2751 Distance: 2765
+ID: 2757 Distance: 2538
+ID: 2841 Distance: 2859
+ID: 2907 Distance: 2713
+ID: 2960 Distance: 2968
+
+Query Point: 37
+Nearest Neighbor Cube: 2756
+Distance Cube: 2389
+True Neighbor: 5843
+DistanceTrue: 865
+tCube: 0.000312
+tTrue: 0.139947
+R-nearest neighbors:
+ID: 103 Distance: 2982
+ID: 146 Distance: 2936
+ID: 372 Distance: 2918
+ID: 413 Distance: 2942
+ID: 536 Distance: 2776
+ID: 806 Distance: 2964
+ID: 910 Distance: 2878
+ID: 981 Distance: 2707
+ID: 990 Distance: 2787
+ID: 1454 Distance: 2943
+ID: 1469 Distance: 2625
+ID: 1626 Distance: 2885
+ID: 1917 Distance: 2558
+ID: 2019 Distance: 2867
+ID: 2516 Distance: 2512
+ID: 2544 Distance: 2701
+ID: 2580 Distance: 2973
+ID: 2590 Distance: 2991
+ID: 2642 Distance: 2894
+ID: 2744 Distance: 2780
+ID: 2756 Distance: 2389
+ID: 2876 Distance: 2818
+ID: 2908 Distance: 2953
+ID: 2924 Distance: 2929
+ID: 3113 Distance: 2732
+ID: 3170 Distance: 2788
+ID: 3290 Distance: 2949
+ID: 3315 Distance: 2894
+ID: 3357 Distance: 2952
+
+Query Point: 38
+Nearest Neighbor Cube: 1844
+Distance Cube: 2569
+True Neighbor: 5185
+DistanceTrue: 1241
+tCube: 0.000274
+tTrue: 0.139437
+R-nearest neighbors:
+ID: 365 Distance: 2946
+ID: 603 Distance: 2978
+ID: 981 Distance: 2934
+ID: 1772 Distance: 2734
+ID: 1844 Distance: 2569
+ID: 2215 Distance: 2640
+ID: 2516 Distance: 2841
+ID: 2642 Distance: 2983
+ID: 3099 Distance: 2685
+ID: 3315 Distance: 2623
+ID: 3419 Distance: 2969
+
+Query Point: 39
+Nearest Neighbor Cube: 1068
+Distance Cube: 2579
+True Neighbor: 5501
+DistanceTrue: 995
+tCube: 0.000308
+tTrue: 0.13656
+R-nearest neighbors:
+ID: 204 Distance: 2917
+ID: 608 Distance: 2818
+ID: 634 Distance: 2917
+ID: 830 Distance: 2952
+ID: 1068 Distance: 2579
+ID: 1398 Distance: 2986
+ID: 1671 Distance: 2743
+
+Query Point: 40
+Nearest Neighbor Cube: 2387
+Distance Cube: 1742
+True Neighbor: 5075
+DistanceTrue: 1200
+tCube: 0.00032
+tTrue: 0.136322
+R-nearest neighbors:
+ID: 12 Distance: 2751
+ID: 119 Distance: 2709
+ID: 142 Distance: 2801
+ID: 256 Distance: 2372
+ID: 334 Distance: 2458
+ID: 932 Distance: 1996
+ID: 1265 Distance: 2236
+ID: 1349 Distance: 2909
+ID: 1612 Distance: 2289
+ID: 1650 Distance: 2833
+ID: 1766 Distance: 2285
+ID: 1876 Distance: 2090
+ID: 2013 Distance: 2000
+ID: 2049 Distance: 2575
+ID: 2387 Distance: 1742
+ID: 2428 Distance: 2409
+ID: 2488 Distance: 2696
+ID: 2556 Distance: 2400
+ID: 2561 Distance: 2487
+ID: 2592 Distance: 2540
+ID: 2659 Distance: 2754
+ID: 2800 Distance: 2859
+ID: 3021 Distance: 2884
+ID: 3083 Distance: 2945
+ID: 3107 Distance: 1821
+ID: 3192 Distance: 2140
+ID: 3240 Distance: 2821
+ID: 4187 Distance: 2102
+
+Query Point: 41
+Nearest Neighbor Cube: 2222
+Distance Cube: 1949
+True Neighbor: 8308
+DistanceTrue: 1106
+tCube: 0.000295
+tTrue: 0.13897
+R-nearest neighbors:
+ID: 3 Distance: 2869
+ID: 15 Distance: 2667
+ID: 60 Distance: 2869
+ID: 63 Distance: 2913
+ID: 86 Distance: 2619
+ID: 120 Distance: 2914
+ID: 141 Distance: 2870
+ID: 204 Distance: 2464
+ID: 206 Distance: 2818
+ID: 358 Distance: 2589
+ID: 375 Distance: 2939
+ID: 475 Distance: 2673
+ID: 481 Distance: 2260
+ID: 500 Distance: 2536
+ID: 552 Distance: 2975
+ID: 591 Distance: 2649
+ID: 621 Distance: 2663
+ID: 633 Distance: 2608
+ID: 635 Distance: 2898
+ID: 655 Distance: 2696
+ID: 872 Distance: 2351
+ID: 903 Distance: 2322
+ID: 964 Distance: 2687
+ID: 974 Distance: 2935
+ID: 1002 Distance: 2810
+ID: 1068 Distance: 2736
+ID: 1197 Distance: 2973
+ID: 1376 Distance: 2704
+ID: 1398 Distance: 2779
+ID: 1400 Distance: 2240
+ID: 1418 Distance: 2979
+ID: 1419 Distance: 2832
+ID: 1641 Distance: 2482
+ID: 1791 Distance: 2625
+ID: 1837 Distance: 2712
+ID: 2127 Distance: 2781
+ID: 2222 Distance: 1949
+ID: 2248 Distance: 2923
+
+Query Point: 42
+Nearest Neighbor Cube: 898
+Distance Cube: 2032
+True Neighbor: 4644
+DistanceTrue: 1442
+tCube: 0.000299
+tTrue: 0.138408
+R-nearest neighbors:
+ID: 536 Distance: 2994
+ID: 898 Distance: 2032
+ID: 1065 Distance: 2634
+ID: 1545 Distance: 2911
+ID: 1626 Distance: 2811
+ID: 1681 Distance: 2428
+ID: 1696 Distance: 2897
+ID: 1712 Distance: 2851
+ID: 1772 Distance: 2917
+ID: 1801 Distance: 2575
+ID: 1917 Distance: 2594
+ID: 2003 Distance: 2920
+ID: 2851 Distance: 2167
+ID: 2900 Distance: 2221
+ID: 2910 Distance: 2827
+ID: 3113 Distance: 2768
+ID: 3357 Distance: 2932
+
+Query Point: 43
+Nearest Neighbor Cube: 59
+Distance Cube: 1924
+True Neighbor: 5225
+DistanceTrue: 1629
+tCube: 0.000315
+tTrue: 0.137326
+R-nearest neighbors:
+ID: 10 Distance: 2783
+ID: 32 Distance: 2707
+ID: 59 Distance: 1924
+ID: 87 Distance: 2738
+ID: 114 Distance: 2565
+ID: 180 Distance: 2434
+ID: 184 Distance: 2925
+ID: 209 Distance: 2935
+ID: 254 Distance: 2700
+ID: 290 Distance: 2427
+ID: 313 Distance: 2321
+ID: 332 Distance: 2607
+ID: 366 Distance: 2363
+ID: 461 Distance: 2913
+ID: 491 Distance: 2464
+ID: 534 Distance: 2822
+ID: 551 Distance: 2780
+ID: 590 Distance: 2564
+ID: 653 Distance: 2278
+ID: 656 Distance: 2605
+ID: 720 Distance: 2310
+ID: 727 Distance: 2613
+ID: 873 Distance: 2498
+ID: 892 Distance: 2363
+ID: 904 Distance: 2489
+ID: 1048 Distance: 2784
+ID: 1049 Distance: 2641
+ID: 1146 Distance: 2245
+ID: 1178 Distance: 2999
+ID: 1179 Distance: 2508
+ID: 1216 Distance: 2653
+ID: 1330 Distance: 2471
+ID: 1441 Distance: 2918
+ID: 1478 Distance: 2508
+ID: 1639 Distance: 2237
+ID: 1654 Distance: 2974
+ID: 1718 Distance: 2129
+ID: 2085 Distance: 2660
+ID: 2095 Distance: 2462
+ID: 2195 Distance: 2660
+ID: 2283 Distance: 2991
+ID: 2615 Distance: 2895
+ID: 2655 Distance: 2743
+
+Query Point: 44
+Nearest Neighbor Cube: 61
+Distance Cube: 2343
+True Neighbor: 6303
+DistanceTrue: 1275
+tCube: 0.000274
+tTrue: 0.142805
+R-nearest neighbors:
+ID: 2 Distance: 2790
+ID: 10 Distance: 2862
+ID: 13 Distance: 2959
+ID: 56 Distance: 2927
+ID: 61 Distance: 2343
+ID: 72 Distance: 2902
+ID: 222 Distance: 2667
+ID: 243 Distance: 2609
+ID: 433 Distance: 2733
+ID: 447 Distance: 2747
+ID: 550 Distance: 2777
+ID: 551 Distance: 2479
+ID: 573 Distance: 2654
+ID: 727 Distance: 2986
+ID: 751 Distance: 2491
+ID: 767 Distance: 2490
+ID: 852 Distance: 2695
+ID: 855 Distance: 2910
+ID: 873 Distance: 2955
+ID: 874 Distance: 2909
+ID: 904 Distance: 2972
+ID: 927 Distance: 2975
+ID: 994 Distance: 2551
+ID: 1014 Distance: 2755
+ID: 1025 Distance: 2717
+ID: 1178 Distance: 2660
+ID: 1216 Distance: 2952
+ID: 1234 Distance: 2868
+ID: 1257 Distance: 2840
+ID: 1314 Distance: 2542
+ID: 1451 Distance: 2946
+ID: 1531 Distance: 2903
+ID: 1586 Distance: 2933
+ID: 2077 Distance: 2909
+ID: 2085 Distance: 2611
+ID: 2147 Distance: 2822
+ID: 2191 Distance: 2940
+ID: 2195 Distance: 2537
+ID: 2224 Distance: 2627
+ID: 2256 Distance: 2532
+ID: 2487 Distance: 2871
+ID: 2535 Distance: 2755
+ID: 2596 Distance: 2853
+
+Query Point: 45
+Nearest Neighbor Cube: 2158
+Distance Cube: 2154
+True Neighbor: 8616
+DistanceTrue: 1483
+tCube: 0.00032
+tTrue: 0.136502
+R-nearest neighbors:
+ID: 265 Distance: 2162
+ID: 342 Distance: 2660
+ID: 390 Distance: 2613
+ID: 401 Distance: 2657
+ID: 816 Distance: 2749
+ID: 823 Distance: 2979
+ID: 885 Distance: 2307
+ID: 923 Distance: 2611
+ID: 1113 Distance: 2490
+ID: 1390 Distance: 2484
+ID: 1565 Distance: 2716
+ID: 1848 Distance: 2315
+ID: 1963 Distance: 2803
+ID: 2128 Distance: 2972
+ID: 2151 Distance: 2866
+ID: 2158 Distance: 2154
+ID: 2361 Distance: 2599
+ID: 2899 Distance: 2684
+ID: 3042 Distance: 2329
+ID: 3269 Distance: 2272
+ID: 3303 Distance: 2623
+ID: 3429 Distance: 2411
+ID: 3512 Distance: 2227
+ID: 3812 Distance: 2993
+ID: 3929 Distance: 2440
+ID: 4113 Distance: 2403
+ID: 4179 Distance: 2542
+ID: 4231 Distance: 2384
+ID: 4256 Distance: 2758
+ID: 4276 Distance: 2178
+ID: 4343 Distance: 2274
+
+Query Point: 46
+Nearest Neighbor Cube: 4995
+Distance Cube: 1977
+True Neighbor: 7877
+DistanceTrue: 1628
+tCube: 0.000318
+tTrue: 0.138179
+R-nearest neighbors:
+ID: 57 Distance: 2265
+ID: 78 Distance: 2247
+ID: 101 Distance: 2417
+ID: 113 Distance: 2430
+ID: 168 Distance: 2445
+ID: 259 Distance: 2670
+ID: 327 Distance: 2764
+ID: 406 Distance: 2788
+ID: 585 Distance: 2700
+ID: 640 Distance: 2709
+ID: 660 Distance: 2656
+ID: 831 Distance: 2850
+ID: 936 Distance: 2337
+ID: 1196 Distance: 2256
+ID: 1248 Distance: 2539
+ID: 1276 Distance: 2572
+ID: 1408 Distance: 2894
+ID: 1815 Distance: 2511
+ID: 1881 Distance: 2710
+ID: 2063 Distance: 2544
+ID: 2613 Distance: 2528
+ID: 2660 Distance: 2347
+ID: 2921 Distance: 2751
+ID: 3281 Distance: 2893
+ID: 3542 Distance: 2608
+ID: 4004 Distance: 2372
+ID: 4111 Distance: 2930
+ID: 4314 Distance: 2555
+ID: 4586 Distance: 2885
+ID: 4639 Distance: 2896
+ID: 4677 Distance: 2499
+ID: 4761 Distance: 2227
+ID: 4776 Distance: 2239
+ID: 4781 Distance: 2652
+ID: 4841 Distance: 2600
+ID: 4846 Distance: 2875
+ID: 4970 Distance: 2689
+ID: 4995 Distance: 1977
+ID: 5040 Distance: 2383
+ID: 5091 Distance: 2064
+ID: 5121 Distance: 2192
+ID: 5198 Distance: 2866
+
+Query Point: 47
+Nearest Neighbor Cube: 859
+Distance Cube: 2008
+True Neighbor: 5881
+DistanceTrue: 646
+tCube: 0.000316
+tTrue: 0.137466
+R-nearest neighbors:
+ID: 84 Distance: 2995
+ID: 129 Distance: 2684
+ID: 131 Distance: 2410
+ID: 171 Distance: 2381
+ID: 174 Distance: 2398
+ID: 328 Distance: 2797
+ID: 376 Distance: 2119
+ID: 438 Distance: 2018
+ID: 440 Distance: 2013
+ID: 478 Distance: 2521
+ID: 510 Distance: 2216
+ID: 560 Distance: 2123
+ID: 579 Distance: 2746
+ID: 721 Distance: 2480
+ID: 800 Distance: 2736
+ID: 808 Distance: 2735
+ID: 819 Distance: 2271
+ID: 859 Distance: 2008
+ID: 897 Distance: 2660
+ID: 916 Distance: 2580
+ID: 942 Distance: 2741
+ID: 1066 Distance: 2425
+ID: 1086 Distance: 2885
+ID: 1155 Distance: 2932
+ID: 1287 Distance: 2814
+ID: 1384 Distance: 2740
+ID: 1433 Distance: 2939
+ID: 1448 Distance: 2662
+ID: 1458 Distance: 2509
+ID: 1507 Distance: 2730
+ID: 1517 Distance: 2916
+ID: 1664 Distance: 2610
+ID: 1689 Distance: 2816
+ID: 1713 Distance: 2582
+ID: 1795 Distance: 2462
+ID: 1948 Distance: 2690
+ID: 1981 Distance: 2284
+ID: 2212 Distance: 2785
+ID: 2272 Distance: 2945
+ID: 2364 Distance: 2375
+ID: 2494 Distance: 2920
+ID: 2525 Distance: 2815
+ID: 2649 Distance: 2982
+ID: 2677 Distance: 2664
+ID: 2770 Distance: 2980
+ID: 2776 Distance: 2965
+ID: 2783 Distance: 2891
+
+Query Point: 48
+Nearest Neighbor Cube: 678
+Distance Cube: 2943
+True Neighbor: 5642
+DistanceTrue: 2446
+tCube: 0.000316
+tTrue: 0.135947
+R-nearest neighbors:
+ID: 678 Distance: 2943
+
+Query Point: 49
+Nearest Neighbor Cube: 1638
+Distance Cube: 2278
+True Neighbor: 5214
+DistanceTrue: 968
+tCube: 0.000317
+tTrue: 0.13869
+R-nearest neighbors:
+ID: 519 Distance: 2695
+ID: 605 Distance: 2880
+ID: 779 Distance: 2977
+ID: 908 Distance: 2930
+ID: 969 Distance: 2940
+ID: 1638 Distance: 2278
+ID: 1814 Distance: 2878
+ID: 1819 Distance: 2786
+ID: 2032 Distance: 2625
+ID: 2267 Distance: 2735
+ID: 2269 Distance: 2904
+ID: 2474 Distance: 2618
+
+Query Point: 50
+Nearest Neighbor Cube: 169
+Distance Cube: 1571
+True Neighbor: 5085
+DistanceTrue: 849
+tCube: 0.000324
+tTrue: 0.138222
+R-nearest neighbors:
+ID: 14 Distance: 2370
+ID: 22 Distance: 2361
+ID: 31 Distance: 2602
+ID: 169 Distance: 1571
+ID: 205 Distance: 2611
+ID: 274 Distance: 2576
+ID: 563 Distance: 2189
+ID: 576 Distance: 2858
+ID: 619 Distance: 2363
+ID: 624 Distance: 2650
+ID: 731 Distance: 2950
+ID: 760 Distance: 2586
+ID: 776 Distance: 2517
+ID: 815 Distance: 2254
+ID: 838 Distance: 2527
+ID: 866 Distance: 2999
+ID: 901 Distance: 2616
+ID: 935 Distance: 2014
+ID: 986 Distance: 2196
+ID: 987 Distance: 2714
+ID: 1010 Distance: 2330
+ID: 1078 Distance: 2543
+ID: 1082 Distance: 2697
+ID: 1090 Distance: 2899
+ID: 1124 Distance: 2215
+ID: 1337 Distance: 2589
+ID: 1399 Distance: 2894
+ID: 1580 Distance: 2709
+ID: 1588 Distance: 2990
+ID: 1673 Distance: 2850
+ID: 1823 Distance: 2790
+ID: 1882 Distance: 2272
+ID: 1901 Distance: 2737
+ID: 1913 Distance: 2907
+ID: 2009 Distance: 2847
+ID: 2072 Distance: 2046
+ID: 2073 Distance: 2651
+ID: 2086 Distance: 2295
+ID: 2133 Distance: 2747
+ID: 2171 Distance: 2621
+ID: 2226 Distance: 2719
+ID: 2351 Distance: 2892
+ID: 2454 Distance: 2499
+ID: 2512 Distance: 2293
+ID: 2573 Distance: 2936
+ID: 2911 Distance: 2293
+ID: 2918 Distance: 2029
+ID: 2919 Distance: 2680
+ID: 2984 Distance: 2363
+ID: 2997 Distance: 2676
+
+Query Point: 51
+Nearest Neighbor Cube: 4268
+Distance Cube: 2518
+True Neighbor: 5013
+DistanceTrue: 1130
+tCube: 0.000314
+tTrue: 0.136647
+R-nearest neighbors:
+ID: 928 Distance: 2810
+ID: 931 Distance: 2933
+ID: 1199 Distance: 2982
+ID: 1298 Distance: 2866
+ID: 1548 Distance: 2683
+ID: 3052 Distance: 2979
+ID: 3105 Distance: 2969
+ID: 3523 Distance: 2635
+ID: 4210 Distance: 2723
+ID: 4268 Distance: 2518
+ID: 4282 Distance: 2967
+
+Query Point: 52
+Nearest Neighbor Cube: 2433
+Distance Cube: 2320
+True Neighbor: 6124
+DistanceTrue: 848
+tCube: 0.00032
+tTrue: 0.147979
+R-nearest neighbors:
+ID: 343 Distance: 2826
+ID: 514 Distance: 2864
+ID: 706 Distance: 2681
+ID: 968 Distance: 2746
+ID: 971 Distance: 2799
+ID: 1020 Distance: 2757
+ID: 1224 Distance: 2944
+ID: 1300 Distance: 2964
+ID: 1862 Distance: 2540
+ID: 1892 Distance: 2422
+ID: 1926 Distance: 2784
+ID: 2284 Distance: 2995
+ID: 2298 Distance: 2804
+ID: 2339 Distance: 2974
+ID: 2433 Distance: 2320
+ID: 2542 Distance: 2861
+ID: 2698 Distance: 2689
+ID: 2837 Distance: 2695
+ID: 3389 Distance: 2406
+
+Query Point: 53
+Nearest Neighbor Cube: 1090
+Distance Cube: 1727
+True Neighbor: 5674
+DistanceTrue: 1188
+tCube: 0.0003
+tTrue: 0.141128
+R-nearest neighbors:
+ID: 16 Distance: 1759
+ID: 22 Distance: 2825
+ID: 31 Distance: 2672
+ID: 144 Distance: 2924
+ID: 169 Distance: 2677
+ID: 205 Distance: 2269
+ID: 274 Distance: 2934
+ID: 291 Distance: 2696
+ID: 295 Distance: 2353
+ID: 359 Distance: 2528
+ID: 414 Distance: 2839
+ID: 556 Distance: 2799
+ID: 563 Distance: 2659
+ID: 619 Distance: 2857
+ID: 760 Distance: 2878
+ID: 768 Distance: 2869
+ID: 776 Distance: 2709
+ID: 815 Distance: 2718
+ID: 825 Distance: 2443
+ID: 838 Distance: 2189
+ID: 901 Distance: 2934
+ID: 918 Distance: 2715
+ID: 935 Distance: 2694
+ID: 1010 Distance: 2900
+ID: 1090 Distance: 1727
+ID: 1124 Distance: 2975
+ID: 1190 Distance: 2874
+ID: 1207 Distance: 2833
+ID: 1337 Distance: 2937
+ID: 1421 Distance: 2391
+ID: 1594 Distance: 2011
+ID: 1601 Distance: 2204
+ID: 1658 Distance: 2959
+ID: 1818 Distance: 2492
+ID: 1823 Distance: 2794
+ID: 1913 Distance: 2677
+ID: 1930 Distance: 2387
+ID: 1959 Distance: 2691
+ID: 2009 Distance: 2903
+ID: 2015 Distance: 2639
+ID: 2058 Distance: 2537
+ID: 2072 Distance: 2310
+ID: 2073 Distance: 2447
+ID: 2086 Distance: 2459
+ID: 2187 Distance: 2712
+ID: 2351 Distance: 1890
+ID: 2454 Distance: 2839
+ID: 2546 Distance: 2961
+ID: 2637 Distance: 2012
+ID: 2858 Distance: 2807
+ID: 2911 Distance: 2663
+ID: 2918 Distance: 2371
+ID: 2919 Distance: 2394
+ID: 2979 Distance: 2828
+
+Query Point: 54
+Nearest Neighbor Cube: 1826
+Distance Cube: 2109
+True Neighbor: 8613
+DistanceTrue: 1219
+tCube: 0.000318
+tTrue: 0.144559
+R-nearest neighbors:
+ID: 51 Distance: 2682
+ID: 74 Distance: 2775
+ID: 167 Distance: 2969
+ID: 237 Distance: 2750
+ID: 242 Distance: 2763
+ID: 312 Distance: 2334
+ID: 335 Distance: 2477
+ID: 620 Distance: 2773
+ID: 622 Distance: 2910
+ID: 1145 Distance: 2573
+ID: 1233 Distance: 2641
+ID: 1343 Distance: 2499
+ID: 1348 Distance: 2925
+ID: 1413 Distance: 2514
+ID: 1539 Distance: 2774
+ID: 1550 Distance: 2586
+ID: 1779 Distance: 2400
+ID: 1810 Distance: 2845
+ID: 1824 Distance: 2867
+ID: 1826 Distance: 2109
+ID: 1918 Distance: 2764
+ID: 2021 Distance: 2868
+ID: 2048 Distance: 2436
+ID: 2142 Distance: 2833
+ID: 2292 Distance: 2924
+ID: 2336 Distance: 2560
+ID: 2453 Distance: 2715
+ID: 2463 Distance: 2978
+ID: 2729 Distance: 2839
+ID: 2893 Distance: 2594
+ID: 2903 Distance: 2704
+ID: 2987 Distance: 2741
+ID: 3038 Distance: 2959
+ID: 3348 Distance: 2467
+ID: 3548 Distance: 2264
+ID: 3748 Distance: 2640
+
+Query Point: 55
+Nearest Neighbor Cube: 722
+Distance Cube: 1644
+True Neighbor: 6159
+DistanceTrue: 979
+tCube: 0.000317
+tTrue: 0.140171
+R-nearest neighbors:
+ID: 264 Distance: 2698
+ID: 599 Distance: 2878
+ID: 722 Distance: 1644
+ID: 979 Distance: 2802
+ID: 1206 Distance: 2588
+ID: 1389 Distance: 2468
+ID: 1391 Distance: 2321
+ID: 1813 Distance: 2957
+ID: 1949 Distance: 2981
+ID: 1974 Distance: 2953
+ID: 2060 Distance: 2417
+ID: 2152 Distance: 2592
+ID: 2472 Distance: 2882
+ID: 2496 Distance: 2699
+ID: 2730 Distance: 2179
+ID: 2878 Distance: 2942
+ID: 2933 Distance: 2258
+ID: 3163 Distance: 2322
+
+Query Point: 56
+Nearest Neighbor Cube: 5060
+Distance Cube: 1451
+True Neighbor: 5831
+DistanceTrue: 1042
+tCube: 0.000319
+tTrue: 0.138143
+R-nearest neighbors:
+ID: 96 Distance: 2762
+ID: 670 Distance: 2794
+ID: 772 Distance: 2421
+ID: 783 Distance: 2729
+ID: 1430 Distance: 2273
+ID: 1706 Distance: 2909
+ID: 2045 Distance: 2460
+ID: 2478 Distance: 2779
+ID: 2690 Distance: 2779
+ID: 2811 Distance: 2914
+ID: 2976 Distance: 2365
+ID: 3249 Distance: 2829
+ID: 3717 Distance: 2112
+ID: 4398 Distance: 2410
+ID: 4432 Distance: 2999
+ID: 4448 Distance: 2466
+ID: 5036 Distance: 1689
+ID: 5060 Distance: 1451
+ID: 5100 Distance: 2202
+
+Query Point: 57
+Nearest Neighbor Cube: 2195
+Distance Cube: 1740
+True Neighbor: 4904
+DistanceTrue: 1436
+tCube: 0.000316
+tTrue: 0.143879
+R-nearest neighbors:
+ID: 2 Distance: 2269
+ID: 10 Distance: 2415
+ID: 13 Distance: 2818
+ID: 32 Distance: 2365
+ID: 56 Distance: 2930
+ID: 59 Distance: 2170
+ID: 61 Distance: 1900
+ID: 72 Distance: 2641
+ID: 87 Distance: 2542
+ID: 114 Distance: 2297
+ID: 180 Distance: 2528
+ID: 184 Distance: 2549
+ID: 209 Distance: 2509
+ID: 222 Distance: 2482
+ID: 243 Distance: 2538
+ID: 254 Distance: 2434
+ID: 313 Distance: 2309
+ID: 332 Distance: 1837
+ID: 366 Distance: 2147
+ID: 427 Distance: 2790
+ID: 433 Distance: 2292
+ID: 447 Distance: 2676
+ID: 461 Distance: 2465
+ID: 491 Distance: 1840
+ID: 534 Distance: 2432
+ID: 550 Distance: 2146
+ID: 551 Distance: 2364
+ID: 589 Distance: 2855
+ID: 590 Distance: 2728
+ID: 653 Distance: 2470
+ID: 727 Distance: 2709
+ID: 728 Distance: 2621
+ID: 767 Distance: 2413
+ID: 852 Distance: 2676
+ID: 855 Distance: 2543
+ID: 873 Distance: 2156
+ID: 874 Distance: 2260
+ID: 892 Distance: 2609
+ID: 904 Distance: 2147
+ID: 927 Distance: 2674
+ID: 967 Distance: 2898
+ID: 994 Distance: 2614
+ID: 1011 Distance: 2692
+ID: 1014 Distance: 2368
+ID: 1048 Distance: 2216
+ID: 1049 Distance: 2607
+ID: 1146 Distance: 2495
+ID: 1178 Distance: 2099
+ID: 1179 Distance: 2546
+ID: 1216 Distance: 2611
+ID: 1234 Distance: 2091
+ID: 1314 Distance: 2491
+ID: 1330 Distance: 2429
+ID: 1361 Distance: 2759
+ID: 1362 Distance: 2941
+ID: 1381 Distance: 2939
+ID: 1441 Distance: 2842
+ID: 1451 Distance: 2819
+ID: 1478 Distance: 2622
+ID: 1586 Distance: 2718
+ID: 1639 Distance: 2269
+ID: 1654 Distance: 2928
+ID: 1718 Distance: 2277
+ID: 1746 Distance: 2739
+ID: 1811 Distance: 2875
+ID: 1909 Distance: 2419
+ID: 2077 Distance: 2222
+ID: 2085 Distance: 1808
+ID: 2147 Distance: 2527
+ID: 2191 Distance: 2699
+ID: 2195 Distance: 1740
+ID: 2225 Distance: 2936
+ID: 2228 Distance: 2761
+ID: 2244 Distance: 2849
+ID: 2256 Distance: 2141
+ID: 2283 Distance: 2785
+ID: 2521 Distance: 2505
+ID: 2535 Distance: 2446
+ID: 2586 Distance: 2509
+ID: 2596 Distance: 2460
+ID: 2615 Distance: 2803
+ID: 2655 Distance: 2555
+
+Query Point: 58
+Nearest Neighbor Cube: 916
+Distance Cube: 2062
+True Neighbor: 5212
+DistanceTrue: 1176
+tCube: 0.000313
+tTrue: 0.143658
+R-nearest neighbors:
+ID: 109 Distance: 2237
+ID: 110 Distance: 2868
+ID: 129 Distance: 2344
+ID: 131 Distance: 2414
+ID: 139 Distance: 2876
+ID: 171 Distance: 2325
+ID: 174 Distance: 2706
+ID: 249 Distance: 2534
+ID: 293 Distance: 2393
+ID: 317 Distance: 2994
+ID: 328 Distance: 2917
+ID: 376 Distance: 2845
+ID: 393 Distance: 2649
+ID: 438 Distance: 2956
+ID: 440 Distance: 2703
+ID: 450 Distance: 2860
+ID: 478 Distance: 2341
+ID: 510 Distance: 2782
+ID: 560 Distance: 2767
+ID: 579 Distance: 2860
+ID: 610 Distance: 2463
+ID: 639 Distance: 2997
+ID: 680 Distance: 2522
+ID: 685 Distance: 2733
+ID: 687 Distance: 2547
+ID: 721 Distance: 2836
+ID: 800 Distance: 2648
+ID: 808 Distance: 2975
+ID: 819 Distance: 2857
+ID: 839 Distance: 2913
+ID: 859 Distance: 2724
+ID: 897 Distance: 2972
+ID: 916 Distance: 2062
+ID: 942 Distance: 2883
+ID: 988 Distance: 2159
+ID: 1086 Distance: 2581
+ID: 1093 Distance: 2882
+ID: 1117 Distance: 2874
+ID: 1155 Distance: 2880
+ID: 1188 Distance: 2145
+ID: 1193 Distance: 2545
+ID: 1240 Distance: 2666
+ID: 1282 Distance: 2809
+ID: 1287 Distance: 2600
+ID: 1323 Distance: 2925
+ID: 1404 Distance: 2480
+ID: 1458 Distance: 2881
+ID: 1507 Distance: 2342
+ID: 1517 Distance: 2668
+ID: 1542 Distance: 2791
+ID: 1564 Distance: 2911
+ID: 1621 Distance: 2882
+ID: 1664 Distance: 2786
+ID: 1683 Distance: 2923
+ID: 1689 Distance: 2270
+ID: 1761 Distance: 2974
+ID: 1795 Distance: 2822
+ID: 1831 Distance: 2766
+ID: 1948 Distance: 2908
+ID: 1950 Distance: 2611
+ID: 1981 Distance: 2636
+ID: 1983 Distance: 2804
+ID: 2113 Distance: 2808
+ID: 2114 Distance: 2868
+ID: 2140 Distance: 2889
+ID: 2201 Distance: 2716
+ID: 2212 Distance: 2707
+ID: 2254 Distance: 2854
+ID: 2272 Distance: 2241
+ID: 2364 Distance: 2733
+ID: 2435 Distance: 2711
+ID: 2494 Distance: 2572
+ID: 2565 Distance: 2791
+ID: 2608 Distance: 2799
+ID: 2649 Distance: 2710
+ID: 2677 Distance: 2914
+ID: 2702 Distance: 2691
+ID: 2770 Distance: 2786
+ID: 2783 Distance: 2589
+
+Query Point: 59
+Nearest Neighbor Cube: 1421
+Distance Cube: 2519
+True Neighbor: 7238
+DistanceTrue: 460
+tCube: 0.000315
+tTrue: 0.137733
+R-nearest neighbors:
+ID: 16 Distance: 2821
+ID: 295 Distance: 2749
+ID: 1090 Distance: 2921
+ID: 1421 Distance: 2519
+ID: 1901 Distance: 2871
+ID: 2072 Distance: 2984
+ID: 2351 Distance: 2866
+ID: 2858 Distance: 2857
+ID: 2918 Distance: 2987
+
+Query Point: 60
+Nearest Neighbor Cube: 99
+Distance Cube: 1260
+True Neighbor: 6835
+DistanceTrue: 619
+tCube: 0.000314
+tTrue: 0.139641
+R-nearest neighbors:
+ID: 37 Distance: 1483
+ID: 45 Distance: 1489
+ID: 81 Distance: 1342
+ID: 99 Distance: 1260
+ID: 121 Distance: 2807
+ID: 149 Distance: 2170
+ID: 1013 Distance: 2846
+ID: 1045 Distance: 2974
+ID: 1110 Distance: 2407
+ID: 1281 Distance: 2673
+ID: 1333 Distance: 2927
+ID: 1347 Distance: 2023
+ID: 1403 Distance: 2498
+ID: 1535 Distance: 2028
+ID: 1537 Distance: 2914
+ID: 1687 Distance: 2321
+ID: 1887 Distance: 2452
+ID: 1984 Distance: 2716
+ID: 2044 Distance: 2497
+ID: 2169 Distance: 2084
+ID: 2182 Distance: 2712
+ID: 2203 Distance: 2904
+ID: 2233 Distance: 2798
+ID: 2250 Distance: 2831
+ID: 2277 Distance: 2316
+ID: 2397 Distance: 2990
+ID: 2411 Distance: 2827
+ID: 2527 Distance: 2252
+ID: 2534 Distance: 2688
+
+Query Point: 61
+Nearest Neighbor Cube: 58
+Distance Cube: 2279
+True Neighbor: 5279
+DistanceTrue: 1209
+tCube: 0.00032
+tTrue: 0.137288
+R-nearest neighbors:
+ID: 52 Distance: 2879
+ID: 58 Distance: 2279
+ID: 91 Distance: 2811
+ID: 221 Distance: 2606
+ID: 374 Distance: 2420
+ID: 457 Distance: 2435
+ID: 559 Distance: 2727
+ID: 575 Distance: 2862
+ID: 623 Distance: 2932
+ID: 651 Distance: 2945
+ID: 654 Distance: 2520
+ID: 679 Distance: 2281
+ID: 691 Distance: 2938
+ID: 753 Distance: 2502
+ID: 766 Distance: 2663
+ID: 832 Distance: 2708
+ID: 888 Distance: 2890
+ID: 919 Distance: 2506
+ID: 961 Distance: 2778
+ID: 1171 Distance: 2909
+ID: 1321 Distance: 2578
+ID: 1360 Distance: 2546
+ID: 1596 Distance: 2814
+ID: 1643 Distance: 2938
+ID: 1693 Distance: 2685
+ID: 1745 Distance: 2652
+ID: 1891 Distance: 2535
+ID: 2189 Distance: 2749
+ID: 2208 Distance: 2678
+ID: 2210 Distance: 2746
+ID: 2218 Distance: 2946
+ID: 2325 Distance: 2795
+ID: 2343 Distance: 2553
+ID: 2426 Distance: 2925
+ID: 2467 Distance: 2957
+ID: 2483 Distance: 2931
+ID: 2486 Distance: 2690
+ID: 2547 Distance: 2661
+ID: 2611 Distance: 2864
+ID: 2704 Distance: 2959
+ID: 2769 Distance: 2790
+ID: 2803 Distance: 2706
+ID: 3051 Distance: 2716
+
+Query Point: 62
+Nearest Neighbor Cube: 959
+Distance Cube: 2146
+True Neighbor: 8403
+DistanceTrue: 732
+tCube: 0.000319
+tTrue: 0.137183
+R-nearest neighbors:
+ID: 5 Distance: 2353
+ID: 224 Distance: 2694
+ID: 238 Distance: 2424
+ID: 326 Distance: 2989
+ID: 548 Distance: 2711
+ID: 604 Distance: 2310
+ID: 777 Distance: 2860
+ID: 877 Distance: 2994
+ID: 905 Distance: 2943
+ID: 959 Distance: 2146
+ID: 960 Distance: 2809
+ID: 963 Distance: 2713
+ID: 1336 Distance: 2750
+ID: 1437 Distance: 2550
+ID: 1443 Distance: 2255
+ID: 1719 Distance: 2261
+ID: 1723 Distance: 2781
+ID: 1946 Distance: 2620
+ID: 1979 Distance: 2958
+ID: 2033 Distance: 2777
+ID: 2185 Distance: 2784
+ID: 2247 Distance: 2784
+
+Query Point: 63
+Nearest Neighbor Cube: 3723
+Distance Cube: 2363
+True Neighbor: 6561
+DistanceTrue: 832
+tCube: 0.000315
+tTrue: 0.139948
+R-nearest neighbors:
+ID: 231 Distance: 2665
+ID: 242 Distance: 2929
+ID: 1637 Distance: 2991
+ID: 2142 Distance: 2703
+ID: 3169 Distance: 2544
+ID: 3723 Distance: 2363
+
+Query Point: 64
+Nearest Neighbor Cube: 865
+Distance Cube: 1871
+True Neighbor: 6322
+DistanceTrue: 627
+tCube: 0.000289
+tTrue: 0.138991
+R-nearest neighbors:
+ID: 326 Distance: 2364
+ID: 333 Distance: 2790
+ID: 417 Distance: 2558
+ID: 499 Distance: 2743
+ID: 777 Distance: 2785
+ID: 865 Distance: 1871
+ID: 959 Distance: 2879
+ID: 963 Distance: 2980
+ID: 1263 Distance: 2940
+ID: 1275 Distance: 2072
+ID: 1407 Distance: 2269
+ID: 1422 Distance: 2938
+ID: 1465 Distance: 2996
+ID: 1483 Distance: 2886
+ID: 1719 Distance: 2988
+ID: 1723 Distance: 2116
+ID: 1727 Distance: 2336
+ID: 1769 Distance: 2859
+ID: 1904 Distance: 2826
+ID: 1946 Distance: 2023
+ID: 2010 Distance: 2740
+ID: 2033 Distance: 2840
+ID: 2185 Distance: 2273
+ID: 2186 Distance: 2938
+
+Query Point: 65
+Nearest Neighbor Cube: 866
+Distance Cube: 2253
+True Neighbor: 5636
+DistanceTrue: 980
+tCube: 0.000313
+tTrue: 0.141061
+R-nearest neighbors:
+ID: 683 Distance: 2555
+ID: 828 Distance: 2965
+ID: 866 Distance: 2253
+ID: 986 Distance: 2918
+ID: 1026 Distance: 2740
+ID: 1082 Distance: 2283
+ID: 1337 Distance: 2821
+ID: 1851 Distance: 2294
+ID: 1882 Distance: 2690
+ID: 2014 Distance: 2406
+ID: 2133 Distance: 2651
+ID: 2171 Distance: 2813
+ID: 2197 Distance: 2669
+ID: 2454 Distance: 2547
+
+Query Point: 66
+Nearest Neighbor Cube: 2452
+Distance Cube: 2208
+True Neighbor: 6406
+DistanceTrue: 1085
+tCube: 0.000313
+tTrue: 0.140682
+R-nearest neighbors:
+ID: 293 Distance: 2516
+ID: 450 Distance: 2279
+ID: 584 Distance: 2421
+ID: 639 Distance: 2478
+ID: 697 Distance: 2452
+ID: 988 Distance: 2890
+ID: 1074 Distance: 2645
+ID: 1140 Distance: 2720
+ID: 1244 Distance: 2961
+ID: 1282 Distance: 2492
+ID: 1404 Distance: 2799
+ID: 1542 Distance: 2884
+ID: 1564 Distance: 2970
+ID: 1983 Distance: 2253
+ID: 2452 Distance: 2208
+
+Query Point: 67
+Nearest Neighbor Cube: 3169
+Distance Cube: 2154
+True Neighbor: 5391
+DistanceTrue: 1189
+tCube: 0.000303
+tTrue: 0.137372
+R-nearest neighbors:
+ID: 2142 Distance: 2839
+ID: 3169 Distance: 2154
+ID: 3723 Distance: 2411
+
+Query Point: 68
+Nearest Neighbor Cube: 1093
+Distance Cube: 2366
+True Neighbor: 6858
+DistanceTrue: 1205
+tCube: 0.000305
+tTrue: 0.137723
+R-nearest neighbors:
+ID: 393 Distance: 2663
+ID: 450 Distance: 2730
+ID: 988 Distance: 2871
+ID: 1093 Distance: 2366
+ID: 1240 Distance: 2532
+ID: 1404 Distance: 2562
+ID: 1542 Distance: 2927
+ID: 1983 Distance: 2790
+ID: 2452 Distance: 2855
+
+Query Point: 69
+Nearest Neighbor Cube: 1289
+Distance Cube: 1823
+True Neighbor: 7218
+DistanceTrue: 1251
+tCube: 0.000353
+tTrue: 0.140658
+R-nearest neighbors:
+ID: 89 Distance: 2339
+ID: 179 Distance: 2772
+ID: 426 Distance: 2073
+ID: 502 Distance: 2435
+ID: 544 Distance: 2852
+ID: 596 Distance: 2334
+ID: 719 Distance: 2619
+ID: 951 Distance: 2867
+ID: 975 Distance: 2774
+ID: 1009 Distance: 2899
+ID: 1122 Distance: 2863
+ID: 1160 Distance: 2265
+ID: 1180 Distance: 1837
+ID: 1289 Distance: 1823
+ID: 1322 Distance: 2486
+ID: 1488 Distance: 2985
+ID: 1525 Distance: 2608
+ID: 1546 Distance: 2787
+ID: 1648 Distance: 2972
+ID: 1659 Distance: 2752
+ID: 1697 Distance: 2082
+ID: 1781 Distance: 1847
+ID: 1908 Distance: 2699
+ID: 2047 Distance: 2887
+ID: 2551 Distance: 2902
+ID: 2656 Distance: 2979
+ID: 2689 Distance: 2648
+ID: 2804 Distance: 2592
+ID: 2917 Distance: 2232
+ID: 3151 Distance: 2661
+ID: 3377 Distance: 2915
+ID: 3403 Distance: 2731
+ID: 3503 Distance: 2936
+
+Query Point: 70
+Nearest Neighbor Cube: 551
+Distance Cube: 2283
+True Neighbor: 5878
+DistanceTrue: 1943
+tCube: 0.000328
+tTrue: 0.140522
+R-nearest neighbors:
+ID: 32 Distance: 2500
+ID: 59 Distance: 2825
+ID: 114 Distance: 2840
+ID: 180 Distance: 2963
+ID: 222 Distance: 2633
+ID: 243 Distance: 2811
+ID: 313 Distance: 2608
+ID: 447 Distance: 2729
+ID: 551 Distance: 2283
+ID: 589 Distance: 2286
+ID: 590 Distance: 2707
+ID: 710 Distance: 2312
+ID: 727 Distance: 2814
+ID: 767 Distance: 2762
+ID: 855 Distance: 2972
+ID: 873 Distance: 2547
+ID: 904 Distance: 2566
+ID: 1146 Distance: 2980
+ID: 1179 Distance: 2941
+ID: 1216 Distance: 2884
+ID: 1314 Distance: 2746
+ID: 1330 Distance: 2878
+ID: 2085 Distance: 2873
+ID: 2095 Distance: 2869
+ID: 2147 Distance: 2882
+ID: 2195 Distance: 2959
+ID: 2615 Distance: 2864
+ID: 2655 Distance: 2366
+
+Query Point: 71
+Nearest Neighbor Cube: 3192
+Distance Cube: 1168
+True Neighbor: 6125
+DistanceTrue: 280
+tCube: 0.000321
+tTrue: 0.144515
+R-nearest neighbors:
+ID: 256 Distance: 2836
+ID: 334 Distance: 2908
+ID: 932 Distance: 2450
+ID: 1265 Distance: 2088
+ID: 1612 Distance: 2765
+ID: 1766 Distance: 1513
+ID: 1876 Distance: 1986
+ID: 2013 Distance: 2242
+ID: 2049 Distance: 1863
+ID: 2387 Distance: 2028
+ID: 2428 Distance: 2727
+ID: 2488 Distance: 2620
+ID: 2556 Distance: 2538
+ID: 2561 Distance: 2209
+ID: 2592 Distance: 2780
+ID: 2659 Distance: 2388
+ID: 2800 Distance: 2551
+ID: 3083 Distance: 2943
+ID: 3107 Distance: 2545
+ID: 3192 Distance: 1168
+ID: 3240 Distance: 2579
+ID: 4187 Distance: 1690
+
+Query Point: 72
+Nearest Neighbor Cube: 1303
+Distance Cube: 2611
+True Neighbor: 5827
+DistanceTrue: 1254
+tCube: 0.000319
+tTrue: 0.148028
+R-nearest neighbors:
+ID: 537 Distance: 2870
+ID: 1003 Distance: 2714
+ID: 1303 Distance: 2611
+ID: 2560 Distance: 2919
+ID: 2641 Distance: 2917
+ID: 2826 Distance: 2863
+
+Query Point: 73
+Nearest Neighbor Cube: 52
+Distance Cube: 2647
+True Neighbor: 934
+DistanceTrue: 2210
+tCube: 0.000309
+tTrue: 0.137337
+R-nearest neighbors:
+ID: 52 Distance: 2647
+ID: 381 Distance: 2944
+ID: 501 Distance: 2955
+ID: 575 Distance: 2964
+ID: 623 Distance: 2946
+ID: 888 Distance: 2966
+ID: 1755 Distance: 2760
+ID: 1958 Distance: 2825
+
+Query Point: 74
+Nearest Neighbor Cube: 3488
+Distance Cube: 2370
+True Neighbor: 6854
+DistanceTrue: 1573
+tCube: 0.000311
+tTrue: 0.137446
+R-nearest neighbors:
+ID: 70 Distance: 2993
+ID: 306 Distance: 2659
+ID: 878 Distance: 2914
+ID: 907 Distance: 2914
+ID: 1725 Distance: 2881
+ID: 3404 Distance: 2959
+ID: 3488 Distance: 2370
+
+Query Point: 75
+Nearest Neighbor Cube: 609
+Distance Cube: 2390
+True Neighbor: 7365
+DistanceTrue: 986
+tCube: 0.000322
+tTrue: 0.139862
+R-nearest neighbors:
+ID: 30 Distance: 2828
+ID: 202 Distance: 2771
+ID: 208 Distance: 2808
+ID: 252 Distance: 2870
+ID: 266 Distance: 2959
+ID: 343 Distance: 2877
+ID: 355 Distance: 2757
+ID: 476 Distance: 2458
+ID: 514 Distance: 2473
+ID: 594 Distance: 2837
+ID: 609 Distance: 2390
+ID: 675 Distance: 2725
+ID: 706 Distance: 2764
+ID: 730 Distance: 2895
+ID: 853 Distance: 2947
+ID: 971 Distance: 2488
+ID: 1012 Distance: 2852
+ID: 1020 Distance: 2396
+ID: 1047 Distance: 2922
+ID: 1060 Distance: 2840
+ID: 1170 Distance: 2748
+ID: 1223 Distance: 2867
+ID: 1224 Distance: 2797
+ID: 1225 Distance: 2397
+ID: 1258 Distance: 2888
+ID: 1352 Distance: 2991
+ID: 1456 Distance: 2895
+ID: 1604 Distance: 2657
+ID: 1613 Distance: 2774
+ID: 1722 Distance: 2951
+ID: 1730 Distance: 2771
+ID: 1731 Distance: 2943
+ID: 1735 Distance: 2583
+ID: 1862 Distance: 2991
+ID: 1889 Distance: 2726
+ID: 1892 Distance: 2755
+ID: 1911 Distance: 2843
+ID: 1926 Distance: 2541
+ID: 2038 Distance: 2979
+ID: 2298 Distance: 2553
+ID: 2306 Distance: 2587
+ID: 2322 Distance: 2579
+ID: 2386 Distance: 2932
+ID: 2433 Distance: 2931
+ID: 2480 Distance: 2967
+ID: 2537 Distance: 2837
+ID: 2542 Distance: 2934
+ID: 2582 Distance: 2948
+ID: 2653 Distance: 2951
+ID: 2780 Distance: 2682
+ID: 2788 Distance: 2791
+ID: 2873 Distance: 2661
+ID: 2927 Distance: 2984
+ID: 3001 Distance: 2568
+ID: 3246 Distance: 2538
+ID: 3291 Distance: 2881
+ID: 3352 Distance: 2998
+ID: 3389 Distance: 2725
+ID: 3462 Distance: 2874
+
+Query Point: 76
+Nearest Neighbor Cube: 963
+Distance Cube: 2660
+True Neighbor: 6554
+DistanceTrue: 1416
+tCube: 0.000313
+tTrue: 0.137673
+R-nearest neighbors:
+ID: 604 Distance: 2877
+ID: 959 Distance: 2715
+ID: 963 Distance: 2660
+ID: 1336 Distance: 2833
+ID: 1437 Distance: 2801
+ID: 1719 Distance: 2906
+ID: 2146 Distance: 2741
+
+Query Point: 77
+Nearest Neighbor Cube: 1553
+Distance Cube: 1943
+True Neighbor: 7904
+DistanceTrue: 1648
+tCube: 0.000309
+tTrue: 0.137461
+R-nearest neighbors:
+ID: 285 Distance: 2693
+ID: 1046 Distance: 2992
+ID: 1294 Distance: 2876
+ID: 1553 Distance: 1943
+ID: 1800 Distance: 2322
+ID: 1808 Distance: 2878
+ID: 1936 Distance: 2228
+ID: 2023 Distance: 2138
+ID: 2067 Distance: 2525
+ID: 2330 Distance: 2921
+
+Query Point: 78
+Nearest Neighbor Cube: 985
+Distance Cube: 3036
+True Neighbor: 8579
+DistanceTrue: 2177
+tCube: 0.000307
+tTrue: 0.14045
+R-nearest neighbors:
+None Found!
+
+Query Point: 79
+Nearest Neighbor Cube: 5
+Distance Cube: 2223
+True Neighbor: 9209
+DistanceTrue: 1551
+tCube: 0.000278
+tTrue: 0.138081
+R-nearest neighbors:
+ID: 5 Distance: 2223
+ID: 75 Distance: 2718
+ID: 238 Distance: 2828
+ID: 333 Distance: 2643
+ID: 357 Distance: 2944
+ID: 417 Distance: 2731
+ID: 444 Distance: 2825
+ID: 548 Distance: 2321
+ID: 595 Distance: 2643
+ID: 604 Distance: 2260
+ID: 729 Distance: 2864
+ID: 865 Distance: 2930
+ID: 877 Distance: 2476
+ID: 881 Distance: 2688
+ID: 893 Distance: 2917
+ID: 905 Distance: 2781
+ID: 957 Distance: 2973
+ID: 959 Distance: 2446
+ID: 963 Distance: 2291
+ID: 985 Distance: 2767
+ID: 1336 Distance: 2594
+ID: 1437 Distance: 2648
+ID: 1443 Distance: 2803
+ID: 1483 Distance: 2895
+ID: 1540 Distance: 2937
+ID: 1589 Distance: 2988
+ID: 1614 Distance: 2837
+ID: 1719 Distance: 2311
+ID: 1723 Distance: 2679
+ID: 1727 Distance: 2505
+ID: 1769 Distance: 2648
+ID: 1790 Distance: 2779
+ID: 1798 Distance: 2697
+ID: 1836 Distance: 2918
+ID: 1912 Distance: 2886
+ID: 1946 Distance: 2376
+ID: 2010 Distance: 2983
+ID: 2033 Distance: 2443
+ID: 2146 Distance: 2822
+ID: 2185 Distance: 2700
+
+Query Point: 80
+Nearest Neighbor Cube: 2722
+Distance Cube: 1822
+True Neighbor: 8070
+DistanceTrue: 743
+tCube: 0.00031
+tTrue: 0.13982
+R-nearest neighbors:
+ID: 241 Distance: 2944
+ID: 470 Distance: 2716
+ID: 2373 Distance: 1968
+ID: 2567 Distance: 2404
+ID: 2684 Distance: 2102
+ID: 2722 Distance: 1822
+ID: 3736 Distance: 2878
+
+Query Point: 81
+Nearest Neighbor Cube: 2278
+Distance Cube: 2096
+True Neighbor: 7452
+DistanceTrue: 987
+tCube: 0.000303
+tTrue: 0.139633
+R-nearest neighbors:
+ID: 39 Distance: 2408
+ID: 69 Distance: 2386
+ID: 100 Distance: 2275
+ID: 170 Distance: 2982
+ID: 175 Distance: 2839
+ID: 189 Distance: 2902
+ID: 441 Distance: 2497
+ID: 540 Distance: 2785
+ID: 657 Distance: 2970
+ID: 682 Distance: 2847
+ID: 886 Distance: 2172
+ID: 1036 Distance: 2123
+ID: 1111 Distance: 2411
+ID: 1228 Distance: 2958
+ID: 1310 Distance: 2786
+ID: 1764 Distance: 2999
+ID: 1907 Distance: 2510
+ID: 2040 Distance: 2540
+ID: 2166 Distance: 2810
+ID: 2278 Distance: 2096
+ID: 2499 Distance: 2283
+ID: 2504 Distance: 2294
+ID: 2667 Distance: 2795
+ID: 2674 Distance: 2967
+ID: 2842 Distance: 2532
+ID: 3221 Distance: 2278
+ID: 3225 Distance: 2811
+ID: 3310 Distance: 2606
+
+Query Point: 82
+Nearest Neighbor Cube: 3767
+Distance Cube: 2145
+True Neighbor: 3087
+DistanceTrue: 1969
+tCube: 0.000273
+tTrue: 0.137462
+R-nearest neighbors:
+ID: 51 Distance: 2696
+ID: 620 Distance: 2871
+ID: 716 Distance: 2977
+ID: 1145 Distance: 2949
+ID: 1233 Distance: 2991
+ID: 1918 Distance: 2628
+ID: 2336 Distance: 2822
+ID: 2893 Distance: 2572
+ID: 2947 Distance: 2949
+ID: 3216 Distance: 2685
+ID: 3508 Distance: 2550
+ID: 3548 Distance: 2928
+ID: 3732 Distance: 2894
+ID: 3748 Distance: 2612
+ID: 3767 Distance: 2145
+
+Query Point: 83
+Nearest Neighbor Cube: 161
+Distance Cube: 2411
+True Neighbor: 91
+DistanceTrue: 2001
+tCube: 0.000275
+tTrue: 0.137488
+R-nearest neighbors:
+ID: 51 Distance: 2709
+ID: 74 Distance: 2966
+ID: 161 Distance: 2411
+ID: 312 Distance: 2993
+ID: 622 Distance: 2731
+ID: 716 Distance: 2992
+ID: 992 Distance: 2665
+ID: 1233 Distance: 2752
+ID: 2598 Distance: 2734
+ID: 3038 Distance: 2928
+ID: 3195 Distance: 2615
+ID: 3278 Distance: 2858
+ID: 3330 Distance: 2820
+ID: 3508 Distance: 2919
+
+Query Point: 84
+Nearest Neighbor Cube: 1479
+Distance Cube: 1531
+True Neighbor: 6006
+DistanceTrue: 1161
+tCube: 0.0003
+tTrue: 0.142404
+R-nearest neighbors:
+ID: 111 Distance: 2876
+ID: 190 Distance: 2388
+ID: 257 Distance: 2886
+ID: 298 Distance: 2936
+ID: 360 Distance: 2633
+ID: 395 Distance: 2716
+ID: 410 Distance: 2722
+ID: 636 Distance: 2926
+ID: 733 Distance: 2575
+ID: 889 Distance: 2902
+ID: 970 Distance: 2279
+ID: 977 Distance: 2965
+ID: 1079 Distance: 2757
+ID: 1084 Distance: 2771
+ID: 1105 Distance: 2460
+ID: 1106 Distance: 2136
+ID: 1227 Distance: 2879
+ID: 1359 Distance: 2817
+ID: 1479 Distance: 1531
+ID: 1563 Distance: 2987
+ID: 1587 Distance: 2818
+ID: 1663 Distance: 2219
+ID: 1672 Distance: 2742
+ID: 1703 Distance: 2944
+ID: 2059 Distance: 2593
+ID: 2132 Distance: 2596
+ID: 2252 Distance: 2908
+ID: 2524 Distance: 2949
+
+Query Point: 85
+Nearest Neighbor Cube: 1602
+Distance Cube: 2093
+True Neighbor: 8895
+DistanceTrue: 1359
+tCube: 0.000304
+tTrue: 0.139514
+R-nearest neighbors:
+ID: 9 Distance: 2959
+ID: 21 Distance: 2985
+ID: 197 Distance: 2446
+ID: 203 Distance: 2883
+ID: 235 Distance: 2808
+ID: 280 Distance: 2972
+ID: 557 Distance: 2816
+ID: 708 Distance: 2872
+ID: 715 Distance: 2772
+ID: 725 Distance: 2686
+ID: 833 Distance: 2771
+ID: 854 Distance: 2786
+ID: 880 Distance: 2709
+ID: 894 Distance: 2964
+ID: 1004 Distance: 2553
+ID: 1153 Distance: 2989
+ID: 1169 Distance: 2998
+ID: 1261 Distance: 2548
+ID: 1299 Distance: 2998
+ID: 1424 Distance: 2797
+ID: 1602 Distance: 2093
+ID: 1726 Distance: 2575
+ID: 1859 Distance: 2818
+ID: 1873 Distance: 2892
+ID: 1903 Distance: 2161
+ID: 1953 Distance: 2650
+ID: 1960 Distance: 2815
+ID: 2028 Distance: 2838
+ID: 2402 Distance: 2713
+ID: 2557 Distance: 2954
+ID: 2709 Distance: 2832
+ID: 2859 Distance: 2935
+ID: 2875 Distance: 2283
+ID: 2996 Distance: 2873
+ID: 3000 Distance: 2694
+ID: 3031 Distance: 2788
+ID: 3054 Distance: 2564
+ID: 3088 Distance: 2960
+ID: 3203 Distance: 2917
+
+Query Point: 86
+Nearest Neighbor Cube: 2388
+Distance Cube: 3331
+True Neighbor: 8726
+DistanceTrue: 1753
+tCube: 0.000318
+tTrue: 0.139414
+R-nearest neighbors:
+None Found!
+
+Query Point: 87
+Nearest Neighbor Cube: 3678
+Distance Cube: 2508
+True Neighbor: 9152
+DistanceTrue: 1673
+tCube: 0.00031
+tTrue: 0.139838
+R-nearest neighbors:
+ID: 42 Distance: 2821
+ID: 518 Distance: 2973
+ID: 1385 Distance: 2531
+ID: 1635 Distance: 2650
+ID: 1886 Distance: 2924
+ID: 2568 Distance: 2640
+ID: 3132 Distance: 2912
+ID: 3678 Distance: 2508
+
+Query Point: 88
+Nearest Neighbor Cube: 744
+Distance Cube: 3077
+True Neighbor: 7723
+DistanceTrue: 683
+tCube: 0.000313
+tTrue: 0.138202
+R-nearest neighbors:
+None Found!
+
+Query Point: 89
+Nearest Neighbor Cube: 2900
+Distance Cube: 2163
+True Neighbor: 7099
+DistanceTrue: 399
+tCube: 0.000305
+tTrue: 0.137713
+R-nearest neighbors:
+ID: 365 Distance: 2261
+ID: 603 Distance: 2231
+ID: 898 Distance: 2904
+ID: 1626 Distance: 2983
+ID: 1681 Distance: 2210
+ID: 1772 Distance: 2523
+ID: 1801 Distance: 2909
+ID: 1844 Distance: 2674
+ID: 2215 Distance: 2595
+ID: 2642 Distance: 2862
+ID: 2851 Distance: 2255
+ID: 2900 Distance: 2163
+
+Query Point: 90
+Nearest Neighbor Cube: 2498
+Distance Cube: 1193
+True Neighbor: 7628
+DistanceTrue: 690
+tCube: 0.000303
+tTrue: 0.139757
+R-nearest neighbors:
+ID: 41 Distance: 1827
+ID: 47 Distance: 1267
+ID: 157 Distance: 2864
+ID: 192 Distance: 2765
+ID: 210 Distance: 2166
+ID: 294 Distance: 2660
+ID: 323 Distance: 2176
+ID: 362 Distance: 2938
+ID: 370 Distance: 2865
+ID: 449 Distance: 2739
+ID: 451 Distance: 2516
+ID: 626 Distance: 2779
+ID: 761 Distance: 2964
+ID: 782 Distance: 2602
+ID: 841 Distance: 2938
+ID: 884 Distance: 2775
+ID: 996 Distance: 2919
+ID: 1144 Distance: 2082
+ID: 1177 Distance: 2650
+ID: 1205 Distance: 2704
+ID: 1236 Distance: 1904
+ID: 1239 Distance: 2857
+ID: 1383 Distance: 2301
+ID: 1429 Distance: 1977
+ID: 1431 Distance: 2002
+ID: 1552 Distance: 2002
+ID: 1990 Distance: 2524
+ID: 2022 Distance: 1480
+ID: 2036 Distance: 1315
+ID: 2053 Distance: 2575
+ID: 2220 Distance: 2025
+ID: 2293 Distance: 2540
+ID: 2449 Distance: 1843
+ID: 2465 Distance: 2952
+ID: 2498 Distance: 1193
+ID: 2503 Distance: 2069
+ID: 2619 Distance: 2997
+ID: 2645 Distance: 2809
+ID: 2651 Distance: 2837
+ID: 2672 Distance: 2741
+ID: 2728 Distance: 2933
+
+Query Point: 91
+Nearest Neighbor Cube: 61
+Distance Cube: 1578
+True Neighbor: 9259
+DistanceTrue: 310
+tCube: 0.000293
+tTrue: 0.137039
+R-nearest neighbors:
+ID: 2 Distance: 2397
+ID: 10 Distance: 2487
+ID: 13 Distance: 2962
+ID: 32 Distance: 2273
+ID: 59 Distance: 2250
+ID: 61 Distance: 1578
+ID: 72 Distance: 2887
+ID: 87 Distance: 2562
+ID: 114 Distance: 2291
+ID: 180 Distance: 2206
+ID: 184 Distance: 2845
+ID: 209 Distance: 2363
+ID: 222 Distance: 2754
+ID: 243 Distance: 2732
+ID: 254 Distance: 2238
+ID: 255 Distance: 2926
+ID: 290 Distance: 2597
+ID: 313 Distance: 2701
+ID: 332 Distance: 1817
+ID: 366 Distance: 2391
+ID: 433 Distance: 2988
+ID: 461 Distance: 2745
+ID: 474 Distance: 2606
+ID: 491 Distance: 1850
+ID: 534 Distance: 2370
+ID: 550 Distance: 2248
+ID: 551 Distance: 2398
+ID: 590 Distance: 2454
+ID: 653 Distance: 2252
+ID: 656 Distance: 2545
+ID: 727 Distance: 2833
+ID: 728 Distance: 2539
+ID: 852 Distance: 2790
+ID: 873 Distance: 2124
+ID: 874 Distance: 1756
+ID: 892 Distance: 2475
+ID: 904 Distance: 2127
+ID: 927 Distance: 2544
+ID: 967 Distance: 2908
+ID: 994 Distance: 2782
+ID: 1011 Distance: 2446
+ID: 1014 Distance: 1788
+ID: 1048 Distance: 2764
+ID: 1049 Distance: 2233
+ID: 1146 Distance: 2721
+ID: 1178 Distance: 2167
+ID: 1179 Distance: 2332
+ID: 1216 Distance: 2679
+ID: 1234 Distance: 2343
+ID: 1314 Distance: 2723
+ID: 1330 Distance: 2451
+ID: 1361 Distance: 2783
+ID: 1362 Distance: 2837
+ID: 1441 Distance: 2686
+ID: 1451 Distance: 2669
+ID: 1478 Distance: 2780
+ID: 1570 Distance: 2952
+ID: 1586 Distance: 2412
+ID: 1639 Distance: 2495
+ID: 1654 Distance: 2686
+ID: 1718 Distance: 2501
+ID: 1746 Distance: 2921
+ID: 1811 Distance: 2713
+ID: 2077 Distance: 2940
+ID: 2085 Distance: 2188
+ID: 2147 Distance: 2705
+ID: 2191 Distance: 2567
+ID: 2195 Distance: 2144
+ID: 2228 Distance: 2777
+ID: 2244 Distance: 2929
+ID: 2256 Distance: 2375
+ID: 2283 Distance: 2843
+ID: 2481 Distance: 2779
+ID: 2521 Distance: 2833
+ID: 2535 Distance: 2454
+ID: 2564 Distance: 2996
+ID: 2596 Distance: 2574
+ID: 2615 Distance: 2665
+ID: 2655 Distance: 2763
+
+Query Point: 92
+Nearest Neighbor Cube: 1782
+Distance Cube: 2907
+True Neighbor: 8897
+DistanceTrue: 1916
+tCube: 0.000312
+tTrue: 0.137435
+R-nearest neighbors:
+ID: 554 Distance: 2934
+ID: 1290 Distance: 2958
+ID: 1782 Distance: 2907
+
+Query Point: 93
+Nearest Neighbor Cube: 1057
+Distance Cube: 2651
+True Neighbor: 8357
+DistanceTrue: 954
+tCube: 0.000293
+tTrue: 0.138456
+R-nearest neighbors:
+ID: 442 Distance: 2780
+ID: 448 Distance: 2943
+ID: 891 Distance: 2816
+ID: 1057 Distance: 2651
+ID: 1585 Distance: 2730
+ID: 1682 Distance: 2882
+ID: 2012 Distance: 2981
+ID: 2240 Distance: 2693
+
+Query Point: 94
+Nearest Neighbor Cube: 3107
+Distance Cube: 2004
+True Neighbor: 8979
+DistanceTrue: 1433
+tCube: 0.000305
+tTrue: 0.169787
+R-nearest neighbors:
+ID: 12 Distance: 2580
+ID: 119 Distance: 2910
+ID: 142 Distance: 2692
+ID: 256 Distance: 2741
+ID: 334 Distance: 2867
+ID: 932 Distance: 2067
+ID: 1265 Distance: 2577
+ID: 1349 Distance: 2918
+ID: 1612 Distance: 2654
+ID: 1766 Distance: 2444
+ID: 1876 Distance: 2185
+ID: 2013 Distance: 2733
+ID: 2049 Distance: 2566
+ID: 2387 Distance: 2353
+ID: 2428 Distance: 2718
+ID: 2488 Distance: 2623
+ID: 2556 Distance: 2805
+ID: 2561 Distance: 2516
+ID: 2592 Distance: 2405
+ID: 2657 Distance: 2977
+ID: 2800 Distance: 2848
+ID: 3021 Distance: 2641
+ID: 3035 Distance: 2604
+ID: 3107 Distance: 2004
+ID: 3192 Distance: 2411
+ID: 3240 Distance: 2570
+ID: 3466 Distance: 2483
+ID: 4187 Distance: 2351
+ID: 4190 Distance: 2994
+
+Query Point: 95
+Nearest Neighbor Cube: 879
+Distance Cube: 2296
+True Neighbor: 8420
+DistanceTrue: 977
+tCube: 0.000319
+tTrue: 0.143393
+R-nearest neighbors:
+ID: 405 Distance: 2970
+ID: 879 Distance: 2296
+ID: 1357 Distance: 2928
+ID: 1528 Distance: 2529
+ID: 2523 Distance: 2816
+ID: 2621 Distance: 2923
+ID: 2894 Distance: 2683
+ID: 3251 Distance: 2854
+
+Query Point: 96
+Nearest Neighbor Cube: 1151
+Distance Cube: 2698
+True Neighbor: 1186
+DistanceTrue: 2188
+tCube: 0.000306
+tTrue: 0.13717
+R-nearest neighbors:
+ID: 262 Distance: 2750
+ID: 319 Distance: 2730
+ID: 618 Distance: 2817
+ID: 1151 Distance: 2698
+ID: 1162 Distance: 2918
+ID: 1288 Distance: 2912
+
+Query Point: 97
+Nearest Neighbor Cube: 972
+Distance Cube: 2224
+True Neighbor: 7513
+DistanceTrue: 2146
+tCube: 0.000286
+tTrue: 0.13917
+R-nearest neighbors:
+ID: 972 Distance: 2224
+ID: 1062 Distance: 2543
+ID: 2727 Distance: 2654
+ID: 2998 Distance: 2985
+ID: 3575 Distance: 2771
+ID: 3819 Distance: 2775
+ID: 4158 Distance: 2958
+
+Query Point: 98
+Nearest Neighbor Cube: 2248
+Distance Cube: 2614
+True Neighbor: 8826
+DistanceTrue: 1515
+tCube: 0.000306
+tTrue: 0.155365
+R-nearest neighbors:
+ID: 945 Distance: 2747
+ID: 1001 Distance: 2821
+ID: 1253 Distance: 2712
+ID: 1655 Distance: 2947
+ID: 2248 Distance: 2614
+ID: 2388 Distance: 2872
+
+Query Point: 99
+Nearest Neighbor Cube: 1209
+Distance Cube: 1296
+True Neighbor: 5811
+DistanceTrue: 787
+tCube: 0.000303
+tTrue: 0.138313
+R-nearest neighbors:
+ID: 11 Distance: 2832
+ID: 19 Distance: 2825
+ID: 58 Distance: 2270
+ID: 187 Distance: 2847
+ID: 344 Distance: 2955
+ID: 384 Distance: 2647
+ID: 457 Distance: 2968
+ID: 528 Distance: 2870
+ID: 559 Distance: 2968
+ID: 654 Distance: 2455
+ID: 888 Distance: 2643
+ID: 919 Distance: 2929
+ID: 961 Distance: 2717
+ID: 1209 Distance: 1296
+ID: 1260 Distance: 2727
+ID: 1271 Distance: 2991
+ID: 1278 Distance: 2597
+ID: 1596 Distance: 2847
+ID: 1636 Distance: 2343
+ID: 1745 Distance: 2815
+ID: 1891 Distance: 2452
+ID: 1916 Distance: 2635
+ID: 1925 Distance: 2174
+ID: 2231 Distance: 2612
+ID: 2297 Distance: 2125
+ID: 2403 Distance: 2231
+ID: 2424 Distance: 2814
+ID: 2426 Distance: 2930
+ID: 2467 Distance: 2700
+ID: 2983 Distance: 2762
+ID: 3168 Distance: 1523
+
+Query Point: 100
+Nearest Neighbor Cube: 2429
+Distance Cube: 2541
+True Neighbor: 8083
+DistanceTrue: 1246
+tCube: 0.000304
+tTrue: 0.139699
+R-nearest neighbors:
+ID: 280 Distance: 2690
+ID: 1951 Distance: 2758
+ID: 2028 Distance: 2978
+ID: 2429 Distance: 2541
+ID: 2931 Distance: 2797
+ID: 3255 Distance: 2757
+

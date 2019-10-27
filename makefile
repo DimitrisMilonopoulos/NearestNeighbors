@@ -3,7 +3,7 @@ FLAGS = -g -c -std=c++14
 #CFLAGS=-I
 DEPS = fileReading.hpp hashTable.hpp dataStructs.hpp metrics.hpp dynamicTimeWarping.hpp bruteForce.hpp
 OBJ = fileReading.o hashTable.o dataStructs.o metrics.o dynamicTimeWarping.o bruteForce.o
-OUT = cube lsh curve brute
+OUT = cube lsh curve brute bruteCurve curve_grid_hypercube
 
 all: $(OUT)
 
@@ -16,9 +16,20 @@ cube: mainCube.o cube.o $(OBJ)
 lsh: mainLSH.o LSH.o $(OBJ)
 	$(CXX) -g mainLSH.o LSH.o $(OBJ) -std=c++14 -o lsh
 
+#added bruteCurve
+
+bruteCurve: bruteCurves.o bruteForce.o fileReading.o dynamicTimeWarping.o metrics.o dataStructs.o
+	$(CXX) -g bruteCurves.o bruteForce.o fileReading.o dynamicTimeWarping.o metrics.o dataStructs.o -std=c++14 -o bruteCurve
+
+#added curve Hypercube
+curve_grid_hypercube: curve_grid_hypercube.o gridCurve.o LSH.o cube.o $(OBJ)
+	$(CXX) -g curve_grid_hypercube.o gridCurve.o LSH.o cube.o $(OBJ) -std=c++14 -o curve_grid_hypercube
+
 brute: brutePoints.o bruteForce.o fileReading.o dynamicTimeWarping.o metrics.o dataStructs.o
 	$(CXX) -g brutePoints.o bruteForce.o fileReading.o dynamicTimeWarping.o metrics.o dataStructs.o -std=c++14 -o brute
 
+curve_grid_hypercube.o: curve_grid_hypercube.cpp cube.hpp $(DEPS)
+	$(CXX) $(FLAGS) curve_grid_hypercube.cpp -o curve_grid_hypercube.o
 mainCube.o: mainCube.cpp cube.hpp $(DEPS)
 	$(CXX) $(FLAGS) mainCube.cpp -o mainCube.o
 
@@ -30,6 +41,9 @@ mainCurve.o: mainCurve.cpp gridCurve.hpp LSH.hpp cube.hpp $(DEPS)
 
 brutePoints.o: brutePoints.cpp bruteForce.hpp fileReading.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) brutePoints.cpp -o brutePoints.o
+
+bruteCurves.o: bruteCurves.cpp bruteForce.hpp fileReading.hpp dataStructs.hpp
+	$(CXX) $(FLAGS) bruteCurves.cpp -o bruteCurves.o
 
 gridCurve.o: gridCurve.cpp gridCurve.hpp LSH.hpp cube.hpp dataStructs.hpp
 	$(CXX) $(FLAGS) gridCurve.cpp -o gridCurve.o

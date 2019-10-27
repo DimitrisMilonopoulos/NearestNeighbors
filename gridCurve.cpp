@@ -23,18 +23,16 @@ gridCurve<T>::gridCurve(vector<class Curve*>* curves, int k, int L, int w, int p
     this->probes = probes;
     this->minCurvePoints = minCurvePoints;
     this->maxCurvePoints = maxCurvePoints;
-    this->maxCoord = maxCoord;
+    this->maxCoord = maxCoord*1000;
 
     //this->delta = 8*minCurvePoints;   /// this needs to change
     //temp change
     //this->delta = 0.000663729;
-    this->delta = calculateDelta();
+    this->delta = 6*calculateDelta();
     this->maxCurvePoints = maxCurvePoints*2;
 
     this->displacement = new double*[L];
 
-    cout.precision(15);
-    cout <<  "DELTA VALUE IS ESTIMATED" << this->delta <<endl;
 
     //initialize the tau vectors
     for (int i = 0; i < L; i++)
@@ -78,7 +76,7 @@ int gridCurve<class LSH<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class LSH<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
-        this->w = 2*calculateW(points[i],5);
+        this->w = 10*calculateW(points[i],2);
         this->algorithm[i] = new class LSH<class Curve*>(this->k, 1, this->w, points[i]);
     }
 
@@ -93,7 +91,7 @@ int gridCurve<class Cube<class Curve*> >::initializeAlgorithm()
     this->algorithm = new class Cube<class Curve*>*[L];
 
     for(int i = 0; i < L; i++){
-        this->w = calculateW(points[i],12);
+        this->w = 10*calculateW(points[i],2);
         this->algorithm[i] = new class Cube<class Curve*>(this->k, 100, this->probes, this->w, points[i]);
     }
 
@@ -110,20 +108,25 @@ class Point* gridCurve<T>::gridCurve::createVector(class Curve* curve, int gridN
 
     //create the coord vector
     double* coord = new double[this->maxCurvePoints];
-    double snappedPadding = round( (this->maxCoord - this->displacement[gridNo][0]) / this->delta );
+    double snappedPadding1 = round( (this->maxCoord - this->displacement[gridNo][0]) / this->delta );
+    double snappedPadding2 = round( (this->maxCoord - this->displacement[gridNo][1]) / this->delta );
+
     
-    for (int i = 0 ; i < this->maxCurvePoints;i++){
-        coord[i] = snappedPadding;
+    for (int i = 0 ; i < this->maxCurvePoints;i+=2){
+        coord[i] = snappedPadding1;
+        coord[i+1]=snappedPadding2;
     }
 
-    double temp1,temp2;
+    double temp1 = 0,temp2 = 0;
 
     //snap the curves onto the grid
     int pos = 0;
     for (int i = 0; i < curve->getSize(); i++)
     {
-        temp1 = round( ( curve->getCoord()[i].first - this->displacement[gridNo][0] )/ this->delta );
-        temp2 =round( ( curve->getCoord()[i].second - this->displacement[gridNo][1]) / this->delta );
+        temp1 = ( curve->getCoord()[i].first - this->displacement[gridNo][0] )/ this->delta;
+        temp2 = ( curve->getCoord()[i].second - this->displacement[gridNo][1]) / this->delta;
+        temp1 = round( temp1 );
+        temp2 =round(temp2 );
         
         // cout << "These are the temps: " << temp1 << " " << temp2 << endl;
         // remove duplicates
@@ -212,8 +215,12 @@ gridCurve<T>::~gridCurve()
     for (int i = 0; i < L; i++)
     {
         delete displacement[i];
-        delete points[i];
         delete algorithm[i];
+        while(!points[i]->empty()){
+            delete points[i]->back();
+            points[i]->pop_back();
+        }
+        delete points[i];
     }
 
     delete [] displacement;
@@ -225,7 +232,7 @@ gridCurve<T>::~gridCurve()
 
 template<class T>
 double gridCurve<T>::calculateDelta(){
-    double curveAvg, totalAvg, tempDist;
+    double curveAvg, totalAvg = 0, tempDist;
     int total = curves->size();
 
     for (int i = 0; i < curves->size(); i++)

@@ -120,7 +120,6 @@ class Curve* LSH<class Curve*>::findNN(class Point *query, double* dist)
     vector< pair <class Point *, unsigned int> > neighbors;
     int count;
 
-    cout << "This is the curve: ";
     cout << query->getCurvePtr()->getID() << endl;
 
     for (int i = 0; i < L; i++)

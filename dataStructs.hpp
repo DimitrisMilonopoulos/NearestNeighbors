@@ -8,20 +8,20 @@ using std::pair;
 #include <vector>
 using std::vector;
 
-class Curve{
+class Curve
+{
     string ID;
-    pair<double, double>* coordinates;
+    pair<double, double> *coordinates;
     int size;
 
-    public:
+public:
     Curve(){};
     ~Curve();
-    Curve(string,pair <double,double>*,int);
-    pair <double,double>* getCoord();
+    Curve(string, pair<double, double> *, int);
+    pair<double, double> *getCoord();
     int getSize();
     string getID();
 };
-
 
 class Point
 {
@@ -32,13 +32,12 @@ class Point
 
 public:
     Point();
-    Point(string ID, double *coord, int siz,class Curve*);
+    Point(string ID, double *coord, int siz, class Curve *);
     ~Point();
     string getID();
     double *getCoord();
     int getSize();
-    class Curve* getCurvePtr();
-
+    class Curve *getCurvePtr();
 };
 
 #endif

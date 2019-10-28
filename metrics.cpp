@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 double manhattanDist(class Point *Point1, class Point *Point2)
 {
     double distance = 0;
@@ -17,28 +16,28 @@ double manhattanDist(class Point *Point1, class Point *Point2)
     {
         distance += abs(coord_1[i] - coord_2[i]);
     }
-    
+
     return distance;
 }
 
-
-double manhattanDist(pair <double, double> Point1,pair <double, double> Point2)
+double manhattanDist(pair<double, double> Point1, pair<double, double> Point2)
 {
     double distance = 0;
-    distance += abs(Point1.first-Point2.first);
-    distance += abs(Point1.second-Point2.second);
-    
+    distance += abs(Point1.first - Point2.first);
+    distance += abs(Point1.second - Point2.second);
+
     return distance;
 }
 
-double euclideanDist(pair <double, double> Point1,pair <double, double> Point2){
+double euclideanDist(pair<double, double> Point1, pair<double, double> Point2)
+{
     double distance;
-    double x,y;
+    double x, y;
     x = Point1.first - Point2.first;
     y = Point1.second - Point2.second;
 
-    distance = pow(x,2) + pow(y,2);
+    distance = pow(x, 2) + pow(y, 2);
     distance = sqrt(distance);
-    
+
     return distance;
 }

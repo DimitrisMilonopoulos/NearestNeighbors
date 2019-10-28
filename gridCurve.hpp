@@ -9,8 +9,8 @@ using std::vector;
 template <class T>
 class gridCurve
 {
-    vector<class Curve*>* curves;
-    vector<class Point*>** points;
+    vector<class Curve *> *curves;
+    vector<class Point *> **points;
     int k;
     int L;
     int w;
@@ -20,15 +20,15 @@ class gridCurve
     double delta;
     double maxCoord;
     double **displacement;
-    T** algorithm;
+    T **algorithm;
 
-    public:
+public:
     gridCurve(){};
     ~gridCurve();
-    gridCurve(vector<class Curve*>*, int, int, int, int, int, int,double);
+    gridCurve(vector<class Curve *> *, int, int, int, int, int, int, double);
     int initializeAlgorithm();
-    class Point* createVector(class Curve*,int);
-    class Curve* findNN(class Curve*, double*);
+    class Point *createVector(class Curve *, int);
+    class Curve *findNN(class Curve *, double *);
     double calculateDelta();
 };
 

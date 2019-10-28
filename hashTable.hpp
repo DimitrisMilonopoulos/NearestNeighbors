@@ -24,7 +24,7 @@ class HashTable
     unsigned int M;
     T *buckets;
     double **sVectors;
-    unsigned int * mArray;
+    unsigned int *mArray;
 
 public:
     HashTable();
@@ -37,19 +37,19 @@ public:
     unsigned int hashFunctionPoint(class Point *x, int functionNo);
     int insertPoint(class Point *);
     int findPoint(class Point *);
-    T &getneighbors(class Point *x, unsigned int* amplifiedResult)
+    T &getneighbors(class Point *x, unsigned int *amplifiedResult)
     {
         *amplifiedResult = amplifiedHashFunctionPoint(x);
-        std::cout <<  "Point: " << x->getID() << " Bucket: " << *amplifiedResult % bucketSize << std::endl;
+        std::cout << "Point: " << x->getID() << " Bucket: " << *amplifiedResult % bucketSize << std::endl;
         return buckets[*amplifiedResult % bucketSize];
     }
-    T getDigit(class Point* x, unsigned int* amplifiedResult)
+    T getDigit(class Point *x, unsigned int *amplifiedResult)
     {
         *amplifiedResult = amplifiedHashFunctionPoint(x);
         return buckets[*amplifiedResult % bucketSize];
     }
 };
 
-unsigned int modular_expo(unsigned int base,unsigned int exponent, unsigned int modulus);
+unsigned int modular_expo(unsigned int base, unsigned int exponent, unsigned int modulus);
 
 #endif

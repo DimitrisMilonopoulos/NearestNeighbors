@@ -15,7 +15,7 @@ class Reading
 {
 public:
     pair<vector<class Point *> *, double> readPoints(string, char);
-    pair<vector<class Curve *>*,vector<class Curve*>* > readCurves(string, int*, int*, double*);
+    pair<vector<class Curve *> *, vector<class Curve *> *> readCurves(string, int *, int *, double *);
 };
 
 #endif

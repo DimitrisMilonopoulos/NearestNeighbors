@@ -10,14 +10,13 @@
 
 using namespace std;
 
-
-int main(int argc, char * argv[]){
-
+int main(int argc, char *argv[])
+{
 
     string inputFile, queryFile, outputFile;
-    class Curve* q;
+    class Curve *q;
     clock_t timeBrute;
-    pair<class Curve*, double>* bruteNN;
+    pair<class Curve *, double> *bruteNN;
     ofstream brute;
 
     string optionBuffer, parameterBuffer;
@@ -35,16 +34,15 @@ int main(int argc, char * argv[]){
             outputFile = parameterBuffer;
     }
 
-
     class Reading reader;
     vector<class Curve *> *inputTable, *queryTable;
-    int minpoints,maxpoints;
+    int minpoints, maxpoints;
     double items;
-    pair<vector<class Curve *> *,vector<class Curve *>* > input = reader.readCurves(inputFile, &minpoints,&maxpoints,&items);
+    pair<vector<class Curve *> *, vector<class Curve *> *> input = reader.readCurves(inputFile, &minpoints, &maxpoints, &items);
     inputTable = input.first;
     queryTable = input.second;
 
-/////////calculate the nearest neighbors with brute force////////////////////
+    /////////calculate the nearest neighbors with brute force////////////////////
     brute.open(outputFile);
 
     for (int i = 0; i < queryTable->size(); i++)
@@ -53,7 +51,7 @@ int main(int argc, char * argv[]){
         timeBrute = clock();
         bruteNN = bruteForceCurve(inputTable, q);
         timeBrute = clock() - timeBrute;
-        brute << bruteNN->first->getID() << " " <<bruteNN->second << " " << timeBrute <<endl;
+        brute << bruteNN->first->getID() << " " << bruteNN->second << " " << timeBrute << endl;
         delete bruteNN;
     }
 
@@ -73,7 +71,6 @@ int main(int argc, char * argv[]){
         queryTable->pop_back();
     }
     delete (queryTable);
-    
-    /////////////////////////////////////////////////////////////////////////////
 
+    /////////////////////////////////////////////////////////////////////////////
 }

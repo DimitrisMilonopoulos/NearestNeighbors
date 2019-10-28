@@ -60,12 +60,12 @@ int main(int argc, char *argv[])
 
     // bruteForce(inputTable, queryTable);
 
-    class Cube<class Point*> cubeImplementation(k, M, probes, w, inputTable);
+    class Cube<class Point *> cubeImplementation(k, M, probes, w, inputTable);
     class Point *q, *b = NULL;
-    double distance, tempAF, maxAF = 0.0,avgAF=0.0;
+    double distance, tempAF, maxAF = 0.0, avgAF = 0.0;
     clock_t timeCube, timeBrute;
 
-    pair<class Point*, double>* bruteNN;
+    pair<class Point *, double> *bruteNN;
     ofstream outfile;
     outfile.open(outputFile);
 
@@ -103,12 +103,14 @@ int main(int argc, char *argv[])
     {
         //read the output of the bruteforce file
 
-        if (getline(readBrute, line)){
+        if (getline(readBrute, line))
+        {
             istringstream buffer(line);
             buffer >> bruteNeighborID >> bruteDist >> timeBrute;
         }
-        else{
-            cout <<"ERROR reading bruteforce file!"<<endl;
+        else
+        {
+            cout << "ERROR reading bruteforce file!" << endl;
         }
         ////////////////////////////////
 
@@ -119,27 +121,31 @@ int main(int argc, char *argv[])
         timeCube = clock() - timeCube;
 
         tempAF = distance / bruteDist;
-        avgAF +=tempAF;
-        if(tempAF > maxAF)
+        avgAF += tempAF;
+        if (tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
-        if(b != NULL)
-            outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "Distance Cube: " << distance << endl;
+        if (b != NULL)
+            outfile << "Nearest Neighbor Cube: " << b->getID() << endl
+                    << "Distance Cube: " << distance << endl;
         else
-            outfile << "Nearest Neighbor Cube: None Found!" << endl << "Distance Cube: -" << endl;
-        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
-        outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
-        
-        if(radius > 0.0)
+            outfile << "Nearest Neighbor Cube: None Found!" << endl
+                    << "Distance Cube: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl
+                << "DistanceTrue: " << bruteDist << endl;
+        outfile << "tCube: " << (float)timeCube / CLOCKS_PER_SEC << endl
+                << "tTrue: " << (float)timeBrute / CLOCKS_PER_SEC << endl;
+
+        if (radius > 0.0)
         {
-            vector<pair<class Point*, double> >* radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);
-            
+            vector<pair<class Point *, double> > *radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);
+
             outfile << "R-nearest neighbors:" << endl;
 
-            if(radiusNeighbors != NULL)
+            if (radiusNeighbors != NULL)
             {
-                for(int i = 0; i < radiusNeighbors->size(); i++)
+                for (int i = 0; i < radiusNeighbors->size(); i++)
                 {
                     outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
                 }
@@ -149,12 +155,13 @@ int main(int argc, char *argv[])
                 delete (radiusNeighbors);
             }
             else
-                outfile << "None Found!" << endl << endl;
+                outfile << "None Found!" << endl
+                        << endl;
         }
     }
 
     cout << "MaxAF: " << maxAF << endl;
-    cout << "AvgAF: " << avgAF/queryTable->size() <<endl;
+    cout << "AvgAF: " << avgAF / queryTable->size() << endl;
 
     outfile.close();
 
@@ -172,5 +179,4 @@ int main(int argc, char *argv[])
         queryTable->pop_back();
     }
     delete (queryTable);
-
 }

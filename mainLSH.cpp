@@ -54,12 +54,12 @@ int main(int argc, char *argv[])
     queryTable = queries.first;
     double radius = queries.second;
 
-    class LSH<class Point*> lshImplementation(k, L, w, inputTable);
+    class LSH<class Point *> lshImplementation(k, L, w, inputTable);
     class Point *q, *b = NULL;
-    double distance, tempAF, maxAF = 0.0,avgAF = 0.0;
+    double distance, tempAF, maxAF = 0.0, avgAF = 0.0;
     clock_t timeLSH, timeBrute;
 
-    pair<class Point*, double>* bruteNN;
+    pair<class Point *, double> *bruteNN;
     ofstream outfile;
     outfile.open(outputFile);
 
@@ -73,12 +73,14 @@ int main(int argc, char *argv[])
     {
         //read the output of the bruteforce file
 
-        if (getline(readBrute, line)){
+        if (getline(readBrute, line))
+        {
             istringstream buffer(line);
             buffer >> bruteNeighborID >> bruteDist >> timeBrute;
         }
-        else{
-            cout <<"ERROR reading bruteforce file!"<<endl;
+        else
+        {
+            cout << "ERROR reading bruteforce file!" << endl;
         }
         ////////////////////////////////
 
@@ -89,27 +91,31 @@ int main(int argc, char *argv[])
         timeLSH = clock() - timeLSH;
 
         tempAF = distance / bruteDist;
-        avgAF +=tempAF;
-        if(tempAF > maxAF)
+        avgAF += tempAF;
+        if (tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
-        if(b != NULL)
-            outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
+        if (b != NULL)
+            outfile << "Nearest Neighbor LSH: " << b->getID() << endl
+                    << "Distance LSH: " << distance << endl;
         else
-            outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
-        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
-        outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
-        
-        if(radius > 0.0)
+            outfile << "Nearest Neighbor LSH: None Found!" << endl
+                    << "Distance LSH: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl
+                << "DistanceTrue: " << bruteDist << endl;
+        outfile << "tLSH: " << (float)timeLSH / CLOCKS_PER_SEC << endl
+                << "tTrue: " << (float)timeBrute / CLOCKS_PER_SEC << endl;
+
+        if (radius > 0.0)
         {
-            vector<pair<class Point*, double> >* radiusNeighbors = lshImplementation.findRadiusNN(q, radius);
-            
+            vector<pair<class Point *, double> > *radiusNeighbors = lshImplementation.findRadiusNN(q, radius);
+
             outfile << "R-nearest neighbors:" << endl;
 
-            if(radiusNeighbors != NULL)
+            if (radiusNeighbors != NULL)
             {
-                for(int i = 0; i < radiusNeighbors->size(); i++)
+                for (int i = 0; i < radiusNeighbors->size(); i++)
                 {
                     outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
                 }
@@ -119,10 +125,10 @@ int main(int argc, char *argv[])
                 delete (radiusNeighbors);
             }
             else
-                outfile << "None Found!" << endl << endl;
+                outfile << "None Found!" << endl
+                        << endl;
         }
     }
-
 
     // for (int i = 0; i < queryTable->size(); i++)
     // {
@@ -147,11 +153,11 @@ int main(int argc, char *argv[])
     //     outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
     //     outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
     //     delete bruteNN;
-        
+
     // }
 
-    cout << "MaxAF: "<< maxAF << endl;
-    cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;
+    cout << "MaxAF: " << maxAF << endl;
+    cout << "AvgAF: " << avgAF / queryTable->size() << endl;
     outfile.close();
 
     //delete the tables

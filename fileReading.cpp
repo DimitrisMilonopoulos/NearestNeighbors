@@ -10,7 +10,7 @@ using namespace std;
 
 //Class used to read the input files
 
-pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, char identifier)
+pair<vector<class Point *> *, double> Reading::readPoints(string FileLocation, char identifier)
 {
     ifstream infile(FileLocation);
     string line;
@@ -20,7 +20,7 @@ pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, ch
     int x;
     ifstream file(FileLocation);
 
-    if(identifier == 'q')
+    if (identifier == 'q')
         getline(file, line);
 
     if (getline(file, line))
@@ -36,7 +36,7 @@ pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, ch
     }
     while (getline(file, line))
         count++;
- 
+
     cout << "Number of lines in file: " << count << endl;
     cout << "Number of dimensions per point: " << columns << endl;
 
@@ -50,15 +50,17 @@ pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, ch
     double radius = -1.0;
     double *coord;
 
-    if(identifier == 'q'){
+    if (identifier == 'q')
+    {
         getline(infile, line);
         istringstream iss(line);
 
         iss >> name;
 
-        if(name == "Radius:"){
+        if (name == "Radius:")
+        {
             iss >> radius;
-        }    
+        }
     }
 
     while (getline(infile, line))
@@ -67,81 +69,87 @@ pair<vector<class Point *>*, double> Reading::readPoints(string FileLocation, ch
 
         //get the name
         iss >> name;
-        
+
         coord = new double[columns];
 
         for (int i = 0; i < columns; i++)
         {
             iss >> coord[i];
         }
-        class Point *newPoint = new class Point(name, coord, columns,NULL);
+        class Point *newPoint = new class Point(name, coord, columns, NULL);
         table->push_back(newPoint);
         j++;
     }
 
-    pair<vector<class Point *>*, double> PAIR;
+    pair<vector<class Point *> *, double> PAIR;
     PAIR.first = table;
     PAIR.second = radius;
 
     return PAIR;
 }
 
-
-pair<vector<class Curve *>*,vector<class Curve*>* > Reading::readCurves(string FileLocation,int* minPoints, int*maxPoints, double * maxCoord)
+pair<vector<class Curve *> *, vector<class Curve *> *> Reading::readCurves(string FileLocation, int *minPoints, int *maxPoints, double *maxCoord)
 {
     ifstream infile(FileLocation);
     string line;
-    vector <class Curve*> *inputTable = new vector <class Curve*>;
-    vector <class Curve*> *queryTable = new vector <class Curve*>;
+    vector<class Curve *> *inputTable = new vector<class Curve *>;
+    vector<class Curve *> *queryTable = new vector<class Curve *>;
 
-    pair<vector<class Curve *>*,vector<class Curve*>* > input;
+    pair<vector<class Curve *> *, vector<class Curve *> *> input;
     input.first = inputTable;
-    input.second =  queryTable;
-    
+    input.second = queryTable;
+
     int minpoints = __INT_MAX__;
-    int maxpoints = 0; 
+    int maxpoints = 0;
     int j = 0;
-    while(getline(infile,line)){
+    while (getline(infile, line))
+    {
         istringstream iss(line);
         int points;
-        string ID,buff;
+        string ID, buff;
         iss >> ID;
         iss >> points;
-        pair <double, double> * coord = new pair<double, double>[points];
-        pair <double, double> mypair;
+        pair<double, double> *coord = new pair<double, double>[points];
+        pair<double, double> mypair;
         for (size_t i = 0; i < points; i++)
         {
             //read first part of the string
-            iss>>buff;
-            sscanf(buff.c_str(),"(%lf,",&coord[i].first);
-            iss>>buff;
-            sscanf(buff.c_str(),"%lf)",&coord[i].second);
+            iss >> buff;
+            sscanf(buff.c_str(), "(%lf,", &coord[i].first);
+            iss >> buff;
+            sscanf(buff.c_str(), "%lf)", &coord[i].second);
 
-            if (coord[i].first>*maxCoord){
+            if (coord[i].first > *maxCoord)
+            {
                 *maxCoord = coord[i].first;
             }
 
-            if (coord[i].second>*maxCoord){
+            if (coord[i].second > *maxCoord)
+            {
                 *maxCoord = coord[i].second;
             }
         }
-        class Curve *curve = new class Curve(ID,coord,points);
+        class Curve *curve = new class Curve(ID, coord, points);
         j++;
-        if (j>7400){
+        if (j > 7400)
+        {
             input.second->push_back(curve); //enter the queries
         }
-        else{
+        else
+        {
             input.first->push_back(curve); //enter the input curves
         }
 
-        if (minpoints>points){
+        if (minpoints > points)
+        {
             minpoints = points;
         }
-        if(maxpoints<points){
+        if (maxpoints < points)
+        {
             maxpoints = points;
         }
     }
-    
+
     *minPoints = minpoints;
     *maxPoints = maxpoints;
     return input;

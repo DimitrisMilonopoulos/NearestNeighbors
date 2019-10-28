@@ -10,18 +10,18 @@
 
 using namespace std;
 
-pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Point *query)
-{    
+pair<class Point *, double> *bruteForce(vector<class Point *> *points, class Point *query)
+{
     size_t npoints = points->size();
-    
-    pair<class Point*, double>* nearestNeighbor = new pair<class Point*, double>;
+
+    pair<class Point *, double> *nearestNeighbor = new pair<class Point *, double>;
 
     class Point *closestPoint = points->at(0);
     double minDistance = manhattanDist(points->at(0), query);
 
-    class Point* tempPoint;
+    class Point *tempPoint;
     double tempDist;
-        
+
     for (int i = 1; i < npoints; i++)
     {
         tempPoint = points->at(i);
@@ -34,10 +34,9 @@ pair<class Point*, double>* bruteForce(vector<class Point *> *points, class Poin
     }
     nearestNeighbor->first = closestPoint;
     nearestNeighbor->second = minDistance;
-    
+
     return nearestNeighbor;
 }
-
 
 int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 {
@@ -73,22 +72,22 @@ int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
     return 1;
 }
 
-pair<class Point*, double>* bruteForceTweaked(vector<class Point *> *points, class Point *query,string ID)
-{    
+pair<class Point *, double> *bruteForceTweaked(vector<class Point *> *points, class Point *query, string ID)
+{
     size_t npoints = points->size();
-    
-    pair<class Point*, double>* nearestNeighbor = new pair<class Point*, double>;
+
+    pair<class Point *, double> *nearestNeighbor = new pair<class Point *, double>;
 
     class Point *closestPoint = points->at(0);
     double minDistance = manhattanDist(points->at(0), query);
 
-    class Point* tempPoint;
+    class Point *tempPoint;
     double tempDist;
-        
+
     for (int i = 1; i < npoints; i++)
     {
         tempPoint = points->at(i);
-        if(ID == tempPoint->getID())
+        if (ID == tempPoint->getID())
             continue;
         tempDist = manhattanDist(tempPoint, query);
         if (tempDist < minDistance)
@@ -99,23 +98,22 @@ pair<class Point*, double>* bruteForceTweaked(vector<class Point *> *points, cla
     }
     nearestNeighbor->first = closestPoint;
     nearestNeighbor->second = minDistance;
-    
+
     return nearestNeighbor;
 }
 
-
-pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class Curve *query)
-{    
+pair<class Curve *, double> *bruteForceCurve(vector<class Curve *> *curves, class Curve *query)
+{
     size_t npoints = curves->size();
-    
-    pair<class Curve*, double>* nearestNeighbor = new pair<class Curve*, double>;
+
+    pair<class Curve *, double> *nearestNeighbor = new pair<class Curve *, double>;
 
     class Curve *closestCurve = curves->at(0);
     double minDistance = dtwDist(curves->at(0), query);
 
-    class Curve* tempCurve;
+    class Curve *tempCurve;
     double tempDist;
-        
+
     for (int i = 1; i < npoints; i++)
     {
         tempCurve = curves->at(i);
@@ -128,31 +126,31 @@ pair<class Curve*, double>* bruteForceCurve(vector<class Curve *> *curves, class
     }
     nearestNeighbor->first = closestCurve;
     nearestNeighbor->second = minDistance;
-    
+
     return nearestNeighbor;
 }
 
-int calculateW(vector<class Point *> *points, int percentage){
+int calculateW(vector<class Point *> *points, int percentage)
+{
 
-    int toCheck = (points->size()*percentage)/100;
+    int toCheck = (points->size() * percentage) / 100;
 
-    random_device rd; 
+    random_device rd;
     mt19937 gen(rd());
-    pair <class Point*,double>* temp;
-    double  avgDist;
+    pair<class Point *, double> *temp;
+    double avgDist;
 
-    uniform_int_distribution<> dis(0,points->size()-1);
+    uniform_int_distribution<> dis(0, points->size() - 1);
 
     for (int i = 0; i < toCheck; i++)
     {
-        class Point * temp_point = points->at(dis(gen)); //generate a random point
-        temp = bruteForceTweaked(points,temp_point,temp_point->getID());
-        avgDist+= temp->second;
+        class Point *temp_point = points->at(dis(gen)); //generate a random point
+        temp = bruteForceTweaked(points, temp_point, temp_point->getID());
+        avgDist += temp->second;
         delete temp;
     }
-    
+
     avgDist = ceil(avgDist / toCheck);
-    cout << "ESTIMATED W IS : " << (int)avgDist <<endl;
+    cout << "ESTIMATED W IS : " << (int)avgDist << endl;
     return (int)avgDist;
-    
 }

@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
             L = stoi(parameterBuffer, nullptr, 10);
         else if (optionBuffer == "-o")
             outputFile = parameterBuffer;
-
     }
 
     ////// Initialize input and queries //////
@@ -60,12 +59,12 @@ int main(int argc, char *argv[])
     int minPoints = 0, maxPoints = 0;
 
     vector<class Curve *> *inputTable, *queryTable;
-    pair <vector<class Curve*>*, vector<class Curve*>*> tables;
+    pair<vector<class Curve *> *, vector<class Curve *> *> tables;
 
     double maxCoord = -10000000;
 
-    tables = reader.readCurves(inputFile, &minPoints, &maxPoints,&maxCoord);
-    cout << "MAXIMUM COORDINATES " << maxCoord<<endl;
+    tables = reader.readCurves(inputFile, &minPoints, &maxPoints, &maxCoord);
+    cout << "MAXIMUM COORDINATES " << maxCoord << endl;
     inputTable = tables.first;
     queryTable = tables.second;
 
@@ -81,30 +80,30 @@ int main(int argc, char *argv[])
     avgAF = 0.0;
     clock_t timeAlgorithm, timeBrute;
 
-    pair<class Curve*, double>* bruteNN;
+    pair<class Curve *, double> *bruteNN;
 
     ////// Run algorithm based on the user's choices
 
     ifstream readBrute("bruteCurves.txt");
-    string line,bruteNeighborID;
+    string line, bruteNeighborID;
     double bruteDist;
 
-    
-    class gridCurve<class Cube<class Curve*> >* lshCube = new class gridCurve<class Cube<class Curve*> >(inputTable, k, L, w, 30, minPoints, maxPoints,maxCoord);
+    class gridCurve<class Cube<class Curve *> > *lshCube = new class gridCurve<class Cube<class Curve *> >(inputTable, k, L, w, 30, minPoints, maxPoints, maxCoord);
     lshCube->initializeAlgorithm();
 
     for (int i = 0; i < queryTable->size(); i++)
     {
-            //read the output of the bruteforce file
-        if (getline(readBrute, line)){
+        //read the output of the bruteforce file
+        if (getline(readBrute, line))
+        {
             istringstream buffer(line);
             buffer >> bruteNeighborID >> bruteDist >> timeBrute;
-            }
-        else{
-                cout <<"ERROR reading bruteforce file!"<<endl;
-            }
-            ////////////////////////////////
-
+        }
+        else
+        {
+            cout << "ERROR reading bruteforce file!" << endl;
+        }
+        ////////////////////////////////
 
         q = (queryTable->at(i));
         timeAlgorithm = clock();
@@ -112,25 +111,29 @@ int main(int argc, char *argv[])
         timeAlgorithm = clock() - timeAlgorithm;
 
         tempAF = distance / bruteDist;
-        if (distance==0 || bruteDist ==0)
+        if (distance == 0 || bruteDist == 0)
             tempAF = 1;
-        avgAF +=tempAF;
-        if(tempAF > maxAF)
+        avgAF += tempAF;
+        if (tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
-        if(b != NULL)
-            outfile << "Nearest Neighbor LSH/Hypercube: " << b->getID() << endl << "Distance LSH/Hypercube: " << distance << endl;
+        if (b != NULL)
+            outfile << "Nearest Neighbor LSH/Hypercube: " << b->getID() << endl
+                    << "Distance LSH/Hypercube: " << distance << endl;
         else
-            outfile << "Nearest Neighbor LSH/Hypercube: None Found!" << endl << "Distance LSH/Hypercube: -" << endl;
-        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
-        outfile << "tLSH/Hypercube: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+            outfile << "Nearest Neighbor LSH/Hypercube: None Found!" << endl
+                    << "Distance LSH/Hypercube: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl
+                << "DistanceTrue: " << bruteDist << endl;
+        outfile << "tLSH/Hypercube: " << (float)timeAlgorithm / CLOCKS_PER_SEC << endl
+                << "tTrue: " << (float)timeBrute / CLOCKS_PER_SEC << endl
+                << endl;
     }
     delete lshCube;
-    
 
-    cout << "MaxAF: "<< maxAF << endl;
-    cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;
+    cout << "MaxAF: " << maxAF << endl;
+    cout << "AvgAF: " << avgAF / queryTable->size() << endl;
     outfile.close();
 
     //delete the tables

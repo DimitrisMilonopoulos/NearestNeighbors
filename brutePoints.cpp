@@ -10,14 +10,13 @@
 
 using namespace std;
 
-
-int main(int argc, char * argv[]){
-
+int main(int argc, char *argv[])
+{
 
     string inputFile, queryFile, outputFile;
-    class Point* q;
+    class Point *q;
     clock_t timeBrute;
-    pair<class Point*, double>* bruteNN;
+    pair<class Point *, double> *bruteNN;
     ofstream brute;
 
     string optionBuffer, parameterBuffer;
@@ -35,7 +34,6 @@ int main(int argc, char * argv[]){
             outputFile = parameterBuffer;
     }
 
-
     class Reading reader;
     vector<class Point *> *inputTable, *queryTable;
     pair<vector<class Point *> *, double> input = reader.readPoints(inputFile, 'i');
@@ -43,7 +41,7 @@ int main(int argc, char * argv[]){
     pair<vector<class Point *> *, double> queries = reader.readPoints(queryFile, 'q');
     queryTable = queries.first;
 
-/////////calculate the nearest neighbors with brute force////////////////////
+    /////////calculate the nearest neighbors with brute force////////////////////
     brute.open(outputFile);
 
     for (int i = 0; i < queryTable->size(); i++)
@@ -52,7 +50,7 @@ int main(int argc, char * argv[]){
         timeBrute = clock();
         bruteNN = bruteForce(inputTable, q);
         timeBrute = clock() - timeBrute;
-        brute << bruteNN->first->getID() << " " <<bruteNN->second << " " << timeBrute <<endl;
+        brute << bruteNN->first->getID() << " " << bruteNN->second << " " << timeBrute << endl;
         delete bruteNN;
     }
 
@@ -72,7 +70,6 @@ int main(int argc, char * argv[]){
         queryTable->pop_back();
     }
     delete (queryTable);
-    
-    /////////////////////////////////////////////////////////////////////////////
 
+    /////////////////////////////////////////////////////////////////////////////
 }

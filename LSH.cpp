@@ -13,7 +13,7 @@ using namespace std;
 
 // Class used for the implementation of the LSH algorithm
 template <class T>
-LSH<T>::LSH(int k, int L, int w, vector<class Point*> *input)
+LSH<T>::LSH(int k, int L, int w, vector<class Point *> *input)
 {
     this->k = k;
     this->L = L;
@@ -24,7 +24,7 @@ LSH<T>::LSH(int k, int L, int w, vector<class Point*> *input)
     int dim = input->at(0)->getSize();
 
     unsigned int hashtableSize = input->size() / 8;
-    hashTables = new class HashTable<vector < pair <class Point*, unsigned int> > >[L];
+    hashTables = new class HashTable<vector<pair<class Point *, unsigned int> > >[L];
     for (int i = 0; i < L; i++)
     {
         hashTables[i].initialize(hashtableSize, w, k, dim, 0);
@@ -40,13 +40,11 @@ LSH<T>::LSH(int k, int L, int w, vector<class Point*> *input)
     }
 }
 
-
 template <class T>
 LSH<T>::~LSH()
 {
     delete[] hashTables;
 }
-
 
 template <class T>
 int LSH<T>::getk()
@@ -54,13 +52,11 @@ int LSH<T>::getk()
     return k;
 }
 
-
 template <class T>
 int LSH<T>::getL()
 {
     return L;
 }
-
 
 template <class T>
 int LSH<T>::getw()
@@ -68,15 +64,14 @@ int LSH<T>::getw()
     return w;
 }
 
-
 template <>
-class Point* LSH<class Point*>::findNN(class Point *query, double *dist)
+class Point *LSH<class Point *>::findNN(class Point *query, double *dist)
 {
     class Point *b = NULL;
     class Point *p = NULL;
     double manhattanD;
     double distance = numeric_limits<double>::max();
-    vector< pair <class Point *, unsigned int> > neighbors;
+    vector<pair<class Point *, unsigned int> > neighbors;
     int count;
 
     for (int i = 0; i < L; i++)
@@ -87,7 +82,7 @@ class Point* LSH<class Point*>::findNN(class Point *query, double *dist)
 
         for (int j = 0; j < neighbors.size(); j++)
         {
-            if(amplifiedResult == neighbors.at(j).second)
+            if (amplifiedResult == neighbors.at(j).second)
             {
                 count++;
                 if (count > 10 * L)
@@ -105,19 +100,18 @@ class Point* LSH<class Point*>::findNN(class Point *query, double *dist)
         }
     }
     *dist = distance;
-    
+
     return b;
 }
 
-
 template <>
-class Curve* LSH<class Curve*>::findNN(class Point *query, double* dist)
+class Curve *LSH<class Curve *>::findNN(class Point *query, double *dist)
 {
     class Point *b = NULL;
     class Point *p = NULL;
     double dtwD;
     double distance = numeric_limits<double>::max();
-    vector< pair <class Point *, unsigned int> > neighbors;
+    vector<pair<class Point *, unsigned int> > neighbors;
     int count;
 
     cout << query->getCurvePtr()->getID() << endl;
@@ -130,7 +124,7 @@ class Curve* LSH<class Curve*>::findNN(class Point *query, double* dist)
 
         for (int j = 0; j < neighbors.size(); j++)
         {
-            if(amplifiedResult == neighbors.at(j).second)
+            if (amplifiedResult == neighbors.at(j).second)
             {
                 count++;
                 if (count > 30 * L)
@@ -149,24 +143,23 @@ class Curve* LSH<class Curve*>::findNN(class Point *query, double* dist)
     }
 
     *dist = distance;
-    if( b != NULL)
+    if (b != NULL)
         return b->getCurvePtr();
     else
         return NULL;
 }
 
-
 template <class T>
-T LSH<T>::findNN(class Point* query, double *dist){}
+T LSH<T>::findNN(class Point *query, double *dist) {}
 
+template <>
+vector<pair<class Point *, double> > *LSH<class Point *>::findRadiusNN(class Point *query, double radius)
+{
 
-template<>
-vector<pair<class Point*, double> >* LSH<class Point*>::findRadiusNN(class Point* query, double radius){
-    
     class Point *p = NULL;
     double manhattanD;
-    vector<pair<class Point*, double> >* radiusNaighbors = new vector<pair<class Point*, double> >;
-    vector< pair <class Point *, unsigned int> > neighbors;
+    vector<pair<class Point *, double> > *radiusNaighbors = new vector<pair<class Point *, double> >;
+    vector<pair<class Point *, unsigned int> > neighbors;
     int count;
 
     for (int i = 0; i < L; i++)
@@ -177,7 +170,7 @@ vector<pair<class Point*, double> >* LSH<class Point*>::findRadiusNN(class Point
 
         for (int j = 0; j < neighbors.size(); j++)
         {
-            if(amplifiedResult == neighbors.at(j).second)
+            if (amplifiedResult == neighbors.at(j).second)
             {
                 count++;
                 if (count > 10 * L)
@@ -186,8 +179,9 @@ vector<pair<class Point*, double> >* LSH<class Point*>::findRadiusNN(class Point
                 p = neighbors.at(j).first;
                 manhattanD = manhattanDist(query, p);
 
-                if(manhattanD <= radius){
-                    pair< class Point*, double> neighborRadius;
+                if (manhattanD <= radius)
+                {
+                    pair<class Point *, double> neighborRadius;
                     neighborRadius.first = p;
                     neighborRadius.second = manhattanD;
                     radiusNaighbors->push_back(neighborRadius);
@@ -196,20 +190,20 @@ vector<pair<class Point*, double> >* LSH<class Point*>::findRadiusNN(class Point
         }
     }
 
-    if(!radiusNaighbors->empty())
+    if (!radiusNaighbors->empty())
         return radiusNaighbors;
-    else{
+    else
+    {
         delete radiusNaighbors;
         return NULL;
     }
 }
 
-template<class T>
-vector<pair<class Point*, double> >* LSH<T>::findRadiusNN(class Point* query, double radius)
+template <class T>
+vector<pair<class Point *, double> > *LSH<T>::findRadiusNN(class Point *query, double radius)
 {
     return NULL;
 }
 
-
-template class LSH<class Curve*>;
-template class LSH<class Point*>;
+template class LSH<class Curve *>;
+template class LSH<class Point *>;

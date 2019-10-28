@@ -59,12 +59,12 @@ int main(int argc, char *argv[])
     int minPoints = 0, maxPoints = 0;
 
     vector<class Curve *> *inputTable, *queryTable;
-    pair <vector<class Curve*>*, vector<class Curve*>*> tables;
+    pair<vector<class Curve *> *, vector<class Curve *> *> tables;
 
     double maxCoord = -10000000;
 
-    tables = reader.readCurves(inputFile, &minPoints, &maxPoints,&maxCoord);
-    cout << "MAXIMUM COORDINATES " << maxCoord<<endl;
+    tables = reader.readCurves(inputFile, &minPoints, &maxPoints, &maxCoord);
+    cout << "MAXIMUM COORDINATES " << maxCoord << endl;
     inputTable = tables.first;
     queryTable = tables.second;
 
@@ -80,63 +80,65 @@ int main(int argc, char *argv[])
     avgAF = 0.0;
     clock_t timeAlgorithm, timeBrute;
 
-    pair<class Curve*, double>* bruteNN;
+    pair<class Curve *, double> *bruteNN;
 
     ////// Run algorithm based on the user's choices
 
     ifstream readBrute("bruteCurves.txt");
-    string line,bruteNeighborID;
+    string line, bruteNeighborID;
     double bruteDist;
 
-    class gridCurve<class LSH<class Curve*> >* lshLsh = new class gridCurve<class LSH<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints,maxCoord);
+    class gridCurve<class LSH<class Curve *> > *lshLsh = new class gridCurve<class LSH<class Curve *> >(inputTable, k, L, w, 0, minPoints, maxPoints, maxCoord);
     lshLsh->initializeAlgorithm();
-    
+
     for (int i = 0; i < queryTable->size(); i++)
     {
-            q = (queryTable->at(i));
+        q = (queryTable->at(i));
         // timeBrute = clock();
         // bruteNN = bruteForceCurve(inputTable, q);
         // timeBrute = clock() - timeBrute;
-            timeAlgorithm = clock();
-            b = lshLsh->findNN(q, &distance);
+        timeAlgorithm = clock();
+        b = lshLsh->findNN(q, &distance);
         timeAlgorithm = clock() - timeAlgorithm;
 
-            //read the output of the bruteforce file
-        if (getline(readBrute, line)){
+        //read the output of the bruteforce file
+        if (getline(readBrute, line))
+        {
             istringstream buffer(line);
             buffer >> bruteNeighborID >> bruteDist >> timeBrute;
-            }
-        else{
-                cout <<"ERROR reading bruteforce file!"<<endl;
-            }
-            ////////////////////////////////
-
-
-
+        }
+        else
+        {
+            cout << "ERROR reading bruteforce file!" << endl;
+        }
+        ////////////////////////////////
 
         tempAF = distance / bruteDist;
-        if (distance==0 || bruteDist ==0)
+        if (distance == 0 || bruteDist == 0)
             tempAF = 1;
         cout.precision(15);
-        cout <<tempAF<<endl;
-        avgAF +=tempAF;
-        if(tempAF > maxAF)
+        cout << tempAF << endl;
+        avgAF += tempAF;
+        if (tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
-        if(b != NULL)
-            outfile << "Nearest Neighbor LSH/LSH: " << b->getID() << endl << "Distance LSH/LSH: " << distance << endl;
+        if (b != NULL)
+            outfile << "Nearest Neighbor LSH/LSH: " << b->getID() << endl
+                    << "Distance LSH/LSH: " << distance << endl;
         else
-            outfile << "Nearest Neighbor LSH/LSH: None Found!" << endl << "Distance LSH/LSH: -" << endl;
-        outfile << "True Neighbor: " <<bruteNeighborID << endl << "DistanceTrue: " << bruteDist << endl;
-        outfile << "tLSH/LSH: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+            outfile << "Nearest Neighbor LSH/LSH: None Found!" << endl
+                    << "Distance LSH/LSH: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl
+                << "DistanceTrue: " << bruteDist << endl;
+        outfile << "tLSH/LSH: " << (float)timeAlgorithm / CLOCKS_PER_SEC << endl
+                << "tTrue: " << (float)timeBrute / CLOCKS_PER_SEC << endl
+                << endl;
     }
     delete lshLsh;
 
-
-
-    cout << "MaxAF: "<< maxAF << endl;
-    cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;
+    cout << "MaxAF: " << maxAF << endl;
+    cout << "AvgAF: " << avgAF / queryTable->size() << endl;
     outfile.close();
 
     //delete the tables

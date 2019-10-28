@@ -48,6 +48,7 @@ int main(int argc, char *argv[])
             L = stoi(parameterBuffer, nullptr, 10);
         else if (optionBuffer == "-o")
             outputFile = parameterBuffer;
+
     }
 
     ////// Initialize input and queries //////
@@ -88,19 +89,12 @@ int main(int argc, char *argv[])
     string line,bruteNeighborID;
     double bruteDist;
 
-    class gridCurve<class LSH<class Curve*> >* lshLsh = new class gridCurve<class LSH<class Curve*> >(inputTable, k, L, w, 0, minPoints, maxPoints,maxCoord);
-    lshLsh->initializeAlgorithm();
     
+    class gridCurve<class Cube<class Curve*> >* lshCube = new class gridCurve<class Cube<class Curve*> >(inputTable, k, L, w, 30, minPoints, maxPoints,maxCoord);
+    lshCube->initializeAlgorithm();
+
     for (int i = 0; i < queryTable->size(); i++)
     {
-            q = (queryTable->at(i));
-        // timeBrute = clock();
-        // bruteNN = bruteForceCurve(inputTable, q);
-        // timeBrute = clock() - timeBrute;
-            timeAlgorithm = clock();
-            b = lshLsh->findNN(q, &distance);
-        timeAlgorithm = clock() - timeAlgorithm;
-
             //read the output of the bruteforce file
         if (getline(readBrute, line)){
             istringstream buffer(line);
@@ -112,28 +106,28 @@ int main(int argc, char *argv[])
             ////////////////////////////////
 
 
-
+        q = (queryTable->at(i));
+        timeAlgorithm = clock();
+        b = lshCube->findNN(q, &distance);
+        timeAlgorithm = clock() - timeAlgorithm;
 
         tempAF = distance / bruteDist;
         if (distance==0 || bruteDist ==0)
             tempAF = 1;
-        cout.precision(15);
-        cout <<tempAF<<endl;
         avgAF +=tempAF;
         if(tempAF > maxAF)
             maxAF = tempAF;
 
         outfile << "Query Point: " << q->getID() << endl;
         if(b != NULL)
-            outfile << "Nearest Neighbor LSH/LSH: " << b->getID() << endl << "Distance LSH/LSH: " << distance << endl;
+            outfile << "Nearest Neighbor LSH/Hypercube: " << b->getID() << endl << "Distance LSH/Hypercube: " << distance << endl;
         else
-            outfile << "Nearest Neighbor LSH/LSH: None Found!" << endl << "Distance LSH/LSH: -" << endl;
-        outfile << "True Neighbor: " <<bruteNeighborID << endl << "DistanceTrue: " << bruteDist << endl;
-        outfile << "tLSH/LSH: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
+            outfile << "Nearest Neighbor LSH/Hypercube: None Found!" << endl << "Distance LSH/Hypercube: -" << endl;
+        outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
+        outfile << "tLSH/Hypercube: " << (float) timeAlgorithm/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
     }
-    delete lshLsh;
-
-
+    delete lshCube;
+    
 
     cout << "MaxAF: "<< maxAF << endl;
     cout <<"AvgAF: " << avgAF/queryTable->size() <<endl;

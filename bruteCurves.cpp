@@ -15,9 +15,9 @@ int main(int argc, char * argv[]){
 
 
     string inputFile, queryFile, outputFile;
-    class Point* q;
+    class Curve* q;
     clock_t timeBrute;
-    pair<class Point*, double>* bruteNN;
+    pair<class Curve*, double>* bruteNN;
     ofstream brute;
 
     string optionBuffer, parameterBuffer;
@@ -37,11 +37,12 @@ int main(int argc, char * argv[]){
 
 
     class Reading reader;
-    vector<class Point *> *inputTable, *queryTable;
-    pair<vector<class Point *> *, double> input = reader.readPoints(inputFile, 'i');
+    vector<class Curve *> *inputTable, *queryTable;
+    int minpoints,maxpoints;
+    double items;
+    pair<vector<class Curve *> *,vector<class Curve *>* > input = reader.readCurves(inputFile, &minpoints,&maxpoints,&items);
     inputTable = input.first;
-    pair<vector<class Point *> *, double> queries = reader.readPoints(queryFile, 'q');
-    queryTable = queries.first;
+    queryTable = input.second;
 
 /////////calculate the nearest neighbors with brute force////////////////////
     brute.open(outputFile);
@@ -50,7 +51,7 @@ int main(int argc, char * argv[]){
     {
         q = (queryTable->at(i));
         timeBrute = clock();
-        bruteNN = bruteForce(inputTable, q);
+        bruteNN = bruteForceCurve(inputTable, q);
         timeBrute = clock() - timeBrute;
         brute << bruteNN->first->getID() << " " <<bruteNN->second << " " << timeBrute <<endl;
         delete bruteNN;

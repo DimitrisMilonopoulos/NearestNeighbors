@@ -1,1027 +1,1040 @@
 Query Point: 1
-Nearest Neighbor Cube: 12
-Distance Cube: 5017
+Nearest Neighbor Cube: 42
+Distance Cube: 3902
 True Neighbor: 2177
 DistanceTrue: 2064
-tCube: 0.005377
+tCube: 0.007274
 tTrue: 0.145159
 R-nearest neighbors:
 None Found!
 
 Query Point: 2
-Nearest Neighbor Cube: 121
-Distance Cube: 2699
+Nearest Neighbor Cube: 23
+Distance Cube: 2513
 True Neighbor: 2782
 DistanceTrue: 2045
-tCube: 0.000527
+tCube: 0.00065
 tTrue: 0.136374
 R-nearest neighbors:
-ID: 121 Distance: 2699
-ID: 122 Distance: 2781
+ID: 23 Distance: 2513
+ID: 27 Distance: 2706
+ID: 97 Distance: 2633
 
 Query Point: 3
-Nearest Neighbor Cube: 8
-Distance Cube: 2996
+Nearest Neighbor Cube: 9
+Distance Cube: 2706
 True Neighbor: 9973
 DistanceTrue: 1619
-tCube: 0.000487
+tCube: 0.00054
 tTrue: 0.140426
 R-nearest neighbors:
+ID: 2 Distance: 2892
 ID: 8 Distance: 2996
+ID: 9 Distance: 2706
 
 Query Point: 4
-Nearest Neighbor Cube: 108
-Distance Cube: 1987
+Nearest Neighbor Cube: 27
+Distance Cube: 2332
 True Neighbor: 9844
 DistanceTrue: 1593
-tCube: 0.000489
+tCube: 0.000869
 tTrue: 0.14734
 R-nearest neighbors:
+ID: 23 Distance: 2485
 ID: 26 Distance: 2785
-ID: 95 Distance: 2649
+ID: 27 Distance: 2332
+ID: 94 Distance: 2757
 ID: 97 Distance: 2345
-ID: 108 Distance: 1987
-ID: 125 Distance: 1992
-ID: 126 Distance: 1988
-ID: 139 Distance: 2739
 
 Query Point: 5
-Nearest Neighbor Cube: 32
-Distance Cube: 2801
+Nearest Neighbor Cube: 9
+Distance Cube: 2947
 True Neighbor: 5165
 DistanceTrue: 1680
-tCube: 0.00053
+tCube: 0.000644
 tTrue: 0.148988
 R-nearest neighbors:
-ID: 10 Distance: 2951
-ID: 31 Distance: 2977
-ID: 32 Distance: 2801
+ID: 9 Distance: 2947
 
 Query Point: 6
-Nearest Neighbor Cube: 97
-Distance Cube: 2666
+Nearest Neighbor Cube: 15
+Distance Cube: 4798
 True Neighbor: 1240
 DistanceTrue: 2180
-tCube: 0.000492
+tCube: 0.000976
 tTrue: 0.147651
-R-nearest neighbors:
-ID: 97 Distance: 2666
-
-Query Point: 7
-Nearest Neighbor Cube: 50
-Distance Cube: 3094
-True Neighbor: 2775
-DistanceTrue: 1946
-tCube: 0.000502
-tTrue: 0.139897
 R-nearest neighbors:
 None Found!
 
+Query Point: 7
+Nearest Neighbor Cube: 97
+Distance Cube: 2587
+True Neighbor: 2775
+DistanceTrue: 1946
+tCube: 0.000861
+tTrue: 0.139897
+R-nearest neighbors:
+ID: 23 Distance: 2963
+ID: 26 Distance: 2663
+ID: 27 Distance: 2940
+ID: 97 Distance: 2587
+
 Query Point: 8
-Nearest Neighbor Cube: 41
-Distance Cube: 2041
+Nearest Neighbor Cube: 37
+Distance Cube: 1517
 True Neighbor: 5869
 DistanceTrue: 1149
-tCube: 0.000686
+tCube: 0.001462
 tTrue: 0.136389
 R-nearest neighbors:
-ID: 35 Distance: 2226
-ID: 41 Distance: 2041
+ID: 37 Distance: 1517
+ID: 49 Distance: 1723
+ID: 84 Distance: 2568
 
 Query Point: 9
-Nearest Neighbor Cube: 31
-Distance Cube: 2645
+Nearest Neighbor Cube: 79
+Distance Cube: 2474
 True Neighbor: 9629
 DistanceTrue: 1791
-tCube: 0.000479
+tCube: 0.000844
 tTrue: 0.138338
 R-nearest neighbors:
-ID: 10 Distance: 2713
-ID: 12 Distance: 2910
-ID: 22 Distance: 2762
-ID: 31 Distance: 2645
+ID: 58 Distance: 2495
+ID: 79 Distance: 2474
+ID: 90 Distance: 2921
+ID: 102 Distance: 2816
+ID: 115 Distance: 2595
+ID: 141 Distance: 2687
 
 Query Point: 10
-Nearest Neighbor Cube: 33
-Distance Cube: 2725
+Nearest Neighbor Cube: 22
+Distance Cube: 2757
 True Neighbor: 4720
 DistanceTrue: 1834
-tCube: 0.000893
+tCube: 0.001287
 tTrue: 0.136371
 R-nearest neighbors:
 ID: 2 Distance: 2994
-ID: 4 Distance: 2973
-ID: 33 Distance: 2725
+ID: 9 Distance: 2974
+ID: 22 Distance: 2757
+ID: 51 Distance: 2914
 
 Query Point: 11
-Nearest Neighbor Cube: 109
-Distance Cube: 3168
+Nearest Neighbor Cube: 110
+Distance Cube: 2779
 True Neighbor: 694
 DistanceTrue: 2067
-tCube: 0.00085
+tCube: 0.001018
 tTrue: 0.139862
 R-nearest neighbors:
-None Found!
+ID: 110 Distance: 2779
 
 Query Point: 12
 Nearest Neighbor Cube: 61
 Distance Cube: 1946
 True Neighbor: 4698
 DistanceTrue: 1280
-tCube: 0.000843
+tCube: 0.000961
 tTrue: 0.138656
 R-nearest neighbors:
 ID: 61 Distance: 1946
-ID: 71 Distance: 2506
-ID: 76 Distance: 2160
-ID: 86 Distance: 2394
-ID: 90 Distance: 2487
-ID: 102 Distance: 2272
-ID: 104 Distance: 2031
 
 Query Point: 13
-Nearest Neighbor Cube: 98
-Distance Cube: 2517
+Nearest Neighbor Cube: 110
+Distance Cube: 2560
 True Neighbor: 507
 DistanceTrue: 1811
-tCube: 0.000828
+tCube: 0.000876
 tTrue: 0.138995
 R-nearest neighbors:
-ID: 68 Distance: 2815
-ID: 98 Distance: 2517
+ID: 110 Distance: 2560
 
 Query Point: 14
-Nearest Neighbor Cube: 121
-Distance Cube: 2341
+Nearest Neighbor Cube: 110
+Distance Cube: 3095
 True Neighbor: 9816
 DistanceTrue: 1829
-tCube: 0.000944
+tCube: 0.000606
 tTrue: 0.13826
 R-nearest neighbors:
-ID: 121 Distance: 2341
+None Found!
 
 Query Point: 15
 Nearest Neighbor Cube: 22
 Distance Cube: 2769
 True Neighbor: 798
 DistanceTrue: 2136
-tCube: 0.000874
+tCube: 0.000721
 tTrue: 0.14266
 R-nearest neighbors:
-ID: 10 Distance: 2800
-ID: 12 Distance: 2999
 ID: 14 Distance: 2978
+ID: 18 Distance: 2879
 ID: 22 Distance: 2769
-ID: 29 Distance: 2835
-ID: 31 Distance: 2866
+ID: 51 Distance: 2926
 
 Query Point: 16
-Nearest Neighbor Cube: 35
-Distance Cube: 4707
+Nearest Neighbor Cube: 105
+Distance Cube: 2423
 True Neighbor: 410
 DistanceTrue: 1973
-tCube: 0.000941
+tCube: 0.0012
 tTrue: 0.136455
+R-nearest neighbors:
+ID: 63 Distance: 2938
+ID: 86 Distance: 2938
+ID: 93 Distance: 2806
+ID: 105 Distance: 2423
+
+Query Point: 17
+Nearest Neighbor Cube: 45
+Distance Cube: 3107
+True Neighbor: 471
+DistanceTrue: 1963
+tCube: 0.001775
+tTrue: 0.138405
 R-nearest neighbors:
 None Found!
 
-Query Point: 17
-Nearest Neighbor Cube: 97
-Distance Cube: 2293
-True Neighbor: 471
-DistanceTrue: 1963
-tCube: 0.000929
-tTrue: 0.138405
-R-nearest neighbors:
-ID: 26 Distance: 2625
-ID: 97 Distance: 2293
-ID: 108 Distance: 2469
-ID: 125 Distance: 2458
-ID: 126 Distance: 2500
-
 Query Point: 18
-Nearest Neighbor Cube: 108
-Distance Cube: 2084
+Nearest Neighbor Cube: 10
+Distance Cube: 5145
 True Neighbor: 4097
 DistanceTrue: 1987
-tCube: 0.000896
+tCube: 0.001316
 tTrue: 0.137014
 R-nearest neighbors:
-ID: 26 Distance: 2156
-ID: 43 Distance: 2826
-ID: 97 Distance: 2430
-ID: 108 Distance: 2084
-ID: 125 Distance: 2507
-ID: 126 Distance: 2447
+None Found!
 
 Query Point: 19
-Nearest Neighbor Cube: 33
-Distance Cube: 2511
+Nearest Neighbor Cube: 12
+Distance Cube: 2541
 True Neighbor: 904
 DistanceTrue: 1964
-tCube: 0.000871
+tCube: 0.000782
 tTrue: 0.138338
 R-nearest neighbors:
-ID: 33 Distance: 2511
+ID: 10 Distance: 2672
+ID: 12 Distance: 2541
+ID: 20 Distance: 2669
 
 Query Point: 20
-Nearest Neighbor Cube: 108
-Distance Cube: 1786
+Nearest Neighbor Cube: 97
+Distance Cube: 2276
 True Neighbor: 9807
 DistanceTrue: 1754
-tCube: 0.000947
+tCube: 0.001063
 tTrue: 0.136047
 R-nearest neighbors:
+ID: 23 Distance: 2594
 ID: 26 Distance: 2364
-ID: 43 Distance: 2986
-ID: 95 Distance: 2750
+ID: 27 Distance: 2669
+ID: 94 Distance: 2722
 ID: 97 Distance: 2276
-ID: 108 Distance: 1786
-ID: 125 Distance: 2481
-ID: 126 Distance: 2287
 
 Query Point: 21
-Nearest Neighbor Cube: 3
-Distance Cube: 2568
+Nearest Neighbor Cube: 71
+Distance Cube: 1944
 True Neighbor: 7028
 DistanceTrue: 1239
-tCube: 0.000681
+tCube: 0.001731
 tTrue: 0.13745
 R-nearest neighbors:
 ID: 3 Distance: 2568
+ID: 7 Distance: 2870
+ID: 16 Distance: 2410
+ID: 24 Distance: 2369
+ID: 71 Distance: 1944
 
 Query Point: 22
-Nearest Neighbor Cube: 16
-Distance Cube: 2325
+Nearest Neighbor Cube: 63
+Distance Cube: 1947
 True Neighbor: 4491
 DistanceTrue: 486
-tCube: 0.000509
+tCube: 0.001118
 tTrue: 0.141426
 R-nearest neighbors:
-ID: 16 Distance: 2325
-ID: 24 Distance: 2356
-ID: 34 Distance: 2853
-ID: 65 Distance: 2967
-ID: 115 Distance: 2464
+ID: 13 Distance: 2191
+ID: 63 Distance: 1947
+ID: 86 Distance: 2007
+ID: 92 Distance: 2044
+ID: 93 Distance: 2163
+ID: 105 Distance: 2084
 
 Query Point: 23
-Nearest Neighbor Cube: 32
-Distance Cube: 1580
+Nearest Neighbor Cube: 15
+Distance Cube: 1955
 True Neighbor: 4958
 DistanceTrue: 1159
-tCube: 0.000475
+tCube: 0.000783
 tTrue: 0.136214
 R-nearest neighbors:
+ID: 4 Distance: 2009
 ID: 6 Distance: 2047
-ID: 8 Distance: 1890
 ID: 10 Distance: 2520
+ID: 11 Distance: 2386
 ID: 12 Distance: 2497
-ID: 14 Distance: 2258
+ID: 15 Distance: 1955
+ID: 19 Distance: 2495
 ID: 20 Distance: 2375
-ID: 22 Distance: 2449
-ID: 29 Distance: 2565
-ID: 31 Distance: 2644
-ID: 32 Distance: 1580
+ID: 21 Distance: 2764
 
 Query Point: 24
-Nearest Neighbor Cube: 33
-Distance Cube: 2694
+Nearest Neighbor Cube: 19
+Distance Cube: 2820
 True Neighbor: 4673
 DistanceTrue: 1520
-tCube: 0.000704
+tCube: 0.000897
 tTrue: 0.138289
 R-nearest neighbors:
-ID: 33 Distance: 2694
+ID: 11 Distance: 2899
+ID: 19 Distance: 2820
+ID: 21 Distance: 2873
 
 Query Point: 25
-Nearest Neighbor Cube: 2
-Distance Cube: 2284
+Nearest Neighbor Cube: 105
+Distance Cube: 1984
 True Neighbor: 4631
 DistanceTrue: 1068
-tCube: 0.000824
+tCube: 0.001171
 tTrue: 0.135866
 R-nearest neighbors:
-ID: 2 Distance: 2284
-ID: 4 Distance: 2347
-ID: 15 Distance: 2489
-ID: 18 Distance: 2517
-ID: 33 Distance: 2513
+ID: 13 Distance: 2409
+ID: 63 Distance: 2371
+ID: 86 Distance: 2403
+ID: 92 Distance: 2268
+ID: 93 Distance: 2789
+ID: 105 Distance: 1984
 
 Query Point: 26
-Nearest Neighbor Cube: 65
-Distance Cube: 2776
+Nearest Neighbor Cube: 10
+Distance Cube: 2871
 True Neighbor: 6423
 DistanceTrue: 1919
-tCube: 0.00096
+tCube: 0.000942
 tTrue: 0.138086
 R-nearest neighbors:
-ID: 65 Distance: 2776
-ID: 115 Distance: 2983
+ID: 10 Distance: 2871
 
 Query Point: 27
-Nearest Neighbor Cube: 106
-Distance Cube: 2108
+Nearest Neighbor Cube: 22
+Distance Cube: 2327
 True Neighbor: 6828
 DistanceTrue: 1251
-tCube: 0.000842
+tCube: 0.001038
 tTrue: 0.135973
 R-nearest neighbors:
-ID: 1 Distance: 2857
-ID: 7 Distance: 2715
-ID: 13 Distance: 2809
-ID: 21 Distance: 2958
-ID: 75 Distance: 2580
-ID: 106 Distance: 2108
+ID: 2 Distance: 2656
+ID: 8 Distance: 2864
+ID: 9 Distance: 2744
+ID: 14 Distance: 2434
+ID: 18 Distance: 2599
+ID: 22 Distance: 2327
+ID: 34 Distance: 2711
 
 Query Point: 28
-Nearest Neighbor Cube: 33
-Distance Cube: 2069
+Nearest Neighbor Cube: 93
+Distance Cube: 1991
 True Neighbor: 5964
 DistanceTrue: 1166
-tCube: 0.000957
+tCube: 0.000939
 tTrue: 0.13703
 R-nearest neighbors:
-ID: 2 Distance: 2722
-ID: 4 Distance: 2579
-ID: 15 Distance: 2699
-ID: 33 Distance: 2069
+ID: 13 Distance: 2771
+ID: 63 Distance: 2105
+ID: 86 Distance: 2283
+ID: 92 Distance: 2772
+ID: 93 Distance: 1991
+ID: 105 Distance: 2500
 
 Query Point: 29
-Nearest Neighbor Cube: 33
-Distance Cube: 2628
+Nearest Neighbor Cube: 22
+Distance Cube: 2640
 True Neighbor: 6828
 DistanceTrue: 1504
-tCube: 0.000517
+tCube: 0.000913
 tTrue: 0.139307
 R-nearest neighbors:
 ID: 2 Distance: 2715
-ID: 4 Distance: 2630
-ID: 15 Distance: 2812
 ID: 18 Distance: 2832
-ID: 33 Distance: 2628
+ID: 22 Distance: 2640
+ID: 34 Distance: 2906
+ID: 51 Distance: 2791
 
 Query Point: 30
-Nearest Neighbor Cube: 3
-Distance Cube: 2967
+Nearest Neighbor Cube: 13
+Distance Cube: 2439
 True Neighbor: 5454
 DistanceTrue: 734
-tCube: 0.000478
+tCube: 0.001228
 tTrue: 0.136142
 R-nearest neighbors:
-ID: 3 Distance: 2967
+ID: 13 Distance: 2439
+ID: 63 Distance: 2681
+ID: 92 Distance: 2770
+ID: 93 Distance: 2567
+ID: 105 Distance: 2912
 
 Query Point: 31
-Nearest Neighbor Cube: 4
-Distance Cube: 2816
+Nearest Neighbor Cube: 10
+Distance Cube: 2747
 True Neighbor: 4778
 DistanceTrue: 1819
-tCube: 0.000791
+tCube: 0.001217
 tTrue: 0.138332
 R-nearest neighbors:
-ID: 2 Distance: 2969
 ID: 4 Distance: 2816
+ID: 6 Distance: 2844
+ID: 10 Distance: 2747
+ID: 12 Distance: 2872
 ID: 15 Distance: 2972
-ID: 33 Distance: 2978
+ID: 20 Distance: 2776
 
 Query Point: 32
-Nearest Neighbor Cube: 61
-Distance Cube: 2304
+Nearest Neighbor Cube: 93
+Distance Cube: 2354
 True Neighbor: 5560
 DistanceTrue: 741
-tCube: 0.000932
+tCube: 0.001231
 tTrue: 0.136495
 R-nearest neighbors:
-ID: 61 Distance: 2304
-ID: 76 Distance: 2840
+ID: 63 Distance: 2398
 ID: 86 Distance: 2682
-ID: 90 Distance: 2769
-ID: 102 Distance: 2680
-ID: 104 Distance: 2745
+ID: 92 Distance: 2441
+ID: 93 Distance: 2354
+ID: 105 Distance: 2953
 
 Query Point: 33
-Nearest Neighbor Cube: 8
-Distance Cube: 2595
+Nearest Neighbor Cube: 154
+Distance Cube: 1958
 True Neighbor: 5301
 DistanceTrue: 1210
-tCube: 0.000893
+tCube: 0.000665
 tTrue: 0.139279
 R-nearest neighbors:
-ID: 8 Distance: 2595
-ID: 10 Distance: 2763
-ID: 12 Distance: 2938
-ID: 20 Distance: 2966
-ID: 22 Distance: 2832
-ID: 31 Distance: 2675
+ID: 74 Distance: 2732
+ID: 154 Distance: 1958
+ID: 190 Distance: 2705
+ID: 212 Distance: 2828
 
 Query Point: 34
-Nearest Neighbor Cube: 103
-Distance Cube: 3793
+Nearest Neighbor Cube: 189
+Distance Cube: 3504
 True Neighbor: 8151
 DistanceTrue: 2368
-tCube: 0.000983
+tCube: 0.00114
 tTrue: 0.136252
 R-nearest neighbors:
 None Found!
 
 Query Point: 35
-Nearest Neighbor Cube: 106
-Distance Cube: 2643
+Nearest Neighbor Cube: 6
+Distance Cube: 2330
 True Neighbor: 7059
 DistanceTrue: 1951
-tCube: 0.00123
+tCube: 0.000875
 tTrue: 0.13981
 R-nearest neighbors:
-ID: 7 Distance: 2994
-ID: 75 Distance: 2831
-ID: 106 Distance: 2643
+ID: 4 Distance: 2854
+ID: 6 Distance: 2330
+ID: 10 Distance: 2461
+ID: 11 Distance: 2573
+ID: 12 Distance: 2424
+ID: 15 Distance: 2938
+ID: 19 Distance: 2724
+ID: 20 Distance: 2370
 
 Query Point: 36
-Nearest Neighbor Cube: 103
-Distance Cube: 2843
+Nearest Neighbor Cube: 95
+Distance Cube: 2732
 True Neighbor: 5842
 DistanceTrue: 969
-tCube: 0.000919
+tCube: 0.001326
 tTrue: 0.139055
 R-nearest neighbors:
-ID: 103 Distance: 2843
+ID: 95 Distance: 2732
 
 Query Point: 37
-Nearest Neighbor Cube: 122
-Distance Cube: 2759
+Nearest Neighbor Cube: 97
+Distance Cube: 2671
 True Neighbor: 5843
 DistanceTrue: 865
-tCube: 0.000923
+tCube: 0.001538
 tTrue: 0.139947
 R-nearest neighbors:
-ID: 122 Distance: 2759
+ID: 23 Distance: 2929
+ID: 26 Distance: 2779
+ID: 97 Distance: 2671
 
 Query Point: 38
 Nearest Neighbor Cube: 42
 Distance Cube: 3313
 True Neighbor: 5185
 DistanceTrue: 1241
-tCube: 0.00108
+tCube: 0.000696
 tTrue: 0.139437
 R-nearest neighbors:
 None Found!
 
 Query Point: 39
-Nearest Neighbor Cube: 106
-Distance Cube: 3151
+Nearest Neighbor Cube: 22
+Distance Cube: 3180
 True Neighbor: 5501
 DistanceTrue: 995
-tCube: 0.000775
+tCube: 0.000671
 tTrue: 0.13656
 R-nearest neighbors:
 None Found!
 
 Query Point: 40
-Nearest Neighbor Cube: 34
-Distance Cube: 3339
+Nearest Neighbor Cube: 14
+Distance Cube: 1854
 True Neighbor: 5075
 DistanceTrue: 1200
-tCube: 0.000985
+tCube: 0.00097
 tTrue: 0.136322
+R-nearest neighbors:
+ID: 8 Distance: 2854
+ID: 14 Distance: 1854
+ID: 18 Distance: 2491
+ID: 22 Distance: 2693
+
+Query Point: 41
+Nearest Neighbor Cube: 86
+Distance Cube: 2619
+True Neighbor: 8308
+DistanceTrue: 1106
+tCube: 0.000999
+tTrue: 0.13897
+R-nearest neighbors:
+ID: 13 Distance: 2657
+ID: 63 Distance: 2913
+ID: 86 Distance: 2619
+ID: 105 Distance: 2738
+
+Query Point: 42
+Nearest Neighbor Cube: 6
+Distance Cube: 5037
+True Neighbor: 4644
+DistanceTrue: 1442
+tCube: 0.000926
+tTrue: 0.138408
 R-nearest neighbors:
 None Found!
 
-Query Point: 41
-Nearest Neighbor Cube: 2
-Distance Cube: 2540
-True Neighbor: 8308
-DistanceTrue: 1106
-tCube: 0.000894
-tTrue: 0.13897
-R-nearest neighbors:
-ID: 2 Distance: 2540
-ID: 4 Distance: 2705
-ID: 15 Distance: 2667
-ID: 33 Distance: 2939
-
-Query Point: 42
-Nearest Neighbor Cube: 38
-Distance Cube: 1865
-True Neighbor: 4644
-DistanceTrue: 1442
-tCube: 0.000679
-tTrue: 0.138408
-R-nearest neighbors:
-ID: 38 Distance: 1865
-ID: 121 Distance: 2925
-ID: 122 Distance: 2651
-
 Query Point: 43
-Nearest Neighbor Cube: 32
-Distance Cube: 2707
+Nearest Neighbor Cube: 12
+Distance Cube: 2750
 True Neighbor: 5225
 DistanceTrue: 1629
-tCube: 0.000997
+tCube: 0.001309
 tTrue: 0.137326
 R-nearest neighbors:
 ID: 6 Distance: 2888
-ID: 8 Distance: 2871
 ID: 10 Distance: 2783
+ID: 11 Distance: 2959
 ID: 12 Distance: 2750
-ID: 14 Distance: 2769
+ID: 19 Distance: 2980
 ID: 20 Distance: 2780
-ID: 22 Distance: 2866
-ID: 31 Distance: 2891
-ID: 32 Distance: 2707
 
 Query Point: 44
-Nearest Neighbor Cube: 115
-Distance Cube: 2746
+Nearest Neighbor Cube: 9
+Distance Cube: 2786
 True Neighbor: 6303
 DistanceTrue: 1275
-tCube: 0.000767
+tCube: 0.00058
 tTrue: 0.142805
 R-nearest neighbors:
-ID: 16 Distance: 2957
-ID: 24 Distance: 2948
-ID: 115 Distance: 2746
+ID: 2 Distance: 2790
+ID: 8 Distance: 2904
+ID: 9 Distance: 2786
+ID: 22 Distance: 2847
+ID: 51 Distance: 2894
 
 Query Point: 45
-Nearest Neighbor Cube: 12
-Distance Cube: 5119
+Nearest Neighbor Cube: 45
+Distance Cube: 2275
 True Neighbor: 8616
 DistanceTrue: 1483
-tCube: 0.000932
+tCube: 0.000555
 tTrue: 0.136502
 R-nearest neighbors:
-None Found!
+ID: 45 Distance: 2275
 
 Query Point: 46
-Nearest Neighbor Cube: 3
-Distance Cube: 3185
+Nearest Neighbor Cube: 11
+Distance Cube: 2768
 True Neighbor: 7877
 DistanceTrue: 1628
-tCube: 0.000891
+tCube: 0.000561
 tTrue: 0.138179
 R-nearest neighbors:
-None Found!
+ID: 11 Distance: 2768
+ID: 19 Distance: 2777
+ID: 21 Distance: 2776
 
 Query Point: 47
 Nearest Neighbor Cube: 49
 Distance Cube: 1880
 True Neighbor: 5881
 DistanceTrue: 646
-tCube: 0.000998
+tCube: 0.001038
 tTrue: 0.137466
 R-nearest neighbors:
-ID: 45 Distance: 1920
+ID: 37 Distance: 1916
 ID: 49 Distance: 1880
-ID: 121 Distance: 2996
+ID: 84 Distance: 2995
 
 Query Point: 48
 Nearest Neighbor Cube: 97
 Distance Cube: 3155
 True Neighbor: 5642
 DistanceTrue: 2446
-tCube: 0.000524
+tCube: 0.001059
 tTrue: 0.135947
 R-nearest neighbors:
 None Found!
 
 Query Point: 49
-Nearest Neighbor Cube: 11
-Distance Cube: 3271
+Nearest Neighbor Cube: 4
+Distance Cube: 2880
 True Neighbor: 5214
 DistanceTrue: 968
-tCube: 0.000651
+tCube: 0.000923
 tTrue: 0.13869
 R-nearest neighbors:
-None Found!
+ID: 4 Distance: 2880
+ID: 6 Distance: 2902
+ID: 15 Distance: 2920
 
 Query Point: 50
-Nearest Neighbor Cube: 32
-Distance Cube: 1804
+Nearest Neighbor Cube: 2
+Distance Cube: 2330
 True Neighbor: 5085
 DistanceTrue: 849
-tCube: 0.003385
+tCube: 0.001018
 tTrue: 0.138222
 R-nearest neighbors:
-ID: 6 Distance: 2187
+ID: 2 Distance: 2330
 ID: 8 Distance: 2588
-ID: 10 Distance: 2476
-ID: 12 Distance: 2637
 ID: 14 Distance: 2370
-ID: 20 Distance: 2575
+ID: 18 Distance: 2419
 ID: 22 Distance: 2361
-ID: 29 Distance: 2411
-ID: 31 Distance: 2602
-ID: 32 Distance: 1804
+ID: 51 Distance: 2836
 
 Query Point: 51
-Nearest Neighbor Cube: 21
-Distance Cube: 3121
+Nearest Neighbor Cube: 61
+Distance Cube: 2748
 True Neighbor: 5013
 DistanceTrue: 1130
-tCube: 0.000942
+tCube: 0.00057
 tTrue: 0.136647
 R-nearest neighbors:
-None Found!
+ID: 61 Distance: 2748
 
 Query Point: 52
-Nearest Neighbor Cube: 18
-Distance Cube: 2664
+Nearest Neighbor Cube: 6
+Distance Cube: 2324
 True Neighbor: 6124
 DistanceTrue: 848
-tCube: 0.000957
+tCube: 0.000575
 tTrue: 0.147979
 R-nearest neighbors:
-ID: 2 Distance: 2961
 ID: 4 Distance: 2758
-ID: 18 Distance: 2664
+ID: 6 Distance: 2324
+ID: 10 Distance: 2873
+ID: 12 Distance: 2950
+ID: 20 Distance: 2910
 
 Query Point: 53
-Nearest Neighbor Cube: 33
-Distance Cube: 2451
+Nearest Neighbor Cube: 63
+Distance Cube: 1733
 True Neighbor: 5674
 DistanceTrue: 1188
-tCube: 0.001017
+tCube: 0.000967
 tTrue: 0.141128
 R-nearest neighbors:
-ID: 2 Distance: 2734
-ID: 4 Distance: 2493
-ID: 15 Distance: 2731
-ID: 33 Distance: 2451
+ID: 13 Distance: 2255
+ID: 63 Distance: 1733
+ID: 86 Distance: 2239
+ID: 92 Distance: 2358
+ID: 93 Distance: 1849
+ID: 105 Distance: 2228
 
 Query Point: 54
-Nearest Neighbor Cube: 33
-Distance Cube: 2453
+Nearest Neighbor Cube: 9
+Distance Cube: 2674
 True Neighbor: 8613
 DistanceTrue: 1219
-tCube: 0.00064
+tCube: 0.001115
 tTrue: 0.144559
 R-nearest neighbors:
-ID: 4 Distance: 2969
-ID: 33 Distance: 2453
+ID: 8 Distance: 2982
+ID: 9 Distance: 2674
+ID: 22 Distance: 2971
+ID: 51 Distance: 2682
 
 Query Point: 55
-Nearest Neighbor Cube: 29
-Distance Cube: 4849
+Nearest Neighbor Cube: 170
+Distance Cube: 2073
 True Neighbor: 6159
 DistanceTrue: 979
-tCube: 0.00096
+tCube: 0.001056
 tTrue: 0.140171
 R-nearest neighbors:
-None Found!
+ID: 170 Distance: 2073
 
 Query Point: 56
-Nearest Neighbor Cube: 96
-Distance Cube: 2762
+Nearest Neighbor Cube: 42
+Distance Cube: 2626
 True Neighbor: 5831
 DistanceTrue: 1042
-tCube: 0.000956
+tCube: 0.000915
 tTrue: 0.138143
 R-nearest neighbors:
-ID: 96 Distance: 2762
+ID: 42 Distance: 2626
 
 Query Point: 57
-Nearest Neighbor Cube: 30
-Distance Cube: 2111
+Nearest Neighbor Cube: 9
+Distance Cube: 2151
 True Neighbor: 4904
 DistanceTrue: 1436
-tCube: 0.000528
+tCube: 0.000886
 tTrue: 0.143879
 R-nearest neighbors:
-ID: 5 Distance: 2618
+ID: 2 Distance: 2269
+ID: 8 Distance: 2157
 ID: 9 Distance: 2151
-ID: 11 Distance: 2141
-ID: 19 Distance: 2172
-ID: 30 Distance: 2111
+ID: 14 Distance: 2889
+ID: 18 Distance: 2534
+ID: 22 Distance: 2584
+ID: 51 Distance: 2637
 
 Query Point: 58
-Nearest Neighbor Cube: 47
-Distance Cube: 2408
+Nearest Neighbor Cube: 6
+Distance Cube: 5102
 True Neighbor: 5212
 DistanceTrue: 1176
-tCube: 0.000866
+tCube: 0.000538
 tTrue: 0.143658
 R-nearest neighbors:
-ID: 46 Distance: 2622
-ID: 47 Distance: 2408
-ID: 50 Distance: 2599
-ID: 69 Distance: 2730
+None Found!
 
 Query Point: 59
 Nearest Neighbor Cube: 61
 Distance Cube: 2941
 True Neighbor: 7238
 DistanceTrue: 460
-tCube: 0.000907
+tCube: 0.000881
 tTrue: 0.137733
 R-nearest neighbors:
 ID: 61 Distance: 2941
 
 Query Point: 60
-Nearest Neighbor Cube: 47
-Distance Cube: 1943
+Nearest Neighbor Cube: 99
+Distance Cube: 1260
 True Neighbor: 6835
 DistanceTrue: 619
-tCube: 0.000842
+tCube: 0.000881
 tTrue: 0.139641
 R-nearest neighbors:
-ID: 47 Distance: 1943
+ID: 81 Distance: 1342
+ID: 99 Distance: 1260
 
 Query Point: 61
-Nearest Neighbor Cube: 22
-Distance Cube: 2474
+Nearest Neighbor Cube: 10
+Distance Cube: 2519
 True Neighbor: 5279
 DistanceTrue: 1209
-tCube: 0.000811
+tCube: 0.000703
 tTrue: 0.137288
 R-nearest neighbors:
+ID: 4 Distance: 2684
 ID: 6 Distance: 2534
 ID: 10 Distance: 2519
 ID: 12 Distance: 2754
-ID: 14 Distance: 2949
+ID: 15 Distance: 2922
 ID: 20 Distance: 2730
-ID: 22 Distance: 2474
-ID: 29 Distance: 2926
-ID: 31 Distance: 2503
-ID: 32 Distance: 2857
 
 Query Point: 62
-Nearest Neighbor Cube: 5
-Distance Cube: 2353
+Nearest Neighbor Cube: 13
+Distance Cube: 2039
 True Neighbor: 8403
 DistanceTrue: 732
-tCube: 0.000823
+tCube: 0.000676
 tTrue: 0.137183
 R-nearest neighbors:
-ID: 5 Distance: 2353
-ID: 11 Distance: 2930
-ID: 19 Distance: 2899
+ID: 13 Distance: 2039
+ID: 63 Distance: 2725
+ID: 92 Distance: 2588
+ID: 93 Distance: 2569
+ID: 105 Distance: 2864
 
 Query Point: 63
-Nearest Neighbor Cube: 34
-Distance Cube: 3731
+Nearest Neighbor Cube: 14
+Distance Cube: 2720
 True Neighbor: 6561
 DistanceTrue: 832
-tCube: 0.00052
+tCube: 0.000918
 tTrue: 0.139948
 R-nearest neighbors:
-None Found!
+ID: 14 Distance: 2720
+ID: 18 Distance: 2797
 
 Query Point: 64
 Nearest Neighbor Cube: 14
 Distance Cube: 2149
 True Neighbor: 6322
 DistanceTrue: 627
-tCube: 0.000507
+tCube: 0.000974
 tTrue: 0.138991
 R-nearest neighbors:
-ID: 6 Distance: 2264
-ID: 12 Distance: 2864
 ID: 14 Distance: 2149
-ID: 20 Distance: 2808
-ID: 29 Distance: 2594
-ID: 32 Distance: 2723
+ID: 18 Distance: 2450
 
 Query Point: 65
 Nearest Neighbor Cube: 14
 Distance Cube: 3236
 True Neighbor: 5636
 DistanceTrue: 980
-tCube: 0.000975
+tCube: 0.001174
 tTrue: 0.141061
 R-nearest neighbors:
 None Found!
 
 Query Point: 66
-Nearest Neighbor Cube: 94
-Distance Cube: 2361
+Nearest Neighbor Cube: 130
+Distance Cube: 2476
 True Neighbor: 6406
 DistanceTrue: 1085
-tCube: 0.000926
+tCube: 0.00123
 tTrue: 0.140682
 R-nearest neighbors:
-ID: 94 Distance: 2361
+ID: 130 Distance: 2476
+ID: 177 Distance: 2804
 
 Query Point: 67
-Nearest Neighbor Cube: 5
-Distance Cube: 3395
+Nearest Neighbor Cube: 34
+Distance Cube: 3049
 True Neighbor: 5391
 DistanceTrue: 1189
-tCube: 0.00058
+tCube: 0.000982
 tTrue: 0.137372
 R-nearest neighbors:
 None Found!
 
 Query Point: 68
-Nearest Neighbor Cube: 94
-Distance Cube: 3174
+Nearest Neighbor Cube: 42
+Distance Cube: 2193
 True Neighbor: 6858
 DistanceTrue: 1205
-tCube: 0.000975
+tCube: 0.000827
 tTrue: 0.137723
+R-nearest neighbors:
+ID: 42 Distance: 2193
+
+Query Point: 69
+Nearest Neighbor Cube: 61
+Distance Cube: 2086
+True Neighbor: 7218
+DistanceTrue: 1251
+tCube: 0.001054
+tTrue: 0.140658
+R-nearest neighbors:
+ID: 61 Distance: 2086
+
+Query Point: 70
+Nearest Neighbor Cube: 79
+Distance Cube: 3015
+True Neighbor: 5878
+DistanceTrue: 1943
+tCube: 0.000987
+tTrue: 0.140522
 R-nearest neighbors:
 None Found!
 
-Query Point: 69
-Nearest Neighbor Cube: 13
-Distance Cube: 2006
-True Neighbor: 7218
-DistanceTrue: 1251
-tCube: 0.000923
-tTrue: 0.140658
-R-nearest neighbors:
-ID: 1 Distance: 2538
-ID: 7 Distance: 2794
-ID: 13 Distance: 2006
-ID: 21 Distance: 2579
-ID: 75 Distance: 2833
-
-Query Point: 70
-Nearest Neighbor Cube: 11
-Distance Cube: 2826
-True Neighbor: 5878
-DistanceTrue: 1943
-tCube: 0.00074
-tTrue: 0.140522
-R-nearest neighbors:
-ID: 11 Distance: 2826
-ID: 19 Distance: 2885
-
 Query Point: 71
-Nearest Neighbor Cube: 90
-Distance Cube: 2842
+Nearest Neighbor Cube: 221
+Distance Cube: 2319
 True Neighbor: 6125
 DistanceTrue: 280
-tCube: 0.000878
+tCube: 0.000922
 tTrue: 0.144515
 R-nearest neighbors:
+ID: 58 Distance: 2966
+ID: 79 Distance: 2919
 ID: 90 Distance: 2842
 ID: 102 Distance: 2887
+ID: 221 Distance: 2319
 
 Query Point: 72
-Nearest Neighbor Cube: 139
-Distance Cube: 4586
+Nearest Neighbor Cube: 61
+Distance Cube: 3268
 True Neighbor: 5827
 DistanceTrue: 1254
-tCube: 0.000903
+tCube: 0.001021
 tTrue: 0.148028
 R-nearest neighbors:
 None Found!
 
 Query Point: 73
-Nearest Neighbor Cube: 2
-Distance Cube: 2981
+Nearest Neighbor Cube: 4
+Distance Cube: 3028
 True Neighbor: 934
 DistanceTrue: 2210
-tCube: 0.000914
+tCube: 0.000909
 tTrue: 0.137337
 R-nearest neighbors:
-ID: 2 Distance: 2981
+None Found!
 
 Query Point: 74
-Nearest Neighbor Cube: 32
-Distance Cube: 3221
+Nearest Neighbor Cube: 22
+Distance Cube: 3300
 True Neighbor: 6854
 DistanceTrue: 1573
-tCube: 0.000962
+tCube: 0.001009
 tTrue: 0.137446
 R-nearest neighbors:
 None Found!
 
 Query Point: 75
-Nearest Neighbor Cube: 22
-Distance Cube: 2267
+Nearest Neighbor Cube: 18
+Distance Cube: 2217
 True Neighbor: 7365
 DistanceTrue: 986
-tCube: 0.001083
+tCube: 0.001232
 tTrue: 0.139862
 R-nearest neighbors:
-ID: 6 Distance: 2407
+ID: 2 Distance: 2660
 ID: 8 Distance: 2588
-ID: 10 Distance: 2288
-ID: 12 Distance: 2545
+ID: 9 Distance: 2828
 ID: 14 Distance: 2624
-ID: 20 Distance: 2593
+ID: 18 Distance: 2217
 ID: 22 Distance: 2267
-ID: 29 Distance: 2429
-ID: 31 Distance: 2270
-ID: 32 Distance: 2470
+ID: 34 Distance: 2885
+ID: 51 Distance: 2770
 
 Query Point: 76
 Nearest Neighbor Cube: 5
 Distance Cube: 3018
 True Neighbor: 6554
 DistanceTrue: 1416
-tCube: 0.001096
+tCube: 0.001062
 tTrue: 0.137673
 R-nearest neighbors:
 None Found!
 
 Query Point: 77
-Nearest Neighbor Cube: 14
-Distance Cube: 4310
+Nearest Neighbor Cube: 177
+Distance Cube: 2350
 True Neighbor: 7904
 DistanceTrue: 1648
-tCube: 0.000911
+tCube: 0.000992
 tTrue: 0.137461
+R-nearest neighbors:
+ID: 177 Distance: 2350
+
+Query Point: 78
+Nearest Neighbor Cube: 21
+Distance Cube: 3165
+True Neighbor: 8579
+DistanceTrue: 2177
+tCube: 0.000856
+tTrue: 0.14045
 R-nearest neighbors:
 None Found!
 
-Query Point: 78
-Nearest Neighbor Cube: 30
-Distance Cube: 2935
-True Neighbor: 8579
-DistanceTrue: 2177
-tCube: 0.000896
-tTrue: 0.14045
-R-nearest neighbors:
-ID: 30 Distance: 2935
-
 Query Point: 79
-Nearest Neighbor Cube: 18
-Distance Cube: 2719
+Nearest Neighbor Cube: 105
+Distance Cube: 2090
 True Neighbor: 9209
 DistanceTrue: 1551
-tCube: 0.001
+tCube: 0.000881
 tTrue: 0.138081
 R-nearest neighbors:
-ID: 2 Distance: 2912
-ID: 4 Distance: 2783
-ID: 17 Distance: 2950
-ID: 18 Distance: 2719
+ID: 13 Distance: 2315
+ID: 63 Distance: 2311
+ID: 86 Distance: 2775
+ID: 92 Distance: 2098
+ID: 93 Distance: 2649
+ID: 105 Distance: 2090
 
 Query Point: 80
-Nearest Neighbor Cube: 37
-Distance Cube: 1581
+Nearest Neighbor Cube: 17
+Distance Cube: 4654
 True Neighbor: 8070
 DistanceTrue: 743
-tCube: 0.000918
+tCube: 0.00093
 tTrue: 0.13982
 R-nearest neighbors:
-ID: 37 Distance: 1581
+None Found!
 
 Query Point: 81
-Nearest Neighbor Cube: 96
-Distance Cube: 3309
+Nearest Neighbor Cube: 6
+Distance Cube: 4686
 True Neighbor: 7452
 DistanceTrue: 987
-tCube: 0.00118
+tCube: 0.000773
 tTrue: 0.139633
 R-nearest neighbors:
 None Found!
 
 Query Point: 82
-Nearest Neighbor Cube: 9
-Distance Cube: 2928
+Nearest Neighbor Cube: 51
+Distance Cube: 2696
 True Neighbor: 3087
 DistanceTrue: 1969
-tCube: 0.000958
+tCube: 0.001018
 tTrue: 0.137462
 R-nearest neighbors:
+ID: 2 Distance: 2778
+ID: 8 Distance: 2986
 ID: 9 Distance: 2928
-ID: 19 Distance: 2983
-ID: 30 Distance: 2928
+ID: 51 Distance: 2696
 
 Query Point: 83
-Nearest Neighbor Cube: 32
-Distance Cube: 2823
+Nearest Neighbor Cube: 51
+Distance Cube: 2709
 True Neighbor: 91
 DistanceTrue: 2001
-tCube: 0.000904
+tCube: 0.000857
 tTrue: 0.137488
 R-nearest neighbors:
-ID: 32 Distance: 2823
+ID: 51 Distance: 2709
 
 Query Point: 84
-Nearest Neighbor Cube: 139
-Distance Cube: 4747
+Nearest Neighbor Cube: 24
+Distance Cube: 2248
 True Neighbor: 6006
 DistanceTrue: 1161
-tCube: 0.000988
+tCube: 0.000938
 tTrue: 0.142404
 R-nearest neighbors:
-None Found!
+ID: 3 Distance: 2815
+ID: 16 Distance: 2249
+ID: 24 Distance: 2248
+ID: 71 Distance: 2561
 
 Query Point: 85
-Nearest Neighbor Cube: 10
-Distance Cube: 2567
+Nearest Neighbor Cube: 92
+Distance Cube: 2139
 True Neighbor: 8895
 DistanceTrue: 1359
-tCube: 0.000971
+tCube: 0.000952
 tTrue: 0.139514
 R-nearest neighbors:
-ID: 6 Distance: 2714
-ID: 8 Distance: 2849
-ID: 10 Distance: 2567
-ID: 12 Distance: 2652
-ID: 20 Distance: 2684
-ID: 22 Distance: 2658
-ID: 31 Distance: 2603
-ID: 32 Distance: 2907
+ID: 13 Distance: 2350
+ID: 63 Distance: 2380
+ID: 86 Distance: 2718
+ID: 92 Distance: 2139
+ID: 93 Distance: 2786
+ID: 105 Distance: 2233
 
 Query Point: 86
-Nearest Neighbor Cube: 29
-Distance Cube: 3829
+Nearest Neighbor Cube: 36
+Distance Cube: 3824
 True Neighbor: 8726
 DistanceTrue: 1753
-tCube: 0.00091
+tCube: 0.000922
 tTrue: 0.139414
 R-nearest neighbors:
 None Found!
@@ -1031,63 +1044,59 @@ Nearest Neighbor Cube: 42
 Distance Cube: 2821
 True Neighbor: 9152
 DistanceTrue: 1673
-tCube: 0.000955
+tCube: 0.00066
 tTrue: 0.139838
 R-nearest neighbors:
 ID: 42 Distance: 2821
 
 Query Point: 88
-Nearest Neighbor Cube: 14
-Distance Cube: 3712
+Nearest Neighbor Cube: 42
+Distance Cube: 2864
 True Neighbor: 7723
 DistanceTrue: 683
-tCube: 0.000899
+tCube: 0.000944
 tTrue: 0.138202
+R-nearest neighbors:
+ID: 42 Distance: 2864
+
+Query Point: 89
+Nearest Neighbor Cube: 39
+Distance Cube: 2403
+True Neighbor: 7099
+DistanceTrue: 399
+tCube: 0.000896
+tTrue: 0.137713
+R-nearest neighbors:
+ID: 39 Distance: 2403
+ID: 94 Distance: 2681
+ID: 97 Distance: 2993
+
+Query Point: 90
+Nearest Neighbor Cube: 200
+Distance Cube: 3622
+True Neighbor: 7628
+DistanceTrue: 690
+tCube: 0.000635
+tTrue: 0.139757
 R-nearest neighbors:
 None Found!
 
-Query Point: 89
-Nearest Neighbor Cube: 94
-Distance Cube: 2681
-True Neighbor: 7099
-DistanceTrue: 399
-tCube: 0.000901
-tTrue: 0.137713
-R-nearest neighbors:
-ID: 94 Distance: 2681
-
-Query Point: 90
-Nearest Neighbor Cube: 47
-Distance Cube: 1267
-True Neighbor: 7628
-DistanceTrue: 690
-tCube: 0.000959
-tTrue: 0.139757
-R-nearest neighbors:
-ID: 47 Distance: 1267
-
 Query Point: 91
-Nearest Neighbor Cube: 33
-Distance Cube: 1528
+Nearest Neighbor Cube: 61
+Distance Cube: 1578
 True Neighbor: 9259
 DistanceTrue: 310
-tCube: 0.000901
+tCube: 0.000586
 tTrue: 0.137039
 R-nearest neighbors:
-ID: 2 Distance: 2397
-ID: 4 Distance: 2190
-ID: 15 Distance: 2528
-ID: 17 Distance: 2557
-ID: 18 Distance: 2890
-ID: 28 Distance: 2904
-ID: 33 Distance: 1528
+ID: 61 Distance: 1578
 
 Query Point: 92
-Nearest Neighbor Cube: 33
-Distance Cube: 3209
+Nearest Neighbor Cube: 14
+Distance Cube: 3092
 True Neighbor: 8897
 DistanceTrue: 1916
-tCube: 0.00094
+tCube: 0.00055
 tTrue: 0.137435
 R-nearest neighbors:
 None Found!
@@ -1097,85 +1106,87 @@ Nearest Neighbor Cube: 6
 Distance Cube: 2976
 True Neighbor: 8357
 DistanceTrue: 954
-tCube: 0.000922
+tCube: 0.000598
 tTrue: 0.138456
 R-nearest neighbors:
 ID: 6 Distance: 2976
 
 Query Point: 94
-Nearest Neighbor Cube: 4
-Distance Cube: 2290
+Nearest Neighbor Cube: 14
+Distance Cube: 2507
 True Neighbor: 8979
 DistanceTrue: 1433
-tCube: 0.00092
+tCube: 0.001445
 tTrue: 0.169787
 R-nearest neighbors:
 ID: 2 Distance: 2595
-ID: 4 Distance: 2290
-ID: 15 Distance: 2638
+ID: 8 Distance: 2975
+ID: 14 Distance: 2507
 ID: 18 Distance: 2766
-ID: 33 Distance: 2996
+ID: 22 Distance: 2758
+ID: 51 Distance: 2989
 
 Query Point: 95
-Nearest Neighbor Cube: 5
-Distance Cube: 3695
+Nearest Neighbor Cube: 221
+Distance Cube: 3155
 True Neighbor: 8420
 DistanceTrue: 977
-tCube: 0.000922
+tCube: 0.001032
 tTrue: 0.143393
 R-nearest neighbors:
 None Found!
 
 Query Point: 96
-Nearest Neighbor Cube: 109
-Distance Cube: 3287
+Nearest Neighbor Cube: 12
+Distance Cube: 4764
 True Neighbor: 1186
 DistanceTrue: 2188
-tCube: 0.00094
+tCube: 0.000853
 tTrue: 0.13717
 R-nearest neighbors:
 None Found!
 
 Query Point: 97
-Nearest Neighbor Cube: 24
-Distance Cube: 2762
+Nearest Neighbor Cube: 21
+Distance Cube: 2784
 True Neighbor: 7513
 DistanceTrue: 2146
-tCube: 0.00081
+tCube: 0.000786
 tTrue: 0.13917
 R-nearest neighbors:
-ID: 16 Distance: 2783
-ID: 24 Distance: 2762
-ID: 34 Distance: 2891
+ID: 21 Distance: 2784
 
 Query Point: 98
-Nearest Neighbor Cube: 18
-Distance Cube: 3258
+Nearest Neighbor Cube: 83
+Distance Cube: 3238
 True Neighbor: 8826
 DistanceTrue: 1515
-tCube: 0.000878
+tCube: 0.000991
 tTrue: 0.155365
 R-nearest neighbors:
 None Found!
 
 Query Point: 99
-Nearest Neighbor Cube: 13
-Distance Cube: 2461
+Nearest Neighbor Cube: 93
+Distance Cube: 2229
 True Neighbor: 5811
 DistanceTrue: 787
-tCube: 0.000781
+tCube: 0.00092
 tTrue: 0.138313
 R-nearest neighbors:
 ID: 13 Distance: 2461
-ID: 21 Distance: 2866
+ID: 63 Distance: 2451
+ID: 92 Distance: 2868
+ID: 93 Distance: 2229
+ID: 105 Distance: 2712
 
 Query Point: 100
-Nearest Neighbor Cube: 4
-Distance Cube: 2906
+Nearest Neighbor Cube: 14
+Distance Cube: 2909
 True Neighbor: 8083
 DistanceTrue: 1246
-tCube: 0.000945
+tCube: 0.000939
 tTrue: 0.139699
 R-nearest neighbors:
-ID: 4 Distance: 2906
+ID: 14 Distance: 2909
 

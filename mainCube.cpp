@@ -74,8 +74,6 @@ int main(int argc, char *argv[])
     string bruteNeighborID;
     string line;
     double bruteDist;
-    vector<pair<class Point*, double> >* radiusNeighbors;
-
 
     // for (int i = 0; i < queryTable->size(); i++)
     // {
@@ -120,8 +118,6 @@ int main(int argc, char *argv[])
         b = cubeImplementation.findNN(q, &distance);
         timeCube = clock() - timeCube;
 
-        radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);
-
         tempAF = distance / bruteDist;
         avgAF +=tempAF;
         if(tempAF > maxAF)
@@ -134,21 +130,27 @@ int main(int argc, char *argv[])
             outfile << "Nearest Neighbor Cube: None Found!" << endl << "Distance Cube: -" << endl;
         outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
         outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
-        outfile << "R-nearest neighbors:" << endl;
-
-        if(radiusNeighbors != NULL)
+        
+        if(radius > 0.0)
         {
-            for(int i = 0; i < radiusNeighbors->size(); i++)
-            {
-                outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
-            }
-            outfile << endl;
+            vector<pair<class Point*, double> >* radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);
+            
+            outfile << "R-nearest neighbors:" << endl;
 
-            radiusNeighbors->clear();
-            delete (radiusNeighbors);
+            if(radiusNeighbors != NULL)
+            {
+                for(int i = 0; i < radiusNeighbors->size(); i++)
+                {
+                    outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
+                }
+                outfile << endl;
+
+                radiusNeighbors->clear();
+                delete (radiusNeighbors);
+            }
+            else
+                outfile << "None Found!" << endl << endl;
         }
-        else
-            outfile << "None Found!" << endl << endl;
     }
 
     cout << "MaxAF: " << maxAF << endl;

@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
     string bruteNeighborID;
     string line;
     double bruteDist;
-    vector<pair<class Point*, double> >* radiusNeighbors;
 
     for (int i = 0; i < queryTable->size(); i++)
     {
@@ -89,8 +88,6 @@ int main(int argc, char *argv[])
         b = lshImplementation.findNN(q, &distance);
         timeLSH = clock() - timeLSH;
 
-        radiusNeighbors = lshImplementation.findRadiusNN(q, radius);
-
         tempAF = distance / bruteDist;
         avgAF +=tempAF;
         if(tempAF > maxAF)
@@ -103,19 +100,27 @@ int main(int argc, char *argv[])
             outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
         outfile << "True Neighbor: " << bruteNeighborID << endl << "DistanceTrue: " << bruteDist<< endl;
         outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl;        
-        outfile << "R-nearest neighbors:" << endl;
+        
+        if(radius > 0.0)
+        {
+            vector<pair<class Point*, double> >* radiusNeighbors = lshImplementation.findRadiusNN(q, radius);
+            
+            outfile << "R-nearest neighbors:" << endl;
 
-        if(radiusNeighbors != NULL){
-            for(int i = 0; i < radiusNeighbors->size(); i++){
-                outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
+            if(radiusNeighbors != NULL)
+            {
+                for(int i = 0; i < radiusNeighbors->size(); i++)
+                {
+                    outfile << "ID: " << radiusNeighbors->at(i).first->getID() << " Distance: " << radiusNeighbors->at(i).second << endl;
+                }
+                outfile << endl;
+
+                radiusNeighbors->clear();
+                delete (radiusNeighbors);
             }
-            outfile << endl;
-
-            radiusNeighbors->clear();
-            delete (radiusNeighbors);
+            else
+                outfile << "None Found!" << endl << endl;
         }
-        else
-            outfile << "None Found!" << endl << endl;
     }
 
 

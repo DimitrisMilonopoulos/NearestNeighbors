@@ -63,6 +63,7 @@ int main(int argc, char *argv[])
 
     double maxCoord = -10000000;
 
+    //read the dataset of input and queries
     tables = reader.readCurves(inputFile, &minPoints, &maxPoints, &maxCoord);
     cout << "MAXIMUM COORDINATES " << maxCoord << endl;
     inputTable = tables.first;
@@ -88,6 +89,7 @@ int main(int argc, char *argv[])
     string line, bruteNeighborID;
     double bruteDist;
 
+    //initialize the calss of the algorithm
     class gridCurve<class Cube<class Curve *> > *lshCube = new class gridCurve<class Cube<class Curve *> >(inputTable, k, L, w, 30, minPoints, maxPoints, maxCoord);
     lshCube->initializeAlgorithm();
 
@@ -108,7 +110,7 @@ int main(int argc, char *argv[])
         q = (queryTable->at(i));
         timeAlgorithm = clock();
         b = lshCube->findNN(q, &distance);
-        timeAlgorithm = clock() - timeAlgorithm;
+        timeAlgorithm = clock() - timeAlgorithm; //calculate the time needed for the operation
 
         tempAF = distance / bruteDist;
         if (distance == 0 || bruteDist == 0)
@@ -117,6 +119,7 @@ int main(int argc, char *argv[])
         if (tempAF > maxAF)
             maxAF = tempAF;
 
+        //print the results to the output file
         outfile << "Query Point: " << q->getID() << endl;
         if (b != NULL)
             outfile << "Nearest Neighbor LSH/Hypercube: " << b->getID() << endl

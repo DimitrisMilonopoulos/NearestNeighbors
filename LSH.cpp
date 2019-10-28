@@ -67,6 +67,8 @@ int LSH<T>::getw()
 template <>
 class Point *LSH<class Point *>::findNN(class Point *query, double *dist)
 {
+
+    //find the nearest neighbors
     class Point *b = NULL;
     class Point *p = NULL;
     double manhattanD;
@@ -82,7 +84,7 @@ class Point *LSH<class Point *>::findNN(class Point *query, double *dist)
 
         for (int j = 0; j < neighbors.size(); j++)
         {
-            if (amplifiedResult == neighbors.at(j).second)
+            if (amplifiedResult == neighbors.at(j).second) //compare two points only if they have the same hashfunction value
             {
                 count++;
                 if (count > 10 * L)

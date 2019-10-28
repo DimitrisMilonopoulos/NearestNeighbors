@@ -25,9 +25,7 @@ gridCurve<T>::gridCurve(vector<class Curve *> *curves, int k, int L, int w, int 
     this->maxCurvePoints = maxCurvePoints;
     this->maxCoord = maxCoord * 1000;
 
-    //this->delta = 8*minCurvePoints;   /// this needs to change
-    //temp change
-    //this->delta = 0.000663729;
+    //use a multiplication of average distance of consecutive points for better results
     this->delta = 6 * calculateDelta();
     this->maxCurvePoints = maxCurvePoints * 2;
 
@@ -46,6 +44,8 @@ gridCurve<T>::gridCurve(vector<class Curve *> *curves, int k, int L, int w, int 
 
     this->points = new vector<class Point *> *[L];
 
+    //create the points produces from the snapped curves for each lsh structure
+
     for (int i = 0; i < L; i++)
     {
         points[i] = new vector<class Point *>;
@@ -57,9 +57,7 @@ gridCurve<T>::gridCurve(vector<class Curve *> *curves, int k, int L, int w, int 
         for (int j = 0; j < 2; j++)
         {
             this->displacement[i][j] = dis(generator);
-            // cout << i << " " << j << " " << displacement[i][j] << " ";
         }
-        // cout << endl;
 
         for (int t = 0; t < curves->size(); t++)
         {
@@ -75,6 +73,7 @@ int gridCurve<class LSH<class Curve *> >::initializeAlgorithm()
 
     this->algorithm = new class LSH<class Curve *> *[L];
 
+    //get an estimation of the average distance of a set of points to use as w
     for (int i = 0; i < L; i++)
     {
         this->w = 6 * calculateW(points[i], 2);
@@ -90,7 +89,7 @@ int gridCurve<class Cube<class Curve *> >::initializeAlgorithm()
 {
 
     this->algorithm = new class Cube<class Curve *> *[L];
-
+    //get an estimation of the average distance of a set of points to use as w
     for (int i = 0; i < L; i++)
     {
         this->w = 10 * calculateW(points[i], 2);
@@ -113,6 +112,8 @@ class Point *gridCurve<T>::gridCurve::createVector(class Curve *curve, int gridN
 
     //create the coord vector
     double *coord = new double[this->maxCurvePoints];
+
+    //use the snapped value of the max coordinate as padding
     double snappedPadding1 = round((this->maxCoord - this->displacement[gridNo][0]) / this->delta);
     double snappedPadding2 = round((this->maxCoord - this->displacement[gridNo][1]) / this->delta);
 
@@ -133,7 +134,6 @@ class Point *gridCurve<T>::gridCurve::createVector(class Curve *curve, int gridN
         temp1 = round(temp1);
         temp2 = round(temp2);
 
-        // cout << "These are the temps: " << temp1 << " " << temp2 << endl;
         // remove duplicates
         if (i > 0)
         {
@@ -152,10 +152,6 @@ class Point *gridCurve<T>::gridCurve::createVector(class Curve *curve, int gridN
     }
     class Point *gridCurve = new class Point(curve->getID(), coord, this->maxCurvePoints, curve);
 
-    // for(int i = 0; i < gridCurve->getSize(); i++){
-    //     cout << gridCurve->getCoord()[i] << " ";
-    // }
-    // cout << endl;
     return gridCurve;
 }
 
@@ -166,11 +162,13 @@ class Curve *gridCurve<class LSH<class Curve *> >::findNN(class Curve *query, do
     class Curve *temp, *neighbor = NULL;
     double minDistance = numeric_limits<double>::max();
 
+    //find the nearest curves among the LSH structures
+
     for (int i = 0; i < L; i++)
     {
         queryGridCurve = createVector(query, i);
         temp = algorithm[i]->findNN(queryGridCurve, dist);
-        if (temp == NULL)
+        if (temp == NULL) //if no neighbor found
             continue;
         if (*dist < minDistance)
         {
@@ -195,10 +193,14 @@ class Curve *gridCurve<class Cube<class Curve *> >::findNN(class Curve *query, d
     double minDistance = numeric_limits<double>::max();
     cout << "TRYING TO FIND" << endl;
 
+    //find the nearest curves among the LSH structures
+
     for (int i = 0; i < L; i++)
     {
         queryGridCurve = createVector(query, i);
         temp = algorithm[i]->findNN(queryGridCurve, dist);
+        if (temp == NULL) //if no neighbor found
+            continue;
         if (*dist < minDistance)
         {
             minDistance = *dist;
@@ -218,6 +220,7 @@ class Curve *gridCurve<T>::findNN(class Curve *query, double *distance)
 template <class T>
 gridCurve<T>::~gridCurve()
 {
+    //delete the structures and free the alocated memory
     for (int i = 0; i < L; i++)
     {
         delete displacement[i];
@@ -240,6 +243,7 @@ gridCurve<T>::~gridCurve()
 template <class T>
 double gridCurve<T>::calculateDelta()
 {
+    //calculate the average distance of consecutive points of the curves
     double curveAvg, totalAvg = 0, tempDist;
     int total = curves->size();
 

@@ -131,6 +131,7 @@ pair<vector<class Curve *> *, vector<class Curve *> *> Reading::readCurves(strin
         }
         class Curve *curve = new class Curve(ID, coord, points);
         j++;
+        //read the last 87 points as queries
         if (j > 7400)
         {
             input.second->push_back(curve); //enter the queries

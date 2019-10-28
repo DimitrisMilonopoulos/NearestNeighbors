@@ -130,32 +130,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    // for (int i = 0; i < queryTable->size(); i++)
-    // {
-    //     q = (queryTable->at(i));
-    //     timeBrute = clock();
-    //     bruteNN = bruteForce(inputTable, q);
-    //     timeBrute = clock() - timeBrute;
-    //     timeLSH = clock();
-    //     b = lshImplementation.approximateNN(q, &distance);
-    //     timeLSH = clock() - timeLSH;
-
-    //     tempAF = distance / bruteNN->second;
-    //     avgAF +=tempAF;
-    //     if(tempAF > maxAF)
-    //         maxAF = tempAF;
-
-    //     outfile << "Query Point: " << q->getID() << endl;
-    //     if(b != NULL)
-    //         outfile << "Nearest Neighbor LSH: " << b->getID() << endl << "Distance LSH: " << distance << endl;
-    //     else
-    //         outfile << "Nearest Neighbor LSH: None Found!" << endl << "Distance LSH: -" << endl;
-    //     outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
-    //     outfile << "tLSH: " << (float) timeLSH/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
-    //     delete bruteNN;
-
-    // }
-
     cout << "MaxAF: " << maxAF << endl;
     cout << "AvgAF: " << avgAF / queryTable->size() << endl;
     outfile.close();

@@ -82,21 +82,18 @@ int main(int argc, char *argv[])
 
     pair<class Curve *, double> *bruteNN;
 
-    ////// Run algorithm based on the user's choices
 
     ifstream readBrute("bruteCurves.txt");
     string line, bruteNeighborID;
     double bruteDist;
 
+    ////// Run algorithm based on the user's choices
     class gridCurve<class LSH<class Curve *> > *lshLsh = new class gridCurve<class LSH<class Curve *> >(inputTable, k, L, w, 0, minPoints, maxPoints, maxCoord);
     lshLsh->initializeAlgorithm();
 
     for (int i = 0; i < queryTable->size(); i++)
     {
         q = (queryTable->at(i));
-        // timeBrute = clock();
-        // bruteNN = bruteForceCurve(inputTable, q);
-        // timeBrute = clock() - timeBrute;
         timeAlgorithm = clock();
         b = lshLsh->findNN(q, &distance);
         timeAlgorithm = clock() - timeAlgorithm;
@@ -122,6 +119,8 @@ int main(int argc, char *argv[])
         if (tempAF > maxAF)
             maxAF = tempAF;
 
+        
+        //print the output results to the outfile
         outfile << "Query Point: " << q->getID() << endl;
         if (b != NULL)
             outfile << "Nearest Neighbor LSH/LSH: " << b->getID() << endl

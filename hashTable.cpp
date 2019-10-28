@@ -125,6 +125,7 @@ HashTable<T>::HashTable() : generator((std::random_device())())
 template <>
 HashTable<map<unsigned int, char> >::~HashTable()
 {
+    //clear the structures and the allocated memory
     buckets->clear();
     delete buckets;
     for (int i = 0; i < numFunct; i++)
@@ -151,6 +152,7 @@ template <>
 int HashTable<vector<pair<class Point *, unsigned int> > >::insertPoint(class Point *point)
 {
     unsigned int result = amplifiedHashFunctionPoint(point);
+    //insert point to the dataset to the position indicated by the hashFunction
     pair<class Point *, unsigned int> PAIR = make_pair(point, result);
     unsigned int position = result % bucketSize;
     buckets[position].push_back(PAIR);
@@ -209,18 +211,14 @@ unsigned int HashTable<T>::hashFunctionPoint(class Point *x, int functionNo)
     double *s = sVectors[functionNo];
     unsigned int m = UINT32_MAX - 4;
 
-    // a[0] = floor((x->getCoord()[0] - s[0]) / w);
-    // m = a[0];
+
 
     for (int i = 0; i < dimensions; i++)
     {
         a[i] = (int)floor((x->getCoord()[i] - s[i]) / w);
-
-        // if (a[i] > m)
-        //     m = a[i];
     }
 
-    // m++; // m must be greater than the max ai
+
 
     unsigned int result = 0;
     unsigned int step1;
@@ -238,6 +236,7 @@ unsigned int HashTable<T>::hashFunctionPoint(class Point *x, int functionNo)
 
 unsigned int modular_expo(unsigned int base, unsigned int exponent, unsigned int modulus)
 {
+    //function that calculates modulos of exponentials that produce very big values
     if (modulus == 1)
         return 0;
     if (exponent == 0)

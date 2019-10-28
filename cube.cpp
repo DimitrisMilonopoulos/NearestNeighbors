@@ -15,7 +15,7 @@ using namespace std;
 template <class T>
 Cube<T>::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vector<class Point *> *points)
 {
-    k = givenk;
+    k = givenk; //number of dimensions
     maxPoints = givenMaxPoints;
     probes = givenProbes;
     w = givenw;
@@ -24,6 +24,8 @@ Cube<T>::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vecto
     int dim = hyperCube->at(0)->getSize();
 
     unsigned int hashtableSize = hyperCube->size() / 8;
+    
+    //create the unordered map for the cube
     hashTables = new class HashTable<map<unsigned int, char> >[k];
 
     for (int i = 0; i < k; i++)
@@ -49,7 +51,7 @@ Cube<T>::Cube(int givenk, int givenMaxPoints, int givenProbes, int givenw, vecto
 template <class T>
 unsigned int Cube<T>::getVertex(class Point *point)
 {
-
+    //get the bitstring that represents the acme of the given class Point
     unsigned int vertex = 0;
     unsigned int hashresult;
     for (int j = 0; j < k; j++)
@@ -98,7 +100,7 @@ int Cube<class Curve *>::searchVertex(vector<class Point *> *vertex, class Point
 
     double DTWDist;
     class Point *p;
-
+    //get the closest curves according to their dtw distance
     for (int j = 0; j < vertex->size(); j++)
     {
         *count = *count + 1;
@@ -157,6 +159,8 @@ class Point *Cube<class Point *>::findNN(class Point *query, double *dist)
 
     probeCounter = 0;
 
+    //first for the nearest neighbor inside the given vertex and its neighbors
+    //that have a hamming distance of 1 
     for (int i = 0; i < k; i++)
     {
 
@@ -208,6 +212,8 @@ class Point *Cube<class Point *>::findNN(class Point *query, double *dist)
     }
     int canProduce;
     int newPos;
+
+    //produce the vertexes that have a hamming distance bigger than 1 
     for (int i = 0; i < k - 1; i++)
     {
         neighborPos2 = new vector<pair<unsigned int, unsigned int> >;
@@ -386,6 +392,7 @@ T Cube<T>::findNN(class Point *query, double *dist)
 template <>
 int Cube<class Point *>::searchVertexRadiusNeighbors(vector<class Point *> *vertex, class Point *query, double radius, int *count, vector<pair<class Point *, double> > *neighbors)
 {
+    //same operation but with the radius parameter
     double manhattanD;
     class Point *p;
 
@@ -420,7 +427,7 @@ int Cube<T>::searchVertexRadiusNeighbors(vector<class Point *> *vertex, class Po
 template <>
 vector<pair<class Point *, double> > *Cube<class Point *>::findRadiusNN(class Point *query, double radius)
 {
-
+    //same operation but with the radius parameter
     vector<pair<class Point *, double> > *radiusNeighbors = new vector<pair<class Point *, double> >;
 
     unsigned int vertexNo = getVertex(query);

@@ -12,6 +12,7 @@ using namespace std;
 
 pair<class Point *, double> *bruteForce(vector<class Point *> *points, class Point *query)
 {
+    //find the nearest neighbor from the dataset of a given query
     size_t npoints = points->size();
 
     pair<class Point *, double> *nearestNeighbor = new pair<class Point *, double>;
@@ -40,7 +41,7 @@ pair<class Point *, double> *bruteForce(vector<class Point *> *points, class Poi
 
 int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 {
-
+    //same as brute force but operates with a set of queries
     size_t npoints = points->size();
     size_t nqueries = queries->size();
 
@@ -74,6 +75,7 @@ int bruteForceAll(vector<class Point *> *points, vector<class Point *> *queries)
 
 pair<class Point *, double> *bruteForceTweaked(vector<class Point *> *points, class Point *query, string ID)
 {
+    //same as bruteforce but ignores points with the same id as the given query
     size_t npoints = points->size();
 
     pair<class Point *, double> *nearestNeighbor = new pair<class Point *, double>;
@@ -104,6 +106,7 @@ pair<class Point *, double> *bruteForceTweaked(vector<class Point *> *points, cl
 
 pair<class Curve *, double> *bruteForceCurve(vector<class Curve *> *curves, class Curve *query)
 {
+    //finds the nearest neighbor of a curve with dtw distance
     size_t npoints = curves->size();
 
     pair<class Curve *, double> *nearestNeighbor = new pair<class Curve *, double>;
@@ -132,7 +135,10 @@ pair<class Curve *, double> *bruteForceCurve(vector<class Curve *> *curves, clas
 
 int calculateW(vector<class Point *> *points, int percentage)
 {
-
+    //estimates the value of w used in the algorithms
+    //uses a percentage of random points from the datasets as queries
+    //and returns their average distance from their nearest neighbor
+    
     int toCheck = (points->size() * percentage) / 100;
 
     random_device rd;

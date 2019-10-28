@@ -10,7 +10,9 @@ using namespace std;
 
 double dtwDist(class Curve *P, class Curve *Q)
 {
-
+    //dynamic time warping as instructed in the class
+    //dynamic programming implementation
+    
     int length = P->getSize();
     int width = Q->getSize();
 

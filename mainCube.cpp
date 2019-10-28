@@ -58,7 +58,6 @@ int main(int argc, char *argv[])
     queryTable = queries.first;
     double radius = queries.second;
 
-    // bruteForce(inputTable, queryTable);
 
     class Cube<class Point *> cubeImplementation(k, M, probes, w, inputTable);
     class Point *q, *b = NULL;
@@ -75,30 +74,6 @@ int main(int argc, char *argv[])
     string line;
     double bruteDist;
 
-    // for (int i = 0; i < queryTable->size(); i++)
-    // {
-    //     q = (queryTable->at(i));
-    //     timeBrute = clock();
-    //     bruteNN = bruteForce(inputTable, q);
-    //     timeBrute = clock() - timeBrute;
-    //     timeCube = clock();
-    //     b = cubeImplementation.findNN(q, &distance);
-    //     timeCube = clock() - timeCube;
-
-    //     tempAF = distance / bruteNN->second;
-    //     avgAF += tempAF;
-    //     if(tempAF > maxAF)
-    //         maxAF = tempAF;
-
-    //     outfile << "Query Point: " << q->getID() << endl;
-    //     if(b != NULL)
-    //         outfile << "Nearest Neighbor Cube: " << b->getID() << endl << "DistanceCube: " << distance << endl;
-    //     else
-    //         outfile << "Nearest Neighbor Cube: None Found!" << endl << "DistanceCube: -" << endl;
-    //     outfile << "True Neighbor: " << bruteNN->first->getID() << endl << "DistanceTrue: " << bruteNN->second << endl;
-    //     outfile << "tCube: " << (float) timeCube/CLOCKS_PER_SEC << endl << "tTrue: " << (float)timeBrute/CLOCKS_PER_SEC << endl << endl;
-    //     delete bruteNN;
-    // }
     for (int i = 0; i < queryTable->size(); i++)
     {
         //read the output of the bruteforce file
@@ -136,7 +111,8 @@ int main(int argc, char *argv[])
                 << "DistanceTrue: " << bruteDist << endl;
         outfile << "tCube: " << (float)timeCube / CLOCKS_PER_SEC << endl
                 << "tTrue: " << (float)timeBrute / CLOCKS_PER_SEC << endl;
-
+        
+        //select which method of NN to run according to the radius
         if (radius > 0.0)
         {
             vector<pair<class Point *, double> > *radiusNeighbors = cubeImplementation.findRadiusNN(q, radius);

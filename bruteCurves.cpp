@@ -13,6 +13,8 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 
+    //calculates the nearest neighbors of the curves with brute force and dtw distance
+    //and saves them into a file
     string inputFile, queryFile, outputFile;
     class Curve *q;
     clock_t timeBrute;
@@ -44,6 +46,7 @@ int main(int argc, char *argv[])
 
     /////////calculate the nearest neighbors with brute force////////////////////
     brute.open(outputFile);
+    brute.precision(15);
 
     for (int i = 0; i < queryTable->size(); i++)
     {
